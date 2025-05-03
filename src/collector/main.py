@@ -9,6 +9,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support.ui import Select
 from webdriver_manager.chrome import ChromeDriverManager
 import time
 
@@ -70,38 +71,58 @@ def setup_driver():
 def login(driver, username, password):
     """쿠팡 광고 플랫폼 로그인"""
     try:
-        driver.get("https://advertising.coupang.com/relay/wing/home?from=WING_LNB")
+        # 쿠키 설정을 위해 일단 도메인에 접속
+        driver.get("https://wing.coupang.com")
+        
+        # 언어 및 지역 관련 쿠키 설정
+        cookies = [
+            {"name": "locale", "value": "ko"},
+            {"name": "wing-locale", "value": "ko"},
+            {"name": "x-coupang-accept-language", "value": "ko-KR"},
+            {"name": "x-coupang-target-market", "value": "KR"}
+        ]
+        
+        for cookie in cookies:
+            try:
+                driver.add_cookie(cookie)
+                logger.debug(f"쿠키 설정: {cookie['name']}={cookie['value']}")
+            except Exception as e:
+                logger.warning(f"쿠키 설정 실패 ({cookie['name']}): {str(e)}")
+        
+        # 로그인 페이지 접속 - 명시적으로 한국어 설정 추가
+        driver.get("https://advertising.coupang.com/relay/wing/home?from=WING_LNB&kc_locale=ko-KR")
         wait = WebDriverWait(driver, 15)
         
-        # 페이지 HTML 저장
-        html_content = driver.page_source
-        timestamp = datetime.now().strftime('%y%m%d_%H%M%S')
-        html_file = f'log/login_page_{timestamp}.html'
-        with open(html_file, 'w', encoding='utf-8') as f:
-            f.write(html_content)
-        logger.info(f"로그인 페이지 HTML 저장됨: {html_file}")
+        # 언어가 한국어로 설정되어 있는지 확인
+        try:
+            # 언어 선택기가 로드될 때까지 대기
+            select_element = wait.until(
+                EC.presence_of_element_located((By.ID, "changeLocale"))
+            )
+            
+            # 한국어 옵션 선택
+            select = Select(select_element)
+            select.select_by_visible_text("한국어")
+            logger.debug("언어를 한국어로 설정함")
+            time.sleep(2)  # 언어 변경 적용 기다림
+        except Exception as e:
+            logger.warning(f"언어 설정 변경 시도 실패: {str(e)}")
         
-        # 스크린샷 저장
-        screenshot_file = f'log/login_page_{timestamp}.png'
-        driver.save_screenshot(screenshot_file)
-        logger.info(f"로그인 페이지 스크린샷 저장됨: {screenshot_file}")
-        
-        # 디버깅을 위해 여기서 종료
-        logger.info("디버깅을 위해 프로그램을 종료합니다.")
-        return True  # 정상 종료로 처리
-        
-        # 아래 코드는 실행되지 않음
+        # ID 입력 필드가 로드될 때까지 대기
         username_field = wait.until(
             EC.presence_of_element_located((By.ID, "username"))
         )
         username_field.send_keys(username)
         
+        # 비밀번호 입력
         password_field = driver.find_element(By.ID, "password")
         password_field.send_keys(password)
         
+        # 로그인 버튼 클릭
         login_button = driver.find_element(By.ID, "kc-login")
         login_button.click()
         
+        # 대시보드 페이지 로드 확인
         wait.until(
             EC.url_to_be("https://advertising.coupang.com/marketing/dashboard/sales")
         )
@@ -313,20 +334,18 @@ def main():
             # 웹드라이버 초기화
             driver = setup_driver()
             
-            # 로그인
+            # 로그인 시도 (디버깅을 위해 여기서 종료됨)
             if not login(driver, COUPANG_ID, COUPANG_PW):
                 raise Exception("로그인 실패")
                 
-            # 20개 보기 설정
+            # 디버깅 중이므로 여기 이후의 코드는 실행되지 않음
             if not select_rows_per_page(driver):
                 raise Exception("행 수 설정 실패")
                 
-            # 데이터 수집
             campaigns, total_cost = collect_campaign_data(driver)
             if not campaigns:
                 raise Exception("데이터 수집 실패")
                 
-            # 데이터 저장
             if not save_data(campaigns, total_cost):
                 raise Exception("데이터 저장 실패")
                 
@@ -340,7 +359,7 @@ def main():
                 time.sleep(retry_interval)
             else:
                 logger.error("최대 재시도 횟수 초과")
-                
+
         finally:
             if driver:
                 driver.quit()
