@@ -39,11 +39,28 @@ def setup_driver():
         chrome_options.add_argument('--disable-dev-shm-usage')
         chrome_options.add_argument('--window-size=1920,1080')
         chrome_options.add_argument('--disable-gpu')
+        
+        # 봇 감지 우회를 위한 추가 설정
         chrome_options.add_argument('--disable-blink-features=AutomationControlled')
+        chrome_options.add_experimental_option('excludeSwitches', ['enable-automation'])
+        chrome_options.add_experimental_option('useAutomationExtension', False)
+        chrome_options.add_argument('--disable-extensions')
+        chrome_options.add_argument('--ignore-certificate-errors')
+        chrome_options.add_argument('--allow-running-insecure-content')
         chrome_options.add_argument('user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
         
         service = Service(ChromeDriverManager().install())
         driver = webdriver.Chrome(service=service, options=chrome_options)
+        
+        # JavaScript 코드 실행으로 웹드라이버 감지 우회
+        driver.execute_cdp_cmd('Page.addScriptToEvaluateOnNewDocument', {
+            'source': '''
+                Object.defineProperty(navigator, 'webdriver', {
+                    get: () => undefined
+                })
+            '''
+        })
+        
         logger.info("웹드라이버 설정 완료")
         return driver
     except Exception as e:
@@ -55,6 +72,19 @@ def login(driver, username, password):
     try:
         driver.get("https://advertising.coupang.com/relay/wing/home?from=WING_LNB")
         wait = WebDriverWait(driver, 15)
+        
+        # 페이지 HTML 저장
+        html_content = driver.page_source
+        timestamp = datetime.now().strftime('%y%m%d_%H%M%S')
+        html_file = f'log/login_page_{timestamp}.html'
+        with open(html_file, 'w', encoding='utf-8') as f:
+            f.write(html_content)
+        logger.info(f"로그인 페이지 HTML 저장됨: {html_file}")
+        
+        # 스크린샷 저장
+        screenshot_file = f'log/login_page_{timestamp}.png'
+        driver.save_screenshot(screenshot_file)
+        logger.info(f"로그인 페이지 스크린샷 저장됨: {screenshot_file}")
         
         # ID 입력 필드가 로드될 때까지 대기
         username_field = wait.until(
@@ -78,6 +108,21 @@ def login(driver, username, password):
         return True
     except Exception as e:
         logger.error(f"로그인 실패: {str(e)}")
+        
+        # 오류 발생 시에도 현재 페이지 상태 저장
+        try:
+            error_timestamp = datetime.now().strftime('%y%m%d_%H%M%S')
+            error_html_file = f'log/login_error_{error_timestamp}.html'
+            with open(error_html_file, 'w', encoding='utf-8') as f:
+                f.write(driver.page_source)
+            logger.info(f"오류 페이지 HTML 저장됨: {error_html_file}")
+            
+            error_screenshot_file = f'log/login_error_{error_timestamp}.png'
+            driver.save_screenshot(error_screenshot_file)
+            logger.info(f"오류 페이지 스크린샷 저장됨: {error_screenshot_file}")
+        except Exception as save_error:
+            logger.error(f"오류 페이지 저장 실패: {str(save_error)}")
+            
         return False
 
 def select_rows_per_page(driver, rows=20):
