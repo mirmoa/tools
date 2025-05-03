@@ -23,8 +23,19 @@ jobs:
     - name: Run test
       run: python src/collector/test_login.py
       
-    - name: Save test results
-      uses: actions/upload-artifact@v1
-      with:
-        name: test-logs
-        path: log/ 
+    - name: Show test results
+      if: always()
+      run: |
+        echo "=== HTML Files ==="
+        for f in log/*.html; do
+          echo "=== $f ==="
+          cat "$f"
+          echo
+        done
+        
+        echo "=== Log Files ==="
+        for f in log/*.txt; do
+          echo "=== $f ==="
+          cat "$f"
+          echo
+        done 
