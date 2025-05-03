@@ -21,32 +21,55 @@ logger = logging.getLogger(__name__)
 
 def setup_driver():
     chrome_options = Options()
-    chrome_options.add_argument('--headless')
+    chrome_options.add_argument('--headless=new')  # 새로운 headless 모드 사용
     chrome_options.add_argument('--no-sandbox')
     chrome_options.add_argument('--disable-dev-shm-usage')
+    chrome_options.add_argument('--window-size=1920,1080')  # 창 크기 설정
+    chrome_options.add_argument('--disable-gpu')  # GPU 가속 비활성화
+    chrome_options.add_argument('--disable-blink-features=AutomationControlled')  # 자동화 감지 방지
+    chrome_options.add_argument('user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')  # 일반적인 user-agent 설정
     
     service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service, options=chrome_options)
     return driver
 
 def login(driver, username, password):
-    driver.get('https://ads.coupang.com')
-    
-    # 로그인 폼 대기
-    wait = WebDriverWait(driver, 10)
-    username_field = wait.until(EC.presence_of_element_located((By.NAME, 'username')))
-    password_field = driver.find_element(By.NAME, 'password')
-    
-    # 로그인 정보 입력
-    username_field.send_keys(username)
-    password_field.send_keys(password)
-    
-    # 로그인 버튼 클릭
-    login_button = driver.find_element(By.CSS_SELECTOR, 'button[type="submit"]')
-    login_button.click()
-    
-    # 대시보드 로딩 대기
-    wait.until(EC.presence_of_element_located((By.CLASS_NAME, 'dashboard')))
+    try:
+        driver.get("https://advertising.coupang.com/relay/wing/home?from=WING_LNB")
+        logger.info("페이지 로딩 시작")
+        
+        # 로그인 폼이 나타날 때까지 대기 (최대 20초)
+        wait = WebDriverWait(driver, 20)
+        
+        # ID 입력 필드 대기 및 입력
+        logger.info("로그인 폼 찾는 중...")
+        username_field = wait.until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, 'input[type="text"]'))
+        )
+        username_field.clear()
+        username_field.send_keys(username)
+        logger.info("아이디 입력 완료")
+        
+        # 비밀번호 입력
+        password_field = driver.find_element(By.CSS_SELECTOR, 'input[type="password"]')
+        password_field.clear()
+        password_field.send_keys(password)
+        logger.info("비밀번호 입력 완료")
+        
+        # 로그인 버튼 클릭
+        login_button = driver.find_element(By.CSS_SELECTOR, 'button[type="submit"]')
+        login_button.click()
+        logger.info("로그인 버튼 클릭")
+        
+        # 대시보드 로딩 대기
+        wait.until(EC.presence_of_element_located((By.CLASS_NAME, 'dashboard')))
+        logger.info("로그인 성공 - 대시보드 로딩됨")
+        
+    except Exception as e:
+        logger.error(f"로그인 중 오류 발생: {str(e)}")
+        # 현재 페이지의 HTML을 로깅
+        logger.error(f"현재 페이지 HTML: {driver.page_source}")
+        raise
 
 def collect_campaign_data(driver):
     # 캠페인 데이터 수집
