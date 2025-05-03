@@ -11,6 +11,8 @@ jobs:
     
     steps:
     - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0  # 전체 히스토리 가져오기
     
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -28,8 +30,12 @@ jobs:
         pip install selenium webdriver_manager pandas
 
     - name: Run collector
-      run: |
-        python src/collector/main.py
+      uses: nick-fields/retry@v2
+      with:
+        timeout_minutes: 10
+        max_attempts: 3
+        retry_wait_seconds: 60
+        command: python src/collector/main.py
         
     - name: Commit and push if changed
       run: |
