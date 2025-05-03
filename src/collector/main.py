@@ -86,21 +86,22 @@ def login(driver, username, password):
         driver.save_screenshot(screenshot_file)
         logger.info(f"로그인 페이지 스크린샷 저장됨: {screenshot_file}")
         
-        # ID 입력 필드가 로드될 때까지 대기
+        # 디버깅을 위해 여기서 종료
+        logger.info("디버깅을 위해 프로그램을 종료합니다.")
+        return True  # 정상 종료로 처리
+        
+        # 아래 코드는 실행되지 않음
         username_field = wait.until(
             EC.presence_of_element_located((By.ID, "username"))
         )
         username_field.send_keys(username)
         
-        # 비밀번호 입력
         password_field = driver.find_element(By.ID, "password")
         password_field.send_keys(password)
         
-        # 로그인 버튼 클릭
         login_button = driver.find_element(By.ID, "kc-login")
         login_button.click()
         
-        # 대시보드 페이지 로드 확인
         wait.until(
             EC.url_to_be("https://advertising.coupang.com/marketing/dashboard/sales")
         )
@@ -108,21 +109,6 @@ def login(driver, username, password):
         return True
     except Exception as e:
         logger.error(f"로그인 실패: {str(e)}")
-        
-        # 오류 발생 시에도 현재 페이지 상태 저장
-        try:
-            error_timestamp = datetime.now().strftime('%y%m%d_%H%M%S')
-            error_html_file = f'log/login_error_{error_timestamp}.html'
-            with open(error_html_file, 'w', encoding='utf-8') as f:
-                f.write(driver.page_source)
-            logger.info(f"오류 페이지 HTML 저장됨: {error_html_file}")
-            
-            error_screenshot_file = f'log/login_error_{error_timestamp}.png'
-            driver.save_screenshot(error_screenshot_file)
-            logger.info(f"오류 페이지 스크린샷 저장됨: {error_screenshot_file}")
-        except Exception as save_error:
-            logger.error(f"오류 페이지 저장 실패: {str(save_error)}")
-            
         return False
 
 def select_rows_per_page(driver, rows=20):
