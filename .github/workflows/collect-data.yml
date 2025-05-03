@@ -26,11 +26,22 @@ jobs:
     
     - name: Run collector
       uses: nick-fields/retry@v2
+      env:
+        TZ: "Asia/Seoul"
+        LANG: "ko_KR.UTF-8"
+        CHROME_OPTIONS: "--no-sandbox --disable-dev-shm-usage --disable-blink-features=AutomationControlled --lang=ko"
       with:
-        timeout_minutes: 10
+        timeout_minutes: 15  # 타임아웃 시간 증가
         max_attempts: 3
         retry_wait_seconds: 60
         command: python src/collector/main.py
+    
+    - name: Save logs (even on failure)
+      if: always()
+      uses: actions/upload-artifact@v2
+      with:
+        name: debug-logs
+        path: log/
         
     - name: Commit and push if changed
       run: |
