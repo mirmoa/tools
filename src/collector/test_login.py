@@ -8,6 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
+import time
 
 # 로그 디렉토리 생성
 os.makedirs('log', exist_ok=True)
@@ -66,9 +67,43 @@ def test_login_page():
     try:
         driver = setup_driver()
         
-        # 로그인 페이지 접속
-        driver.get("https://advertising.coupang.com/relay/wing/home?from=WING_LNB")
+        # 쿠키 설정을 위해 일단 도메인에 접속
+        driver.get("https://wing.coupang.com")
+        
+        # 쿠키 설정
+        cookies = [
+            {"name": "locale", "value": "ko"},
+            {"name": "wing-locale", "value": "ko"},
+            {"name": "x-coupang-accept-language", "value": "ko-KR"},
+            {"name": "x-coupang-target-market", "value": "KR"}
+        ]
+        
+        for cookie in cookies:
+            try:
+                driver.add_cookie(cookie)
+                logger.info(f"쿠키 설정: {cookie['name']}={cookie['value']}")
+            except Exception as e:
+                logger.warning(f"쿠키 설정 실패 ({cookie['name']}): {str(e)}")
+        
+        # 로그인 페이지 접속 - 명시적으로 한국어 설정 추가
+        driver.get("https://advertising.coupang.com/relay/wing/home?from=WING_LNB&kc_locale=ko-KR")
         wait = WebDriverWait(driver, 15)
+        
+        # 언어 확인 및 설정
+        try:
+            # 언어 선택기가 로드될 때까지 대기
+            select_element = wait.until(
+                EC.presence_of_element_located((By.ID, "changeLocale"))
+            )
+            
+            # 한국어 옵션 선택
+            from selenium.webdriver.support.ui import Select
+            select = Select(select_element)
+            select.select_by_visible_text("한국어")
+            logger.info("언어를 한국어로 설정함")
+            time.sleep(2)  # 언어 변경 적용 기다림
+        except Exception as e:
+            logger.warning(f"언어 설정 변경 시도 실패: {str(e)}")
         
         # 페이지 HTML 저장
         html_content = driver.page_source
