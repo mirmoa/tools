@@ -1,0 +1,25 @@
+{
+  "name": "mir_company",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mirmoa/tools.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mirmoa/tools/issues"
+  },
+  "homepage": "https://github.com/mirmoa/tools#readme",
+  "description": "",
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
