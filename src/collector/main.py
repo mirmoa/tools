@@ -38,19 +38,18 @@ def login(driver, username, password):
         driver.get("https://advertising.coupang.com/relay/wing/home?from=WING_LNB")
         logger.info("페이지 로딩 시작")
         
-        # 로그인 폼이 나타날 때까지 대기 (최대 15초)
         wait = WebDriverWait(driver, 15)
-        
-        # ID 입력 필드 대기 및 입력
         logger.info("로그인 폼 찾는 중...")
+        
+        # ID 입력
         username_field = wait.until(
             EC.presence_of_element_located((By.ID, "username"))
         )
-        password_field = driver.find_element(By.ID, "password")
-        
         username_field.send_keys(username)
         logger.info("아이디 입력 완료")
         
+        # 비밀번호 입력
+        password_field = driver.find_element(By.ID, "password")
         password_field.send_keys(password)
         logger.info("비밀번호 입력 완료")
         
@@ -59,7 +58,7 @@ def login(driver, username, password):
         login_button.click()
         logger.info("로그인 버튼 클릭")
         
-        # 대시보드 로딩 대기
+        # 대시보드 페이지 로딩 대기
         wait.until(
             EC.url_to_be("https://advertising.coupang.com/marketing/dashboard/sales")
         )
@@ -67,7 +66,6 @@ def login(driver, username, password):
         
     except Exception as e:
         logger.error(f"로그인 중 오류 발생: {str(e)}")
-        # 현재 페이지의 HTML을 로깅
         logger.error(f"현재 페이지 HTML: {driver.page_source}")
         raise
 
