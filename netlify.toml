@@ -1,6 +1,6 @@
 [build]
   command = "npm run build"
-  publish = "dist"
+  publish = "public"  # public 폴더를 배포하도록 설정
   ignore = ""
 
 [build.environment]
@@ -10,6 +10,3 @@
   from = "/*"
   to = "/index.html"
   status = 200 
-
-[[publish]]
-  path = "data/daily" 
