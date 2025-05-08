@@ -1,7 +1,6 @@
 [build]
   command = "npm run build"
-  publish = "public"  # public 폴더를 배포하도록 설정
-  ignore = ""
+  publish = "dist"
 
 [build.environment]
   NODE_VERSION = "18"
@@ -9,4 +8,4 @@
 [[redirects]]
   from = "/*"
   to = "/index.html"
-  status = 200 
+  status = 200

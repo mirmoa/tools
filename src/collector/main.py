@@ -318,7 +318,7 @@ def save_data(campaigns, total_cost):
         today = current_time.strftime('%Y-%m-%d')
         current_hour = current_time.strftime('%H')
         
-        data_dir = Path('public/data/daily')
+        data_dir = Path('src/frontend/public/data/daily')
         data_dir.mkdir(parents=True, exist_ok=True)
         data_file = data_dir / f'{today}.json'
         
