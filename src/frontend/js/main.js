@@ -73,10 +73,40 @@ function initializeChart(labels, data) {
     });
 }
 
+// 캠페인별 최대 비용 계산 함수
+function calculateMaxCost(campaignData) {
+    // 각 캠페인별 최대 비용 계산
+    const maxCosts = {};
+    
+    Object.entries(campaignData).forEach(([name, data]) => {
+        if (data.hourly_costs) {
+            // 해당 캠페인의 시간별 비용 중 최대값 찾기
+            const costs = Object.values(data.hourly_costs);
+            maxCosts[name] = Math.max(...costs);
+        } else {
+            maxCosts[name] = 0;
+        }
+    });
+    
+    return maxCosts;
+}
+
+// 총 비용 계산 함수
+function calculateTotalCost(maxCosts) {
+    // 모든 캠페인의 최대 비용 합산
+    return Object.values(maxCosts).reduce((sum, cost) => sum + cost, 0);
+}
+
 // 요약 정보 업데이트
 function updateSummary(data) {
+    // 각 캠페인별 최대 비용 계산
+    const maxCosts = calculateMaxCost(data.campaign_summary);
+    
+    // 총 비용 계산 (각 캠페인의 최대 비용 합산)
+    const totalCost = calculateTotalCost(maxCosts);
+    
     const summaryData = {
-        total_cost: data.total_cost,
+        total_cost: totalCost,
         campaign_count: Object.keys(data.campaign_summary).length,
         last_updated: data.last_updated
     };
@@ -86,7 +116,7 @@ function updateSummary(data) {
         document.getElementById('lastUpdated').textContent = 
             `마지막 업데이트: ${formatDate(data.last_updated)}`;
         document.getElementById('totalCost').textContent = 
-            formatNumber(data.total_cost);
+            formatNumber(totalCost);
         document.getElementById('campaignCount').textContent = 
             Object.keys(data.campaign_summary).length;
             
@@ -113,17 +143,23 @@ function updateCampaignTable(campaignData) {
         const tbody = document.getElementById('campaignTable').querySelector('tbody');
         if (!tbody) return;
 
+        // 각 캠페인별 최대 비용 계산
+        const maxCosts = calculateMaxCost(campaignData);
+
         tbody.innerHTML = Object.entries(campaignData)
             .map(([name, data]) => {
                 // 시간별 데이터가 있는 경우 해당 시간의 데이터 포인트 수를 표시
                 const dataPoints = data.hourly_costs ? 
                     Object.keys(data.hourly_costs).length : 
                     1;  // 기본값
+                
+                // 해당 캠페인의 최대 비용 사용
+                const totalCost = maxCosts[name] || 0;
                     
                 return `
                     <tr>
                         <td>${name}</td>
-                        <td>${formatNumber(data.total_cost)}</td>
+                        <td>${formatNumber(totalCost)}</td>
                         <td>${dataPoints}</td>
                         <td>${formatDate(data.last_updated)}</td>
                     </tr>
@@ -185,4 +221,4 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // 5분마다 새로운 데이터 확인
     setInterval(loadData, 5 * 60 * 1000);
-}); 
+});
