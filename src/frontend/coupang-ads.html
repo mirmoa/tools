@@ -100,6 +100,33 @@
                 </div>
             </div>
 
+            <!-- 주간 데이터 요약 -->
+            <div class="row mt-4 mb-4">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">최근 일주일 데이터</h5>
+                            <div class="table-responsive">
+                                <table class="table table-hover" id="weeklyTable">
+                                    <thead>
+                                        <tr>
+                                            <th>날짜</th>
+                                            <th>총 비용</th>
+                                            <th>캠페인 수</th>
+                                            <th>피크 시간</th>
+                                            <th>세부 정보</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- JavaScript로 동적 생성 -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- 캠페인 목록 -->
             <div class="row mt-4">
                 <div class="col-12">
@@ -125,10 +152,47 @@
                     </div>
                 </div>
             </div>
+
+            <!-- 일별 세부 정보 모달 -->
+            <div class="modal fade" id="dayDetailModal" tabindex="-1" aria-labelledby="dayDetailModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="dayDetailModalLabel">일별 세부 정보</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <canvas id="dailyDetailChart"></canvas>
+                            </div>
+                            <div class="mt-4">
+                                <h6>캠페인별 비용</h6>
+                                <div class="table-responsive">
+                                    <table class="table table-sm" id="dailyCampaignTable">
+                                        <thead>
+                                            <tr>
+                                                <th>캠페인명</th>
+                                                <th>총 비용</th>
+                                                <th>비율</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- JavaScript로 동적 생성 -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/main.js" type="module"></script>
 </body>
-</html> 
+</html>
