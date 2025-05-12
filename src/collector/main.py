@@ -31,7 +31,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-def setup_driver():
+def setup_driver(): # 웹드라이버 설정
     """웹드라이버 설정"""
     try:
         chrome_options = Options()
@@ -50,7 +50,7 @@ def setup_driver():
         chrome_options.add_argument('--allow-running-insecure-content')
         chrome_options.add_argument('user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
         
-        service = Service(ChromeDriverManager().install())
+        service = Service(ChromeDriverManager().install())  #설치 경로 C:\Users\모아유통\.wdm\drivers\chromedriver\win64
         driver = webdriver.Chrome(service=service, options=chrome_options)
         
         # JavaScript 코드 실행으로 웹드라이버 감지 우회
