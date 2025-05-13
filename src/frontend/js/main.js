@@ -444,7 +444,7 @@ async function loadWeeklyData() {
     }
 }
 
-// 데이터 로드 및 표시
+// 데이터 로드 및 표시 함수 수정
 async function loadData() {
     try {
         const today = new Date().toISOString().split('T')[0];
@@ -466,8 +466,14 @@ async function loadData() {
 
         // 각 컴포넌트 개별적으로 업데이트
         updateSummary(data);
-        updateHourlyChart(data.hourly_data);
+        // 현재 뷰가 'today'일 때만 차트 업데이트
+        if (currentView === 'today') {
+            initializeChart(data.hourly_data, 'today');
+        }
         updateCampaignTable(data.campaign_summary);
+        
+        // 오늘 데이터 저장
+        lastData.hourly = data.hourly_data;
         
         // 주간 데이터도 함께 갱신
         await loadWeeklyData();
@@ -491,7 +497,7 @@ function setupSidebar() {
     }
 }
 
-// 페이지 초기화
+// 토글 이벤트 리스너 수정
 document.addEventListener('DOMContentLoaded', () => {
     setupSidebar();  // 사이드바 설정
     
@@ -499,16 +505,14 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('todayView').addEventListener('change', function() {
         if (this.checked) {
             currentView = 'today';
-            // 마지막으로 저장된 오늘 데이터 사용
-            updateHourlyChart(lastData.hourly);
+            initializeChart(lastData.hourly, 'today');
         }
     });
 
     document.getElementById('weekView').addEventListener('change', function() {
         if (this.checked) {
             currentView = 'week';
-            // 주간 데이터로 차트 업데이트
-            updateHourlyChart(null);
+            initializeChart(weeklyData, 'week');
         }
     });
     
