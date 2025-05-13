@@ -9,7 +9,6 @@ let lastData = {  // 각 컴포넌트의 마지막 데이터 저장
     weekly: null
 };
 let weeklyData = [];  // 주간 데이터 저장
-let currentView = 'today'; // 기본값은 오늘
 
 // 날짜 관련 상수
 const DAY_NAMES = ['일', '월', '화', '수', '목', '금', '토'];
@@ -44,58 +43,25 @@ function formatKoreanDate(date) {
     return `${date.getFullYear()}년 ${date.getMonth() + 1}월 ${date.getDate()}일 (${DAY_NAMES[date.getDay()]})`;
 }
 
-// 차트 초기화 함수 수정
-function initializeChart(data) {
+// 시간별 차트 초기화
+function initializeChart(labels, data) {
     const ctx = document.getElementById('hourlyChart').getContext('2d');
     
     if (hourlyChart) {
         hourlyChart.destroy();
     }
 
-    // 색상 팔레트 정의
-    const colors = [
-        'rgb(75, 192, 192)',
-        'rgb(255, 99, 132)',
-        'rgb(255, 205, 86)',
-        'rgb(54, 162, 235)',
-        'rgb(153, 102, 255)',
-        'rgb(255, 159, 64)',
-        'rgb(201, 203, 207)'
-    ];
-
-    let datasets = [];
-    
-    if (currentView === 'today') {
-        // 오늘 데이터만 표시
-        datasets = [{
-            label: '오늘',
-            data: Object.values(data[0]?.hourly_data || Array(24).fill(0)),
-            borderColor: colors[0],
-            tension: 0.1,
-            fill: false
-        }];
-    } else {
-        // 주간 데이터 표시
-        datasets = (data || [])
-            .sort((a, b) => new Date(b.date) - new Date(a.date))
-            .map((dayData, index) => ({
-                label: new Date(dayData.date).toLocaleDateString('ko-KR', {
-                    month: 'short',
-                    day: 'numeric',
-                    weekday: 'short'
-                }),
-                data: Object.values(dayData.hourly_data || Array(24).fill(0)),
-                borderColor: colors[index],
-                tension: 0.1,
-                fill: false
-            }));
-    }
-
     hourlyChart = new Chart(ctx, {
         type: 'line',
         data: {
-            labels: Array.from({length: 24}, (_, i) => `${String(i).padStart(2, '0')}시`),
-            datasets: datasets
+            labels: labels,
+            datasets: [{
+                label: '시간별 비용',
+                data: data,
+                borderColor: 'rgb(75, 192, 192)',
+                tension: 0.1,
+                fill: false
+            }]
         },
         options: {
             responsive: true,
@@ -114,15 +80,61 @@ function initializeChart(data) {
                 tooltip: {
                     callbacks: {
                         label: function(context) {
-                            return `${context.dataset.label}: ${formatNumber(context.parsed.y)}`;
+                            return formatNumber(context.parsed.y);
                         }
                     }
-                },
-                legend: {
-                    position: 'bottom',
-                    labels: {
-                        usePointStyle: true,
-                        padding: 20
+                }
+            }
+        }
+    });
+}
+
+// 일별 세부 정보 차트 초기화
+function initializeDailyDetailChart(date, hourlyData) {
+    const ctx = document.getElementById('dailyDetailChart').getContext('2d');
+    
+    if (dailyDetailChart) {
+        dailyDetailChart.destroy();
+    }
+
+    // 시간별 데이터 준비
+    const hours = Object.keys(hourlyData).sort();
+    const costs = hours.map(hour => hourlyData[hour]);
+    
+    // 시간 레이블 포맷팅 (00시, 01시, ...)
+    const hourLabels = hours.map(hour => `${hour}시`);
+
+    dailyDetailChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: hourLabels,
+            datasets: [{
+                label: `${date} 시간별 비용`,
+                data: costs,
+                backgroundColor: 'rgba(75, 192, 192, 0.5)',
+                borderColor: 'rgb(75, 192, 192)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        callback: function(value) {
+                            return formatNumber(value);
+                        }
+                    }
+                }
+            },
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            return formatNumber(context.parsed.y);
+                        }
                     }
                 }
             }
@@ -196,30 +208,54 @@ function updateSummary(data) {
     }
 }
 
-// 차트 업데이트 함수 수정
-function updateHourlyChart() {
-    if (!weeklyData || weeklyData.length === 0) {
-        // 데이터가 없는 경우 빈 차트 표시
-        initializeChart([]);
-        return;
+// 시간별 차트 업데이트
+function updateHourlyChart(hourlyData) {
+    // 변경사항이 있는 경우에만 업데이트
+    if (JSON.stringify(lastData.hourly) !== JSON.stringify(hourlyData)) {
+        const hours = Object.keys(hourlyData).sort();
+        const costs = hours.map(hour => hourlyData[hour]);
+        
+        // 시간 레이블 포맷팅 (00시, 01시, ...)
+        const hourLabels = hours.map(hour => `${hour}시`);
+        
+        initializeChart(hourLabels, costs);
+        
+        lastData.hourly = hourlyData;
     }
-
-    initializeChart(weeklyData);
-    lastData.weekly = [...weeklyData];
 }
 
 // 캠페인 테이블 업데이트
-function updateCampaignTable(campaigns) {
-    const tbody = document.getElementById('campaignTable').querySelector('tbody');
-    if (!tbody) return;
+function updateCampaignTable(campaignData) {
+    // 변경사항이 있는 경우에만 업데이트
+    if (JSON.stringify(lastData.campaigns) !== JSON.stringify(campaignData)) {
+        const tbody = document.getElementById('campaignTable').querySelector('tbody');
+        if (!tbody) return;
 
-    tbody.innerHTML = campaigns.map(campaign => `
-        <tr>
-            <td>${campaign.name}</td>
-            <td>${formatNumber(campaign.total_cost)}</td>
-            <td>${formatDate(campaign.last_updated)}</td>
-        </tr>
-    `).join('');
+        // 각 캠페인별 최대 비용 계산
+        const maxCosts = calculateMaxCost(campaignData);
+
+        tbody.innerHTML = Object.entries(campaignData)
+            .map(([name, data]) => {
+                // 시간별 데이터가 있는 경우 해당 시간의 데이터 포인트 수를 표시
+                const dataPoints = data.hourly_costs ? 
+                    Object.keys(data.hourly_costs).length : 
+                    1;  // 기본값
+                
+                // 해당 캠페인의 최대 비용 사용
+                const totalCost = maxCosts[name] || 0;
+                    
+                return `
+                    <tr>
+                        <td>${name}</td>
+                        <td>${formatNumber(totalCost)}</td>
+                        <td>${dataPoints}</td>
+                        <td>${formatDate(data.last_updated)}</td>
+                    </tr>
+                `;
+            }).join('');
+            
+        lastData.campaigns = campaignData;
+    }
 }
 
 // 주간 데이터 테이블 업데이트
@@ -366,7 +402,7 @@ async function loadWeeklyData() {
     }
 }
 
-// 데이터 로드 및 표시 함수 수정
+// 데이터 로드 및 표시
 async function loadData() {
     try {
         const today = new Date().toISOString().split('T')[0];
@@ -388,21 +424,11 @@ async function loadData() {
 
         // 각 컴포넌트 개별적으로 업데이트
         updateSummary(data);
+        updateHourlyChart(data.hourly_data);
         updateCampaignTable(data.campaign_summary);
         
-        // 주간 데이터 로드
+        // 주간 데이터도 함께 갱신
         await loadWeeklyData();
-        
-        // 현재 뷰에 맞는 차트 업데이트
-        if (currentView === 'today') {
-            // 오늘 데이터로 weeklyData 배열의 첫 번째 항목 업데이트
-            if (weeklyData.length > 0) {
-                weeklyData[0].hourly_data = data.hourly_data;
-            }
-        }
-        
-        // 차트 업데이트
-        updateHourlyChart();
 
     } catch (error) {
         console.error('데이터 로드 중 오류:', error);
@@ -423,28 +449,9 @@ function setupSidebar() {
     }
 }
 
-// 이벤트 리스너 추가
-function initializeEventListeners() {
-    // 차트 뷰 토글 이벤트
-    document.getElementById('todayView').addEventListener('change', function() {
-        if (this.checked) {
-            currentView = 'today';
-            updateHourlyChart();
-        }
-    });
-
-    document.getElementById('weekView').addEventListener('change', function() {
-        if (this.checked) {
-            currentView = 'week';
-            updateHourlyChart();
-        }
-    });
-}
-
 // 페이지 초기화
 document.addEventListener('DOMContentLoaded', () => {
     setupSidebar();  // 사이드바 설정
-    initializeEventListeners(); // 이벤트 리스너 초기화
     loadData();      // 초기 데이터 로드
     
     // 5분마다 새로운 데이터 확인
