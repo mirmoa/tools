@@ -209,37 +209,17 @@ function updateHourlyChart() {
 }
 
 // 캠페인 테이블 업데이트
-function updateCampaignTable(campaignData) {
-    // 변경사항이 있는 경우에만 업데이트
-    if (JSON.stringify(lastData.campaigns) !== JSON.stringify(campaignData)) {
-        const tbody = document.getElementById('campaignTable').querySelector('tbody');
-        if (!tbody) return;
+function updateCampaignTable(campaigns) {
+    const tbody = document.getElementById('campaignTable').querySelector('tbody');
+    if (!tbody) return;
 
-        // 각 캠페인별 최대 비용 계산
-        const maxCosts = calculateMaxCost(campaignData);
-
-        tbody.innerHTML = Object.entries(campaignData)
-            .map(([name, data]) => {
-                // 시간별 데이터가 있는 경우 해당 시간의 데이터 포인트 수를 표시
-                const dataPoints = data.hourly_costs ? 
-                    Object.keys(data.hourly_costs).length : 
-                    1;  // 기본값
-                
-                // 해당 캠페인의 최대 비용 사용
-                const totalCost = maxCosts[name] || 0;
-                    
-                return `
-                    <tr>
-                        <td>${name}</td>
-                        <td>${formatNumber(totalCost)}</td>
-                        <td>${dataPoints}</td>
-                        <td>${formatDate(data.last_updated)}</td>
-                    </tr>
-                `;
-            }).join('');
-            
-        lastData.campaigns = campaignData;
-    }
+    tbody.innerHTML = campaigns.map(campaign => `
+        <tr>
+            <td>${campaign.name}</td>
+            <td>${formatNumber(campaign.total_cost)}</td>
+            <td>${formatDate(campaign.last_updated)}</td>
+        </tr>
+    `).join('');
 }
 
 // 주간 데이터 테이블 업데이트
@@ -386,7 +366,7 @@ async function loadWeeklyData() {
     }
 }
 
-// 데이터 로드 및 표시
+// 데이터 로드 및 표시 함수 수정
 async function loadData() {
     try {
         const today = new Date().toISOString().split('T')[0];
@@ -408,11 +388,21 @@ async function loadData() {
 
         // 각 컴포넌트 개별적으로 업데이트
         updateSummary(data);
-        updateHourlyChart(data.hourly_data);
         updateCampaignTable(data.campaign_summary);
         
-        // 주간 데이터도 함께 갱신
+        // 주간 데이터 로드
         await loadWeeklyData();
+        
+        // 현재 뷰에 맞는 차트 업데이트
+        if (currentView === 'today') {
+            // 오늘 데이터로 weeklyData 배열의 첫 번째 항목 업데이트
+            if (weeklyData.length > 0) {
+                weeklyData[0].hourly_data = data.hourly_data;
+            }
+        }
+        
+        // 차트 업데이트
+        updateHourlyChart();
 
     } catch (error) {
         console.error('데이터 로드 중 오류:', error);
