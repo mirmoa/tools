@@ -315,8 +315,7 @@ def save_data(campaigns, total_cost):
         return None
 
 
-def git_push(file_path):
-<<<<<<< HEAD
+def git_push(file_path, log_file_path=None):
     """Git에 특정 파일 변경사항만 푸시"""
     try:
         # 현재 상태 확인 (다른 파일들의 변경 사항이 있는지)
@@ -336,13 +335,14 @@ def git_push(file_path):
         else:
             logger.info("Git pull 완료")
         
-=======
-    """Git에 특정 파일 변경사항 푸시"""
-    try:
->>>>>>> c366146620526b19529552459d70ea2f7e88e1f4
         # 특정 파일만 추가
         subprocess.run(["git", "add", file_path], check=True)
         logger.info(f"Git에 파일 추가: {file_path}")
+
+        # 로그 파일도 함께 푸시하려면 (log_file_path가 None이 아니면 추가)
+        if log_file_path:
+            subprocess.run(["git", "add", log_file_path], check=True)
+            logger.info(f"Git에 로그 파일 추가: {log_file_path}")
 
         # 커밋 메시지 생성
         commit_message = f"Update data: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
@@ -359,19 +359,10 @@ def git_push(file_path):
             
         logger.info(f"Git 커밋 생성: {commit_message}")
 
-        # 원격 저장소 변경사항 가져오기 (rebase로 깔끔하게)
-        # 푸시 전에 충돌을 방지하기 위해 pull --rebase를 먼저 수행
-        pull_result = subprocess.run(["git", "pull", "--rebase"], capture_output=True, text=True)
-        if pull_result.returncode != 0:
-            logger.error(f"Git pull --rebase 실패:\n{pull_result.stderr}")
-            return False
-        logger.info("Git pull 완료")
-
         # 푸시
         push_result = subprocess.run(["git", "push"], capture_output=True, text=True)
         if push_result.returncode != 0:
             logger.error(f"Git push 실패:\n{push_result.stderr}")
-<<<<<<< HEAD
             # 강제 푸시 시도
             logger.info("강제 푸시 시도...")
             force_push = subprocess.run(["git", "push", "--force"], capture_output=True, text=True)
@@ -380,9 +371,6 @@ def git_push(file_path):
                 return False
             logger.info("강제 푸시 완료")
             return True
-=======
-            return False
->>>>>>> c366146620526b19529552459d70ea2f7e88e1f4
         logger.info("Git 푸시 완료")
         return True
 
