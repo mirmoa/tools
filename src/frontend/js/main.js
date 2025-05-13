@@ -9,6 +9,7 @@ let lastData = {  // 각 컴포넌트의 마지막 데이터 저장
     weekly: null
 };
 let weeklyData = [];  // 주간 데이터 저장
+let currentView = 'today'; // 'today' 또는 'week'
 
 // 날짜 관련 상수
 const DAY_NAMES = ['일', '월', '화', '수', '목', '금', '토'];
@@ -44,24 +45,51 @@ function formatKoreanDate(date) {
 }
 
 // 시간별 차트 초기화
-function initializeChart(labels, data) {
+function initializeChart(data, type = 'today') {
     const ctx = document.getElementById('hourlyChart').getContext('2d');
     
     if (hourlyChart) {
         hourlyChart.destroy();
     }
 
+    const colors = [
+        'rgb(75, 192, 192)',
+        'rgb(255, 99, 132)',
+        'rgb(255, 205, 86)',
+        'rgb(54, 162, 235)',
+        'rgb(153, 102, 255)',
+        'rgb(255, 159, 64)',
+        'rgb(201, 203, 207)'
+    ];
+
+    let datasets = [];
+    const hourLabels = Array.from({length: 24}, (_, i) => `${String(i).padStart(2, '0')}시`);
+
+    if (type === 'today') {
+        datasets = [{
+            label: '오늘',
+            data: Object.values(data),
+            borderColor: colors[0],
+            tension: 0.1,
+            fill: false
+        }];
+    } else {
+        datasets = weeklyData
+            .sort((a, b) => new Date(b.date) - new Date(a.date))
+            .map((dayData, index) => ({
+                label: formatKoreanDate(new Date(dayData.date)),
+                data: Object.values(dayData.hourly_data),
+                borderColor: colors[index % colors.length],
+                tension: 0.1,
+                fill: false
+            }));
+    }
+
     hourlyChart = new Chart(ctx, {
         type: 'line',
         data: {
-            labels: labels,
-            datasets: [{
-                label: '시간별 비용',
-                data: data,
-                borderColor: 'rgb(75, 192, 192)',
-                tension: 0.1,
-                fill: false
-            }]
+            labels: hourLabels,
+            datasets: datasets
         },
         options: {
             responsive: true,
@@ -80,8 +108,15 @@ function initializeChart(labels, data) {
                 tooltip: {
                     callbacks: {
                         label: function(context) {
-                            return formatNumber(context.parsed.y);
+                            return `${context.dataset.label}: ${formatNumber(context.parsed.y)}`;
                         }
+                    }
+                },
+                legend: {
+                    position: 'bottom',
+                    labels: {
+                        usePointStyle: true,
+                        padding: 20
                     }
                 }
             }
@@ -210,17 +245,13 @@ function updateSummary(data) {
 
 // 시간별 차트 업데이트
 function updateHourlyChart(hourlyData) {
-    // 변경사항이 있는 경우에만 업데이트
-    if (JSON.stringify(lastData.hourly) !== JSON.stringify(hourlyData)) {
-        const hours = Object.keys(hourlyData).sort();
-        const costs = hours.map(hour => hourlyData[hour]);
-        
-        // 시간 레이블 포맷팅 (00시, 01시, ...)
-        const hourLabels = hours.map(hour => `${hour}시`);
-        
-        initializeChart(hourLabels, costs);
-        
-        lastData.hourly = hourlyData;
+    if (currentView === 'today') {
+        if (JSON.stringify(lastData.hourly) !== JSON.stringify(hourlyData)) {
+            initializeChart(hourlyData, 'today');
+            lastData.hourly = hourlyData;
+        }
+    } else {
+        initializeChart(weeklyData, 'week');
     }
 }
 
@@ -452,6 +483,22 @@ function setupSidebar() {
 // 페이지 초기화
 document.addEventListener('DOMContentLoaded', () => {
     setupSidebar();  // 사이드바 설정
+    
+    // 차트 뷰 토글 이벤트 리스너 추가
+    document.getElementById('todayView').addEventListener('change', function() {
+        if (this.checked) {
+            currentView = 'today';
+            updateHourlyChart(lastData.hourly);
+        }
+    });
+
+    document.getElementById('weekView').addEventListener('change', function() {
+        if (this.checked) {
+            currentView = 'week';
+            updateHourlyChart(lastData.hourly);
+        }
+    });
+    
     loadData();      // 초기 데이터 로드
     
     // 5분마다 새로운 데이터 확인
