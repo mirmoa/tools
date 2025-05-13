@@ -390,6 +390,52 @@ function showDayDetail(date) {
     modal.show();
 }
 
+// Excel 다운로드 함수
+async function downloadExcel(date) {
+    try {
+        const response = await fetch(`/data/daily/${date}.json`);
+        if (!response.ok) {
+            throw new Error('데이터를 찾을 수 없습니다.');
+            return;
+        }
+
+        const data = await response.json();
+        
+        // 워크북 생성
+        const wb = XLSX.utils.book_new();
+        
+        // 시간별 데이터 시트
+        const hourlyArray = [
+            ['시간', '비용'],
+            ...Object.entries(data.hourly_data).map(([hour, cost]) => [
+                `${hour}시`,
+                cost
+            ])
+        ];
+        const hourlySheet = XLSX.utils.aoa_to_sheet(hourlyArray);
+        XLSX.utils.book_append_sheet(wb, hourlySheet, "시간별 데이터");
+        
+        // 캠페인별 데이터 시트
+        const campaignArray = [
+            ['캠페인명', '총 비용', '마지막 업데이트'],
+            ...Object.entries(data.campaign_summary).map(([name, info]) => [
+                name,
+                calculateMaxCost(data.campaign_summary)[name],
+                formatDate(info.last_updated)
+            ])
+        ];
+        const campaignSheet = XLSX.utils.aoa_to_sheet(campaignArray);
+        XLSX.utils.book_append_sheet(wb, campaignSheet, "캠페인별 데이터");
+        
+        // 파일 다운로드
+        XLSX.writeFile(wb, `coupang-ads-${date}.xlsx`);
+
+    } catch (error) {
+        console.error('Excel 다운로드 중 오류:', error);
+        alert('데이터 다운로드 중 오류가 발생했습니다.');
+    }
+}
+
 // 주간 데이터 로드
 async function loadWeeklyData() {
     try {
@@ -521,4 +567,22 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // 5분마다 새로운 데이터 확인
     setInterval(loadData, 5 * 60 * 1000);
+
+    // 다운로드 버튼 이벤트 리스너
+    const downloadBtn = document.getElementById('downloadBtn');
+    const downloadDate = document.getElementById('downloadDate');
+    
+    if (downloadBtn && downloadDate) {
+        // 오늘 날짜를 기본값으로 설정
+        downloadDate.value = new Date().toISOString().split('T')[0];
+        
+        downloadBtn.addEventListener('click', () => {
+            const selectedDate = downloadDate.value;
+            if (!selectedDate) {
+                alert('날짜를 선택해주세요.');
+                return;
+            }
+            downloadExcel(selectedDate);
+        });
+    }
 });
