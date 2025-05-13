@@ -66,19 +66,21 @@ function initializeChart(data, type = 'today') {
     const hourLabels = Array.from({length: 24}, (_, i) => `${String(i).padStart(2, '0')}시`);
 
     if (type === 'today') {
+        // 오늘 데이터는 그대로 표시
         datasets = [{
             label: '오늘',
-            data: Object.values(data),
+            data: hourLabels.map(hour => data[hour.slice(0, 2)] || 0),
             borderColor: colors[0],
             tension: 0.1,
             fill: false
         }];
     } else {
+        // 주간 데이터도 각 날짜별로 그대로 표시
         datasets = weeklyData
             .sort((a, b) => new Date(b.date) - new Date(a.date))
             .map((dayData, index) => ({
                 label: formatKoreanDate(new Date(dayData.date)),
-                data: Object.values(dayData.hourly_data),
+                data: hourLabels.map(hour => dayData.hourly_data[hour.slice(0, 2)] || 0),
                 borderColor: colors[index % colors.length],
                 tension: 0.1,
                 fill: false
