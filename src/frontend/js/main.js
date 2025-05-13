@@ -280,7 +280,7 @@ function updateCampaignTable(campaignData) {
 
         tbody.innerHTML = Object.entries(campaignData)
             .map(([name, data]) => {
-                // 시간별 데이터가 있는 경우 해당 시간의 데이터 포인트 수를 표시
+                // 시간별 데이터가 있는 경우 해당 시간의 데이터 포인트 수를 표시 <td>${dataPoints}</td>
                 const dataPoints = data.hourly_costs ? 
                     Object.keys(data.hourly_costs).length : 
                     1;  // 기본값
@@ -292,7 +292,6 @@ function updateCampaignTable(campaignData) {
                     <tr>
                         <td>${name}</td>
                         <td>${formatNumber(totalCost)}</td>
-                        <td>${dataPoints}</td>
                         <td>${formatDate(data.last_updated)}</td>
                     </tr>
                 `;
