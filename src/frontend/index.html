@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모아유통 대시보드</title>
+    <link rel="shortcut icon" href="https://hottmall.co.kr/web/upload/favicon-8ec475d36e11a495ef699ed54797b38b.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+</head>
+<body class="bg-light">
+    <!-- 사이드바 -->
+    <nav id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h3>모아유통</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+            <li class="active">
+                <a href="index.html">
+                    <i class="bx bxs-dashboard"></i>
+                    <span>대시보드</span>
+                </a>
+            </li>
+            <li>
+                <a href="coupang-ads.html">
+                    <i class="bx bx-store"></i>
+                    <span>쿠팡 광고</span>
+                </a>
+            </li>
+            <!-- 추가 메뉴 항목들 -->
+            <li>
+                <a href="#" class="disabled">
+                    <i class="bx bx-cart"></i>
+                    <span>스마트스토어</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="disabled">
+                    <i class="bx bx-bar-chart"></i>
+                    <span>매출 분석</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="disabled">
+                    <i class="bx bx-box"></i>
+                    <span>재고 관리</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- 메인 컨텐츠 -->
+    <div class="main-content">
+        <!-- 상단 네비게이션 -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container-fluid">
+                <button type="button" id="sidebarCollapse" class="btn">
+                    <i class="bx bx-menu"></i>
+                </button>
+                <div class="ms-auto">
+                    <span class="navbar-text" id="currentTime"></span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 대시보드 컨텐츠 -->
+        <div class="container-fluid mt-4">
+            <h2 class="mb-4">서비스 현황</h2>
+            
+            <div class="row">
+                <!-- 쿠팡 광고 카드 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bx bx-store service-icon"></i>
+                                <h5 class="card-title mb-0 ms-2">쿠팡 광고</h5>
+                            </div>
+                            <p class="card-text">실시간 광고 비용 모니터링</p>
+                            <div class="service-stats mb-3">
+                                <div class="stat-item">
+                                    <span class="stat-label">오늘 지출</span>
+                                    <span class="stat-value" id="coupangTodayCost">-</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">활성 캠페인</span>
+                                    <span class="stat-value" id="coupangActiveCampaigns">-</span>
+                                </div>
+                            </div>
+                            <a href="coupang-ads.html" class="btn btn-primary w-100">자세히 보기</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 스마트스토어 카드 (준비중) -->
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card disabled">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bx bx-cart service-icon"></i>
+                                <h5 class="card-title mb-0 ms-2">스마트스토어</h5>
+                            </div>
+                            <p class="card-text">매출 및 주문 관리</p>
+                            <div class="coming-soon">
+                                <span>준비중</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 매출 분석 카드 (준비중) -->
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card disabled">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bx bx-bar-chart service-icon"></i>
+                                <h5 class="card-title mb-0 ms-2">매출 분석</h5>
+                            </div>
+                            <p class="card-text">통합 매출 분석 및 리포트</p>
+                            <div class="coming-soon">
+                                <span>준비중</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 시스템 상태 -->
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">시스템 상태</h5>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>서비스</th>
+                                            <th>상태</th>
+                                            <th>마지막 업데이트</th>
+                                            <th>다음 실행</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="systemStatus">
+                                        <!-- JavaScript로 동적 생성 -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/dashboard.js" type="module"></script>
+</body>
+</html> 

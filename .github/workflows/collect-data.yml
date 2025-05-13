@@ -1,0 +1,52 @@
+name: Collect Coupang Ads Data
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # 매시 정각에 실행
+  workflow_dispatch:      # 수동 실행 가능
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0  # 전체 히스토리 가져오기
+    
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.9'
+    
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y chromium-browser
+        pip install selenium webdriver_manager pandas
+    
+    - name: Run collector
+      uses: nick-fields/retry@v2
+      env:
+        TZ: "Asia/Seoul"
+        LANG: "ko_KR.UTF-8"
+        CHROME_OPTIONS: "--no-sandbox --disable-dev-shm-usage --disable-blink-features=AutomationControlled --lang=ko"
+      with:
+        timeout_minutes: 15  # 타임아웃 시간 증가
+        max_attempts: 3
+        retry_wait_seconds: 60
+        command: python src/collector/main.py
+    
+    - name: Save logs (even on failure)
+      if: always()
+      uses: actions/upload-artifact@v2
+      with:
+        name: debug-logs
+        path: log/
+        
+    - name: Commit and push if changed
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add data/
+        git commit -m "Update data: $(date '+%Y-%m-%d %H:%M')" || exit 0
+        git push 
