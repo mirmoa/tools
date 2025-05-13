@@ -316,9 +316,9 @@ def save_data(campaigns, total_cost):
 
 
 def git_push(file_path):
-    """Git에 변경사항 푸시"""
+    """Git에 특정 파일 변경사항 푸시"""
     try:
-        # 파일 추가
+        # 특정 파일만 추가
         subprocess.run(["git", "add", file_path], check=True)
         logger.info(f"Git에 파일 추가: {file_path}")
 
@@ -327,17 +327,28 @@ def git_push(file_path):
         subprocess.run(["git", "commit", "-m", commit_message], check=True)
         logger.info(f"Git 커밋 생성: {commit_message}")
 
+        # 원격 저장소 변경사항 가져오기 (rebase로 깔끔하게)
+        # 푸시 전에 충돌을 방지하기 위해 pull --rebase를 먼저 수행
+        pull_result = subprocess.run(["git", "pull", "--rebase"], capture_output=True, text=True)
+        if pull_result.returncode != 0:
+            logger.error(f"Git pull --rebase 실패:\n{pull_result.stderr}")
+            return False
+        logger.info("Git pull 완료")
+
         # 푸시
-        subprocess.run(["git", "push"], check=True)
+        push_result = subprocess.run(["git", "push"], capture_output=True, text=True)
+        if push_result.returncode != 0:
+            logger.error(f"Git push 실패:\n{push_result.stderr}")
+            return False
         logger.info("Git 푸시 완료")
         return True
+
     except subprocess.CalledProcessError as e:
         logger.error(f"Git 작업 실패: {e}")
         return False
     except Exception as e:
         logger.error(f"Git 푸시 중 오류 발생: {str(e)}")
         return False
-
 
 def main():
     """메인 실행 함수"""
