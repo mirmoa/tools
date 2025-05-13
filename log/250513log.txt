@@ -232,3 +232,23 @@ error: Please commit or stash them.
 2025-05-13 15:18:06,585 - INFO - 작업 완료
 2025-05-13 15:18:08,647 - INFO - 웹드라이버 종료
 >>>>>>> c366146620526b19529552459d70ea2f7e88e1f4
+2025-05-13 16:05:06,485 - INFO - 실행 시도 1/3
+2025-05-13 16:05:06,485 - INFO - ====== WebDriver manager ======
+2025-05-13 16:05:06,972 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-13 16:05:06,994 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-13 16:05:07,013 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\136.0.7103.92\chromedriver-win32/chromedriver.exe] found in cache
+2025-05-13 16:05:08,042 - INFO - 웹드라이버 설정 완료
+2025-05-13 16:05:25,432 - INFO - 로그인 성공
+2025-05-13 16:05:32,846 - INFO - 20개 보기 설정 완료
+2025-05-13 16:05:33,050 - INFO - 13개의 캠페인 데이터 수집 완료
+2025-05-13 16:05:33,051 - WARNING - 기존 파일 손상: src\frontend\public\data\daily\2025-05-13.json
+2025-05-13 16:05:33,052 - INFO - 데이터 저장 완료: src\frontend\public\data\daily\2025-05-13.json
+2025-05-13 16:05:33,307 - INFO - 기존 스테이징된 파일 리셋
+2025-05-13 16:05:33,307 - INFO - Git pull 시도 중...
+2025-05-13 16:05:34,038 - INFO - Git pull 완료
+2025-05-13 16:05:34,066 - INFO - Git에 파일 추가: src\frontend\public\data\daily\2025-05-13.json
+2025-05-13 16:05:34,119 - INFO - Git 커밋 생성: Update data: 2025-05-13 16:05:34
+2025-05-13 16:05:35,756 - INFO - Git 푸시 완료
+2025-05-13 16:05:35,757 - INFO - 데이터 수집 및 Git 푸시 완료
+2025-05-13 16:05:35,757 - INFO - 작업 완료
+2025-05-13 16:05:37,833 - INFO - 웹드라이버 종료
