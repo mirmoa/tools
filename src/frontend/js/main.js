@@ -246,12 +246,23 @@ function updateSummary(data) {
 // 시간별 차트 업데이트
 function updateHourlyChart(hourlyData) {
     if (currentView === 'today') {
-        if (JSON.stringify(lastData.hourly) !== JSON.stringify(hourlyData)) {
-            initializeChart(hourlyData, 'today');
-            lastData.hourly = hourlyData;
+        // 오늘 데이터가 있는지 확인하고 없으면 다시 로드
+        if (!hourlyData || !lastData.hourly) {
+            loadData();
+            return;
         }
+        initializeChart(hourlyData || lastData.hourly, 'today');
     } else {
+        if (!weeklyData || weeklyData.length === 0) {
+            loadWeeklyData();
+            return;
+        }
         initializeChart(weeklyData, 'week');
+    }
+    
+    // 마지막 데이터 업데이트
+    if (hourlyData) {
+        lastData.hourly = hourlyData;
     }
 }
 
@@ -484,10 +495,11 @@ function setupSidebar() {
 document.addEventListener('DOMContentLoaded', () => {
     setupSidebar();  // 사이드바 설정
     
-    // 차트 뷰 토글 이벤트 리스너 추가
+    // 차트 뷰 토글 이벤트 리스너 수정
     document.getElementById('todayView').addEventListener('change', function() {
         if (this.checked) {
             currentView = 'today';
+            // 마지막으로 저장된 오늘 데이터 사용
             updateHourlyChart(lastData.hourly);
         }
     });
@@ -495,7 +507,8 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('weekView').addEventListener('change', function() {
         if (this.checked) {
             currentView = 'week';
-            updateHourlyChart(lastData.hourly);
+            // 주간 데이터로 차트 업데이트
+            updateHourlyChart(null);
         }
     });
     
