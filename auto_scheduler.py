@@ -316,30 +316,56 @@ def save_data(campaigns, total_cost):
 
 
 def git_push(file_path):
-    """Git에 특정 파일 변경사항 푸시"""
+    """Git에 특정 파일 변경사항만 푸시"""
     try:
+        # 현재 상태 확인 (다른 파일들의 변경 사항이 있는지)
+        status = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True).stdout
+        
+        # 이전에 스테이징된 다른 파일들이 있으면 스테이징 취소
+        if status:
+            subprocess.run(["git", "reset"], check=True)
+            logger.info("기존 스테이징된 파일 리셋")
+        
+        # 원격 저장소 변경사항 가져오기 (먼저 pull 수행)
+        logger.info("Git pull 시도 중...")
+        pull_result = subprocess.run(["git", "pull", "--rebase=false"], capture_output=True, text=True)
+        if pull_result.returncode != 0:
+            logger.error(f"Git pull 실패:\n{pull_result.stderr}")
+            # 계속 진행 (로컬 변경사항 우선시)
+        else:
+            logger.info("Git pull 완료")
+        
         # 특정 파일만 추가
         subprocess.run(["git", "add", file_path], check=True)
         logger.info(f"Git에 파일 추가: {file_path}")
 
         # 커밋 메시지 생성
         commit_message = f"Update data: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
-        subprocess.run(["git", "commit", "-m", commit_message], check=True)
-        logger.info(f"Git 커밋 생성: {commit_message}")
-
-        # 원격 저장소 변경사항 가져오기 (rebase로 깔끔하게)
-        # 푸시 전에 충돌을 방지하기 위해 pull --rebase를 먼저 수행
-        pull_result = subprocess.run(["git", "pull", "--rebase"], capture_output=True, text=True)
-        if pull_result.returncode != 0:
-            logger.error(f"Git pull --rebase 실패:\n{pull_result.stderr}")
+        commit_result = subprocess.run(["git", "commit", "-m", commit_message], capture_output=True, text=True)
+        
+        # 아무것도 커밋할 게 없는 경우 처리
+        if "nothing to commit" in commit_result.stdout or "nothing to commit" in commit_result.stderr:
+            logger.info("커밋할 변경사항 없음")
+            return True
+            
+        if commit_result.returncode != 0:
+            logger.error(f"Git 커밋 실패:\n{commit_result.stderr}")
             return False
-        logger.info("Git pull 완료")
+            
+        logger.info(f"Git 커밋 생성: {commit_message}")
 
         # 푸시
         push_result = subprocess.run(["git", "push"], capture_output=True, text=True)
         if push_result.returncode != 0:
             logger.error(f"Git push 실패:\n{push_result.stderr}")
-            return False
+            # 강제 푸시 시도
+            logger.info("강제 푸시 시도...")
+            force_push = subprocess.run(["git", "push", "--force"], capture_output=True, text=True)
+            if force_push.returncode != 0:
+                logger.error(f"강제 푸시 실패:\n{force_push.stderr}")
+                return False
+            logger.info("강제 푸시 완료")
+            return True
         logger.info("Git 푸시 완료")
         return True
 
