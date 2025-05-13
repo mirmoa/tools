@@ -404,28 +404,28 @@ async function downloadExcel(date) {
         // 워크북 생성
         const wb = XLSX.utils.book_new();
         
-        // 시간별 데이터 시트
-        const hourlyArray = [
-            ['시간', '비용'],
-            ...Object.entries(data.hourly_data).map(([hour, cost]) => [
-                `${hour}시`,
-                cost
-            ])
-        ];
-        const hourlySheet = XLSX.utils.aoa_to_sheet(hourlyArray);
-        XLSX.utils.book_append_sheet(wb, hourlySheet, "시간별 데이터");
-        
-        // 캠페인별 데이터 시트
-        const campaignArray = [
-            ['캠페인명', '총 비용', '마지막 업데이트'],
-            ...Object.entries(data.campaign_summary).map(([name, info]) => [
+        // 캠페인별 시간대 데이터 구성
+        const headers = ['캠페인명', ...Array.from({length: 24}, (_, i) => 
+            String(i).padStart(2, '0'))];
+            
+        const campaignRows = Object.entries(data.campaign_summary).map(([name, info]) => {
+            const hourlyData = info.hourly_costs || {};
+            return [
                 name,
-                calculateMaxCost(data.campaign_summary)[name],
-                formatDate(info.last_updated)
-            ])
-        ];
-        const campaignSheet = XLSX.utils.aoa_to_sheet(campaignArray);
-        XLSX.utils.book_append_sheet(wb, campaignSheet, "캠페인별 데이터");
+                ...headers.slice(1).map(hour => hourlyData[hour] || 0)
+            ];
+        });
+        
+        const hourlySheet = XLSX.utils.aoa_to_sheet([
+            headers,
+            ...campaignRows
+        ]);
+        
+        // 열 너비 자동 조정
+        const colWidths = headers.map(h => ({wch: Math.max(h.length * 1.5, 8)}));
+        hourlySheet['!cols'] = colWidths;
+        
+        XLSX.utils.book_append_sheet(wb, hourlySheet, "시간별 캠페인 데이터");
         
         // 파일 다운로드
         XLSX.writeFile(wb, `coupang-ads-${date}.xlsx`);
