@@ -54,10 +54,34 @@ function formatDate(dateString) {
     }).format(date);
 }
 
+// 캠페인별 최대 비용 계산 함수 추가
+function calculateMaxCost(campaignData) {
+    if (!campaignData) return {};
+    
+    const maxCosts = {};
+    Object.entries(campaignData).forEach(([name, data]) => {
+        if (data && data.hourly_costs) {
+            const costs = Object.values(data.hourly_costs);
+            maxCosts[name] = costs.length > 0 ? Math.max(...costs) : 0;
+        } else {
+            maxCosts[name] = 0;
+        }
+    });
+    return maxCosts;
+}
+
+// 총 비용 계산 함수 추가
+function calculateTotalCost(maxCosts) {
+    if (!maxCosts || Object.keys(maxCosts).length === 0) return 0;
+    
+    return Object.values(maxCosts)
+        .filter(cost => !isNaN(cost))
+        .reduce((sum, cost) => sum + (cost || 0), 0);
+}
+
 // 대시보드 데이터 로드
 async function loadDashboardData() {
     try {
-        // 오늘 날짜의 데이터 파일 경로
         const today = new Date().toISOString().split('T')[0];
         const response = await fetch(`/data/daily/${today}.json`);
         
@@ -66,10 +90,14 @@ async function loadDashboardData() {
         }
 
         const data = await response.json();
+        
+        // 총 비용 계산
+        const maxCosts = calculateMaxCost(data.campaign_summary);
+        const totalCost = calculateTotalCost(maxCosts);
 
         // 쿠팡 광고 데이터 업데이트
         document.getElementById('coupangTodayCost').textContent = 
-            formatNumber(data.total_cost);
+            formatNumber(totalCost);
         document.getElementById('coupangActiveCampaigns').textContent = 
             Object.keys(data.campaign_summary).length;
 
@@ -133,4 +161,4 @@ function updateSystemStatus(data) {
 }
 
 // 5분마다 데이터 새로고침
-setInterval(loadDashboardData, 5 * 60 * 1000); 
+setInterval(loadDashboardData, 5 * 60 * 1000);
