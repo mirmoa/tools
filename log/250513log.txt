@@ -56,3 +56,68 @@
 2025-05-13 12:45:06,460 - INFO - 데이터 수집 및 Git 푸시 완료
 2025-05-13 12:45:06,460 - INFO - 작업 완료
 2025-05-13 12:45:08,549 - INFO - 웹드라이버 종료
+2025-05-13 12:54:55,596 - INFO - 실행 시도 1/3
+2025-05-13 12:54:55,596 - INFO - ====== WebDriver manager ======
+2025-05-13 12:54:56,075 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-13 12:54:56,097 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-13 12:54:56,112 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\136.0.7103.92\chromedriver-win32/chromedriver.exe] found in cache
+2025-05-13 12:54:57,099 - INFO - 웹드라이버 설정 완료
+2025-05-13 12:55:15,174 - INFO - 로그인 성공
+2025-05-13 12:55:23,187 - INFO - 20개 보기 설정 완료
+2025-05-13 12:55:23,370 - INFO - 13개의 캠페인 데이터 수집 완료
+2025-05-13 12:55:23,378 - WARNING - 기존 파일 손상: src\frontend\public\data\daily\2025-05-13.json
+2025-05-13 12:55:23,379 - INFO - 데이터 저장 완료: src\frontend\public\data\daily\2025-05-13.json
+2025-05-13 12:55:23,406 - INFO - Git에 파일 추가: src\frontend\public\data\daily\2025-05-13.json
+2025-05-13 12:55:23,451 - INFO - Git 커밋 생성: Update data: 2025-05-13 12:55:23
+2025-05-13 12:55:23,469 - ERROR - Git 작업 실패: Command '['git', 'push']' returned non-zero exit status 128.
+2025-05-13 12:55:23,469 - ERROR - Git 푸시 실패
+2025-05-13 12:55:23,469 - INFO - 작업 완료
+2025-05-13 12:55:25,539 - INFO - 웹드라이버 종료
+2025-05-13 12:55:48,527 - INFO - 실행 시도 1/3
+2025-05-13 12:55:48,527 - INFO - ====== WebDriver manager ======
+2025-05-13 12:55:48,959 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-13 12:55:48,981 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-13 12:55:48,997 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\136.0.7103.92\chromedriver-win32/chromedriver.exe] found in cache
+2025-05-13 12:55:49,973 - INFO - 웹드라이버 설정 완료
+2025-05-13 12:56:08,433 - INFO - 로그인 성공
+2025-05-13 12:56:15,515 - INFO - 20개 보기 설정 완료
+2025-05-13 12:56:15,692 - INFO - 13개의 캠페인 데이터 수집 완료
+2025-05-13 12:56:15,700 - INFO - 데이터 저장 완료: src\frontend\public\data\daily\2025-05-13.json
+2025-05-13 12:56:15,723 - INFO - Git에 파일 추가: src\frontend\public\data\daily\2025-05-13.json
+2025-05-13 12:56:15,767 - INFO - Git 커밋 생성: Update data: 2025-05-13 12:56:15
+2025-05-13 12:56:17,235 - INFO - Git 푸시 완료
+2025-05-13 12:56:17,236 - INFO - 데이터 수집 및 Git 푸시 완료
+2025-05-13 12:56:17,236 - INFO - 작업 완료
+2025-05-13 12:56:19,331 - INFO - 웹드라이버 종료
+2025-05-13 13:12:29,207 - INFO - 실행 시도 1/3
+2025-05-13 13:12:29,207 - INFO - ====== WebDriver manager ======
+2025-05-13 13:12:29,715 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-13 13:12:29,730 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-13 13:12:29,746 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\136.0.7103.92\chromedriver-win32/chromedriver.exe] found in cache
+2025-05-13 13:12:30,727 - INFO - 웹드라이버 설정 완료
+2025-05-13 13:12:48,343 - INFO - 로그인 성공
+2025-05-13 13:12:56,412 - INFO - 20개 보기 설정 완료
+2025-05-13 13:12:56,569 - INFO - 13개의 캠페인 데이터 수집 완료
+2025-05-13 13:12:56,569 - INFO - 데이터 저장 완료: src\frontend\public\data\daily\2025-05-13.json
+2025-05-13 13:12:56,600 - INFO - Git에 파일 추가: src\frontend\public\data\daily\2025-05-13.json
+2025-05-13 13:12:56,647 - INFO - Git 커밋 생성: Update data: 2025-05-13 13:12:56
+2025-05-13 13:12:58,065 - INFO - Git 푸시 완료
+2025-05-13 13:12:58,065 - INFO - 데이터 수집 및 Git 푸시 완료
+2025-05-13 13:12:58,065 - INFO - 작업 완료
+2025-05-13 13:13:00,123 - INFO - 웹드라이버 종료
+2025-05-13 14:23:25,454 - INFO - 실행 시도 1/3
+2025-05-13 14:23:25,454 - INFO - ====== WebDriver manager ======
+2025-05-13 14:23:25,949 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-13 14:23:25,965 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-13 14:23:25,980 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\136.0.7103.92\chromedriver-win32/chromedriver.exe] found in cache
+2025-05-13 14:23:27,009 - INFO - 웹드라이버 설정 완료
+2025-05-13 14:23:45,431 - INFO - 로그인 성공
+2025-05-13 14:23:54,491 - INFO - 20개 보기 설정 완료
+2025-05-13 14:23:54,688 - INFO - 13개의 캠페인 데이터 수집 완료
+2025-05-13 14:23:54,691 - INFO - 데이터 저장 완료: src\frontend\public\data\daily\2025-05-13.json
+2025-05-13 14:23:54,718 - INFO - Git에 파일 추가: src\frontend\public\data\daily\2025-05-13.json
+2025-05-13 14:23:54,772 - INFO - Git 커밋 생성: Update data: 2025-05-13 14:23:54
+2025-05-13 14:23:56,274 - INFO - Git 푸시 완료
+2025-05-13 14:23:56,274 - INFO - 데이터 수집 및 Git 푸시 완료
+2025-05-13 14:23:56,274 - INFO - 작업 완료
+2025-05-13 14:23:58,358 - INFO - 웹드라이버 종료
