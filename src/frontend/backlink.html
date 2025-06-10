@@ -527,12 +527,24 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/login.js" type="module"></script>
-    <script>
-        // 시뮬레이션 데이터 및 상태
-        let systemStatus = 'waiting'; // working, stopped, waiting, error
+
+<script>
+        // Google Sheets 설정
+        const GOOGLE_SHEETS_CONFIG = {
+            spreadsheetId: '1VR_t2P90Rqf-ZOopStJKYUtgAl8vp8zOFc389efXjZM', // 실제 스프레드시트 ID
+            apiKey: 'AIzaSyCsPnfG3VbHUFaxwIa0X8omqM9Gtql72WE', // Google Sheets API 키 필요
+            backlinksRange: 'Sheet1!A:H', // 백링크 데이터 범위
+            logsRange: 'Logs!A:D' // 로그 데이터 범위
+        };
+
+        // 시스템 상태 및 데이터
+        let systemStatus = 'waiting';
         let backlinks = [];
         let logs = [];
-        let isRunning = false;
+        let isConnected = false;
+        let pollingInterval = null;
+        let retryCount = 0;
+        const MAX_RETRY = 3;
 
         // DOM 요소들
         const elements = {
@@ -560,8 +572,115 @@
             elements.mainContent.classList.toggle('expanded');
         });
 
+        // Google Sheets API 호출
+        async function fetchGoogleSheetsData(range) {
+            try {
+                const url = `https://sheets.googleapis.com/v4/spreadsheets/${GOOGLE_SHEETS_CONFIG.spreadsheetId}/values/${range}?key=${GOOGLE_SHEETS_CONFIG.apiKey}`;
+                const response = await fetch(url);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const data = await response.json();
+                return data.values || [];
+            } catch (error) {
+                console.error('Google Sheets API 호출 실패:', error);
+                throw error;
+            }
+        }
+
+        // 백링크 데이터 로드
+        async function loadBacklinksData() {
+            try {
+                const data = await fetchGoogleSheetsData(GOOGLE_SHEETS_CONFIG.backlinksRange);
+                
+                if (data.length > 1) { // 헤더 제외
+                    backlinks = data.slice(1).map((row, index) => ({
+                        id: index + 1,
+                        domain: row[0] || '',
+                        url: row[1] || '',
+                        status: row[2] || 'waiting',
+                        progress: parseInt(row[3]) || 0,
+                        createdAt: row[4] ? new Date(row[4]) : new Date(),
+                        completedAt: row[5] ? new Date(row[5]) : null,
+                        errorMessage: row[6] || '',
+                        attempts: parseInt(row[7]) || 0
+                    }));
+                }
+                
+                retryCount = 0; // 성공 시 재시도 횟수 리셋
+                isConnected = true;
+                return true;
+            } catch (error) {
+                console.error('백링크 데이터 로드 실패:', error);
+                isConnected = false;
+                throw error;
+            }
+        }
+
+        // 로그 데이터 로드
+        async function loadLogsData() {
+            try {
+                const data = await fetchGoogleSheetsData(GOOGLE_SHEETS_CONFIG.logsRange);
+                
+                if (data.length > 1) { // 헤더 제외
+                    const newLogs = data.slice(1).map((row, index) => ({
+                        id: index + 1,
+                        timestamp: row[0] || '',
+                        type: row[1] || 'info',
+                        message: row[2] || '',
+                        details: row[3] || ''
+                    }));
+                    
+                    // 새로운 로그만 UI에 추가
+                    const existingLogCount = logs.length;
+                    logs = newLogs;
+                    
+                    // 새 로그가 있으면 UI 업데이트
+                    if (newLogs.length > existingLogCount) {
+                        const newLogsToShow = newLogs.slice(existingLogCount);
+                        newLogsToShow.forEach(log => {
+                            addLogToUI(log.type, log.message, log.timestamp);
+                        });
+                    }
+                }
+                
+                return true;
+            } catch (error) {
+                console.error('로그 데이터 로드 실패:', error);
+                throw error;
+            }
+        }
+
+        // 시스템 상태 결정 (백링크 데이터 기반)
+        function determineSystemStatus() {
+            if (!isConnected) {
+                return 'error';
+            }
+            
+            if (backlinks.length === 0) {
+                return 'waiting';
+            }
+            
+            const progressTasks = backlinks.filter(b => b.status === 'progress' || b.status === 'working');
+            const errorTasks = backlinks.filter(b => b.status === 'error');
+            
+            if (progressTasks.length > 0) {
+                return 'working';
+            } else if (errorTasks.length > 0) {
+                return 'error';
+            } else {
+                return 'waiting';
+            }
+        }
+
         // 시스템 상태 업데이트
-        function updateSystemStatus(status) {
+        function updateSystemStatus(status = null) {
+            if (status === null) {
+                status = determineSystemStatus();
+            }
+            
             systemStatus = status;
             const statusElement = elements.systemStatus;
             statusElement.className = 'badge backlink-status-badge';
@@ -581,51 +700,44 @@
                     break;
                 case 'error':
                     statusElement.classList.add('backlink-status-error');
-                    statusElement.textContent = '오류';
+                    statusElement.textContent = isConnected ? '오류' : '연결 끊김';
                     break;
             }
         }
 
-        // 로그 추가
-        function addLog(type, message) {
-            const timestamp = new Date().toLocaleString('ko-KR');
+        // UI에 로그 추가
+        function addLogToUI(type, message, timestamp = null) {
+            const logTimestamp = timestamp || new Date().toLocaleString('ko-KR');
             const logLine = document.createElement('div');
             logLine.className = 'backlink-log-line';
             logLine.innerHTML = `
-                <span class="backlink-log-timestamp">[${timestamp}]</span>
+                <span class="backlink-log-timestamp">[${logTimestamp}]</span>
                 <span class="backlink-log-${type}"> [${type.toUpperCase()}] ${message}</span>
             `;
             
             elements.logContainer.appendChild(logLine);
             elements.logContainer.scrollTop = elements.logContainer.scrollHeight;
             
-            // 로그가 너무 많으면 오래된 것 제거
+            // 로그가 너무 많으면 오래된 것 제거 (UI에서만)
             const logLines = elements.logContainer.children;
             if (logLines.length > 100) {
                 elements.logContainer.removeChild(logLines[0]);
             }
         }
 
-        // 백링크 작업 생성
-        function createBacklinkTask() {
-            const domains = ['blog.naver.com', 'coupang.com', 'naver/blog.com', 'm.blog.naver.com', 'm.coupang.com'];
-            const statuses = ['success', 'progress', 'error'];
-            
-            return {
-                id: Date.now() + Math.random(),
-                domain: domains[Math.floor(Math.random() * domains.length)],
-                url: `https://${domains[Math.floor(Math.random() * domains.length)]}/page${Math.floor(Math.random() * 100)}`,
-                status: statuses[Math.floor(Math.random() * statuses.length)],
-                progress: Math.floor(Math.random() * 100),
-                createdAt: new Date()
-            };
+        // 로컬 로그 추가 (시트에는 저장되지 않음)
+        function addLocalLog(type, message) {
+            addLogToUI(type, message);
         }
 
         // 작업 목록 업데이트
         function updateTaskList() {
             elements.taskList.innerHTML = '';
             
-            backlinks.slice(-10).reverse().forEach(task => {
+            // 최근 10개 작업만 표시
+            const recentTasks = backlinks.slice(-10).reverse();
+            
+            recentTasks.forEach(task => {
                 const taskDiv = document.createElement('div');
                 taskDiv.className = 'backlink-task-item p-3 mb-2 border rounded';
                 
@@ -634,9 +746,11 @@
                 
                 switch(task.status) {
                     case 'success':
+                    case 'completed':
                         statusBadge = '<span class="badge bg-success">완료</span>';
                         break;
                     case 'progress':
+                    case 'working':
                         statusBadge = '<span class="badge bg-warning">진행중</span>';
                         progressBar = `
                             <div class="backlink-progress-custom mt-2">
@@ -646,16 +760,30 @@
                         `;
                         break;
                     case 'error':
+                    case 'failed':
                         statusBadge = '<span class="badge bg-danger">오류</span>';
                         break;
+                    case 'waiting':
+                        statusBadge = '<span class="badge bg-secondary">대기중</span>';
+                        break;
+                    default:
+                        statusBadge = '<span class="badge bg-light text-dark">알 수 없음</span>';
                 }
+                
+                const errorInfo = task.errorMessage ? 
+                    `<small class="text-danger d-block">오류: ${task.errorMessage}</small>` : '';
+                
+                const attemptsInfo = task.attempts > 1 ? 
+                    `<small class="text-muted d-block">시도 횟수: ${task.attempts}</small>` : '';
                 
                 taskDiv.innerHTML = `
                     <div class="d-flex justify-content-between align-items-start">
                         <div class="flex-grow-1">
-                            <h6 class="mb-1">${task.domain}</h6>
-                            <p class="mb-1 text-muted small">${task.url}</p>
+                            <h6 class="mb-1">${task.domain || 'Unknown Domain'}</h6>
+                            <p class="mb-1 text-muted small">${task.url || 'No URL'}</p>
                             <small class="text-muted">${task.createdAt.toLocaleString('ko-KR')}</small>
+                            ${errorInfo}
+                            ${attemptsInfo}
                             ${progressBar}
                         </div>
                         <div>
@@ -666,21 +794,32 @@
                 
                 elements.taskList.appendChild(taskDiv);
             });
+            
+            // 작업이 없을 때 메시지 표시
+            if (recentTasks.length === 0) {
+                const emptyDiv = document.createElement('div');
+                emptyDiv.className = 'text-center text-muted p-4';
+                emptyDiv.innerHTML = '<i class="fas fa-inbox fa-2x mb-2"></i><br>작업이 없습니다.';
+                elements.taskList.appendChild(emptyDiv);
+            }
         }
 
         // 통계 업데이트
         function updateStats() {
             const total = backlinks.length;
-            const success = backlinks.filter(b => b.status === 'success').length;
-            const progress = backlinks.filter(b => b.status === 'progress').length;
-            const error = backlinks.filter(b => b.status === 'error').length;
+            const success = backlinks.filter(b => ['success', 'completed'].includes(b.status)).length;
+            const progress = backlinks.filter(b => ['progress', 'working'].includes(b.status)).length;
+            const error = backlinks.filter(b => ['error', 'failed'].includes(b.status)).length;
+            const waiting = backlinks.filter(b => b.status === 'waiting').length;
             
             elements.totalBacklinks.textContent = total;
             elements.successCount.textContent = success;
             elements.progressCount.textContent = progress;
             elements.errorCount.textContent = error;
             
-            elements.lastUpdated.textContent = `마지막 업데이트: ${new Date().toLocaleString('ko-KR')}`;
+            const statusText = isConnected ? '연결됨' : '연결 끊김';
+            const lastUpdate = new Date().toLocaleString('ko-KR');
+            elements.lastUpdated.textContent = `마지막 업데이트: ${lastUpdate} (${statusText})`;
         }
 
         // 차트 초기화
@@ -690,10 +829,10 @@
             progressChart = new Chart(ctx, {
                 type: 'doughnut',
                 data: {
-                    labels: ['성공', '진행중', '오류'],
+                    labels: ['성공', '진행중', '오류', '대기중'],
                     datasets: [{
-                        data: [0, 0, 0],
-                        backgroundColor: ['#28a745', '#ffc107', '#dc3545']
+                        data: [0, 0, 0, 0],
+                        backgroundColor: ['#28a745', '#ffc107', '#dc3545', '#6c757d']
                     }]
                 },
                 options: {
@@ -702,6 +841,17 @@
                     plugins: {
                         legend: {
                             position: 'bottom'
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const label = context.label || '';
+                                    const value = context.parsed;
+                                    const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                    const percentage = total > 0 ? ((value / total) * 100).toFixed(1) : 0;
+                                    return `${label}: ${value}개 (${percentage}%)`;
+                                }
+                            }
                         }
                     }
                 }
@@ -710,108 +860,139 @@
 
         // 차트 업데이트
         function updateChart() {
-            const success = backlinks.filter(b => b.status === 'success').length;
-            const progress = backlinks.filter(b => b.status === 'progress').length;
-            const error = backlinks.filter(b => b.status === 'error').length;
+            const success = backlinks.filter(b => ['success', 'completed'].includes(b.status)).length;
+            const progress = backlinks.filter(b => ['progress', 'working'].includes(b.status)).length;
+            const error = backlinks.filter(b => ['error', 'failed'].includes(b.status)).length;
+            const waiting = backlinks.filter(b => b.status === 'waiting').length;
             
-            progressChart.data.datasets[0].data = [success, progress, error];
-            progressChart.update();
+            progressChart.data.datasets[0].data = [success, progress, error, waiting];
+            progressChart.update('none'); // 애니메이션 없이 업데이트
         }
 
-        // 시뮬레이션 시작
-        function startSimulation() {
-            if (isRunning) return;
-            
-            isRunning = true;
-            updateSystemStatus('working');
-            addLog('info', '백링크 작업 시작됨');
-            
-            const interval = setInterval(() => {
-                if (!isRunning) {
-                    clearInterval(interval);
-                    return;
-                }
+        // 데이터 새로고침
+        async function refreshData() {
+            try {
+                addLocalLog('info', '데이터 새로고침 시작...');
                 
-                // 새 작업 추가
-                if (Math.random() < 0.7) {
-                    const newTask = createBacklinkTask();
-                    backlinks.push(newTask);
-                    addLog('info', `새 백링크 작업 추가: ${newTask.domain}`);
-                }
+                // 백링크 데이터 로드
+                await loadBacklinksData();
                 
-                // 기존 작업 상태 업데이트
-                backlinks.forEach(task => {
-                    if (task.status === 'progress') {
-                        if (Math.random() < 0.3) {
-                            task.status = Math.random() < 0.8 ? 'success' : 'error';
-                            addLog(task.status === 'success' ? 'success' : 'error', 
-                                  `${task.domain} 작업 ${task.status === 'success' ? '완료' : '실패'}`);
-                        } else {
-                            task.progress = Math.min(100, task.progress + Math.floor(Math.random() * 20));
-                        }
-                    }
-                });
+                // 로그 데이터 로드
+                await loadLogsData();
                 
+                // UI 업데이트
+                updateSystemStatus();
                 updateStats();
                 updateTaskList();
                 updateChart();
                 
-                // 랜덤 오류 발생
-                if (Math.random() < 0.05) {
-                    addLog('warning', '일시적인 네트워크 지연 감지');
-                }
+                addLocalLog('success', '데이터 새로고침 완료');
                 
-            }, 2000);
+            } catch (error) {
+                retryCount++;
+                const errorMsg = `데이터 로드 실패 (${retryCount}/${MAX_RETRY}): ${error.message}`;
+                addLocalLog('error', errorMsg);
+                
+                if (retryCount < MAX_RETRY) {
+                    addLocalLog('warning', `${5}초 후 재시도...`);
+                    setTimeout(refreshData, 5000);
+                } else {
+                    addLocalLog('error', '최대 재시도 횟수 초과. 수동으로 새로고침해주세요.');
+                    updateSystemStatus('error');
+                }
+            }
         }
 
-        // 제어 버튼 이벤트
+        // 자동 폴링 시작
+        function startPolling() {
+            if (pollingInterval) {
+                clearInterval(pollingInterval);
+            }
+            
+            // 30초마다 데이터 새로고침
+            pollingInterval = setInterval(refreshData, 30000);
+            addLocalLog('info', '자동 데이터 폴링 시작 (30초 간격)');
+        }
+
+        // 자동 폴링 중지
+        function stopPolling() {
+            if (pollingInterval) {
+                clearInterval(pollingInterval);
+                pollingInterval = null;
+                addLocalLog('warning', '자동 데이터 폴링 중지');
+            }
+        }
+
+        // 제어 버튼 이벤트 (실제로는 파이썬 프로그램을 제어하지 않고 모니터링만)
         elements.startBtn.addEventListener('click', () => {
-            startSimulation();
-            addLog('info', '사용자가 시스템 시작');
+            startPolling();
+            addLocalLog('info', '모니터링 시작 - 파이썬 프로그램을 별도로 실행해주세요');
         });
 
         elements.pauseBtn.addEventListener('click', () => {
-            isRunning = false;
-            updateSystemStatus('waiting');
-            addLog('warning', '사용자가 시스템 일시정지');
+            stopPolling();
+            addLocalLog('warning', '모니터링 일시정지');
         });
 
         elements.stopBtn.addEventListener('click', () => {
-            isRunning = false;
-            updateSystemStatus('stopped');
-            addLog('error', '사용자가 시스템 정지');
+            stopPolling();
+            addLocalLog('error', '모니터링 중지');
         });
 
         elements.refreshBtn.addEventListener('click', () => {
-            updateStats();
-            updateTaskList();
-            updateChart();
-            addLog('info', '데이터 새로고침 완료');
+            refreshData();
         });
 
         elements.clearLogBtn.addEventListener('click', () => {
             elements.logContainer.innerHTML = '';
-            addLog('info', '로그 기록 초기화됨');
+            addLocalLog('info', '로컬 로그 화면 초기화됨 (구글 시트 로그는 유지됨)');
         });
 
+        // API 키 검증
+        function validateApiKey() {
+            if (!GOOGLE_SHEETS_CONFIG.apiKey || GOOGLE_SHEETS_CONFIG.apiKey === 'YOUR_GOOGLE_SHEETS_API_KEY') {
+                addLocalLog('error', 'Google Sheets API 키가 설정되지 않았습니다');
+                addLocalLog('warning', 'GOOGLE_SHEETS_CONFIG.apiKey를 실제 API 키로 변경해주세요');
+                return false;
+            }
+            return true;
+        }
+
         // 초기화
-        document.addEventListener('DOMContentLoaded', () => {
-            updateSystemStatus('waiting');
-            initChart();
+        document.addEventListener('DOMContentLoaded', async () => {
+            addLocalLog('info', '백링크 모니터링 시스템 초기화 중...');
             
-            // 초기 데이터 생성
-            for (let i = 0; i < 5; i++) {
-                backlinks.push(createBacklinkTask());
+            // API 키 검증
+            if (!validateApiKey()) {
+                updateSystemStatus('error');
+                return;
             }
             
-            updateStats();
-            updateTaskList();
-            updateChart();
+            // 차트 초기화
+            initChart();
             
-            addLog('success', '백링크 모니터링 시스템 초기화 완료');
-            addLog('info', '구글 시트 연동 대기중...');
+            // 초기 데이터 로드
+            try {
+                await refreshData();
+                addLocalLog('success', '백링크 모니터링 시스템 초기화 완료');
+                addLocalLog('info', '구글 시트 연동 대기중...');
+                
+                // 자동 폴링 시작
+                startPolling();
+                
+            } catch (error) {
+                addLocalLog('error', '초기화 실패: ' + error.message);
+                updateSystemStatus('error');
+            }
+        });
+
+        // 페이지 언로드 시 폴링 정리
+        window.addEventListener('beforeunload', () => {
+            stopPolling();
         });
     </script>
+
+
 <script>
 // 설정 관련 변수
 let backlinkSettings = {
