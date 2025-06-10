@@ -7,7 +7,8 @@ export default {
     rollupOptions: {
       input: {
         main: 'src/frontend/index.html',
-        coupang: 'src/frontend/coupang-ads.html'
+        coupang: 'src/frontend/coupang-ads.html',
+        backlink: 'src/frontend/backlink.html'
       }
     }
   }

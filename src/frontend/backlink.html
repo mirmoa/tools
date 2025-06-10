@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://hottmall.co.kr/web/upload/favicon-8ec475d36e11a495ef699ed54797b38b.ico" />
+    <title>백링크 모니터링 - 모아유통</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+    <style>
+        /* 백링크 모니터링 전용 스타일 */
+        .backlink-status-badge {
+            font-size: 12px;
+            padding: 4px 8px;
+            border-radius: 12px;
+        }
+        
+        .backlink-status-working { background-color: #28a745; color: white; }
+        .backlink-status-stopped { background-color: #dc3545; color: white; }
+        .backlink-status-waiting { background-color: #ffc107; color: #212529; }
+        .backlink-status-error { background-color: #fd7e14; color: white; }
+        
+        .backlink-log-container {
+            background: #1a1a1a;
+            border-radius: 8px;
+            padding: 20px;
+            height: 400px;
+            overflow-y: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            color: #00ff00;
+            border: 1px solid #333;
+        }
+        
+        .backlink-log-line {
+            margin-bottom: 5px;
+            white-space: nowrap;
+        }
+        
+        .backlink-log-timestamp {
+            color: #888;
+        }
+        
+        .backlink-log-info { color: #00ff00; }
+        .backlink-log-warning { color: #ffaa00; }
+        .backlink-log-error { color: #ff4444; }
+        .backlink-log-success { color: #44ff44; }
+        
+        .backlink-stats-card {
+            transition: transform 0.2s;
+        }
+        
+        .backlink-stats-card:hover {
+            transform: translateY(-2px);
+        }
+        
+        .backlink-pulse {
+            animation: backlinkPulse 2s infinite;
+        }
+        
+        @keyframes backlinkPulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.7; }
+            100% { opacity: 1; }
+        }
+        
+        .backlink-task-item {
+            border-left: 4px solid #007bff;
+            transition: all 0.3s;
+        }
+        
+        .backlink-task-item:hover {
+            background-color: #f8f9fa;
+            transform: translateX(5px);
+        }
+        
+        .backlink-progress-custom {
+            height: 8px;
+            background-color: #e9ecef;
+            border-radius: 4px;
+        }
+        
+        .backlink-control-panel {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            padding: 20px;
+            color: white;
+        }
+        
+        .backlink-btn-control {
+            margin: 5px;
+            min-width: 100px;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <!-- 사이드바 -->
+    <nav id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h3>모아유통</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+            <li>
+                <a href="index.html">
+                    <i class="bx bxs-dashboard"></i>
+                    <span>대시보드</span>
+                </a>
+            </li>
+            <li>
+                <a href="coupang-ads.html">
+                    <i class="bx bx-store"></i>
+                    <span>쿠팡 광고</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="backlink.html">
+                    <i class="bx bx-link"></i>
+                    <span>백링크</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="disabled">
+                    <i class="bx bx-bar-chart"></i>
+                    <span>매출 분석</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="disabled">
+                    <i class="bx bx-box"></i>
+                    <span>재고 관리</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- 메인 컨텐츠 -->
+    <div class="main-content" id="mainContent">
+        <!-- 상단 네비게이션 -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container-fluid">
+                <button type="button" id="sidebarCollapse" class="btn">
+                    <i class="bx bx-menu"></i>
+                </button>
+                <div class="ms-auto">
+                    <span class="navbar-text me-3" id="lastUpdated">마지막 업데이트: -</span>
+                    <a href="https://link.coupang.com/a/cuNVCM" class="btn btn-primary" target="_blank" rel="noopener noreferrer">쿠팡</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 백링크 모니터링 컨텐츠 -->
+        <div class="container-fluid mt-4">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2>백링크 모니터링 시스템</h2>
+                <div>
+                    <span class="badge backlink-status-badge" id="systemStatus">시스템 상태</span>
+                </div>
+            </div>
+            
+            <!-- 상태 카드들 -->
+            <div class="row mb-4">
+                <div class="col-md-3 mb-3">
+                    <div class="card backlink-stats-card">
+                        <div class="card-body text-center">
+                            <i class="bx bx-link-alt text-primary" style="font-size: 2rem;"></i>
+                            <h5 class="card-title mt-2">총 백링크</h5>
+                            <h3 class="text-primary" id="totalBacklinks">0</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card backlink-stats-card">
+                        <div class="card-body text-center">
+                            <i class="bx bx-check-circle text-success" style="font-size: 2rem;"></i>
+                            <h5 class="card-title mt-2">성공</h5>
+                            <h3 class="text-success" id="successCount">0</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card backlink-stats-card">
+                        <div class="card-body text-center">
+                            <i class="bx bx-time text-warning" style="font-size: 2rem;"></i>
+                            <h5 class="card-title mt-2">진행중</h5>
+                            <h3 class="text-warning" id="progressCount">0</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card backlink-stats-card">
+                        <div class="card-body text-center">
+                            <i class="bx bx-error text-danger" style="font-size: 2rem;"></i>
+                            <h5 class="card-title mt-2">오류</h5>
+                            <h3 class="text-danger" id="errorCount">0</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 제어 패널 -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="backlink-control-panel">
+                        <h5><i class="bx bx-cog me-2"></i>시스템 제어</h5>
+                        <div class="mt-3">
+                            <button class="btn btn-success backlink-btn-control" id="startBtn">
+                                <i class="bx bx-play me-1"></i>시작
+                            </button>
+                            <button class="btn btn-warning backlink-btn-control" id="pauseBtn">
+                                <i class="bx bx-pause me-1"></i>일시정지
+                            </button>
+                            <button class="btn btn-danger backlink-btn-control" id="stopBtn">
+                                <i class="bx bx-stop me-1"></i>정지
+                            </button>
+                            <button class="btn btn-info backlink-btn-control" id="refreshBtn">
+                                <i class="bx bx-refresh me-1"></i>새로고침
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- 실시간 로그 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <h5 class="mb-0"><i class="bx bx-terminal me-2"></i>실시간 로그</h5>
+                            <button class="btn btn-sm btn-outline-secondary" id="clearLogBtn">
+                                <i class="bx bx-trash"></i>
+                            </button>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="backlink-log-container" id="logContainer">
+                                <div class="backlink-log-line">
+                                    <span class="backlink-log-timestamp">[2024-06-10 15:30:00]</span>
+                                    <span class="backlink-log-info"> [INFO] 백링크 모니터링 시스템 초기화 완료</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 작업 목록 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0"><i class="bx bx-list-ul me-2"></i>작업 목록</h5>
+                        </div>
+                        <div class="card-body" style="max-height: 400px; overflow-y: auto;">
+                            <div id="taskList">
+                                <!-- 작업 항목들이 여기에 동적으로 추가됩니다 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 상세 통계 -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0"><i class="bx bx-bar-chart me-2"></i>작업 진행률</h5>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="progressChart" height="100"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // 시뮬레이션 데이터 및 상태
+        let systemStatus = 'waiting'; // working, stopped, waiting, error
+        let backlinks = [];
+        let logs = [];
+        let isRunning = false;
+
+        // DOM 요소들
+        const elements = {
+            sidebar: document.getElementById('sidebar'),
+            mainContent: document.getElementById('mainContent'),
+            sidebarCollapse: document.getElementById('sidebarCollapse'),
+            systemStatus: document.getElementById('systemStatus'),
+            totalBacklinks: document.getElementById('totalBacklinks'),
+            successCount: document.getElementById('successCount'),
+            progressCount: document.getElementById('progressCount'),
+            errorCount: document.getElementById('errorCount'),
+            logContainer: document.getElementById('logContainer'),
+            taskList: document.getElementById('taskList'),
+            lastUpdated: document.getElementById('lastUpdated'),
+            startBtn: document.getElementById('startBtn'),
+            pauseBtn: document.getElementById('pauseBtn'),
+            stopBtn: document.getElementById('stopBtn'),
+            refreshBtn: document.getElementById('refreshBtn'),
+            clearLogBtn: document.getElementById('clearLogBtn')
+        };
+
+        // 사이드바 토글
+        elements.sidebarCollapse.addEventListener('click', function() {
+            elements.sidebar.classList.toggle('collapsed');
+            elements.mainContent.classList.toggle('expanded');
+        });
+
+        // 시스템 상태 업데이트
+        function updateSystemStatus(status) {
+            systemStatus = status;
+            const statusElement = elements.systemStatus;
+            statusElement.className = 'badge backlink-status-badge';
+            
+            switch(status) {
+                case 'working':
+                    statusElement.classList.add('backlink-status-working', 'backlink-pulse');
+                    statusElement.textContent = '작업중';
+                    break;
+                case 'stopped':
+                    statusElement.classList.add('backlink-status-stopped');
+                    statusElement.textContent = '중지됨';
+                    break;
+                case 'waiting':
+                    statusElement.classList.add('backlink-status-waiting');
+                    statusElement.textContent = '대기중';
+                    break;
+                case 'error':
+                    statusElement.classList.add('backlink-status-error');
+                    statusElement.textContent = '오류';
+                    break;
+            }
+        }
+
+        // 로그 추가
+        function addLog(type, message) {
+            const timestamp = new Date().toLocaleString('ko-KR');
+            const logLine = document.createElement('div');
+            logLine.className = 'backlink-log-line';
+            logLine.innerHTML = `
+                <span class="backlink-log-timestamp">[${timestamp}]</span>
+                <span class="backlink-log-${type}"> [${type.toUpperCase()}] ${message}</span>
+            `;
+            
+            elements.logContainer.appendChild(logLine);
+            elements.logContainer.scrollTop = elements.logContainer.scrollHeight;
+            
+            // 로그가 너무 많으면 오래된 것 제거
+            const logLines = elements.logContainer.children;
+            if (logLines.length > 100) {
+                elements.logContainer.removeChild(logLines[0]);
+            }
+        }
+
+        // 백링크 작업 생성
+        function createBacklinkTask() {
+            const domains = ['example.com', 'test.co.kr', 'sample.net', 'demo.org', 'site.com'];
+            const statuses = ['success', 'progress', 'error'];
+            
+            return {
+                id: Date.now() + Math.random(),
+                domain: domains[Math.floor(Math.random() * domains.length)],
+                url: `https://${domains[Math.floor(Math.random() * domains.length)]}/page${Math.floor(Math.random() * 100)}`,
+                status: statuses[Math.floor(Math.random() * statuses.length)],
+                progress: Math.floor(Math.random() * 100),
+                createdAt: new Date()
+            };
+        }
+
+        // 작업 목록 업데이트
+        function updateTaskList() {
+            elements.taskList.innerHTML = '';
+            
+            backlinks.slice(-10).reverse().forEach(task => {
+                const taskDiv = document.createElement('div');
+                taskDiv.className = 'backlink-task-item p-3 mb-2 border rounded';
+                
+                let statusBadge = '';
+                let progressBar = '';
+                
+                switch(task.status) {
+                    case 'success':
+                        statusBadge = '<span class="badge bg-success">완료</span>';
+                        break;
+                    case 'progress':
+                        statusBadge = '<span class="badge bg-warning">진행중</span>';
+                        progressBar = `
+                            <div class="backlink-progress-custom mt-2">
+                                <div style="width: ${task.progress}%; height: 100%; background-color: #ffc107; border-radius: 4px;"></div>
+                            </div>
+                            <small class="text-muted">${task.progress}%</small>
+                        `;
+                        break;
+                    case 'error':
+                        statusBadge = '<span class="badge bg-danger">오류</span>';
+                        break;
+                }
+                
+                taskDiv.innerHTML = `
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div class="flex-grow-1">
+                            <h6 class="mb-1">${task.domain}</h6>
+                            <p class="mb-1 text-muted small">${task.url}</p>
+                            <small class="text-muted">${task.createdAt.toLocaleString('ko-KR')}</small>
+                            ${progressBar}
+                        </div>
+                        <div>
+                            ${statusBadge}
+                        </div>
+                    </div>
+                `;
+                
+                elements.taskList.appendChild(taskDiv);
+            });
+        }
+
+        // 통계 업데이트
+        function updateStats() {
+            const total = backlinks.length;
+            const success = backlinks.filter(b => b.status === 'success').length;
+            const progress = backlinks.filter(b => b.status === 'progress').length;
+            const error = backlinks.filter(b => b.status === 'error').length;
+            
+            elements.totalBacklinks.textContent = total;
+            elements.successCount.textContent = success;
+            elements.progressCount.textContent = progress;
+            elements.errorCount.textContent = error;
+            
+            elements.lastUpdated.textContent = `마지막 업데이트: ${new Date().toLocaleString('ko-KR')}`;
+        }
+
+        // 차트 초기화
+        let progressChart;
+        function initChart() {
+            const ctx = document.getElementById('progressChart').getContext('2d');
+            progressChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['성공', '진행중', '오류'],
+                    datasets: [{
+                        data: [0, 0, 0],
+                        backgroundColor: ['#28a745', '#ffc107', '#dc3545']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }
+            });
+        }
+
+        // 차트 업데이트
+        function updateChart() {
+            const success = backlinks.filter(b => b.status === 'success').length;
+            const progress = backlinks.filter(b => b.status === 'progress').length;
+            const error = backlinks.filter(b => b.status === 'error').length;
+            
+            progressChart.data.datasets[0].data = [success, progress, error];
+            progressChart.update();
+        }
+
+        // 시뮬레이션 시작
+        function startSimulation() {
+            if (isRunning) return;
+            
+            isRunning = true;
+            updateSystemStatus('working');
+            addLog('info', '백링크 작업 시작됨');
+            
+            const interval = setInterval(() => {
+                if (!isRunning) {
+                    clearInterval(interval);
+                    return;
+                }
+                
+                // 새 작업 추가
+                if (Math.random() < 0.7) {
+                    const newTask = createBacklinkTask();
+                    backlinks.push(newTask);
+                    addLog('info', `새 백링크 작업 추가: ${newTask.domain}`);
+                }
+                
+                // 기존 작업 상태 업데이트
+                backlinks.forEach(task => {
+                    if (task.status === 'progress') {
+                        if (Math.random() < 0.3) {
+                            task.status = Math.random() < 0.8 ? 'success' : 'error';
+                            addLog(task.status === 'success' ? 'success' : 'error', 
+                                  `${task.domain} 작업 ${task.status === 'success' ? '완료' : '실패'}`);
+                        } else {
+                            task.progress = Math.min(100, task.progress + Math.floor(Math.random() * 20));
+                        }
+                    }
+                });
+                
+                updateStats();
+                updateTaskList();
+                updateChart();
+                
+                // 랜덤 오류 발생
+                if (Math.random() < 0.05) {
+                    addLog('warning', '일시적인 네트워크 지연 감지');
+                }
+                
+            }, 2000);
+        }
+
+        // 제어 버튼 이벤트
+        elements.startBtn.addEventListener('click', () => {
+            startSimulation();
+            addLog('info', '사용자가 시스템 시작');
+        });
+
+        elements.pauseBtn.addEventListener('click', () => {
+            isRunning = false;
+            updateSystemStatus('waiting');
+            addLog('warning', '사용자가 시스템 일시정지');
+        });
+
+        elements.stopBtn.addEventListener('click', () => {
+            isRunning = false;
+            updateSystemStatus('stopped');
+            addLog('error', '사용자가 시스템 정지');
+        });
+
+        elements.refreshBtn.addEventListener('click', () => {
+            updateStats();
+            updateTaskList();
+            updateChart();
+            addLog('info', '데이터 새로고침 완료');
+        });
+
+        elements.clearLogBtn.addEventListener('click', () => {
+            elements.logContainer.innerHTML = '';
+            addLog('info', '로그 기록 초기화됨');
+        });
+
+        // 초기화
+        document.addEventListener('DOMContentLoaded', () => {
+            updateSystemStatus('waiting');
+            initChart();
+            
+            // 초기 데이터 생성
+            for (let i = 0; i < 5; i++) {
+                backlinks.push(createBacklinkTask());
+            }
+            
+            updateStats();
+            updateTaskList();
+            updateChart();
+            
+            addLog('success', '백링크 모니터링 시스템 초기화 완료');
+            addLog('info', '구글 시트 연동 대기중...');
+        });
+    </script>
+</body>
+</html>
