@@ -125,6 +125,15 @@
 }
 /*설정모달 끝 */
 
+/* url 잘림 해결 */
+.text-truncate-url {
+    white-space: nowrap;        /* 텍스트를 한 줄로 만듭니다. */
+    overflow: hidden;           /* 넘치는 내용을 숨깁니다. */
+    text-overflow: ellipsis;    /* 숨겨진 내용 대신 '...'을 표시합니다. */
+    max-width: 250px; 
+
+/**/
+
     </style>
 </head>
 <body class="bg-light">
@@ -866,18 +875,16 @@ function updateTaskList() {
         
         taskDiv.innerHTML = `
             <div class="d-flex justify-content-between align-items-start">
-                <div class="flex-grow-1">
-                    <h6 class="mb-1">${task.domain}</h6>
-                    <p class="mb-1 text-muted small">소스: ${task.sourceUrl}</p>
-                    <p class="mb-1 text-muted small">타겟: ${task.targetUrl}</p>
+                <div class="flex-grow-1 flex-shrink-1"> <h6 class="mb-1">${task.domain}</h6>
+                    <p class="mb-1 text-muted small text-truncate-url">소스: ${task.sourceUrl}</p>
+                    <p class="mb-1 text-muted small text-truncate-url">타겟: ${task.targetUrl}</p>
                     <small class="text-muted">시작: ${task.createdAt ? task.createdAt.toLocaleString('ko-KR') : 'N/A'}</small><br>
                     ${task.completedAt ? `<small class="text-muted">완료: ${task.completedAt.toLocaleString('ko-KR')}</small><br>` : ''}
                     ${task.attempts > 1 ? `<small class="text-info">시도: ${task.attempts}회</small>` : ''}
                     ${errorInfo}
                     ${progressBar}
                 </div>
-                <div>
-                    ${statusBadge}
+                <div class="flex-shrink-0 ms-2"> ${statusBadge}
                 </div>
             </div>
         `;
