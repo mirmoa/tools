@@ -131,8 +131,8 @@
     overflow: hidden;           /* 넘치는 내용을 숨깁니다. */
     text-overflow: ellipsis;    /* 숨겨진 내용 대신 '...'을 표시합니다. */
     max-width: 250px; 
-
-/**/
+}
+/***/
 
     </style>
 </head>
@@ -969,7 +969,7 @@ async function refreshData() {
         updateTaskList();
         updateChart();
         
-        addLocalLog('success', '데이터 새로고침 완료');
+        //addLocalLog('success', '데이터 새로고침 완료');
         
         // 파이썬 프로그램 상태에 따라 폴링을 제어
         if (['STOPPED', 'ERROR', 'FETCH_ERROR', 'UNKNOWN'].includes(pythonProgramStatus)) {
@@ -997,13 +997,13 @@ async function refreshData() {
     }
 }
 
-// 자동 폴링 시작 (5초 간격)
+// 자동 폴링 시작 (10초 간격)
 function startPolling() {
     if (pollingInterval) {
         clearInterval(pollingInterval);
     }
     
-    pollingInterval = setInterval(refreshData, 5000); // 5초로 변경
+    pollingInterval = setInterval(refreshData, 10000); // 10초로 변경
     addLocalLog('info', '자동 데이터 폴링 시작 (5초 간격)');
 }
 
