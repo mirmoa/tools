@@ -94,6 +94,37 @@
             margin: 5px;
             min-width: 100px;
         }
+/* 설정 모달 전용 스타일 추가 */
+.modal-body {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.form-check-label {
+    cursor: pointer;
+}
+
+.form-check-input:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.form-range::-webkit-slider-thumb {
+    background-color: #007bff;
+}
+
+.form-range::-moz-range-thumb {
+    background-color: #007bff;
+    border: none;
+}
+
+.settings-section {
+    border-left: 3px solid #007bff;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+/*설정모달 끝 */
+
     </style>
 </head>
 <body class="bg-light">
@@ -218,6 +249,224 @@
                             </button>
                             <button class="btn btn-info backlink-btn-control" id="refreshBtn">
                                 <i class="bx bx-refresh me-1"></i>새로고침
+                            </button>
+                            <!-- 설정 버튼 추가 -->
+                            <button class="btn btn-secondary backlink-btn-control" id="settingsBtn" data-bs-toggle="modal" data-bs-target="#settingsModal">
+                                <i class="bx bx-cog me-1"></i>설정
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 설정 모달 -->
+            <div class="modal fade" id="settingsModal" tabindex="-1" aria-labelledby="settingsModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="settingsModalLabel">
+                                <i class="bx bx-cog me-2"></i>백링크 작업 설정
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- 디바이스 설정 -->
+                            <div class="mb-4">
+                                <h6 class="fw-bold mb-3">
+                                    <i class="bx bx-mobile-alt me-2 text-primary"></i>디바이스 모델 설정
+                                </h6>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6 class="text-muted mb-2">iPhone 시리즈</h6>
+                                        <div class="form-check">
+                                            <input class="form-check-input device-checkbox" type="checkbox" value="iPhone 15 Pro" id="iphone15pro" checked>
+                                            <label class="form-check-label" for="iphone15pro">iPhone 15 Pro</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input device-checkbox" type="checkbox" value="iPhone 14" id="iphone14" checked>
+                                            <label class="form-check-label" for="iphone14">iPhone 14</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input device-checkbox" type="checkbox" value="iPhone 13" id="iphone13" checked>
+                                            <label class="form-check-label" for="iphone13">iPhone 13</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input device-checkbox" type="checkbox" value="iPhone 12" id="iphone12" checked>
+                                            <label class="form-check-label" for="iphone12">iPhone 12</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="text-muted mb-2">Galaxy 시리즈</h6>
+                                        <div class="form-check">
+                                            <input class="form-check-input device-checkbox" type="checkbox" value="Galaxy S24" id="galaxys24" checked>
+                                            <label class="form-check-label" for="galaxys24">Galaxy S24</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input device-checkbox" type="checkbox" value="Galaxy S23" id="galaxys23" checked>
+                                            <label class="form-check-label" for="galaxys23">Galaxy S23</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input device-checkbox" type="checkbox" value="Galaxy S22" id="galaxys22" checked>
+                                            <label class="form-check-label" for="galaxys22">Galaxy S22</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input device-checkbox" type="checkbox" value="Galaxy S20" id="galaxys20" checked>
+                                            <label class="form-check-label" for="galaxys20">Galaxy S20</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-2">
+                                    <button type="button" class="btn btn-sm btn-outline-primary" id="selectAllDevices">전체 선택</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" id="deselectAllDevices">전체 해제</button>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <!-- 네트워크 설정 -->
+                            <div class="mb-4">
+                                <h6 class="fw-bold mb-3">
+                                    <i class="bx bx-wifi me-2 text-success"></i>네트워크 연결 타입
+                                </h6>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input network-checkbox" type="checkbox" value="WiFi" id="wifi" checked>
+                                            <label class="form-check-label" for="wifi">
+                                                <i class="bx bx-wifi me-1"></i>WiFi
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input network-checkbox" type="checkbox" value="5G" id="network5g" checked>
+                                            <label class="form-check-label" for="network5g">
+                                                <i class="bx bx-signal-5 me-1"></i>5G
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input network-checkbox" type="checkbox" value="LTE" id="lte" checked>
+                                            <label class="form-check-label" for="lte">
+                                                <i class="bx bx-signal-4 me-1"></i>LTE
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <!-- 봇 탐지 방어 설정 -->
+                            <div class="mb-4">
+                                <h6 class="fw-bold mb-3">
+                                    <i class="bx bx-shield me-2 text-warning"></i>봇 탐지 방어 기술
+                                </h6>
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input anti-bot-checkbox" type="checkbox" value="random_scroll" id="randomScroll" checked>
+                                            <label class="form-check-label" for="randomScroll">
+                                                <i class="bx bx-mouse me-1"></i>랜덤 스크롤 패턴
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input anti-bot-checkbox" type="checkbox" value="gps_spoofing" id="gpsSpoof" checked>
+                                            <label class="form-check-label" for="gpsSpoof">
+                                                <i class="bx bx-map me-1"></i>GPS 위치 변조
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input anti-bot-checkbox" type="checkbox" value="battery_simulation" id="batterySim" checked>
+                                            <label class="form-check-label" for="batterySim">
+                                                <i class="bx bx-battery me-1"></i>배터리 상태 시뮬레이션
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input anti-bot-checkbox" type="checkbox" value="gyroscope" id="gyroscope" checked>
+                                            <label class="form-check-label" for="gyroscope">
+                                                <i class="bx bx-rotate-right me-1"></i>자이로스코프 데이터
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input anti-bot-checkbox" type="checkbox" value="human_delay" id="humanDelay" checked>
+                                            <label class="form-check-label" for="humanDelay">
+                                                <i class="bx bx-time me-1"></i>사람같은 지연시간
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input anti-bot-checkbox" type="checkbox" value="mouse_movement" id="mouseMovement" checked>
+                                            <label class="form-check-label" for="mouseMovement">
+                                                <i class="bx bx-mouse-alt me-1"></i>자연스러운 마우스 움직임
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input anti-bot-checkbox" type="checkbox" value="screen_resolution" id="screenRes" checked>
+                                            <label class="form-check-label" for="screenRes">
+                                                <i class="bx bx-desktop me-1"></i>화면 해상도 변조
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input anti-bot-checkbox" type="checkbox" value="timezone_random" id="timezoneRandom" checked>
+                                            <label class="form-check-label" for="timezoneRandom">
+                                                <i class="bx bx-world me-1"></i>타임존 랜덤화
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <!-- 고급 설정 -->
+                            <div class="mb-4">
+                                <h6 class="fw-bold mb-3">
+                                    <i class="bx bx-slider me-2 text-info"></i>고급 설정
+                                </h6>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="requestDelay" class="form-label">요청 간 지연시간 (초)</label>
+                                            <input type="range" class="form-range" min="1" max="10" value="3" id="requestDelay">
+                                            <div class="d-flex justify-content-between">
+                                                <small>1초</small>
+                                                <small id="delayValue">3초</small>
+                                                <small>10초</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="maxRetries" class="form-label">최대 재시도 횟수</label>
+                                            <select class="form-select" id="maxRetries">
+                                                <option value="1">1회</option>
+                                                <option value="2">2회</option>
+                                                <option value="3" selected>3회</option>
+                                                <option value="5">5회</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="enableLogging" checked>
+                                            <label class="form-check-label" for="enableLogging">
+                                                상세 로깅 활성화
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+                            <button type="button" class="btn btn-primary" id="saveSettingsBtn">
+                                <i class="bx bx-save me-1"></i>설정 저장
                             </button>
                         </div>
                     </div>
@@ -563,5 +812,166 @@
             addLog('info', '구글 시트 연동 대기중...');
         });
     </script>
+<script>
+// 설정 관련 변수
+let backlinkSettings = {
+    devices: [],
+    networks: [],
+    antiBotFeatures: [],
+    requestDelay: 3,
+    maxRetries: 3,
+    enableLogging: true
+};
+
+// 설정 관련 DOM 요소들
+const settingsElements = {
+    deviceCheckboxes: document.querySelectorAll('.device-checkbox'),
+    networkCheckboxes: document.querySelectorAll('.network-checkbox'),
+    antiBotCheckboxes: document.querySelectorAll('.anti-bot-checkbox'),
+    requestDelay: document.getElementById('requestDelay'),
+    delayValue: document.getElementById('delayValue'),
+    maxRetries: document.getElementById('maxRetries'),
+    enableLogging: document.getElementById('enableLogging'),
+    saveBtn: document.getElementById('saveSettingsBtn'),
+    selectAllDevices: document.getElementById('selectAllDevices'),
+    deselectAllDevices: document.getElementById('deselectAllDevices')
+};
+
+// 설정 초기화
+function initializeSettings() {
+    // 로컬 스토리지에서 설정 불러오기
+    const savedSettings = localStorage.getItem('backlinkSettings');
+    if (savedSettings) {
+        backlinkSettings = JSON.parse(savedSettings);
+        loadSettingsToUI();
+    } else {
+        // 기본 설정으로 초기화
+        loadDefaultSettings();
+    }
+}
+
+// 기본 설정 로드
+function loadDefaultSettings() {
+    // 모든 디바이스 체크
+    settingsElements.deviceCheckboxes.forEach(checkbox => {
+        checkbox.checked = true;
+    });
+    
+    // 모든 네트워크 체크
+    settingsElements.networkCheckboxes.forEach(checkbox => {
+        checkbox.checked = true;
+    });
+    
+    // 모든 봇 방어 기능 체크
+    settingsElements.antiBotCheckboxes.forEach(checkbox => {
+        checkbox.checked = true;
+    });
+    
+    updateSettingsFromUI();
+}
+
+// UI에서 설정 불러오기
+function loadSettingsToUI() {
+    // 디바이스 설정
+    settingsElements.deviceCheckboxes.forEach(checkbox => {
+        checkbox.checked = backlinkSettings.devices.includes(checkbox.value);
+    });
+    
+    // 네트워크 설정
+    settingsElements.networkCheckboxes.forEach(checkbox => {
+        checkbox.checked = backlinkSettings.networks.includes(checkbox.value);
+    });
+    
+    // 봇 방어 설정
+    settingsElements.antiBotCheckboxes.forEach(checkbox => {
+        checkbox.checked = backlinkSettings.antiBotFeatures.includes(checkbox.value);
+    });
+    
+    // 기타 설정
+    settingsElements.requestDelay.value = backlinkSettings.requestDelay;
+    settingsElements.delayValue.textContent = backlinkSettings.requestDelay + '초';
+    settingsElements.maxRetries.value = backlinkSettings.maxRetries;
+    settingsElements.enableLogging.checked = backlinkSettings.enableLogging;
+}
+
+// UI에서 설정 업데이트
+function updateSettingsFromUI() {
+    // 디바이스 설정
+    backlinkSettings.devices = Array.from(settingsElements.deviceCheckboxes)
+        .filter(checkbox => checkbox.checked)
+        .map(checkbox => checkbox.value);
+    
+    // 네트워크 설정
+    backlinkSettings.networks = Array.from(settingsElements.networkCheckboxes)
+        .filter(checkbox => checkbox.checked)
+        .map(checkbox => checkbox.value);
+    
+    // 봇 방어 설정
+    backlinkSettings.antiBotFeatures = Array.from(settingsElements.antiBotCheckboxes)
+        .filter(checkbox => checkbox.checked)
+        .map(checkbox => checkbox.value);
+    
+    // 기타 설정
+    backlinkSettings.requestDelay = parseInt(settingsElements.requestDelay.value);
+    backlinkSettings.maxRetries = parseInt(settingsElements.maxRetries.value);
+    backlinkSettings.enableLogging = settingsElements.enableLogging.checked;
+}
+
+// 설정 저장
+function saveSettings() {
+    updateSettingsFromUI();
+    localStorage.setItem('backlinkSettings', JSON.stringify(backlinkSettings));
+    
+    addLog('success', '설정이 성공적으로 저장되었습니다');
+    addLog('info', `선택된 디바이스: ${backlinkSettings.devices.length}개`);
+    addLog('info', `선택된 네트워크: ${backlinkSettings.networks.join(', ')}`);
+    addLog('info', `활성화된 방어기술: ${backlinkSettings.antiBotFeatures.length}개`);
+    
+    // 모달 닫기
+    const modal = bootstrap.Modal.getInstance(document.getElementById('settingsModal'));
+    modal.hide();
+}
+
+// 이벤트 리스너 설정
+document.addEventListener('DOMContentLoaded', () => {
+    // 기존 초기화 코드...
+    
+    // 설정 초기화
+    initializeSettings();
+    
+    // 지연시간 슬라이더 이벤트
+    settingsElements.requestDelay.addEventListener('input', (e) => {
+        settingsElements.delayValue.textContent = e.target.value + '초';
+    });
+    
+    // 전체 선택/해제 버튼
+    settingsElements.selectAllDevices.addEventListener('click', () => {
+        settingsElements.deviceCheckboxes.forEach(checkbox => {
+            checkbox.checked = true;
+        });
+    });
+    
+    settingsElements.deselectAllDevices.addEventListener('click', () => {
+        settingsElements.deviceCheckboxes.forEach(checkbox => {
+            checkbox.checked = false;
+        });
+    });
+    
+    // 설정 저장 버튼
+    settingsElements.saveBtn.addEventListener('click', saveSettings);
+    
+    // 설정 모달이 열릴 때 현재 설정 표시
+    document.getElementById('settingsModal').addEventListener('show.bs.modal', () => {
+        loadSettingsToUI();
+    });
+});
+
+// 설정 정보를 구글 시트로 전송하는 함수 (나중에 구현)
+function sendSettingsToGoogleSheets() {
+    // 구글 시트 API를 통해 설정 정보 전송
+    // 파이썬 프로그램에서 이 설정을 읽어서 사용
+}    
+</script>
+
 </body>
 </html>
