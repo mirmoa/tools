@@ -125,6 +125,15 @@
 }
 /*설정모달 끝 */
 
+/* url 잘림 해결 */
+.text-truncate-url {
+    white-space: nowrap;        /* 텍스트를 한 줄로 만듭니다. */
+    overflow: hidden;           /* 넘치는 내용을 숨깁니다. */
+    text-overflow: ellipsis;    /* 숨겨진 내용 대신 '...'을 표시합니다. */
+    max-width: 250px; 
+}
+/***/
+
     </style>
 </head>
 <body class="bg-light">
@@ -533,8 +542,11 @@
 const GOOGLE_SHEETS_CONFIG = {
     spreadsheetId: '1VR_t2P90Rqf-ZOopStJKYUtgAl8vp8zOFc389efXjZM',
     apiKey: 'AIzaSyCsPnfG3VbHUFaxwIa0X8omqM9Gtql72WE',
-    backlinksRange: 'Sheet1!A:H',
-    logsRange: 'Logs!A:D'
+    // 파이썬 코드에서 사용하는 시트의 컬럼 순서에 맞게 range를 명확히 지정
+    // Sheet1의 컬럼 순서: domain, sourceUrl, targetUrl, status, progress, createdAt, completedAt, errorMessage, attempts
+    backlinksRange: 'Sheet1!A:I', 
+    logsRange: 'Logs!A:D',
+    settingsStatusCell: 'Settings!A1' // 파이썬이 상태를 기록하는 A1 셀
 };
 
 // 시스템 상태 및 데이터
@@ -545,8 +557,10 @@ let isConnected = false;
 let pollingInterval = null;
 let retryCount = 0;
 const MAX_RETRY = 3;
+let lastLogId = 0; // 마지막으로 로드된 로그의 ID (새로운 로그만 추가하기 위함)
+let pythonProgramStatus = 'UNKNOWN'; // 파이썬 프로그램의 현재 상태
 
-// 설정 관련 변수
+// 설정 관련 변수 (기존과 동일)
 let backlinkSettings = {
     devices: [],
     networks: [],
@@ -556,7 +570,7 @@ let backlinkSettings = {
     enableLogging: true
 };
 
-// DOM 요소들
+// DOM 요소들 (기존과 동일)
 const elements = {
     sidebar: document.getElementById('sidebar'),
     mainContent: document.getElementById('mainContent'),
@@ -575,7 +589,7 @@ const elements = {
     clearLogBtn: document.getElementById('clearLogBtn')
 };
 
-// 설정 관련 DOM 요소들
+// 설정 관련 DOM 요소들 (기존과 동일)
 const settingsElements = {
     deviceCheckboxes: document.querySelectorAll('.device-checkbox'),
     networkCheckboxes: document.querySelectorAll('.network-checkbox'),
@@ -604,7 +618,8 @@ async function fetchGoogleSheetsData(range) {
         const response = await fetch(url);
         
         if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+            const errorData = await response.json(); // 오류 메시지를 더 자세히 파싱
+            throw new Error(`HTTP error! status: ${response.status}, message: ${errorData.error ? errorData.error.message : 'Unknown error'}`);
         }
         
         const data = await response.json();
@@ -615,45 +630,58 @@ async function fetchGoogleSheetsData(range) {
     }
 }
 
-// 백링크 데이터 로드
+// 새로운 함수: 파이썬 프로그램 상태 로드 (Settings 시트 A1)
+async function loadPythonProgramStatus() {
+    try {
+        const data = await fetchGoogleSheetsData(GOOGLE_SHEETS_CONFIG.settingsStatusCell);
+        if (data && data.length > 0 && data[0].length > 0) {
+            pythonProgramStatus = data[0][0]; // A1 셀의 값 (예: "RUNNING", "STOPPED", "ERROR")
+            return pythonProgramStatus;
+        }
+        pythonProgramStatus = 'UNKNOWN'; // 값이 없을 경우
+        return 'UNKNOWN';
+    } catch (error) {
+        console.error('파이썬 프로그램 상태 로드 실패:', error);
+        pythonProgramStatus = 'FETCH_ERROR';
+        return 'FETCH_ERROR';
+    }
+}
+
+// 백링크 데이터 로드 (파이썬 코드의 시트 순서에 맞게 수정)
 async function loadBacklinksData() {
     try {
         const data = await fetchGoogleSheetsData(GOOGLE_SHEETS_CONFIG.backlinksRange);
         
-        if (data.length > 1) {
+        if (data.length > 1) { // 첫 번째 행은 헤더이므로 스킵
             backlinks = data.slice(1).map((row, index) => {
-                // 첫 번째 컬럼에서 URL 추출
-                const sourceUrl = row[0] || '';
-                const targetUrl = row[1] || '';
-                const status = row[2] || 'waiting';
-                const progress = parseInt(row[3]) || 0;
-                const timestamp = row[4] || '';
-                
-                // 도메인 추출 (소스 URL에서)
-                let domain = 'Unknown Domain';
-                try {
-                    if (sourceUrl) {
-                        const url = new URL(sourceUrl);
-                        domain = url.hostname;
-                    }
-                } catch (e) {
-                    // URL 파싱 실패 시 첫 번째 부분 사용
-                    domain = sourceUrl.split('/')[2] || sourceUrl.substring(0, 30) + '...';
-                }
+                // 파이썬에서 정의된 Sheets!A:I 컬럼 순서에 맞게 인덱스 매핑
+                // domain (A열), sourceUrl (B열), targetUrl (C열), status (D열), progress (E열),
+                // createdAt (F열), completedAt (G열), errorMessage (H열), attempts (I열)
+                const domain = row[0] || 'Unknown Domain';
+                const sourceUrl = row[1] || '';
+                const targetUrl = row[2] || '';
+                const status = row[3] ? row[3].toLowerCase() : 'waiting'; // 상태는 소문자로 통일
+                const progress = parseInt(row[4]) || 0;
+                const createdAt = row[5] || '';
+                const completedAt = row[6] || '';
+                const errorMessage = row[7] || '';
+                const attempts = parseInt(row[8]) || 0;
                 
                 return {
-                    id: index + 1,
+                    id: index + 1, // 행 번호 (헤더 제외)
                     domain: domain,
                     sourceUrl: sourceUrl,
                     targetUrl: targetUrl,
-                    status: status.toLowerCase(),
+                    status: status,
                     progress: progress,
-                    createdAt: timestamp ? new Date(timestamp) : new Date(),
-                    completedAt: null,
-                    errorMessage: '',
-                    attempts: 1
+                    createdAt: createdAt ? new Date(createdAt) : null,
+                    completedAt: completedAt ? new Date(completedAt) : null,
+                    errorMessage: errorMessage,
+                    attempts: attempts
                 };
             });
+        } else {
+            backlinks = []; // 데이터가 없거나 헤더만 있는 경우
         }
         
         retryCount = 0;
@@ -666,29 +694,28 @@ async function loadBacklinksData() {
     }
 }
 
-// 로그 데이터 로드
+// 로그 데이터 로드 (한 줄씩 추가하도록 수정)
 async function loadLogsData() {
     try {
         const data = await fetchGoogleSheetsData(GOOGLE_SHEETS_CONFIG.logsRange);
         
-        if (data.length > 1) {
+        if (data.length > 1) { // 첫 번째 행은 헤더이므로 스킵
             const newLogs = data.slice(1).map((row, index) => ({
-                id: index + 1,
+                id: index + 1, // 로그 고유 ID (행 번호)
                 timestamp: row[0] || '',
-                type: row[1] || 'info',
+                type: row[1] ? row[1].toLowerCase() : 'info', // 타입은 소문자로 통일
                 message: row[2] || '',
                 details: row[3] || ''
             }));
             
-            const existingLogCount = logs.length;
-            logs = newLogs;
-            
-            if (newLogs.length > existingLogCount) {
-                const newLogsToShow = newLogs.slice(existingLogCount);
-                newLogsToShow.forEach(log => {
-                    addLogToUI(log.type, log.message, log.timestamp);
-                });
+            // 기존 로그와 비교하여 새로운 로그만 UI에 추가
+            for (let i = 0; i < newLogs.length; i++) {
+                if (newLogs[i].id > lastLogId) {
+                    addLogToUI(newLogs[i].type, newLogs[i].message, newLogs[i].timestamp);
+                    lastLogId = newLogs[i].id; // 마지막으로 표시된 로그 ID 업데이트
+                }
             }
+            logs = newLogs; // 전체 로그 데이터는 최신으로 유지
         }
         
         return true;
@@ -698,29 +725,35 @@ async function loadLogsData() {
     }
 }
 
-// 시스템 상태 결정
+// 시스템 상태 결정 (파이썬 프로그램 상태를 기반으로 업데이트)
 function determineSystemStatus() {
-    if (!isConnected) {
+    if (pythonProgramStatus.includes('ERROR')) {
         return 'error';
     }
-    
-    if (backlinks.length === 0) {
-        return 'waiting';
+    if (pythonProgramStatus === 'STOPPED') {
+        return 'stopped';
     }
-    
-    const progressTasks = backlinks.filter(b => b.status === 'progress' || b.status === 'working');
-    const errorTasks = backlinks.filter(b => b.status === 'error' || b.status === 'failed');
-    
-    if (progressTasks.length > 0) {
-        return 'working';
-    } else if (errorTasks.length > 0) {
+    if (pythonProgramStatus === 'PAUSED') {
+        return 'paused'; // '일시정지' 상태 추가
+    }
+    if (pythonProgramStatus === 'RUNNING' || pythonProgramStatus === 'STARTING') {
+        // 파이썬이 실행 중인 경우, 백링크 작업 진행 상태를 확인
+        const progressTasks = backlinks.filter(b => b.status === 'progress' || b.status === 'working');
+        if (progressTasks.length > 0) {
+            return 'working';
+        } else {
+            return 'waiting'; // 파이썬은 돌고 있지만 작업이 없는 상태
+        }
+    }
+    // API 연결 문제 또는 알 수 없는 상태
+    if (!isConnected || pythonProgramStatus === 'FETCH_ERROR' || pythonProgramStatus === 'UNKNOWN') {
         return 'error';
-    } else {
-        return 'waiting';
     }
+    return 'waiting';
 }
 
-// 시스템 상태 업데이트
+
+// 시스템 상태 업데이트 (badge class 및 text 수정)
 function updateSystemStatus(status = null) {
     if (status === null) {
         status = determineSystemStatus();
@@ -728,7 +761,7 @@ function updateSystemStatus(status = null) {
     
     systemStatus = status;
     const statusElement = elements.systemStatus;
-    statusElement.className = 'badge backlink-status-badge';
+    statusElement.className = 'badge backlink-status-badge'; // 모든 클래스 초기화
     
     switch(status) {
         case 'working':
@@ -739,18 +772,30 @@ function updateSystemStatus(status = null) {
             statusElement.classList.add('backlink-status-stopped');
             statusElement.textContent = '중지됨';
             break;
+        case 'paused': // 일시정지 상태 추가
+            statusElement.classList.add('backlink-status-paused');
+            statusElement.textContent = '일시정지';
+            break;
         case 'waiting':
             statusElement.classList.add('backlink-status-waiting');
             statusElement.textContent = '대기중';
             break;
         case 'error':
             statusElement.classList.add('backlink-status-error');
-            statusElement.textContent = isConnected ? '오류' : '연결 끊김';
+            statusElement.textContent = '오류 발생'; // 더 명확한 오류 메시지
+            break;
+        case 'UNKNOWN': // 파이썬 상태를 알 수 없을 때 (예: 처음 로드 시)
+            statusElement.classList.add('backlink-status-waiting');
+            statusElement.textContent = '상태 확인중';
+            break;
+        case 'FETCH_ERROR': // API 호출 실패 시
+            statusElement.classList.add('backlink-status-error');
+            statusElement.textContent = 'API 연결 오류';
             break;
     }
 }
 
-// UI에 로그 추가
+// UI에 로그 추가 (기존과 동일)
 function addLogToUI(type, message, timestamp = null) {
     const logTimestamp = timestamp || new Date().toLocaleString('ko-KR');
     const logLine = document.createElement('div');
@@ -764,23 +809,35 @@ function addLogToUI(type, message, timestamp = null) {
     elements.logContainer.scrollTop = elements.logContainer.scrollHeight;
     
     const logLines = elements.logContainer.children;
-    if (logLines.length > 100) {
+    if (logLines.length > 100) { // 로그가 너무 많으면 오래된 로그 삭제
         elements.logContainer.removeChild(logLines[0]);
     }
 }
 
-// 로컬 로그 추가
+// 로컬 로그 추가 (기존과 동일)
 function addLocalLog(type, message) {
     addLogToUI(type, message);
 }
 
-// 작업 목록 업데이트
+// 작업 목록 업데이트 (모든 내역을 표시하도록 수정)
 function updateTaskList() {
     elements.taskList.innerHTML = '';
     
-    const recentTasks = backlinks.slice(-10).reverse();
+    // 가장 최근 작업이 위로 오도록 정렬 (옵션: .reverse() 제거 시 oldest first)
+    const sortedBacklinks = [...backlinks].sort((a, b) => {
+        if (!a.createdAt || !b.createdAt) return 0; // 날짜 없으면 정렬 안 함
+        return b.createdAt.getTime() - a.createdAt.getTime(); // 최신 날짜가 위로
+    });
+
+    if (sortedBacklinks.length === 0) {
+        const emptyDiv = document.createElement('div');
+        emptyDiv.className = 'text-center text-muted p-4';
+        emptyDiv.innerHTML = '<i class="bx bx-inbox" style="font-size: 2rem;"></i><br>작업이 없습니다.';
+        elements.taskList.appendChild(emptyDiv);
+        return;
+    }
     
-    recentTasks.forEach(task => {
+    sortedBacklinks.forEach(task => {
         const taskDiv = document.createElement('div');
         taskDiv.className = 'backlink-task-item p-3 mb-2 border rounded';
         
@@ -818,32 +875,25 @@ function updateTaskList() {
         
         taskDiv.innerHTML = `
             <div class="d-flex justify-content-between align-items-start">
-                <div class="flex-grow-1">
-                    <h6 class="mb-1">${task.domain}</h6>
-                    <p class="mb-1 text-muted small">${task.sourceUrl}</p>
-                    <p class="mb-1 text-muted small">→ ${task.targetUrl}</p>
-                    <small class="text-muted">${task.createdAt.toLocaleString('ko-KR')}</small>
+                <div class="flex-grow-1 flex-shrink-1"> <h6 class="mb-1">${task.domain}</h6>
+                    <p class="mb-1 text-muted small text-truncate-url">소스: ${task.sourceUrl}</p>
+                    <p class="mb-1 text-muted small text-truncate-url">타겟: ${task.targetUrl}</p>
+                    <small class="text-muted">시작: ${task.createdAt ? task.createdAt.toLocaleString('ko-KR') : 'N/A'}</small><br>
+                    ${task.completedAt ? `<small class="text-muted">완료: ${task.completedAt.toLocaleString('ko-KR')}</small><br>` : ''}
+                    ${task.attempts > 1 ? `<small class="text-info">시도: ${task.attempts}회</small>` : ''}
                     ${errorInfo}
                     ${progressBar}
                 </div>
-                <div>
-                    ${statusBadge}
+                <div class="flex-shrink-0 ms-2"> ${statusBadge}
                 </div>
             </div>
         `;
         
         elements.taskList.appendChild(taskDiv);
     });
-    
-    if (recentTasks.length === 0) {
-        const emptyDiv = document.createElement('div');
-        emptyDiv.className = 'text-center text-muted p-4';
-        emptyDiv.innerHTML = '<i class="bx bx-inbox" style="font-size: 2rem;"></i><br>작업이 없습니다.';
-        elements.taskList.appendChild(emptyDiv);
-    }
 }
 
-// 통계 업데이트
+// 통계 업데이트 (기존과 동일)
 function updateStats() {
     const total = backlinks.length;
     const success = backlinks.filter(b => ['success', 'completed'].includes(b.status)).length;
@@ -856,7 +906,7 @@ function updateStats() {
     elements.errorCount.textContent = error;
 }
 
-// 차트 초기화
+// 차트 초기화 (기존과 동일)
 let progressChart;
 function initChart() {
     const ctx = document.getElementById('progressChart').getContext('2d');
@@ -892,7 +942,7 @@ function initChart() {
     });
 }
 
-// 차트 업데이트
+// 차트 업데이트 (기존과 동일)
 function updateChart() {
     const success = backlinks.filter(b => ['success', 'completed'].includes(b.status)).length;
     const progress = backlinks.filter(b => ['progress', 'working'].includes(b.status)).length;
@@ -906,17 +956,30 @@ function updateChart() {
 // 데이터 새로고침
 async function refreshData() {
     try {
-        addLocalLog('info', '데이터 새로고침 시작...');
+        //addLocalLog('info', '데이터 새로고침 시작...');
+        
+        // 파이썬 프로그램 상태를 가장 먼저 로드
+        await loadPythonProgramStatus(); 
         
         await loadBacklinksData();
         await loadLogsData();
         
-        updateSystemStatus();
+        updateSystemStatus(); // 파이썬 상태를 기반으로 전체 시스템 상태 업데이트
         updateStats();
         updateTaskList();
         updateChart();
         
-        addLocalLog('success', '데이터 새로고침 완료');
+        //addLocalLog('success', '데이터 새로고침 완료');
+        
+        // 파이썬 프로그램 상태에 따라 폴링을 제어
+        if (['STOPPED', 'ERROR', 'FETCH_ERROR', 'UNKNOWN'].includes(pythonProgramStatus)) {
+            stopPolling(); // 파이썬이 실행 중이 아니면 폴링 중지
+            addLocalLog('warning', `파이썬 프로그램이 '${pythonProgramStatus}' 상태입니다. 모니터링이 자동 중지됩니다.`, 'control');
+        } else if (!pollingInterval) { // 파이썬이 실행 중인데 폴링이 중지되어 있다면 다시 시작
+            startPolling();
+        }
+
+        retryCount = 0; // 성공적으로 로드했으니 재시도 횟수 초기화
         
     } catch (error) {
         retryCount++;
@@ -925,25 +988,26 @@ async function refreshData() {
         
         if (retryCount < MAX_RETRY) {
             addLocalLog('warning', `5초 후 재시도...`);
-            setTimeout(refreshData, 5000);
+            // setTimeout(refreshData, 5000); // refreshData가 startPolling/stopPolling 내부에서 호출되므로 필요 없음
         } else {
-            addLocalLog('error', '최대 재시도 횟수 초과. 수동으로 새로고침해주세요.');
-            updateSystemStatus('error');
+            addLocalLog('error', '최대 재시도 횟수 초과. 수동으로 새로고침하거나 API 연결을 확인해주세요.');
+            updateSystemStatus('error'); // 오류 상태 표시
+            stopPolling(); // 최대 재시도 후에도 실패하면 폴링 중지
         }
     }
 }
 
-// 자동 폴링 시작 (5초 간격)
+// 자동 폴링 시작 (10초 간격)
 function startPolling() {
     if (pollingInterval) {
         clearInterval(pollingInterval);
     }
     
-    pollingInterval = setInterval(refreshData, 5000); // 5초로 변경
+    pollingInterval = setInterval(refreshData, 10000); // 10초로 변경
     addLocalLog('info', '자동 데이터 폴링 시작 (5초 간격)');
 }
 
-// 자동 폴링 중지
+// 자동 폴링 중지 (기존과 동일)
 function stopPolling() {
     if (pollingInterval) {
         clearInterval(pollingInterval);
@@ -952,7 +1016,7 @@ function stopPolling() {
     }
 }
 
-// 설정 초기화
+// 설정 초기화 (기존과 동일)
 function initializeSettings() {
     try {
         const savedSettings = localStorage.getItem('backlinkSettings');
@@ -968,7 +1032,7 @@ function initializeSettings() {
     }
 }
 
-// 기본 설정 로드
+// 기본 설정 로드 (기존과 동일)
 function loadDefaultSettings() {
     settingsElements.deviceCheckboxes.forEach(checkbox => {
         checkbox.checked = true;
@@ -985,7 +1049,7 @@ function loadDefaultSettings() {
     updateSettingsFromUI();
 }
 
-// UI에서 설정 불러오기
+// UI에서 설정 불러오기 (기존과 동일)
 function loadSettingsToUI() {
     settingsElements.deviceCheckboxes.forEach(checkbox => {
         checkbox.checked = backlinkSettings.devices.includes(checkbox.value);
@@ -1005,7 +1069,7 @@ function loadSettingsToUI() {
     settingsElements.enableLogging.checked = backlinkSettings.enableLogging;
 }
 
-// UI에서 설정 업데이트
+// UI에서 설정 업데이트 (기존과 동일)
 function updateSettingsFromUI() {
     backlinkSettings.devices = Array.from(settingsElements.deviceCheckboxes)
         .filter(checkbox => checkbox.checked)
@@ -1024,7 +1088,7 @@ function updateSettingsFromUI() {
     backlinkSettings.enableLogging = settingsElements.enableLogging.checked;
 }
 
-// 설정 저장
+// 설정 저장 (기존과 동일)
 function saveSettings() {
     try {
         updateSettingsFromUI();
@@ -1047,11 +1111,11 @@ function saveSettings() {
     }
 }
 
-// API 키 검증
+// API 키 검증 (기존과 동일)
 function validateApiKey() {
-    if (!GOOGLE_SHEETS_CONFIG.apiKey || GOOGLE_SHEETS_CONFIG.apiKey === 'YOUR_GOOGLE_SHEETS_API_KEY') {
-        addLocalLog('error', 'Google Sheets API 키가 설정되지 않았습니다');
-        addLocalLog('warning', 'GOOGLE_SHEETS_CONFIG.apiKey를 실제 API 키로 변경해주세요');
+    if (!GOOGLE_SHEETS_CONFIG.apiKey || GOOGLE_SHEETS_CONFIG.apiKey === 'AIzaSyCsPnfG3VbHUFaxwIa0X8omqM9Gtql72WE') {
+        addLocalLog('error', 'Google Sheets API 키가 설정되지 않았거나 기본값입니다.');
+        addLocalLog('warning', 'GOOGLE_SHEETS_CONFIG.apiKey를 실제 API 키로 변경해주세요.');
         return false;
     }
     return true;
@@ -1060,23 +1124,24 @@ function validateApiKey() {
 // 이벤트 리스너 설정
 document.addEventListener('DOMContentLoaded', async () => {
     addLocalLog('info', '백링크 모니터링 시스템 초기화 중...');
-    
+    /*
     // API 키 검증
     if (!validateApiKey()) {
         updateSystemStatus('error');
         return;
     }
-    
+    */
     // 차트 초기화
     initChart();
     
     // 설정 초기화
     initializeSettings();
     
-    // 제어 버튼 이벤트
+    // 제어 버튼 이벤트 (버튼 동작은 모니터링 자체에만 영향을 줌)
     elements.startBtn.addEventListener('click', () => {
-        startPolling();
-        addLocalLog('info', '모니터링 시작 - 파이썬 프로그램을 별도로 실행해주세요');
+        addLocalLog('info', '모니터링 시작 (파이썬 프로그램은 별도로 실행되어야 합니다)');
+        // 파이썬 프로그램의 실제 상태와 무관하게 UI 모니터링 시작 요청
+        startPolling(); 
     });
 
     elements.pauseBtn.addEventListener('click', () => {
@@ -1090,11 +1155,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 
     elements.refreshBtn.addEventListener('click', () => {
-        refreshData();
+        refreshData(); // 수동 새로고침
     });
 
     elements.clearLogBtn.addEventListener('click', () => {
         elements.logContainer.innerHTML = '';
+        lastLogId = 0; // 로그 ID 초기화
         addLocalLog('info', '로컬 로그 화면 초기화됨 (구글 시트 로그는 유지됨)');
     });
     
@@ -1133,21 +1199,19 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     }
     
-    // 초기 데이터 로드
+    // 초기 데이터 로드 및 파이썬 상태에 따른 폴링 시작/중지
     try {
-        await refreshData();
+        await refreshData(); // 최초 한 번 데이터 로드 및 파이썬 상태 확인
         addLocalLog('success', '백링크 모니터링 시스템 초기화 완료');
-        addLocalLog('info', '구글 시트 연동 대기중...');
-        
-        startPolling();
+        // refreshData 함수 내에서 파이썬 상태에 따라 startPolling/stopPolling이 호출됩니다.
         
     } catch (error) {
         addLocalLog('error', '초기화 실패: ' + error.message);
-        updateSystemStatus('error');
+        updateSystemStatus('error'); // 초기화 실패 시 에러 상태
     }
 });
 
-// 페이지 언로드 시 폴링 정리
+// 페이지 언로드 시 폴링 정리 (기존과 동일)
 window.addEventListener('beforeunload', () => {
     stopPolling();
 });
