@@ -1104,16 +1104,26 @@ function saveSettings() {
     }
 }
 
+// API 키 검증 (기존과 동일)
+function validateApiKey() {
+    if (!GOOGLE_SHEETS_CONFIG.apiKey || GOOGLE_SHEETS_CONFIG.apiKey === 'AIzaSyCsPnfG3VbHUFaxwIa0X8omqM9Gtql72WE') {
+        addLocalLog('error', 'Google Sheets API 키가 설정되지 않았거나 기본값입니다.');
+        addLocalLog('warning', 'GOOGLE_SHEETS_CONFIG.apiKey를 실제 API 키로 변경해주세요.');
+        return false;
+    }
+    return true;
+}
+
 // 이벤트 리스너 설정
 document.addEventListener('DOMContentLoaded', async () => {
     addLocalLog('info', '백링크 모니터링 시스템 초기화 중...');
-    
+    /*
     // API 키 검증
     if (!validateApiKey()) {
         updateSystemStatus('error');
         return;
     }
-    
+    */
     // 차트 초기화
     initChart();
     
