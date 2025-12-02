@@ -166,13 +166,24 @@ def login(driver, username, password):
         driver.execute_script("arguments[0].click();", login_button)
         logger.info("로그인 버튼 클릭 완료")
         
-        # 대시보드 페이지 로드 확인
-        logger.info("대시보드 페이지 로드 대기 중...")
-        wait_dashboard = WebDriverWait(driver, 30)  # 대시보드 로드 대기 시간 증가
-        wait_dashboard.until(
-            EC.url_to_be("https://advertising.coupang.com/marketing/dashboard/sales")
-        )
+        # 로그인 처리 대기
+        logger.info("로그인 처리 대기 중...")
+        time.sleep(3)
         logger.info("로그인 성공")
+
+        # sales 페이지로 직접 이동
+        logger.info("캠페인 테이블 페이지로 이동...")
+        driver.get("https://advertising.coupang.com/marketing/dashboard/sales")
+        
+
+        # 테이블 로드 대기
+        wait = WebDriverWait(driver, 30)
+        wait.until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, ".rt-tbody"))
+        )
+        logger.info("캠페인 테이블 페이지 로드 완료")
+
+
         return True
     except Exception as e:
         logger.error(f"로그인 실패: {str(e)}")
@@ -261,7 +272,7 @@ def collect_campaign_data(driver):
         campaigns = {}
         total_cost = 0
         campaign_column = 0  # 캠페인명 열
-        cost_column = 5      # 비용 열
+        cost_column = 6      # 비용 열
         current_hour = datetime.now().strftime('%H')
         
         for row in rows:
@@ -269,13 +280,14 @@ def collect_campaign_data(driver):
             if not cells or len(cells) <= max(campaign_column, cost_column):
                 continue
                 
-            campaign_name = cells[campaign_column].text.strip()
+            #기존 코드 아래 수정 campaign_name = cells[campaign_column].text.strip()
+            campaign_name = cells[0].find_element(By.CSS_SELECTOR, ".dashboard-title").text.strip()
             cost_text = cells[cost_column].text.strip()
             
             if not campaign_name:
                 continue
                 
-            cost = float(cost_text.replace(',', '').replace(' 원', '')) if cost_text and any(c.isdigit() for c in cost_text) else 0
+            cost = float(cost_text.replace(',', '').replace('원', '').strip()) if cost_text and any(c.isdigit() for c in cost_text) else 0
             current_time = datetime.now().isoformat()
             
             try:
