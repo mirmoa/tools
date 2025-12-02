@@ -31,7 +31,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-def setup_driver(): # 웹드라이버 설정
+def setup_driver():
     """웹드라이버 설정"""
     try:
         chrome_options = Options()
@@ -40,6 +40,11 @@ def setup_driver(): # 웹드라이버 설정
         chrome_options.add_argument('--disable-dev-shm-usage')
         chrome_options.add_argument('--window-size=1920,1080')
         chrome_options.add_argument('--disable-gpu')
+        
+        # 쿠키 관련 설정 추가
+        chrome_options.add_argument('--enable-cookies')
+        chrome_options.add_argument('--disable-web-security')
+        chrome_options.add_argument('--user-data-dir=/tmp/chrome-profile')
         
         # 봇 감지 우회를 위한 추가 설정
         chrome_options.add_argument('--disable-blink-features=AutomationControlled')
@@ -50,7 +55,7 @@ def setup_driver(): # 웹드라이버 설정
         chrome_options.add_argument('--allow-running-insecure-content')
         chrome_options.add_argument('user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
         
-        service = Service(ChromeDriverManager().install())  #설치 경로 C:\Users\모아유통\.wdm\drivers\chromedriver\win64
+        service = Service(ChromeDriverManager().install())
         driver = webdriver.Chrome(service=service, options=chrome_options)
         
         # JavaScript 코드 실행으로 웹드라이버 감지 우회
@@ -79,10 +84,10 @@ def login(driver, username, password):
         
         # 언어 및 지역 관련 쿠키 설정
         cookies = [
-            {"name": "locale", "value": "ko"},
-            {"name": "wing-locale", "value": "ko"},
-            {"name": "x-coupang-accept-language", "value": "ko-KR"},
-            {"name": "x-coupang-target-market", "value": "KR"}
+            {"name": "locale", "value": "ko", "domain": ".coupang.com"},
+            {"name": "wing-locale", "value": "ko", "domain": ".coupang.com"},
+            {"name": "x-coupang-accept-language", "value": "ko-KR", "domain": ".coupang.com"},
+            {"name": "x-coupang-target-market", "value": "KR", "domain": ".coupang.com"}
         ]
         
         logger.info("쿠키 설정 시작...")
@@ -92,6 +97,10 @@ def login(driver, username, password):
                 logger.info(f"쿠키 설정 성공: {cookie['name']}={cookie['value']}")
             except Exception as e:
                 logger.warning(f"쿠키 설정 실패 ({cookie['name']}): {str(e)}")
+        
+        # 쿠키 적용을 위해 페이지 새로고침
+        driver.refresh()
+        time.sleep(2)
         
         # 로그인 페이지 접속
         logger.info("로그인 페이지 접속 시도...")
