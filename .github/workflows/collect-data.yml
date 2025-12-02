@@ -21,7 +21,7 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y chromium-browser fonts-nanum
+        sudo apt-get install -y chromium-browser
         pip install selenium webdriver_manager pandas
     
     - name: Run collector
