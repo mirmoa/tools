@@ -14,8 +14,7 @@ jobs:
         python-version: '3.9'
     
     - name: Install dependencies
-      run: |
-        pip install selenium webdriver_manager
+      run: pip install selenium webdriver_manager
     
     - name: Run test
       env:
