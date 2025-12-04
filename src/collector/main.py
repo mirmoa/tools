@@ -31,7 +31,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-def setup_driver(): # 웹드라이버 설정
+def setup_driver():
     """웹드라이버 설정"""
     try:
         chrome_options = Options()
@@ -40,6 +40,11 @@ def setup_driver(): # 웹드라이버 설정
         chrome_options.add_argument('--disable-dev-shm-usage')
         chrome_options.add_argument('--window-size=1920,1080')
         chrome_options.add_argument('--disable-gpu')
+        
+        # 쿠키 관련 설정 추가
+        chrome_options.add_argument('--enable-cookies')
+        chrome_options.add_argument('--disable-web-security')
+        chrome_options.add_argument('--user-data-dir=/tmp/chrome-profile')
         
         # 봇 감지 우회를 위한 추가 설정
         chrome_options.add_argument('--disable-blink-features=AutomationControlled')
@@ -50,7 +55,7 @@ def setup_driver(): # 웹드라이버 설정
         chrome_options.add_argument('--allow-running-insecure-content')
         chrome_options.add_argument('user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
         
-        service = Service(ChromeDriverManager().install())  #설치 경로 C:\Users\모아유통\.wdm\drivers\chromedriver\win64
+        service = Service(ChromeDriverManager().install())
         driver = webdriver.Chrome(service=service, options=chrome_options)
         
         # JavaScript 코드 실행으로 웹드라이버 감지 우회
@@ -74,15 +79,15 @@ def login(driver, username, password):
         # 쿠키 설정을 위해 일단 도메인에 접속
         logger.info("기본 도메인 접속 시도...")
         driver.get("https://wing.coupang.com")
-        time.sleep(3)  # 페이지 로드 대기
+        time.sleep(3)
         logger.info("기본 도메인 접속 완료")
         
         # 언어 및 지역 관련 쿠키 설정
         cookies = [
-            {"name": "locale", "value": "ko"},
-            {"name": "wing-locale", "value": "ko"},
-            {"name": "x-coupang-accept-language", "value": "ko-KR"},
-            {"name": "x-coupang-target-market", "value": "KR"}
+            {"name": "locale", "value": "ko", "domain": ".coupang.com"},
+            {"name": "wing-locale", "value": "ko", "domain": ".coupang.com"},
+            {"name": "x-coupang-accept-language", "value": "ko-KR", "domain": ".coupang.com"},
+            {"name": "x-coupang-target-market", "value": "KR", "domain": ".coupang.com"}
         ]
         
         logger.info("쿠키 설정 시작...")
@@ -93,52 +98,46 @@ def login(driver, username, password):
             except Exception as e:
                 logger.warning(f"쿠키 설정 실패 ({cookie['name']}): {str(e)}")
         
-        # 로그인 페이지 접속 - 명시적으로 한국어 설정 추가
+        # 쿠키 적용을 위해 페이지 새로고침
+        driver.refresh()
+        time.sleep(2)
+        
+        # 로그인 페이지 접속
         logger.info("로그인 페이지 접속 시도...")
         driver.get("https://advertising.coupang.com/relay/wing/home?from=WING_LNB&kc_locale=ko-KR")
-        time.sleep(5)  # 페이지 로드를 위한 추가 대기
+        time.sleep(5)
         
         # 현재 URL 로깅
-        current_url = driver.current_url
-        logger.info(f"현재 URL: {current_url}")
-        
-        # 페이지 타이틀 로깅
-        page_title = driver.title
-        logger.info(f"페이지 타이틀: {page_title}")
+        logger.info(f"현재 URL: {driver.current_url}")
+        logger.info(f"페이지 타이틀: {driver.title}")
         
         # 페이지 스크린샷 저장
         timestamp = datetime.now().strftime('%y%m%d_%H%M%S')
-        screenshot_file = f'log/login_page_{timestamp}.png'
-        driver.save_screenshot(screenshot_file)
-        logger.info(f"로그인 페이지 스크린샷 저장: {screenshot_file}")
+        driver.save_screenshot(f'log/login_page_{timestamp}.png')
+        logger.info(f"로그인 페이지 스크린샷 저장: log/login_page_{timestamp}.png")
         
-        wait = WebDriverWait(driver, 20)  # 대기 시간 증가
+        wait = WebDriverWait(driver, 20)
         
-        # 언어가 한국어로 설정되어 있는지 확인
+        # 언어 설정 시도
         try:
-            # 언어 선택기가 로드될 때까지 대기
             logger.info("언어 선택기 찾는 중...")
             select_element = wait.until(
                 EC.presence_of_element_located((By.ID, "changeLocale"))
             )
             logger.info("언어 선택기 발견")
-            
-            # 한국어 옵션 선택
             select = Select(select_element)
             select.select_by_visible_text("한국어")
             logger.info("언어를 한국어로 설정함")
-            time.sleep(3)  # 언어 변경 적용 기다림
+            time.sleep(3)
         except Exception as e:
             logger.warning(f"언어 설정 변경 시도 실패: {str(e)}")
         
-        # ID 입력 필드가 로드될 때까지 대기
+        # 사용자명 입력
         logger.info("사용자명 입력 필드 찾는 중...")
         username_field = wait.until(
             EC.presence_of_element_located((By.ID, "username"))
         )
         logger.info("사용자명 입력 필드 발견")
-        
-        # 자바스크립트로 값 설정
         driver.execute_script("arguments[0].value = arguments[1]", username_field, username)
         logger.info("사용자명 입력 완료")
         time.sleep(1)
@@ -149,8 +148,6 @@ def login(driver, username, password):
             EC.presence_of_element_located((By.ID, "password"))
         )
         logger.info("비밀번호 입력 필드 발견")
-        
-        # 자바스크립트로 값 설정
         driver.execute_script("arguments[0].value = arguments[1]", password_field, password)
         logger.info("비밀번호 입력 완료")
         time.sleep(1)
@@ -161,34 +158,57 @@ def login(driver, username, password):
             EC.element_to_be_clickable((By.ID, "kc-login"))
         )
         logger.info("로그인 버튼 발견")
-        
-        # 자바스크립트로 클릭
         driver.execute_script("arguments[0].click();", login_button)
         logger.info("로그인 버튼 클릭 완료")
         
-        # 대시보드 페이지 로드 확인
-        logger.info("대시보드 페이지 로드 대기 중...")
-        wait_dashboard = WebDriverWait(driver, 30)  # 대시보드 로드 대기 시간 증가
-        wait_dashboard.until(
-            EC.url_to_be("https://advertising.coupang.com/marketing/dashboard/sales")
-        )
-        logger.info("로그인 성공")
-        return True
-    except Exception as e:
-        logger.error(f"로그인 실패: {str(e)}")
+        # 로그인 처리 대기
+        logger.info("로그인 처리 대기 중...")
+        time.sleep(5)
+        logger.info(f"로그인 후 현재 URL: {driver.current_url}")
         
-        # 현재 페이지 스크린샷 저장
+        # 광고관리 메뉴 버튼 찾기 (로그인 성공 확인)
+        wait = WebDriverWait(driver, 30)
         try:
-            error_timestamp = datetime.now().strftime('%y%m%d_%H%M%S')
-            error_screenshot_file = f'log/login_error_{error_timestamp}.png'
-            driver.save_screenshot(error_screenshot_file)
-            logger.info(f"오류 화면 스크린샷 저장: {error_screenshot_file}")
+            ad_menu = wait.until(
+                EC.element_to_be_clickable((By.CSS_SELECTOR, "a[data-bigfoot-component='lnb-menu-ad-management']"))
+            )
+            logger.info("광고관리 메뉴 발견 - 로그인 성공")
+        except Exception as e:
+            logger.error(f"광고관리 메뉴 찾기 실패 (로그인 실패 추정): {str(e)}")
+            driver.save_screenshot(f'log/login_error_{datetime.now().strftime("%y%m%d_%H%M%S")}.png')
+            logger.info(f"오류 발생 시 URL: {driver.current_url}")
+            return False
+        
+        # 메뉴 클릭
+        try:
+            driver.execute_script("arguments[0].click();", ad_menu)
+            logger.info("광고관리 메뉴 클릭 완료")
+            time.sleep(3)
+        except Exception as e:
+            logger.error(f"광고관리 메뉴 클릭 실패: {str(e)}")
+            driver.save_screenshot(f'log/menu_click_error_{datetime.now().strftime("%y%m%d_%H%M%S")}.png')
+            return False
+        
+        # 테이블 로드 대기
+        try:
+            wait.until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, ".rt-tbody"))
+            )
+            logger.info("캠페인 테이블 로드 완료")
+            return True
+        except Exception as e:
+            logger.error(f"테이블 로드 실패: {str(e)}")
+            driver.save_screenshot(f'log/table_error_{datetime.now().strftime("%y%m%d_%H%M%S")}.png')
+            logger.info(f"오류 발생 시 URL: {driver.current_url}")
+            return False
             
-            # 현재 URL 로깅
+    except Exception as e:
+        logger.error(f"로그인 중 예외 발생: {str(e)}")
+        try:
+            driver.save_screenshot(f'log/exception_{datetime.now().strftime("%y%m%d_%H%M%S")}.png')
             logger.info(f"오류 발생 시 URL: {driver.current_url}")
         except:
-            logger.error("오류 화면 스크린샷 저장 실패")
-            
+            pass
         return False
 
 def select_rows_per_page(driver, rows=20):
@@ -261,7 +281,7 @@ def collect_campaign_data(driver):
         campaigns = {}
         total_cost = 0
         campaign_column = 0  # 캠페인명 열
-        cost_column = 5      # 비용 열
+        cost_column = 6      # 비용 열
         current_hour = datetime.now().strftime('%H')
         
         for row in rows:
@@ -269,13 +289,14 @@ def collect_campaign_data(driver):
             if not cells or len(cells) <= max(campaign_column, cost_column):
                 continue
                 
-            campaign_name = cells[campaign_column].text.strip()
+            #기존 코드 아래 수정 campaign_name = cells[campaign_column].text.strip()
+            campaign_name = cells[0].find_element(By.CSS_SELECTOR, ".dashboard-title").text.strip()
             cost_text = cells[cost_column].text.strip()
             
             if not campaign_name:
                 continue
                 
-            cost = float(cost_text.replace(',', '').replace(' 원', '')) if cost_text and any(c.isdigit() for c in cost_text) else 0
+            cost = float(cost_text.replace(',', '').replace('원', '').strip()) if cost_text and any(c.isdigit() for c in cost_text) else 0
             current_time = datetime.now().isoformat()
             
             try:
