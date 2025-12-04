@@ -19,7 +19,7 @@ jobs:
     - name: Run test
       env:
         TZ: "Asia/Seoul"
-      run: python src/collector/test_login.py
+      run: python src/collector/logind_err_1202.py
     
     - name: Save screenshots
       if: always()
