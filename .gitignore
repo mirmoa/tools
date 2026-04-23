@@ -37,4 +37,7 @@ Thumbs.db
 
 # Project specific
 *.log
-.env 
+.env
+
+# Node
+node_modules/
