@@ -93,8 +93,11 @@ def login(driver):
 
         # relay URL을 벗어나면 로그인 완료로 판단 (최대 60초)
         wait_long = WebDriverWait(driver, 60)
+        # 변경 후
         wait_long.until(
-            lambda d: "advertising.coupang.com" in d.current_url and "relay" not in d.current_url
+            lambda d: "advertising.coupang.com" in d.current_url 
+                      and "relay" not in d.current_url 
+                      and "xauth" not in d.current_url
         )
         logger.info(f"로그인 성공! 현재 URL: {driver.current_url}")
         return True
