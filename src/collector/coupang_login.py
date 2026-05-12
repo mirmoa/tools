@@ -287,68 +287,68 @@ def save_data(campaigns, total_cost):
         return False
 
 
-def git_push():
-    """Git에 변경사항 push"""
-    try:
-        git_root = '.'
+# def git_push():
+#     """Git에 변경사항 push"""
+#     try:
+#         git_root = '.'
 
-        # git pull
-        result = subprocess.run(
-            ['git', 'pull', '--no-edit'],
-            capture_output=True, text=True, encoding='utf-8',
-            cwd=git_root
-        )
-        if result.returncode != 0:
-            logger.warning(f"git pull 경고: {result.stderr}")
+#         # git pull
+#         result = subprocess.run(
+#             ['git', 'pull', '--no-edit'],
+#             capture_output=True, text=True, encoding='utf-8',
+#             cwd=git_root
+#         )
+#         if result.returncode != 0:
+#             logger.warning(f"git pull 경고: {result.stderr}")
 
-        # git add
-        result = subprocess.run(
-            ['git', 'add', 'src/frontend/public/data/daily/'],
-            capture_output=True, text=True, encoding='utf-8',
-            cwd=git_root
-        )
-        if result.returncode != 0:
-            logger.error(f"git add 실패: {result.stderr}")
-            return False
+#         # git add
+#         result = subprocess.run(
+#             ['git', 'add', 'src/frontend/public/data/daily/'],
+#             capture_output=True, text=True, encoding='utf-8',
+#             cwd=git_root
+#         )
+#         if result.returncode != 0:
+#             logger.error(f"git add 실패: {result.stderr}")
+#             return False
 
-        # 변경사항 확인
-        result = subprocess.run(
-            ['git', 'diff', '--cached', '--quiet'],
-            capture_output=True,
-            cwd=git_root
-        )
-        if result.returncode == 0:
-            logger.info("변경사항 없음 - Git push 스킵")
-            return True
+#         # 변경사항 확인
+#         result = subprocess.run(
+#             ['git', 'diff', '--cached', '--quiet'],
+#             capture_output=True,
+#             cwd=git_root
+#         )
+#         if result.returncode == 0:
+#             logger.info("변경사항 없음 - Git push 스킵")
+#             return True
 
-        # git commit
-        today = datetime.now().strftime('%Y-%m-%d')
-        current_time = datetime.now().strftime('%H:%M')
-        result = subprocess.run(
-            ['git', 'commit', '-m', f'광고비 데이터 업데이트: {today} {current_time}'],
-            capture_output=True, text=True, encoding='utf-8',
-            cwd=git_root
-        )
-        if result.returncode != 0:
-            logger.error(f"git commit 실패: {result.stderr}")
-            return False
+#         # git commit
+#         today = datetime.now().strftime('%Y-%m-%d')
+#         current_time = datetime.now().strftime('%H:%M')
+#         result = subprocess.run(
+#             ['git', 'commit', '-m', f'광고비 데이터 업데이트: {today} {current_time}'],
+#             capture_output=True, text=True, encoding='utf-8',
+#             cwd=git_root
+#         )
+#         if result.returncode != 0:
+#             logger.error(f"git commit 실패: {result.stderr}")
+#             return False
 
-        # git push
-        result = subprocess.run(
-            ['git', 'push'],
-            capture_output=True, text=True, encoding='utf-8',
-            cwd=git_root
-        )
-        if result.returncode != 0:
-            logger.error(f"git push 실패: {result.stderr}")
-            return False
+#         # git push
+#         result = subprocess.run(
+#             ['git', 'push'],
+#             capture_output=True, text=True, encoding='utf-8',
+#             cwd=git_root
+#         )
+#         if result.returncode != 0:
+#             logger.error(f"git push 실패: {result.stderr}")
+#             return False
 
-        logger.info("Git push 완료")
-        return True
+#         logger.info("Git push 완료")
+#         return True
 
-    except Exception as e:
-        logger.error(f"Git 오류: {e}")
-        return False
+#     except Exception as e:
+#         logger.error(f"Git 오류: {e}")
+#         return False
 
 
 def main():
