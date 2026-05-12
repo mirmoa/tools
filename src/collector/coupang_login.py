@@ -2,7 +2,7 @@ import os
 import re
 import json
 import logging
-import subprocess
+#import subprocess
 from datetime import datetime
 from pathlib import Path
 from selenium import webdriver
@@ -378,7 +378,7 @@ def main():
         if not save_data(campaigns, total_cost):
             raise Exception("데이터 저장 실패")
 
-        git_push()
+        #git_push()
 
         logger.info("=" * 50)
         logger.info("작업 완료!")
