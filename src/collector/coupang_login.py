@@ -16,7 +16,7 @@ import time
 
 # 계정 정보
 COUPANG_ID = "alfm1991"
-COUPANG_PW = "$als$Ehdvkf29!"
+COUPANG_PW = "Ehdvkf29@@als!"
 
 # 로그 디렉토리 생성
 os.makedirs('log', exist_ok=True)
