@@ -1,0 +1,36 @@
+2026-04-23 16:03:17,778 - INFO - 실행 시도 1/3
+2026-04-23 16:03:17,778 - INFO - ====== WebDriver manager ======
+2026-04-23 16:03:18,554 - INFO - Get LATEST chromedriver version for google-chrome
+2026-04-23 16:03:18,575 - INFO - Get LATEST chromedriver version for google-chrome
+2026-04-23 16:03:18,591 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-04-23 16:03:19,654 - INFO - 웹드라이버 설정 완료
+2026-04-23 16:03:37,959 - INFO - 로그인 성공
+2026-04-23 16:03:45,716 - INFO - 20개 보기 설정 완료
+2026-04-23 16:03:45,777 - ERROR - 데이터 수집 실패: could not convert string to float: '63점'
+2026-04-23 16:03:45,777 - ERROR - 오류 발생 (시도 1): 데이터 수집 실패
+2026-04-23 16:03:45,777 - INFO - 30초 후 재시도...
+2026-04-23 16:04:17,924 - INFO - 웹드라이버 종료
+2026-04-23 16:04:17,924 - INFO - 실행 시도 2/3
+2026-04-23 16:04:17,925 - INFO - ====== WebDriver manager ======
+2026-04-23 16:04:18,721 - INFO - Get LATEST chromedriver version for google-chrome
+2026-04-23 16:04:18,738 - INFO - Get LATEST chromedriver version for google-chrome
+2026-04-23 16:04:18,752 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-04-23 16:04:19,822 - INFO - 웹드라이버 설정 완료
+2026-04-23 16:04:49,218 - INFO - 로그인 성공
+2026-04-23 16:04:58,386 - INFO - 20개 보기 설정 완료
+2026-04-23 16:04:58,423 - ERROR - 데이터 수집 실패: could not convert string to float: '63점'
+2026-04-23 16:04:58,424 - ERROR - 오류 발생 (시도 2): 데이터 수집 실패
+2026-04-23 16:04:58,424 - INFO - 30초 후 재시도...
+2026-04-23 16:05:30,610 - INFO - 웹드라이버 종료
+2026-04-23 16:05:30,610 - INFO - 실행 시도 3/3
+2026-04-23 16:05:30,611 - INFO - ====== WebDriver manager ======
+2026-04-23 16:05:31,483 - INFO - Get LATEST chromedriver version for google-chrome
+2026-04-23 16:05:31,501 - INFO - Get LATEST chromedriver version for google-chrome
+2026-04-23 16:05:31,517 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-04-23 16:05:32,623 - INFO - 웹드라이버 설정 완료
+2026-04-23 16:05:51,296 - INFO - 로그인 성공
+2026-04-23 16:05:59,826 - INFO - 20개 보기 설정 완료
+2026-04-23 16:05:59,859 - ERROR - 데이터 수집 실패: could not convert string to float: '63점'
+2026-04-23 16:05:59,860 - ERROR - 오류 발생 (시도 3): 데이터 수집 실패
+2026-04-23 16:05:59,860 - ERROR - 최대 재시도 횟수 초과
+2026-04-23 16:06:02,052 - INFO - 웹드라이버 종료

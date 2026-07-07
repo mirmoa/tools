@@ -1,0 +1,14 @@
+2025-12-26 17:06:37,951 - INFO - ==================================================
+2025-12-26 17:06:37,951 - INFO - 쿠팡 광고비 수집 시작
+2025-12-26 17:06:37,951 - INFO - ==================================================
+2025-12-26 17:06:37,951 - INFO - ====== WebDriver manager ======
+2025-12-26 17:06:39,826 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-26 17:06:39,826 - ERROR - 웹드라이버 설정 실패: Could not reach host. Are you offline?
+2025-12-26 17:06:39,826 - ERROR - 오류 발생: Could not reach host. Are you offline?
+2025-12-26 17:18:37,083 - INFO - ==================================================
+2025-12-26 17:18:37,083 - INFO - 쿠팡 광고비 수집 시작
+2025-12-26 17:18:37,083 - INFO - ==================================================
+2025-12-26 17:18:37,083 - INFO - ====== WebDriver manager ======
+2025-12-26 17:18:38,781 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-26 17:18:38,791 - ERROR - 웹드라이버 설정 실패: Could not reach host. Are you offline?
+2025-12-26 17:18:38,791 - ERROR - 오류 발생: Could not reach host. Are you offline?

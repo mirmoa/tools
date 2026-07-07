@@ -39,7 +39,7 @@ def setup_driver():
     """웹드라이버 설정"""
     try:
         chrome_options = Options()
-        chrome_options.add_argument('--headless=new')
+        #chrome_options.add_argument('--headless=new')
         chrome_options.add_argument('--no-sandbox')
         chrome_options.add_argument('--disable-dev-shm-usage')
         chrome_options.add_argument('--window-size=1920,1080')
@@ -126,7 +126,10 @@ def login(driver, username, password):
 
         # 대시보드 페이지 로드 확인
         wait_dashboard = WebDriverWait(driver, 30)
-        wait_dashboard.until(EC.url_to_be("https://advertising.coupang.com/marketing/dashboard/sales"))
+        #wait_dashboard.until(EC.url_to_be("https://advertising.coupang.com/dashboard")) 경로 바뀜
+        driver.get("https://advertising.coupang.com/marketing/dashboard/sales")
+        wait = WebDriverWait(driver, 10)  # 최대 10초까지 대기
+
         logger.info("로그인 성공")
         return True
     except Exception as e:
@@ -158,11 +161,15 @@ def select_rows_per_page(driver, rows=20):
 
         # select 클릭
         select_element.click()
+        time.sleep(3)
 
         # 옵션 선택
         option_selector = f"select[aria-label='rows per page'] option[value='{rows}']"
+        time.sleep(1)
         option = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, option_selector)))
+        time.sleep(1)
         option.click()
+        time.sleep(1)
 
         # 변경 후 로딩 완료 대기
         wait.until(EC.invisibility_of_element_located((By.CSS_SELECTOR, "div.-loading.-active")))

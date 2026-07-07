@@ -1,0 +1,322 @@
+2025-12-02 16:28:24,451 - INFO - 시도 1/3
+2025-12-02 16:28:24,451 - INFO - ====== WebDriver manager ======
+2025-12-02 16:28:25,209 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-02 16:28:25,247 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-02 16:28:25,270 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-02 16:28:26,330 - INFO - 웹드라이버 설정 완료
+2025-12-02 16:28:26,330 - INFO - 기본 도메인 접속 시도...
+2025-12-02 16:28:27,324 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, '현재 연결은 원격 호스트에 의해 강제로 끊겼습니다', None, 10054, None)': /session/07ca46f265295d970a260e107b3be48b
+2025-12-02 16:28:45,234 - INFO - 시도 1/3
+2025-12-02 16:28:45,235 - INFO - ====== WebDriver manager ======
+2025-12-02 16:28:45,961 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-02 16:28:45,985 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-02 16:28:46,008 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-02 16:28:47,072 - INFO - 웹드라이버 설정 완료
+2025-12-02 16:28:47,073 - INFO - 기본 도메인 접속 시도...
+2025-12-02 16:28:50,885 - INFO - 기본 도메인 접속 완료
+2025-12-02 16:28:50,885 - INFO - 쿠키 설정 시작...
+2025-12-02 16:28:50,891 - INFO - 쿠키 설정 성공: locale=ko
+2025-12-02 16:28:50,894 - INFO - 쿠키 설정 성공: wing-locale=ko
+2025-12-02 16:28:50,899 - INFO - 쿠키 설정 성공: x-coupang-accept-language=ko-KR
+2025-12-02 16:28:50,901 - INFO - 쿠키 설정 성공: x-coupang-target-market=KR
+2025-12-02 16:28:50,902 - INFO - 로그인 페이지 접속 시도...
+2025-12-02 16:28:53,289 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, '현재 연결은 원격 호스트에 의해 강제로 끊겼습니다', None, 10054, None)': /session/c79a67a923fcf0d032e189582341c632
+2025-12-02 16:28:57,371 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000029E34774080>: Failed to establish a new connection: [WinError 10061] 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다')': /session/c79a67a923fcf0d032e189582341c632
+2025-12-02 16:39:59,364 - INFO - 시도 1/3
+2025-12-02 16:39:59,364 - INFO - ====== WebDriver manager ======
+2025-12-02 16:40:00,123 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-02 16:40:00,150 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-02 16:40:00,170 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-02 16:40:01,219 - INFO - 웹드라이버 설정 완료
+2025-12-02 16:40:01,220 - INFO - 기본 도메인 접속 시도...
+2025-12-02 16:40:05,498 - INFO - 기본 도메인 접속 완료
+2025-12-02 16:40:05,498 - INFO - 쿠키 설정 시작...
+2025-12-02 16:40:05,503 - INFO - 쿠키 설정 성공: locale=ko
+2025-12-02 16:40:05,507 - INFO - 쿠키 설정 성공: wing-locale=ko
+2025-12-02 16:40:05,510 - INFO - 쿠키 설정 성공: x-coupang-accept-language=ko-KR
+2025-12-02 16:40:05,514 - INFO - 쿠키 설정 성공: x-coupang-target-market=KR
+2025-12-02 16:40:05,515 - INFO - 로그인 페이지 접속 시도...
+2025-12-02 16:40:11,327 - INFO - 현재 URL: https://xauth.coupang.com/auth/realms/seller/protocol/openid-connect/auth?client_id=wing-compat&scope=openid%20phone%20web-origins%20profile%20roles%20address%20microprofile-jwt%20email&response_type=code&redirect_uri=https%3A%2F%2Fadvertising.coupang.com%2Fuser%2Fwing%2Fauthorization-callback&state=4Ia3gCOANKM1qARkUOLlMELAwMEAEUjSqao9v8HFvvc&code_challenge=NjB5BL3FUvTReKJ9mmxrCSPvBAPSktHFWU2JF2nRktw&code_challenge_method=S256
+2025-12-02 16:40:11,330 - INFO - 페이지 타이틀: Sign in to seller
+2025-12-02 16:40:11,419 - INFO - 로그인 페이지 스크린샷 저장: log/login_page_251202_164011.png
+2025-12-02 16:40:11,420 - INFO - 언어 선택기 찾는 중...
+2025-12-02 16:40:11,427 - INFO - 언어 선택기 발견
+2025-12-02 16:40:11,461 - INFO - 언어를 한국어로 설정함
+2025-12-02 16:40:14,462 - INFO - 사용자명 입력 필드 찾는 중...
+2025-12-02 16:40:14,471 - INFO - 사용자명 입력 필드 발견
+2025-12-02 16:40:14,479 - INFO - 사용자명 입력 완료
+2025-12-02 16:40:15,480 - INFO - 비밀번호 입력 필드 찾는 중...
+2025-12-02 16:40:15,490 - INFO - 비밀번호 입력 필드 발견
+2025-12-02 16:40:15,497 - INFO - 비밀번호 입력 완료
+2025-12-02 16:40:16,499 - INFO - 로그인 버튼 찾는 중...
+2025-12-02 16:40:16,546 - INFO - 로그인 버튼 발견
+2025-12-02 16:40:18,815 - INFO - 로그인 버튼 클릭 완료
+2025-12-02 16:40:18,816 - INFO - 대시보드 페이지 로드 대기 중...
+2025-12-02 16:40:32,015 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, '현재 연결은 원격 호스트에 의해 강제로 끊겼습니다', None, 10054, None)': /session/6c1ccff05149033a7ee633e47f9c353a
+2025-12-02 17:00:49,581 - INFO - 시도 1/3
+2025-12-02 17:00:49,581 - INFO - ====== WebDriver manager ======
+2025-12-02 17:00:50,349 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-02 17:00:50,375 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-02 17:00:50,397 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-02 17:00:51,452 - INFO - 웹드라이버 설정 완료
+2025-12-02 17:00:51,452 - INFO - 기본 도메인 접속 시도...
+2025-12-02 17:00:55,340 - INFO - 기본 도메인 접속 완료
+2025-12-02 17:00:55,340 - INFO - 쿠키 설정 시작...
+2025-12-02 17:00:55,346 - INFO - 쿠키 설정 성공: locale=ko
+2025-12-02 17:00:55,350 - INFO - 쿠키 설정 성공: wing-locale=ko
+2025-12-02 17:00:55,354 - INFO - 쿠키 설정 성공: x-coupang-accept-language=ko-KR
+2025-12-02 17:00:55,357 - INFO - 쿠키 설정 성공: x-coupang-target-market=KR
+2025-12-02 17:00:55,358 - INFO - 로그인 페이지 접속 시도...
+2025-12-02 17:01:01,070 - INFO - 현재 URL: https://xauth.coupang.com/auth/realms/seller/protocol/openid-connect/auth?client_id=wing-compat&scope=openid%20phone%20web-origins%20profile%20roles%20address%20microprofile-jwt%20email&response_type=code&redirect_uri=https%3A%2F%2Fadvertising.coupang.com%2Fuser%2Fwing%2Fauthorization-callback&state=V9ok_gFtkHj6zLowW9D_qNd-72zAzOJR-MzatFVA6y4&code_challenge=wf1CaeWjHz2_fwNEhfLLVizNUKTHHUrjpiHbxQRHnWM&code_challenge_method=S256
+2025-12-02 17:01:01,076 - INFO - 페이지 타이틀: Sign in to seller
+2025-12-02 17:01:01,166 - INFO - 로그인 페이지 스크린샷 저장: log/login_page_251202_170101.png
+2025-12-02 17:01:01,166 - INFO - 언어 선택기 찾는 중...
+2025-12-02 17:01:01,172 - INFO - 언어 선택기 발견
+2025-12-02 17:01:01,201 - INFO - 언어를 한국어로 설정함
+2025-12-02 17:01:04,202 - INFO - 사용자명 입력 필드 찾는 중...
+2025-12-02 17:01:04,208 - INFO - 사용자명 입력 필드 발견
+2025-12-02 17:01:04,213 - INFO - 사용자명 입력 완료
+2025-12-02 17:01:05,214 - INFO - 비밀번호 입력 필드 찾는 중...
+2025-12-02 17:01:05,222 - INFO - 비밀번호 입력 필드 발견
+2025-12-02 17:01:05,232 - INFO - 비밀번호 입력 완료
+2025-12-02 17:01:06,234 - INFO - 로그인 버튼 찾는 중...
+2025-12-02 17:01:06,257 - INFO - 로그인 버튼 발견
+2025-12-02 17:01:08,447 - INFO - 로그인 버튼 클릭 완료
+2025-12-02 17:01:08,447 - INFO - 대시보드 페이지 로드 대기 중...
+2025-12-02 17:01:38,730 - ERROR - 로그인 실패: Message: 
+
+2025-12-02 17:01:38,801 - INFO - 오류 화면 스크린샷 저장: log/login_error_251202_170138.png
+2025-12-02 17:01:38,803 - INFO - 오류 발생 시 URL: https://advertising.coupang.com/dashboard
+2025-12-02 17:01:38,803 - ERROR - 오류 발생 (시도 1): 로그인 실패
+2025-12-02 17:01:38,804 - INFO - 30초 후 재시도...
+2025-12-02 17:01:47,237 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, '현재 연결은 원격 호스트에 의해 강제로 끊겼습니다', None, 10054, None)': /session/72b7b122f8d1a3c6c68accc61ccc9c96
+2025-12-02 17:01:51,296 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001FA39F845F0>: Failed to establish a new connection: [WinError 10061] 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다')': /session/72b7b122f8d1a3c6c68accc61ccc9c96
+2025-12-02 17:01:55,355 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001FA39F843B0>: Failed to establish a new connection: [WinError 10061] 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다')': /session/72b7b122f8d1a3c6c68accc61ccc9c96
+2025-12-02 17:01:59,420 - INFO - 웹드라이버 종료
+2025-12-02 17:07:55,349 - INFO - 시도 1/3
+2025-12-02 17:07:55,349 - INFO - ====== WebDriver manager ======
+2025-12-02 17:07:56,070 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-02 17:07:56,097 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-02 17:07:56,123 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-02 17:07:57,195 - INFO - 웹드라이버 설정 완료
+2025-12-02 17:07:57,195 - INFO - 기본 도메인 접속 시도...
+2025-12-02 17:08:00,898 - INFO - 기본 도메인 접속 완료
+2025-12-02 17:08:00,898 - INFO - 쿠키 설정 시작...
+2025-12-02 17:08:00,902 - INFO - 쿠키 설정 성공: locale=ko
+2025-12-02 17:08:00,904 - INFO - 쿠키 설정 성공: wing-locale=ko
+2025-12-02 17:08:00,907 - INFO - 쿠키 설정 성공: x-coupang-accept-language=ko-KR
+2025-12-02 17:08:00,909 - INFO - 쿠키 설정 성공: x-coupang-target-market=KR
+2025-12-02 17:08:00,909 - INFO - 로그인 페이지 접속 시도...
+2025-12-02 17:08:06,506 - INFO - 현재 URL: https://xauth.coupang.com/auth/realms/seller/protocol/openid-connect/auth?client_id=wing-compat&scope=openid%20phone%20web-origins%20profile%20roles%20address%20microprofile-jwt%20email&response_type=code&redirect_uri=https%3A%2F%2Fadvertising.coupang.com%2Fuser%2Fwing%2Fauthorization-callback&state=3j-xVbrsntp1XIdC08l5oanMP3SJw7aVyjRQeeGnlcs&code_challenge=0QwY3_KcRAoS54hOHOcNPMAFeGK8nPH-j0D4qHW-uCA&code_challenge_method=S256
+2025-12-02 17:08:06,509 - INFO - 페이지 타이틀: Sign in to seller
+2025-12-02 17:08:06,631 - INFO - 로그인 페이지 스크린샷 저장: log/login_page_251202_170806.png
+2025-12-02 17:08:06,631 - INFO - 언어 선택기 찾는 중...
+2025-12-02 17:08:06,637 - INFO - 언어 선택기 발견
+2025-12-02 17:08:06,665 - INFO - 언어를 한국어로 설정함
+2025-12-02 17:08:09,666 - INFO - 사용자명 입력 필드 찾는 중...
+2025-12-02 17:08:09,673 - INFO - 사용자명 입력 필드 발견
+2025-12-02 17:08:09,678 - INFO - 사용자명 입력 완료
+2025-12-02 17:08:10,679 - INFO - 비밀번호 입력 필드 찾는 중...
+2025-12-02 17:08:10,688 - INFO - 비밀번호 입력 필드 발견
+2025-12-02 17:08:10,698 - INFO - 비밀번호 입력 완료
+2025-12-02 17:08:11,699 - INFO - 로그인 버튼 찾는 중...
+2025-12-02 17:08:11,716 - INFO - 로그인 버튼 발견
+2025-12-02 17:08:14,482 - INFO - 로그인 버튼 클릭 완료
+2025-12-02 17:08:14,483 - INFO - 대시보드 페이지 로드 대기 중...
+2025-12-02 17:08:25,476 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, '현재 연결은 원격 호스트에 의해 강제로 끊겼습니다', None, 10054, None)': /session/e771d13714b622cb72443d25889cb705
+2025-12-02 17:08:29,548 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C2966C45F0>: Failed to establish a new connection: [WinError 10061] 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다')': /session/e771d13714b622cb72443d25889cb705
+2025-12-02 17:08:33,605 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C2966C4620>: Failed to establish a new connection: [WinError 10061] 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다')': /session/e771d13714b622cb72443d25889cb705
+2025-12-02 17:08:37,689 - INFO - 웹드라이버 종료
+2025-12-02 17:09:52,750 - INFO - 시도 1/3
+2025-12-02 17:09:52,751 - INFO - ====== WebDriver manager ======
+2025-12-02 17:09:53,486 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-02 17:09:53,511 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-02 17:09:53,533 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-02 17:09:54,594 - INFO - 웹드라이버 설정 완료
+2025-12-02 17:09:54,594 - INFO - 기본 도메인 접속 시도...
+2025-12-02 17:09:58,372 - INFO - 기본 도메인 접속 완료
+2025-12-02 17:09:58,372 - INFO - 쿠키 설정 시작...
+2025-12-02 17:09:58,377 - INFO - 쿠키 설정 성공: locale=ko
+2025-12-02 17:09:58,381 - INFO - 쿠키 설정 성공: wing-locale=ko
+2025-12-02 17:09:58,386 - INFO - 쿠키 설정 성공: x-coupang-accept-language=ko-KR
+2025-12-02 17:09:58,390 - INFO - 쿠키 설정 성공: x-coupang-target-market=KR
+2025-12-02 17:09:58,390 - INFO - 로그인 페이지 접속 시도...
+2025-12-02 17:10:04,289 - INFO - 현재 URL: https://xauth.coupang.com/auth/realms/seller/protocol/openid-connect/auth?client_id=wing-compat&scope=openid%20phone%20web-origins%20profile%20roles%20address%20microprofile-jwt%20email&response_type=code&redirect_uri=https%3A%2F%2Fadvertising.coupang.com%2Fuser%2Fwing%2Fauthorization-callback&state=Qd3h-8anEjEvNbxmxxfimziLBAZw_7mOt6CEwDSQgHU&code_challenge=JlcacE8KvfcoeJ79dqsFBytCTmAUvGCvAT6vmF00j_Q&code_challenge_method=S256
+2025-12-02 17:10:04,293 - INFO - 페이지 타이틀: Sign in to seller
+2025-12-02 17:10:04,378 - INFO - 로그인 페이지 스크린샷 저장: log/login_page_251202_171004.png
+2025-12-02 17:10:04,378 - INFO - 언어 선택기 찾는 중...
+2025-12-02 17:10:04,384 - INFO - 언어 선택기 발견
+2025-12-02 17:10:04,412 - INFO - 언어를 한국어로 설정함
+2025-12-02 17:10:07,413 - INFO - 사용자명 입력 필드 찾는 중...
+2025-12-02 17:10:07,418 - INFO - 사용자명 입력 필드 발견
+2025-12-02 17:10:07,423 - INFO - 사용자명 입력 완료
+2025-12-02 17:10:08,424 - INFO - 비밀번호 입력 필드 찾는 중...
+2025-12-02 17:10:08,433 - INFO - 비밀번호 입력 필드 발견
+2025-12-02 17:10:08,445 - INFO - 비밀번호 입력 완료
+2025-12-02 17:10:09,446 - INFO - 로그인 버튼 찾는 중...
+2025-12-02 17:10:09,467 - INFO - 로그인 버튼 발견
+2025-12-02 17:10:35,633 - INFO - 로그인 버튼 클릭 완료
+2025-12-02 17:10:35,633 - INFO - 대시보드 페이지 로드 대기 중...
+2025-12-02 17:10:55,293 - INFO - 로그인 성공
+2025-12-02 17:10:55,293 - INFO - 캠페인 테이블 페이지로 이동...
+2025-12-02 17:10:59,259 - INFO - 캠페인 테이블 페이지 로드 완료
+2025-12-02 17:11:05,518 - INFO - 20개 보기 설정 완료
+2025-12-02 17:11:05,563 - ERROR - 데이터 수집 실패: could not convert string to float: '6183원'
+2025-12-02 17:11:05,563 - ERROR - 오류 발생 (시도 1): 데이터 수집 실패
+2025-12-02 17:11:05,563 - INFO - 30초 후 재시도...
+2025-12-02 17:11:20,469 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, '현재 연결은 원격 호스트에 의해 강제로 끊겼습니다', None, 10054, None)': /session/c86779b9d3f1ebea29b5bf179354f8ad
+2025-12-02 17:15:33,759 - INFO - 시도 1/3
+2025-12-02 17:15:33,760 - INFO - ====== WebDriver manager ======
+2025-12-02 17:15:34,669 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-02 17:15:34,696 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-02 17:15:34,720 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-02 17:15:36,121 - INFO - 웹드라이버 설정 완료
+2025-12-02 17:15:36,121 - INFO - 기본 도메인 접속 시도...
+2025-12-02 17:15:39,909 - INFO - 기본 도메인 접속 완료
+2025-12-02 17:15:39,909 - INFO - 쿠키 설정 시작...
+2025-12-02 17:15:39,915 - INFO - 쿠키 설정 성공: locale=ko
+2025-12-02 17:15:39,919 - INFO - 쿠키 설정 성공: wing-locale=ko
+2025-12-02 17:15:39,923 - INFO - 쿠키 설정 성공: x-coupang-accept-language=ko-KR
+2025-12-02 17:15:39,927 - INFO - 쿠키 설정 성공: x-coupang-target-market=KR
+2025-12-02 17:15:39,927 - INFO - 로그인 페이지 접속 시도...
+2025-12-02 17:15:45,786 - INFO - 현재 URL: https://xauth.coupang.com/auth/realms/seller/protocol/openid-connect/auth?client_id=wing-compat&scope=openid%20phone%20web-origins%20profile%20roles%20address%20microprofile-jwt%20email&response_type=code&redirect_uri=https%3A%2F%2Fadvertising.coupang.com%2Fuser%2Fwing%2Fauthorization-callback&state=FS6_1QsJefujJSFNFlJqr8d9DIBKujXiX9LMxaIHaI8&code_challenge=YrauV3B4JjOXrbAh-RRqJYY_4EnNo7GUTQ9GGfUMVe8&code_challenge_method=S256
+2025-12-02 17:15:45,789 - INFO - 페이지 타이틀: Sign in to seller
+2025-12-02 17:15:45,880 - INFO - 로그인 페이지 스크린샷 저장: log/login_page_251202_171545.png
+2025-12-02 17:15:45,881 - INFO - 언어 선택기 찾는 중...
+2025-12-02 17:15:45,886 - INFO - 언어 선택기 발견
+2025-12-02 17:15:45,912 - INFO - 언어를 한국어로 설정함
+2025-12-02 17:15:48,914 - INFO - 사용자명 입력 필드 찾는 중...
+2025-12-02 17:15:48,920 - INFO - 사용자명 입력 필드 발견
+2025-12-02 17:15:48,924 - INFO - 사용자명 입력 완료
+2025-12-02 17:15:49,925 - INFO - 비밀번호 입력 필드 찾는 중...
+2025-12-02 17:15:49,934 - INFO - 비밀번호 입력 필드 발견
+2025-12-02 17:15:49,944 - INFO - 비밀번호 입력 완료
+2025-12-02 17:15:50,944 - INFO - 로그인 버튼 찾는 중...
+2025-12-02 17:15:50,985 - INFO - 로그인 버튼 발견
+2025-12-02 17:15:53,022 - INFO - 로그인 버튼 클릭 완료
+2025-12-02 17:15:53,022 - INFO - 로그인 처리 대기 중...
+2025-12-02 17:15:56,024 - INFO - 로그인 성공
+2025-12-02 17:15:56,024 - INFO - 캠페인 테이블 페이지로 이동...
+2025-12-02 17:15:57,394 - ERROR - 로그인 실패: name 'wait_dashboard' is not defined
+2025-12-02 17:15:57,540 - INFO - 오류 화면 스크린샷 저장: log/login_error_251202_171557.png
+2025-12-02 17:15:57,542 - INFO - 오류 발생 시 URL: https://advertising.coupang.com/marketing/dashboard/sales
+2025-12-02 17:15:57,542 - ERROR - 오류 발생 (시도 1): 로그인 실패
+2025-12-02 17:15:57,543 - INFO - 30초 후 재시도...
+2025-12-02 17:16:21,819 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, '현재 연결은 원격 호스트에 의해 강제로 끊겼습니다', None, 10054, None)': /session/5c5891737607bca9d332ea3e5fe2ed52
+2025-12-02 17:16:25,926 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C9B06C4D0>: Failed to establish a new connection: [WinError 10061] 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다')': /session/5c5891737607bca9d332ea3e5fe2ed52
+2025-12-02 17:16:30,009 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C9B06CA10>: Failed to establish a new connection: [WinError 10061] 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다')': /session/5c5891737607bca9d332ea3e5fe2ed52
+2025-12-02 17:16:34,091 - INFO - 웹드라이버 종료
+2025-12-02 17:17:17,136 - INFO - 시도 1/3
+2025-12-02 17:17:17,137 - INFO - ====== WebDriver manager ======
+2025-12-02 17:17:17,868 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-02 17:17:17,897 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-02 17:17:17,920 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-02 17:17:18,972 - INFO - 웹드라이버 설정 완료
+2025-12-02 17:17:18,972 - INFO - 기본 도메인 접속 시도...
+2025-12-02 17:17:23,168 - INFO - 기본 도메인 접속 완료
+2025-12-02 17:17:23,168 - INFO - 쿠키 설정 시작...
+2025-12-02 17:17:23,173 - INFO - 쿠키 설정 성공: locale=ko
+2025-12-02 17:17:23,177 - INFO - 쿠키 설정 성공: wing-locale=ko
+2025-12-02 17:17:23,180 - INFO - 쿠키 설정 성공: x-coupang-accept-language=ko-KR
+2025-12-02 17:17:23,183 - INFO - 쿠키 설정 성공: x-coupang-target-market=KR
+2025-12-02 17:17:23,183 - INFO - 로그인 페이지 접속 시도...
+2025-12-02 17:17:28,873 - INFO - 현재 URL: https://xauth.coupang.com/auth/realms/seller/protocol/openid-connect/auth?client_id=wing-compat&scope=openid%20phone%20web-origins%20profile%20roles%20address%20microprofile-jwt%20email&response_type=code&redirect_uri=https%3A%2F%2Fadvertising.coupang.com%2Fuser%2Fwing%2Fauthorization-callback&state=tQZdowHN8RkvT_zQN5L60AU6Bw9JcfQn53ikAIDuV6A&code_challenge=H7E0HaJh4FU9Luk5ASRWgdUM00tM6Ncf3-qwZhN7eqA&code_challenge_method=S256
+2025-12-02 17:17:28,877 - INFO - 페이지 타이틀: Sign in to seller
+2025-12-02 17:17:28,966 - INFO - 로그인 페이지 스크린샷 저장: log/login_page_251202_171728.png
+2025-12-02 17:17:28,967 - INFO - 언어 선택기 찾는 중...
+2025-12-02 17:17:28,973 - INFO - 언어 선택기 발견
+2025-12-02 17:17:29,002 - INFO - 언어를 한국어로 설정함
+2025-12-02 17:17:32,003 - INFO - 사용자명 입력 필드 찾는 중...
+2025-12-02 17:17:32,009 - INFO - 사용자명 입력 필드 발견
+2025-12-02 17:17:32,014 - INFO - 사용자명 입력 완료
+2025-12-02 17:17:33,015 - INFO - 비밀번호 입력 필드 찾는 중...
+2025-12-02 17:17:33,025 - INFO - 비밀번호 입력 필드 발견
+2025-12-02 17:17:33,034 - INFO - 비밀번호 입력 완료
+2025-12-02 17:17:34,034 - INFO - 로그인 버튼 찾는 중...
+2025-12-02 17:17:34,057 - INFO - 로그인 버튼 발견
+2025-12-02 17:17:37,687 - INFO - 로그인 버튼 클릭 완료
+2025-12-02 17:17:37,687 - INFO - 로그인 처리 대기 중...
+2025-12-02 17:17:40,688 - INFO - 로그인 성공
+2025-12-02 17:17:40,688 - INFO - 캠페인 테이블 페이지로 이동...
+2025-12-02 17:17:43,916 - INFO - 캠페인 테이블 페이지 로드 완료
+2025-12-02 17:17:51,339 - INFO - 20개 보기 설정 완료
+2025-12-02 17:17:51,626 - INFO - 20개의 캠페인 데이터 수집 완료
+2025-12-02 17:17:51,629 - INFO - 데이터 저장 완료: src\frontend\public\data\daily\2025-12-02.json
+2025-12-02 17:17:51,629 - INFO - 작업 완료
+2025-12-02 17:17:53,772 - INFO - 웹드라이버 종료
+2025-12-02 17:33:43,468 - INFO - 시도 1/3
+2025-12-02 17:33:43,468 - INFO - ====== WebDriver manager ======
+2025-12-02 17:33:44,246 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-02 17:33:44,276 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-02 17:33:44,297 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-02 17:33:45,363 - INFO - 웹드라이버 설정 완료
+2025-12-02 17:33:45,364 - INFO - 기본 도메인 접속 시도...
+2025-12-02 17:33:49,123 - INFO - 기본 도메인 접속 완료
+2025-12-02 17:33:49,123 - INFO - 쿠키 설정 시작...
+2025-12-02 17:33:49,128 - INFO - 쿠키 설정 성공: locale=ko
+2025-12-02 17:33:49,132 - INFO - 쿠키 설정 성공: wing-locale=ko
+2025-12-02 17:33:49,135 - INFO - 쿠키 설정 성공: x-coupang-accept-language=ko-KR
+2025-12-02 17:33:49,139 - INFO - 쿠키 설정 성공: x-coupang-target-market=KR
+2025-12-02 17:33:49,139 - INFO - 로그인 페이지 접속 시도...
+2025-12-02 17:33:55,044 - INFO - 현재 URL: https://xauth.coupang.com/auth/realms/seller/protocol/openid-connect/auth?client_id=wing-compat&scope=openid%20phone%20web-origins%20profile%20roles%20address%20microprofile-jwt%20email&response_type=code&redirect_uri=https%3A%2F%2Fadvertising.coupang.com%2Fuser%2Fwing%2Fauthorization-callback&state=2n1C3hMLMwSfUCXO3BOkZ7jbhJUEEaxHt2o6-QZy8dA&code_challenge=n4ApG0EjBjAJqI1Cv9PWCmaS0kOxsCT-Ix_oGsBUpt4&code_challenge_method=S256
+2025-12-02 17:33:55,047 - INFO - 페이지 타이틀: Sign in to seller
+2025-12-02 17:33:55,141 - INFO - 로그인 페이지 스크린샷 저장: log/login_page_251202_173355.png
+2025-12-02 17:33:55,142 - INFO - 언어 선택기 찾는 중...
+2025-12-02 17:33:55,147 - INFO - 언어 선택기 발견
+2025-12-02 17:33:55,174 - INFO - 언어를 한국어로 설정함
+2025-12-02 17:33:58,176 - INFO - 사용자명 입력 필드 찾는 중...
+2025-12-02 17:33:58,182 - INFO - 사용자명 입력 필드 발견
+2025-12-02 17:33:58,186 - INFO - 사용자명 입력 완료
+2025-12-02 17:33:59,187 - INFO - 비밀번호 입력 필드 찾는 중...
+2025-12-02 17:33:59,196 - INFO - 비밀번호 입력 필드 발견
+2025-12-02 17:33:59,206 - INFO - 비밀번호 입력 완료
+2025-12-02 17:34:00,207 - INFO - 로그인 버튼 찾는 중...
+2025-12-02 17:34:00,223 - INFO - 로그인 버튼 발견
+2025-12-02 17:34:02,801 - INFO - 로그인 버튼 클릭 완료
+2025-12-02 17:34:02,801 - INFO - 로그인 처리 대기 중...
+2025-12-02 17:34:05,801 - INFO - 로그인 성공
+2025-12-02 17:34:05,801 - INFO - 캠페인 테이블 페이지로 이동...
+2025-12-02 17:34:08,910 - INFO - 캠페인 테이블 페이지 로드 완료
+2025-12-02 17:34:16,987 - INFO - 20개 보기 설정 완료
+2025-12-02 17:34:17,277 - INFO - 20개의 캠페인 데이터 수집 완료
+2025-12-02 17:34:17,279 - INFO - 데이터 저장 완료: src\frontend\public\data\daily\2025-12-02.json
+2025-12-02 17:34:17,279 - INFO - 작업 완료
+2025-12-02 17:53:14,932 - INFO - 시도 1/3
+2025-12-02 17:53:14,932 - INFO - ====== WebDriver manager ======
+2025-12-02 17:53:15,685 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-02 17:53:15,714 - INFO - Get LATEST chromedriver version for google-chrome
+2025-12-02 17:53:15,738 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-12-02 17:53:16,806 - INFO - 웹드라이버 설정 완료
+2025-12-02 17:53:16,806 - INFO - 기본 도메인 접속 시도...
+2025-12-02 17:53:20,470 - INFO - 기본 도메인 접속 완료
+2025-12-02 17:53:20,471 - INFO - 쿠키 설정 시작...
+2025-12-02 17:53:20,476 - INFO - 쿠키 설정 성공: locale=ko
+2025-12-02 17:53:20,479 - INFO - 쿠키 설정 성공: wing-locale=ko
+2025-12-02 17:53:20,481 - INFO - 쿠키 설정 성공: x-coupang-accept-language=ko-KR
+2025-12-02 17:53:20,484 - INFO - 쿠키 설정 성공: x-coupang-target-market=KR
+2025-12-02 17:53:20,484 - INFO - 로그인 페이지 접속 시도...
+2025-12-02 17:53:26,414 - INFO - 현재 URL: https://xauth.coupang.com/auth/realms/seller/protocol/openid-connect/auth?client_id=wing-compat&scope=openid%20phone%20web-origins%20profile%20roles%20address%20microprofile-jwt%20email&response_type=code&redirect_uri=https%3A%2F%2Fadvertising.coupang.com%2Fuser%2Fwing%2Fauthorization-callback&state=EljvBx921B4JZn7oyw-vfUT7rvYC5O0Pv0GH04NobV8&code_challenge=Vbcp53E-qLz5mQqdJRuAbklEJE1KASmELSy3H-Wgca0&code_challenge_method=S256
+2025-12-02 17:53:26,417 - INFO - 페이지 타이틀: Sign in to seller
+2025-12-02 17:53:26,507 - INFO - 로그인 페이지 스크린샷 저장: log/login_page_251202_175326.png
+2025-12-02 17:53:26,508 - INFO - 언어 선택기 찾는 중...
+2025-12-02 17:53:26,514 - INFO - 언어 선택기 발견
+2025-12-02 17:53:26,545 - INFO - 언어를 한국어로 설정함
+2025-12-02 17:53:29,545 - INFO - 사용자명 입력 필드 찾는 중...
+2025-12-02 17:53:29,552 - INFO - 사용자명 입력 필드 발견
+2025-12-02 17:53:29,557 - INFO - 사용자명 입력 완료
+2025-12-02 17:53:30,557 - INFO - 비밀번호 입력 필드 찾는 중...
+2025-12-02 17:53:30,567 - INFO - 비밀번호 입력 필드 발견
+2025-12-02 17:53:30,577 - INFO - 비밀번호 입력 완료
+2025-12-02 17:53:31,577 - INFO - 로그인 버튼 찾는 중...
+2025-12-02 17:53:31,599 - INFO - 로그인 버튼 발견
+2025-12-02 17:53:33,459 - INFO - 로그인 버튼 클릭 완료
+2025-12-02 17:53:33,459 - INFO - 로그인 처리 대기 중...
+2025-12-02 17:53:38,464 - INFO - 로그인 후 현재 URL: https://advertising.coupang.com/dashboard
+2025-12-02 17:53:38,477 - INFO - 광고관리 메뉴 발견 - 로그인 성공
+2025-12-02 17:53:39,649 - INFO - 광고관리 메뉴 클릭 완료
+2025-12-02 17:53:42,882 - INFO - 캠페인 테이블 로드 완료
+2025-12-02 17:53:49,490 - INFO - 20개 보기 설정 완료
+2025-12-02 17:53:49,782 - INFO - 20개의 캠페인 데이터 수집 완료
+2025-12-02 17:53:49,783 - INFO - 데이터 저장 완료: src\frontend\public\data\daily\2025-12-02.json
+2025-12-02 17:53:49,784 - INFO - 작업 완료
+2025-12-02 17:53:51,917 - INFO - 웹드라이버 종료

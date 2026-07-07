@@ -1,0 +1,250 @@
+2026-06-02 10:14:28,903 - INFO - ==================================================
+2026-06-02 10:14:28,904 - INFO - 쿠팡 광고비 수집 시작
+2026-06-02 10:14:28,904 - INFO - ==================================================
+2026-06-02 10:14:28,904 - INFO - >>> 시도 1/3
+2026-06-02 10:14:28,904 - INFO - ====== WebDriver manager ======
+2026-06-02 10:14:30,164 - INFO - Get LATEST chromedriver version for google-chrome
+2026-06-02 10:14:30,210 - INFO - Get LATEST chromedriver version for google-chrome
+2026-06-02 10:14:30,234 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.178\chromedriver-win32/chromedriver.exe] found in cache
+2026-06-02 10:14:31,518 - INFO - 웹드라이버 설정 완료
+2026-06-02 10:14:31,518 - INFO - 로그인 페이지 접속...
+2026-06-02 10:14:36,671 - INFO - 아이디 입력 완료
+2026-06-02 10:14:36,728 - INFO - 비밀번호 입력 완료
+2026-06-02 10:14:36,750 - INFO - 엔터키로 로그인 시도
+2026-06-02 10:14:46,969 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-06-02 10:14:46,970 - INFO - 대시보드 페이지로 이동...
+2026-06-02 10:14:56,607 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020299D9DF40>: Failed to establish a new connection: [WinError 10061] 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다')': /session/30133388117415db5a2c42e42f712c43
+2026-06-02 10:15:00,696 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020299D9DD30>: Failed to establish a new connection: [WinError 10061] 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다')': /session/30133388117415db5a2c42e42f712c43
+2026-06-02 10:15:04,789 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020299D9E0F0>: Failed to establish a new connection: [WinError 10061] 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다')': /session/30133388117415db5a2c42e42f712c43
+2026-06-02 10:15:08,864 - INFO - 브라우저 종료
+2026-06-02 10:15:36,506 - INFO - ==================================================
+2026-06-02 10:15:36,507 - INFO - 쿠팡 광고비 수집 시작
+2026-06-02 10:15:36,507 - INFO - ==================================================
+2026-06-02 10:15:36,507 - INFO - >>> 시도 1/3
+2026-06-02 10:15:36,507 - INFO - ====== WebDriver manager ======
+2026-06-02 10:15:37,734 - INFO - Get LATEST chromedriver version for google-chrome
+2026-06-02 10:15:37,763 - INFO - Get LATEST chromedriver version for google-chrome
+2026-06-02 10:15:37,784 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.178\chromedriver-win32/chromedriver.exe] found in cache
+2026-06-02 10:15:39,515 - INFO - 웹드라이버 설정 완료
+2026-06-02 10:15:39,515 - INFO - 로그인 페이지 접속...
+2026-06-02 10:15:44,077 - INFO - 아이디 입력 완료
+2026-06-02 10:15:44,126 - INFO - 비밀번호 입력 완료
+2026-06-02 10:15:44,142 - INFO - 엔터키로 로그인 시도
+2026-06-02 10:16:08,563 - ERROR - 로그인 실패: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=148.0.7778.97)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xb1b593+105d3]
+	chromedriver!GetHandleVerifier [0xb1b6c4+10704]
+	chromedriver!(No symbol) [0x921ea0]
+	chromedriver!(No symbol) [0x910dbe]
+	chromedriver!(No symbol) [0x92f98e]
+	chromedriver!(No symbol) [0x993cdc]
+	chromedriver!(No symbol) [0x9aa2a9]
+	chromedriver!(No symbol) [0x98d516]
+	chromedriver!(No symbol) [0x9608e9]
+	chromedriver!(No symbol) [0x9616a4]
+	chromedriver!GetHandleVerifier [0xda3014+298054]
+	chromedriver!GetHandleVerifier [0xd9e603+293643]
+	chromedriver!GetHandleVerifier [0xdbea05+2b3a45]
+	chromedriver!GetHandleVerifier [0xb354e8+2a528]
+	chromedriver!GetHandleVerifier [0xb3cd1d+31d5d]
+	chromedriver!GetHandleVerifier [0xb23e68+18ea8]
+	chromedriver!GetHandleVerifier [0xb24015+19055]
+	chromedriver!GetHandleVerifier [0xb0d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x76d8fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x76f682ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x76f6827e+ee]
+
+2026-06-02 10:16:08,781 - ERROR - 수집 실패: Message: invalid session id
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xb1b593+105d3]
+	chromedriver!GetHandleVerifier [0xb1b6c4+10704]
+	chromedriver!(No symbol) [0x921cde]
+	chromedriver!(No symbol) [0x95fb77]
+	chromedriver!(No symbol) [0x98d636]
+	chromedriver!(No symbol) [0x988861]
+	chromedriver!(No symbol) [0x988241]
+	chromedriver!(No symbol) [0x8f502e]
+	chromedriver!(No symbol) [0x8f55ce]
+	chromedriver!(No symbol) [0x8f5aad]
+	chromedriver!GetHandleVerifier [0xda3014+298054]
+	chromedriver!GetHandleVerifier [0xd9e603+293643]
+	chromedriver!GetHandleVerifier [0xdbea05+2b3a45]
+	chromedriver!GetHandleVerifier [0xb354e8+2a528]
+	chromedriver!GetHandleVerifier [0xb3cd1d+31d5d]
+	chromedriver!(No symbol) [0x8f4ba6]
+	chromedriver!(No symbol) [0x8f41e0]
+	chromedriver!GetHandleVerifier [0xf087af+3fd7ef]
+	KERNEL32!BaseThreadInitThunk [0x76d8fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x76f682ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x76f6827e+ee]
+
+2026-06-02 10:16:32,255 - INFO - ==================================================
+2026-06-02 10:16:32,255 - INFO - 쿠팡 광고비 수집 시작
+2026-06-02 10:16:32,255 - INFO - ==================================================
+2026-06-02 10:16:32,255 - INFO - >>> 시도 1/3
+2026-06-02 10:16:32,255 - INFO - ====== WebDriver manager ======
+2026-06-02 10:16:33,450 - INFO - Get LATEST chromedriver version for google-chrome
+2026-06-02 10:16:33,486 - INFO - Get LATEST chromedriver version for google-chrome
+2026-06-02 10:16:33,506 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.178\chromedriver-win32/chromedriver.exe] found in cache
+2026-06-02 10:16:35,184 - INFO - 웹드라이버 설정 완료
+2026-06-02 10:16:35,184 - INFO - 로그인 페이지 접속...
+2026-06-02 10:16:39,514 - INFO - 아이디 입력 완료
+2026-06-02 10:16:39,563 - INFO - 비밀번호 입력 완료
+2026-06-02 10:16:39,583 - INFO - 엔터키로 로그인 시도
+2026-06-02 10:16:42,132 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-06-02 10:16:42,132 - INFO - 대시보드 페이지로 이동...
+2026-06-02 10:16:42,664 - ERROR - 대시보드 이동 실패: 'NoneType' object has no attribute 'is_displayed'
+2026-06-02 10:16:42,665 - ERROR - 수집 실패: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=148.0.7778.97)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xb1b593+105d3]
+	chromedriver!GetHandleVerifier [0xb1b6c4+10704]
+	chromedriver!(No symbol) [0x921ea0]
+	chromedriver!(No symbol) [0x900933]
+	chromedriver!(No symbol) [0x993aeb]
+	chromedriver!(No symbol) [0x9aa2a9]
+	chromedriver!(No symbol) [0x98d516]
+	chromedriver!(No symbol) [0x9608e9]
+	chromedriver!(No symbol) [0x9616a4]
+	chromedriver!GetHandleVerifier [0xda3014+298054]
+	chromedriver!GetHandleVerifier [0xd9e603+293643]
+	chromedriver!GetHandleVerifier [0xdbea05+2b3a45]
+	chromedriver!GetHandleVerifier [0xb354e8+2a528]
+	chromedriver!GetHandleVerifier [0xb3cd1d+31d5d]
+	chromedriver!GetHandleVerifier [0xb23e68+18ea8]
+	chromedriver!GetHandleVerifier [0xb24015+19055]
+	chromedriver!GetHandleVerifier [0xb0d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x76d8fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x76f682ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x76f6827e+ee]
+
+2026-06-02 10:21:19,615 - INFO - ==================================================
+2026-06-02 10:21:19,615 - INFO - 쿠팡 광고비 수집 시작
+2026-06-02 10:21:19,615 - INFO - ==================================================
+2026-06-02 10:21:19,615 - INFO - >>> 시도 1/3
+2026-06-02 10:21:19,615 - INFO - ====== WebDriver manager ======
+2026-06-02 10:21:20,851 - INFO - Get LATEST chromedriver version for google-chrome
+2026-06-02 10:21:20,887 - INFO - Get LATEST chromedriver version for google-chrome
+2026-06-02 10:21:20,908 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.178\chromedriver-win32/chromedriver.exe] found in cache
+2026-06-02 10:21:22,276 - INFO - 웹드라이버 설정 완료
+2026-06-02 10:21:22,276 - INFO - 로그인 페이지 접속...
+2026-06-02 10:21:28,055 - INFO - 아이디 입력 완료
+2026-06-02 10:21:29,496 - INFO - 비밀번호 입력 완료
+2026-06-02 10:21:32,747 - INFO - 로그인 버튼 클릭
+2026-06-02 10:21:41,588 - ERROR - 로그인 실패: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=148.0.7778.97)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xb1b593+105d3]
+	chromedriver!GetHandleVerifier [0xb1b6c4+10704]
+	chromedriver!(No symbol) [0x921ea0]
+	chromedriver!(No symbol) [0x910dbe]
+	chromedriver!(No symbol) [0x92f98e]
+	chromedriver!(No symbol) [0x993cdc]
+	chromedriver!(No symbol) [0x9aa2a9]
+	chromedriver!(No symbol) [0x98d516]
+	chromedriver!(No symbol) [0x9608e9]
+	chromedriver!(No symbol) [0x9616a4]
+	chromedriver!GetHandleVerifier [0xda3014+298054]
+	chromedriver!GetHandleVerifier [0xd9e603+293643]
+	chromedriver!GetHandleVerifier [0xdbea05+2b3a45]
+	chromedriver!GetHandleVerifier [0xb354e8+2a528]
+	chromedriver!GetHandleVerifier [0xb3cd1d+31d5d]
+	chromedriver!GetHandleVerifier [0xb23e68+18ea8]
+	chromedriver!GetHandleVerifier [0xb24015+19055]
+	chromedriver!GetHandleVerifier [0xb0d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x76d8fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x76f682ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x76f6827e+ee]
+
+2026-06-02 10:21:41,756 - ERROR - 수집 실패: Message: invalid session id
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xb1b593+105d3]
+	chromedriver!GetHandleVerifier [0xb1b6c4+10704]
+	chromedriver!(No symbol) [0x921cde]
+	chromedriver!(No symbol) [0x95fb77]
+	chromedriver!(No symbol) [0x98d636]
+	chromedriver!(No symbol) [0x988861]
+	chromedriver!(No symbol) [0x988241]
+	chromedriver!(No symbol) [0x8f502e]
+	chromedriver!(No symbol) [0x8f55ce]
+	chromedriver!(No symbol) [0x8f5aad]
+	chromedriver!GetHandleVerifier [0xda3014+298054]
+	chromedriver!GetHandleVerifier [0xd9e603+293643]
+	chromedriver!GetHandleVerifier [0xdbea05+2b3a45]
+	chromedriver!GetHandleVerifier [0xb354e8+2a528]
+	chromedriver!GetHandleVerifier [0xb3cd1d+31d5d]
+	chromedriver!(No symbol) [0x8f4ba6]
+	chromedriver!(No symbol) [0x8f41e0]
+	chromedriver!GetHandleVerifier [0xf087af+3fd7ef]
+	KERNEL32!BaseThreadInitThunk [0x76d8fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x76f682ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x76f6827e+ee]
+
+2026-06-02 12:11:20,103 - INFO - ==================================================
+2026-06-02 12:11:20,104 - INFO - 쿠팡 광고비 수집 시작
+2026-06-02 12:11:20,104 - INFO - ==================================================
+2026-06-02 12:11:20,104 - INFO - >>> 시도 1/3
+2026-06-02 12:11:20,104 - INFO - ====== WebDriver manager ======
+2026-06-02 12:11:21,318 - INFO - Get LATEST chromedriver version for google-chrome
+2026-06-02 12:11:21,362 - INFO - Get LATEST chromedriver version for google-chrome
+2026-06-02 12:11:21,380 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.178\chromedriver-win32/chromedriver.exe] found in cache
+2026-06-02 12:11:22,851 - INFO - 웹드라이버 설정 완료
+2026-06-02 12:11:22,851 - INFO - 로그인 페이지 접속...
+2026-06-02 12:11:28,678 - INFO - 아이디 입력 완료
+2026-06-02 12:11:30,287 - INFO - 비밀번호 입력 완료
+2026-06-02 12:11:32,925 - INFO - 로그인 버튼 클릭
+2026-06-02 12:11:42,930 - WARNING - 차단 감지 → 새로고침 시도
+2026-06-02 12:12:05,546 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-06-02 12:12:05,546 - INFO - 대시보드 페이지로 이동...
+2026-06-02 12:12:08,185 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, '현재 연결은 원격 호스트에 의해 강제로 끊겼습니다', None, 10054, None)': /session/b7f4175b1837a98045f116a2db0fbb10
+2026-06-02 14:08:01,718 - INFO - ==================================================
+2026-06-02 14:08:01,718 - INFO - 쿠팡 광고비 수집 시작
+2026-06-02 14:08:01,718 - INFO - ==================================================
+2026-06-02 14:08:01,718 - INFO - >>> 시도 1/3
+2026-06-02 14:08:01,718 - INFO - ====== WebDriver manager ======
+2026-06-02 14:08:02,776 - INFO - Get LATEST chromedriver version for google-chrome
+2026-06-02 14:08:02,805 - INFO - Get LATEST chromedriver version for google-chrome
+2026-06-02 14:08:02,828 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.178\chromedriver-win32/chromedriver.exe] found in cache
+2026-06-02 14:08:03,921 - INFO - 웹드라이버 설정 완료
+2026-06-02 14:08:03,921 - INFO - 로그인 페이지 접속...
+2026-06-02 14:08:09,101 - INFO - 아이디 입력 완료
+2026-06-02 14:08:10,928 - INFO - 비밀번호 입력 완료
+2026-06-02 14:08:13,675 - INFO - 로그인 버튼 클릭
+2026-06-02 14:08:23,680 - WARNING - 차단 감지 → 새로고침 시도
+2026-06-02 14:08:39,957 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-06-02 14:08:39,957 - INFO - 대시보드 페이지로 이동...
+2026-06-02 14:08:47,934 - INFO - 대시보드 테이블 로드 완료
+2026-06-02 14:08:56,111 - INFO - 20개 보기 설정 완료
+2026-06-02 14:08:56,171 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 8
+2026-06-02 14:08:56,194 - INFO -   AI-2차: 0원
+2026-06-02 14:08:56,211 - INFO -   [메인] 광고효율UP 상품만: 4,837원
+2026-06-02 14:08:56,225 - INFO -   [메인] 메인 전체 상품 단품+톡 3: 3,627원
+2026-06-02 14:08:56,239 - INFO -   [메인] 메인 전체 상품 단품+톡 2: 4,697원
+2026-06-02 14:08:56,253 - INFO -   [메인] 메인 전체 상품 단품+톡 1: 4,433원
+2026-06-02 14:08:56,267 - INFO -   [메인] 메인 상품 A 단품+톡 1: 4,871원
+2026-06-02 14:08:56,281 - INFO -   [메인] 메인 상품 B+C 단품+톡 3: 4,414원
+2026-06-02 14:08:56,295 - INFO -   [메인] 메인 상품 B+C 단품+톡 2: 5,241원
+2026-06-02 14:08:56,309 - INFO -   [메인] 메인 상품 B+C 단품+톡 1: 2,399원
+2026-06-02 14:08:56,325 - INFO -   [서브] 메인 상품 A 단품+톡 1: 2,110원
+2026-06-02 14:08:56,340 - INFO -   [서브] 메인 상품 B+C 단품+톡 3: 2,617원
+2026-06-02 14:08:56,354 - INFO -   [서브] 메인 상품 B+C 단품+톡 2: 2,211원
+2026-06-02 14:08:56,369 - INFO -   [서브] 메인 상품 B+C 단품+톡 1: 2,113원
+2026-06-02 14:08:56,382 - INFO -   [수동 키워드 노출] -2 / 매출최적화 변환: 0원
+2026-06-02 14:08:56,396 - INFO -   [수동 키워드 노출] -1 / 매출최적화 변환: 0원
+2026-06-02 14:08:56,409 - INFO -   0220 0259 0270 0324 0930 1012 1181 1235 1268 1583: 0원
+2026-06-02 14:08:56,422 - INFO -   [수동 키워드 노출] -2: 0원
+2026-06-02 14:08:56,436 - INFO -   [수동 키워드 노출] -1: 0원
+2026-06-02 14:08:56,449 - INFO -   0791 0944 0085 0083 0084 0320 0077 0131 1063_2: 0원
+2026-06-02 14:08:56,463 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 0원
+2026-06-02 14:08:56,463 - INFO - 총 20개 캠페인 | 합계: 43,570원
+2026-06-02 14:08:56,476 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-06-02.json
+2026-06-02 14:08:56,477 - INFO - 현재 시간(14시) 총 광고비: 43,570원
+2026-06-02 14:08:59,831 - INFO - Git push 완료
+2026-06-02 14:09:01,981 - INFO - 브라우저 종료
+2026-06-02 14:09:01,981 - INFO - ==================================================
+2026-06-02 14:09:01,981 - INFO - 작업 완료!
+2026-06-02 14:09:01,981 - INFO - ==================================================

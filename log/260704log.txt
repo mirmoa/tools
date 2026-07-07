@@ -1,0 +1,1630 @@
+2026-07-04 00:00:02,787 - INFO - ==================================================
+2026-07-04 00:00:02,787 - INFO - 쿠팡 광고비 수집 시작
+2026-07-04 00:00:02,787 - INFO - ==================================================
+2026-07-04 00:00:02,787 - INFO - >>> 시도 1/3
+2026-07-04 00:00:02,787 - INFO - ====== WebDriver manager ======
+2026-07-04 00:00:04,355 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 00:00:04,387 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 00:00:04,412 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 00:00:04,475 - INFO - WebDriver version 149.0.7827.155 selected
+2026-07-04 00:00:04,475 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/149.0.7827.155/win32/chromedriver-win32.zip
+2026-07-04 00:00:04,475 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/149.0.7827.155/win32/chromedriver-win32.zip
+2026-07-04 00:00:04,553 - INFO - Driver downloading response is 200
+2026-07-04 00:00:04,724 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 00:00:04,896 - INFO - Driver has been saved in cache [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155]
+2026-07-04 00:00:07,317 - INFO - 웹드라이버 설정 완료
+2026-07-04 00:00:07,317 - INFO - 로그인 페이지 접속...
+2026-07-04 00:00:13,166 - INFO - 아이디 입력 완료
+2026-07-04 00:00:14,873 - INFO - 비밀번호 입력 완료
+2026-07-04 00:00:17,743 - INFO - 로그인 버튼 클릭
+2026-07-04 00:00:27,761 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-07-04 00:00:27,762 - INFO - 대시보드 페이지로 이동...
+2026-07-04 00:00:35,931 - INFO - 대시보드 테이블 로드 완료
+2026-07-04 00:00:42,871 - INFO - 20개 보기 설정 완료
+2026-07-04 00:00:42,940 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 8
+2026-07-04 00:00:42,971 - INFO -   [메인] 광고효율UP 상품만: 19,950원
+2026-07-04 00:00:42,991 - INFO -   [메인] 메인 전체 상품 단품+톡 3: 14,348원
+2026-07-04 00:00:43,009 - INFO -   [메인] 메인 전체 상품 단품+톡 2: 17,808원
+2026-07-04 00:00:43,029 - INFO -   [메인] 메인 전체 상품 단품+톡 1: 27,252원
+2026-07-04 00:00:43,047 - INFO -   [메인] 메인 상품 A 단품+톡 1: 10,062원
+2026-07-04 00:00:43,064 - INFO -   [메인] 메인 상품 B+C 단품+톡 3: 14,936원
+2026-07-04 00:00:43,083 - INFO -   [메인] 메인 상품 B+C 단품+톡 2: 14,666원
+2026-07-04 00:00:43,100 - INFO -   [메인] 메인 상품 B+C 단품+톡 1: 14,902원
+2026-07-04 00:00:43,118 - INFO -   [서브] 메인 상품 A 단품+톡 1: 9,699원
+2026-07-04 00:00:43,135 - INFO -   [서브] 메인 상품 B+C 단품+톡 3: 9,934원
+2026-07-04 00:00:43,152 - INFO -   [서브] 메인 상품 B+C 단품+톡 2: 14,723원
+2026-07-04 00:00:43,170 - INFO -   [서브] 메인 상품 B+C 단품+톡 1: 10,756원
+2026-07-04 00:00:43,187 - INFO -   [수동 키워드 노출] -2 / 매출최적화 변환: 0원
+2026-07-04 00:00:43,203 - INFO -   [수동 키워드 노출] -1 / 매출최적화 변환: 0원
+2026-07-04 00:00:43,220 - INFO -   0220 0259 0270 0324 0930 1012 1181 1235 1268 1583: 0원
+2026-07-04 00:00:43,236 - INFO -   [수동 키워드 노출] -2: 0원
+2026-07-04 00:00:43,253 - INFO -   [수동 키워드 노출] -1: 0원
+2026-07-04 00:00:43,269 - INFO -   0791 0944 0085 0083 0084 0320 0077 0131 1063_2: 0원
+2026-07-04 00:00:43,286 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 0원
+2026-07-04 00:00:43,304 - INFO -   [수동] 메인 아이폰16, 17 시리즈 [아이폰 키워드만]: 0원
+2026-07-04 00:00:43,304 - INFO - 총 20개 캠페인 | 합계: 179,036원
+2026-07-04 00:00:43,312 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-07-04.json
+2026-07-04 00:00:43,312 - INFO - 현재 시간(00시) 총 광고비: 179,036원
+2026-07-04 00:00:44,865 - WARNING - git pull 경고: error: Your local changes to the following files would be overwritten by merge:
+	auto_scheduler.py
+Please commit your changes or stash them before you merge.
+Aborting
+Merge with strategy ort failed.
+
+2026-07-04 00:00:47,439 - ERROR - git push 실패: To https://github.com/mirmoa/tools.git
+ ! [rejected]          master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/mirmoa/tools.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+2026-07-04 00:00:50,972 - INFO - 브라우저 종료
+2026-07-04 00:00:50,972 - INFO - ==================================================
+2026-07-04 00:00:50,972 - INFO - 작업 완료!
+2026-07-04 00:00:50,972 - INFO - ==================================================
+2026-07-04 01:00:03,290 - INFO - ==================================================
+2026-07-04 01:00:03,290 - INFO - 쿠팡 광고비 수집 시작
+2026-07-04 01:00:03,290 - INFO - ==================================================
+2026-07-04 01:00:03,290 - INFO - >>> 시도 1/3
+2026-07-04 01:00:03,290 - INFO - ====== WebDriver manager ======
+2026-07-04 01:00:04,838 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 01:00:04,885 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 01:00:04,916 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 01:00:06,611 - INFO - 웹드라이버 설정 완료
+2026-07-04 01:00:06,611 - INFO - 로그인 페이지 접속...
+2026-07-04 01:00:18,422 - INFO - 아이디 입력 완료
+2026-07-04 01:00:20,083 - INFO - 비밀번호 입력 완료
+2026-07-04 01:00:23,171 - INFO - 로그인 버튼 클릭
+2026-07-04 01:00:33,189 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-07-04 01:00:33,189 - INFO - 대시보드 페이지로 이동...
+2026-07-04 01:00:40,517 - INFO - 대시보드 테이블 로드 완료
+2026-07-04 01:00:47,389 - INFO - 20개 보기 설정 완료
+2026-07-04 01:00:47,458 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 8
+2026-07-04 01:00:47,485 - INFO -   [메인] 광고효율UP 상품만: 245원
+2026-07-04 01:00:47,502 - INFO -   [메인] 메인 전체 상품 단품+톡 3: 419원
+2026-07-04 01:00:47,520 - INFO -   [메인] 메인 전체 상품 단품+톡 2: 488원
+2026-07-04 01:00:47,538 - INFO -   [메인] 메인 전체 상품 단품+톡 1: 1,195원
+2026-07-04 01:00:47,555 - INFO -   [메인] 메인 상품 A 단품+톡 1: 101원
+2026-07-04 01:00:47,572 - INFO -   [메인] 메인 상품 B+C 단품+톡 3: 603원
+2026-07-04 01:00:47,590 - INFO -   [메인] 메인 상품 B+C 단품+톡 2: 556원
+2026-07-04 01:00:47,607 - INFO -   [메인] 메인 상품 B+C 단품+톡 1: 604원
+2026-07-04 01:00:47,625 - INFO -   [서브] 메인 상품 A 단품+톡 1: 202원
+2026-07-04 01:00:47,642 - INFO -   [서브] 메인 상품 B+C 단품+톡 3: 200원
+2026-07-04 01:00:47,660 - INFO -   [서브] 메인 상품 B+C 단품+톡 2: 602원
+2026-07-04 01:00:47,677 - INFO -   [서브] 메인 상품 B+C 단품+톡 1: 404원
+2026-07-04 01:00:47,695 - INFO -   [수동 키워드 노출] -2 / 매출최적화 변환: 0원
+2026-07-04 01:00:47,712 - INFO -   [수동 키워드 노출] -1 / 매출최적화 변환: 0원
+2026-07-04 01:00:47,730 - INFO -   0220 0259 0270 0324 0930 1012 1181 1235 1268 1583: 0원
+2026-07-04 01:00:47,748 - INFO -   [수동 키워드 노출] -2: 0원
+2026-07-04 01:00:47,765 - INFO -   [수동 키워드 노출] -1: 0원
+2026-07-04 01:00:47,782 - INFO -   0791 0944 0085 0083 0084 0320 0077 0131 1063_2: 0원
+2026-07-04 01:00:47,800 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 0원
+2026-07-04 01:00:47,817 - INFO -   [수동] 메인 아이폰16, 17 시리즈 [아이폰 키워드만]: 0원
+2026-07-04 01:00:47,817 - INFO - 총 20개 캠페인 | 합계: 5,619원
+2026-07-04 01:00:47,819 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-07-04.json
+2026-07-04 01:00:47,819 - INFO - 현재 시간(01시) 총 광고비: 5,619원
+2026-07-04 01:00:49,418 - WARNING - git pull 경고: error: Your local changes to the following files would be overwritten by merge:
+	auto_scheduler.py
+Please commit your changes or stash them before you merge.
+Aborting
+Merge with strategy ort failed.
+
+2026-07-04 01:00:51,614 - ERROR - git push 실패: To https://github.com/mirmoa/tools.git
+ ! [rejected]          master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/mirmoa/tools.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+2026-07-04 01:00:54,439 - INFO - 브라우저 종료
+2026-07-04 01:00:54,439 - INFO - ==================================================
+2026-07-04 01:00:54,439 - INFO - 작업 완료!
+2026-07-04 01:00:54,439 - INFO - ==================================================
+2026-07-04 02:00:03,346 - INFO - ==================================================
+2026-07-04 02:00:03,346 - INFO - 쿠팡 광고비 수집 시작
+2026-07-04 02:00:03,346 - INFO - ==================================================
+2026-07-04 02:00:03,346 - INFO - >>> 시도 1/3
+2026-07-04 02:00:03,346 - INFO - ====== WebDriver manager ======
+2026-07-04 02:00:04,903 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 02:00:04,934 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 02:00:04,950 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 02:00:06,584 - INFO - 웹드라이버 설정 완료
+2026-07-04 02:00:06,584 - INFO - 로그인 페이지 접속...
+2026-07-04 02:00:12,387 - INFO - 아이디 입력 완료
+2026-07-04 02:00:13,983 - INFO - 비밀번호 입력 완료
+2026-07-04 02:00:17,372 - INFO - 로그인 버튼 클릭
+2026-07-04 02:00:27,391 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-07-04 02:00:27,392 - INFO - 대시보드 페이지로 이동...
+2026-07-04 02:00:35,684 - INFO - 대시보드 테이블 로드 완료
+2026-07-04 02:00:42,713 - INFO - 20개 보기 설정 완료
+2026-07-04 02:00:42,782 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 8
+2026-07-04 02:00:42,812 - INFO -   [메인] 광고효율UP 상품만: 447원
+2026-07-04 02:00:42,830 - INFO -   [메인] 메인 전체 상품 단품+톡 3: 520원
+2026-07-04 02:00:42,848 - INFO -   [메인] 메인 전체 상품 단품+톡 2: 790원
+2026-07-04 02:00:42,866 - INFO -   [메인] 메인 전체 상품 단품+톡 1: 1,295원
+2026-07-04 02:00:42,883 - INFO -   [메인] 메인 상품 A 단품+톡 1: 302원
+2026-07-04 02:00:42,901 - INFO -   [메인] 메인 상품 B+C 단품+톡 3: 904원
+2026-07-04 02:00:42,920 - INFO -   [메인] 메인 상품 B+C 단품+톡 2: 757원
+2026-07-04 02:00:42,937 - INFO -   [메인] 메인 상품 B+C 단품+톡 1: 1,123원
+2026-07-04 02:00:42,955 - INFO -   [서브] 메인 상품 A 단품+톡 1: 302원
+2026-07-04 02:00:42,972 - INFO -   [서브] 메인 상품 B+C 단품+톡 3: 200원
+2026-07-04 02:00:42,989 - INFO -   [서브] 메인 상품 B+C 단품+톡 2: 904원
+2026-07-04 02:00:43,006 - INFO -   [서브] 메인 상품 B+C 단품+톡 1: 404원
+2026-07-04 02:00:43,023 - INFO -   [수동 키워드 노출] -2 / 매출최적화 변환: 0원
+2026-07-04 02:00:43,041 - INFO -   [수동 키워드 노출] -1 / 매출최적화 변환: 0원
+2026-07-04 02:00:43,058 - INFO -   0220 0259 0270 0324 0930 1012 1181 1235 1268 1583: 0원
+2026-07-04 02:00:43,075 - INFO -   [수동 키워드 노출] -2: 0원
+2026-07-04 02:00:43,092 - INFO -   [수동 키워드 노출] -1: 0원
+2026-07-04 02:00:43,109 - INFO -   0791 0944 0085 0083 0084 0320 0077 0131 1063_2: 0원
+2026-07-04 02:00:43,125 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 0원
+2026-07-04 02:00:43,142 - INFO -   [수동] 메인 아이폰16, 17 시리즈 [아이폰 키워드만]: 0원
+2026-07-04 02:00:43,143 - INFO - 총 20개 캠페인 | 합계: 7,948원
+2026-07-04 02:00:43,145 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-07-04.json
+2026-07-04 02:00:43,145 - INFO - 현재 시간(02시) 총 광고비: 7,948원
+2026-07-04 02:00:44,817 - WARNING - git pull 경고: error: Your local changes to the following files would be overwritten by merge:
+	auto_scheduler.py
+Please commit your changes or stash them before you merge.
+Aborting
+Merge with strategy ort failed.
+
+2026-07-04 02:00:47,058 - ERROR - git push 실패: To https://github.com/mirmoa/tools.git
+ ! [rejected]          master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/mirmoa/tools.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+2026-07-04 02:00:50,974 - INFO - 브라우저 종료
+2026-07-04 02:00:50,974 - INFO - ==================================================
+2026-07-04 02:00:50,974 - INFO - 작업 완료!
+2026-07-04 02:00:50,974 - INFO - ==================================================
+2026-07-04 03:00:03,311 - INFO - ==================================================
+2026-07-04 03:00:03,311 - INFO - 쿠팡 광고비 수집 시작
+2026-07-04 03:00:03,311 - INFO - ==================================================
+2026-07-04 03:00:03,311 - INFO - >>> 시도 1/3
+2026-07-04 03:00:03,311 - INFO - ====== WebDriver manager ======
+2026-07-04 03:00:04,842 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 03:00:04,883 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 03:00:04,898 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 03:00:07,080 - INFO - 웹드라이버 설정 완료
+2026-07-04 03:00:07,081 - INFO - 로그인 페이지 접속...
+2026-07-04 03:00:12,455 - INFO - 아이디 입력 완료
+2026-07-04 03:00:14,222 - INFO - 비밀번호 입력 완료
+2026-07-04 03:00:17,496 - INFO - 로그인 버튼 클릭
+2026-07-04 03:00:27,503 - WARNING - 차단 감지 → 새로고침 시도 (1/3)
+2026-07-04 03:00:35,499 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-07-04 03:00:35,500 - INFO - 대시보드 페이지로 이동...
+2026-07-04 03:00:42,703 - INFO - 대시보드 테이블 로드 완료
+2026-07-04 03:00:49,479 - INFO - 20개 보기 설정 완료
+2026-07-04 03:00:49,543 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 8
+2026-07-04 03:00:49,570 - INFO -   [메인] 광고효율UP 상품만: 648원
+2026-07-04 03:00:49,587 - INFO -   [메인] 메인 전체 상품 단품+톡 3: 958원
+2026-07-04 03:00:49,603 - INFO -   [메인] 메인 전체 상품 단품+톡 2: 790원
+2026-07-04 03:00:49,622 - INFO -   [메인] 메인 전체 상품 단품+톡 1: 1,557원
+2026-07-04 03:00:49,638 - INFO -   [메인] 메인 상품 A 단품+톡 1: 403원
+2026-07-04 03:00:49,655 - INFO -   [메인] 메인 상품 B+C 단품+톡 3: 1,106원
+2026-07-04 03:00:49,672 - INFO -   [메인] 메인 상품 B+C 단품+톡 2: 858원
+2026-07-04 03:00:49,688 - INFO -   [메인] 메인 상품 B+C 단품+톡 1: 1,224원
+2026-07-04 03:00:49,705 - INFO -   [서브] 메인 상품 A 단품+톡 1: 302원
+2026-07-04 03:00:49,721 - INFO -   [서브] 메인 상품 B+C 단품+톡 3: 301원
+2026-07-04 03:00:49,738 - INFO -   [서브] 메인 상품 B+C 단품+톡 2: 1,005원
+2026-07-04 03:00:49,755 - INFO -   [서브] 메인 상품 B+C 단품+톡 1: 806원
+2026-07-04 03:00:49,771 - INFO -   [수동 키워드 노출] -2 / 매출최적화 변환: 0원
+2026-07-04 03:00:49,788 - INFO -   [수동 키워드 노출] -1 / 매출최적화 변환: 0원
+2026-07-04 03:00:49,805 - INFO -   0220 0259 0270 0324 0930 1012 1181 1235 1268 1583: 0원
+2026-07-04 03:00:49,821 - INFO -   [수동 키워드 노출] -2: 0원
+2026-07-04 03:00:49,838 - INFO -   [수동 키워드 노출] -1: 0원
+2026-07-04 03:00:49,854 - INFO -   0791 0944 0085 0083 0084 0320 0077 0131 1063_2: 0원
+2026-07-04 03:00:49,871 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 0원
+2026-07-04 03:00:49,888 - INFO -   [수동] 메인 아이폰16, 17 시리즈 [아이폰 키워드만]: 0원
+2026-07-04 03:00:49,888 - INFO - 총 20개 캠페인 | 합계: 9,958원
+2026-07-04 03:00:49,890 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-07-04.json
+2026-07-04 03:00:49,890 - INFO - 현재 시간(03시) 총 광고비: 9,958원
+2026-07-04 03:00:51,512 - WARNING - git pull 경고: error: Your local changes to the following files would be overwritten by merge:
+	auto_scheduler.py
+Please commit your changes or stash them before you merge.
+Aborting
+Merge with strategy ort failed.
+
+2026-07-04 03:00:53,724 - ERROR - git push 실패: To https://github.com/mirmoa/tools.git
+ ! [rejected]          master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/mirmoa/tools.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+2026-07-04 03:00:56,515 - INFO - 브라우저 종료
+2026-07-04 03:00:56,515 - INFO - ==================================================
+2026-07-04 03:00:56,515 - INFO - 작업 완료!
+2026-07-04 03:00:56,515 - INFO - ==================================================
+2026-07-04 04:00:03,542 - INFO - ==================================================
+2026-07-04 04:00:03,542 - INFO - 쿠팡 광고비 수집 시작
+2026-07-04 04:00:03,542 - INFO - ==================================================
+2026-07-04 04:00:03,542 - INFO - >>> 시도 1/3
+2026-07-04 04:00:03,542 - INFO - ====== WebDriver manager ======
+2026-07-04 04:00:05,112 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 04:00:05,159 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 04:00:05,175 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 04:00:07,278 - INFO - 웹드라이버 설정 완료
+2026-07-04 04:00:07,279 - INFO - 로그인 페이지 접속...
+2026-07-04 04:00:12,749 - INFO - 아이디 입력 완료
+2026-07-04 04:00:14,245 - INFO - 비밀번호 입력 완료
+2026-07-04 04:00:17,334 - INFO - 로그인 버튼 클릭
+2026-07-04 04:00:27,349 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-07-04 04:00:27,349 - INFO - 대시보드 페이지로 이동...
+2026-07-04 04:00:34,649 - INFO - 대시보드 테이블 로드 완료
+2026-07-04 04:00:41,272 - INFO - 20개 보기 설정 완료
+2026-07-04 04:00:41,342 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 8
+2026-07-04 04:00:41,368 - INFO -   [메인] 광고효율UP 상품만: 971원
+2026-07-04 04:00:41,385 - INFO -   [메인] 메인 전체 상품 단품+톡 3: 958원
+2026-07-04 04:00:41,402 - INFO -   [메인] 메인 전체 상품 단품+톡 2: 990원
+2026-07-04 04:00:41,419 - INFO -   [메인] 메인 전체 상품 단품+톡 1: 1,657원
+2026-07-04 04:00:41,435 - INFO -   [메인] 메인 상품 A 단품+톡 1: 605원
+2026-07-04 04:00:41,452 - INFO -   [메인] 메인 상품 B+C 단품+톡 3: 1,206원
+2026-07-04 04:00:41,469 - INFO -   [메인] 메인 상품 B+C 단품+톡 2: 858원
+2026-07-04 04:00:41,488 - INFO -   [메인] 메인 상품 B+C 단품+톡 1: 1,224원
+2026-07-04 04:00:41,505 - INFO -   [서브] 메인 상품 A 단품+톡 1: 302원
+2026-07-04 04:00:41,522 - INFO -   [서브] 메인 상품 B+C 단품+톡 3: 301원
+2026-07-04 04:00:41,538 - INFO -   [서브] 메인 상품 B+C 단품+톡 2: 1,509원
+2026-07-04 04:00:41,555 - INFO -   [서브] 메인 상품 B+C 단품+톡 1: 806원
+2026-07-04 04:00:41,572 - INFO -   [수동 키워드 노출] -2 / 매출최적화 변환: 0원
+2026-07-04 04:00:41,589 - INFO -   [수동 키워드 노출] -1 / 매출최적화 변환: 0원
+2026-07-04 04:00:41,606 - INFO -   0220 0259 0270 0324 0930 1012 1181 1235 1268 1583: 0원
+2026-07-04 04:00:41,622 - INFO -   [수동 키워드 노출] -2: 0원
+2026-07-04 04:00:41,640 - INFO -   [수동 키워드 노출] -1: 0원
+2026-07-04 04:00:41,656 - INFO -   0791 0944 0085 0083 0084 0320 0077 0131 1063_2: 0원
+2026-07-04 04:00:41,674 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 0원
+2026-07-04 04:00:41,692 - INFO -   [수동] 메인 아이폰16, 17 시리즈 [아이폰 키워드만]: 0원
+2026-07-04 04:00:41,693 - INFO - 총 20개 캠페인 | 합계: 11,387원
+2026-07-04 04:00:41,699 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-07-04.json
+2026-07-04 04:00:41,699 - INFO - 현재 시간(04시) 총 광고비: 11,387원
+2026-07-04 04:00:43,473 - WARNING - git pull 경고: error: Your local changes to the following files would be overwritten by merge:
+	auto_scheduler.py
+Please commit your changes or stash them before you merge.
+Aborting
+Merge with strategy ort failed.
+
+2026-07-04 04:00:45,837 - ERROR - git push 실패: To https://github.com/mirmoa/tools.git
+ ! [rejected]          master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/mirmoa/tools.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+2026-07-04 04:00:48,661 - INFO - 브라우저 종료
+2026-07-04 04:00:48,661 - INFO - ==================================================
+2026-07-04 04:00:48,661 - INFO - 작업 완료!
+2026-07-04 04:00:48,661 - INFO - ==================================================
+2026-07-04 05:00:03,497 - INFO - ==================================================
+2026-07-04 05:00:03,497 - INFO - 쿠팡 광고비 수집 시작
+2026-07-04 05:00:03,497 - INFO - ==================================================
+2026-07-04 05:00:03,497 - INFO - >>> 시도 1/3
+2026-07-04 05:00:03,497 - INFO - ====== WebDriver manager ======
+2026-07-04 05:00:05,058 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 05:00:05,104 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 05:00:05,120 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 05:00:06,834 - INFO - 웹드라이버 설정 완료
+2026-07-04 05:00:06,834 - INFO - 로그인 페이지 접속...
+2026-07-04 05:00:12,909 - INFO - 아이디 입력 완료
+2026-07-04 05:00:14,618 - INFO - 비밀번호 입력 완료
+2026-07-04 05:00:18,486 - INFO - 로그인 버튼 클릭
+2026-07-04 05:00:28,491 - WARNING - 차단 감지 → 새로고침 시도 (1/3)
+2026-07-04 05:00:33,737 - WARNING - 차단 감지 → 새로고침 시도 (2/3)
+2026-07-04 05:00:38,990 - WARNING - 차단 감지 → 새로고침 시도 (3/3)
+2026-07-04 05:00:46,780 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-07-04 05:00:46,780 - INFO - 대시보드 페이지로 이동...
+2026-07-04 05:00:54,113 - INFO - 대시보드 테이블 로드 완료
+2026-07-04 05:01:00,886 - INFO - 20개 보기 설정 완료
+2026-07-04 05:01:00,955 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 8
+2026-07-04 05:01:00,982 - INFO -   [메인] 광고효율UP 상품만: 1,117원
+2026-07-04 05:01:01,000 - INFO -   [메인] 메인 전체 상품 단품+톡 3: 1,160원
+2026-07-04 05:01:01,018 - INFO -   [메인] 메인 전체 상품 단품+톡 2: 1,091원
+2026-07-04 05:01:01,035 - INFO -   [메인] 메인 전체 상품 단품+톡 1: 2,363원
+2026-07-04 05:01:01,053 - INFO -   [메인] 메인 상품 A 단품+톡 1: 705원
+2026-07-04 05:01:01,070 - INFO -   [메인] 메인 상품 B+C 단품+톡 3: 1,408원
+2026-07-04 05:01:01,087 - INFO -   [메인] 메인 상품 B+C 단품+톡 2: 1,060원
+2026-07-04 05:01:01,105 - INFO -   [메인] 메인 상품 B+C 단품+톡 1: 1,224원
+2026-07-04 05:01:01,122 - INFO -   [서브] 메인 상품 A 단품+톡 1: 302원
+2026-07-04 05:01:01,140 - INFO -   [서브] 메인 상품 B+C 단품+톡 3: 401원
+2026-07-04 05:01:01,160 - INFO -   [서브] 메인 상품 B+C 단품+톡 2: 1,709원
+2026-07-04 05:01:01,180 - INFO -   [서브] 메인 상품 B+C 단품+톡 1: 1,106원
+2026-07-04 05:01:01,200 - INFO -   [수동 키워드 노출] -2 / 매출최적화 변환: 0원
+2026-07-04 05:01:01,218 - INFO -   [수동 키워드 노출] -1 / 매출최적화 변환: 0원
+2026-07-04 05:01:01,235 - INFO -   0220 0259 0270 0324 0930 1012 1181 1235 1268 1583: 0원
+2026-07-04 05:01:01,253 - INFO -   [수동 키워드 노출] -2: 0원
+2026-07-04 05:01:01,269 - INFO -   [수동 키워드 노출] -1: 0원
+2026-07-04 05:01:01,286 - INFO -   0791 0944 0085 0083 0084 0320 0077 0131 1063_2: 0원
+2026-07-04 05:01:01,303 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 0원
+2026-07-04 05:01:01,320 - INFO -   [수동] 메인 아이폰16, 17 시리즈 [아이폰 키워드만]: 0원
+2026-07-04 05:01:01,321 - INFO - 총 20개 캠페인 | 합계: 13,646원
+2026-07-04 05:01:01,323 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-07-04.json
+2026-07-04 05:01:01,323 - INFO - 현재 시간(05시) 총 광고비: 13,646원
+2026-07-04 05:01:03,450 - WARNING - git pull 경고: error: Your local changes to the following files would be overwritten by merge:
+	auto_scheduler.py
+Please commit your changes or stash them before you merge.
+Aborting
+Merge with strategy ort failed.
+
+2026-07-04 05:01:05,654 - ERROR - git push 실패: To https://github.com/mirmoa/tools.git
+ ! [rejected]          master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/mirmoa/tools.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+2026-07-04 05:01:08,423 - INFO - 브라우저 종료
+2026-07-04 05:01:08,423 - INFO - ==================================================
+2026-07-04 05:01:08,423 - INFO - 작업 완료!
+2026-07-04 05:01:08,423 - INFO - ==================================================
+2026-07-04 06:00:03,452 - INFO - ==================================================
+2026-07-04 06:00:03,452 - INFO - 쿠팡 광고비 수집 시작
+2026-07-04 06:00:03,452 - INFO - ==================================================
+2026-07-04 06:00:03,452 - INFO - >>> 시도 1/3
+2026-07-04 06:00:03,452 - INFO - ====== WebDriver manager ======
+2026-07-04 06:00:05,023 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 06:00:05,054 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 06:00:05,086 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 06:00:06,770 - INFO - 웹드라이버 설정 완료
+2026-07-04 06:00:06,770 - INFO - 로그인 페이지 접속...
+2026-07-04 06:00:12,634 - INFO - 아이디 입력 완료
+2026-07-04 06:00:14,197 - INFO - 비밀번호 입력 완료
+2026-07-04 06:00:18,111 - INFO - 로그인 버튼 클릭
+2026-07-04 06:00:28,117 - WARNING - 차단 감지 → 새로고침 시도 (1/3)
+2026-07-04 06:00:33,364 - WARNING - 차단 감지 → 새로고침 시도 (2/3)
+2026-07-04 06:00:38,622 - WARNING - 차단 감지 → 새로고침 시도 (3/3)
+2026-07-04 06:01:14,113 - ERROR - 로그인 실패: Message: 
+
+2026-07-04 06:01:14,163 - ERROR - 수집 실패: 로그인 실패
+2026-07-04 06:01:16,922 - INFO - 브라우저 종료
+2026-07-04 06:01:16,922 - WARNING - 실패 → 60초 후 재시도...
+2026-07-04 06:02:16,924 - INFO - >>> 시도 2/3
+2026-07-04 06:02:16,924 - INFO - ====== WebDriver manager ======
+2026-07-04 06:02:18,457 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 06:02:18,473 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 06:02:18,504 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 06:02:20,062 - INFO - 웹드라이버 설정 완료
+2026-07-04 06:02:20,062 - INFO - 로그인 페이지 접속...
+2026-07-04 06:02:28,898 - INFO - 아이디 입력 완료
+2026-07-04 06:02:30,539 - INFO - 비밀번호 입력 완료
+2026-07-04 06:02:33,686 - INFO - 로그인 버튼 클릭
+2026-07-04 06:02:43,692 - WARNING - 차단 감지 → 새로고침 시도 (1/3)
+2026-07-04 06:02:51,704 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-07-04 06:02:51,705 - INFO - 대시보드 페이지로 이동...
+2026-07-04 06:03:00,084 - INFO - 대시보드 테이블 로드 완료
+2026-07-04 06:03:06,718 - INFO - 20개 보기 설정 완료
+2026-07-04 06:03:06,785 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 8
+2026-07-04 06:03:06,812 - INFO -   [메인] 광고효율UP 상품만: 1,308원
+2026-07-04 06:03:06,829 - INFO -   [메인] 메인 전체 상품 단품+톡 3: 1,261원
+2026-07-04 06:03:06,846 - INFO -   [메인] 메인 전체 상품 단품+톡 2: 1,192원
+2026-07-04 06:03:06,863 - INFO -   [메인] 메인 전체 상품 단품+톡 1: 2,363원
+2026-07-04 06:03:06,882 - INFO -   [메인] 메인 상품 A 단품+톡 1: 705원
+2026-07-04 06:03:06,899 - INFO -   [메인] 메인 상품 B+C 단품+톡 3: 1,408원
+2026-07-04 06:03:06,916 - INFO -   [메인] 메인 상품 B+C 단품+톡 2: 1,161원
+2026-07-04 06:03:06,933 - INFO -   [메인] 메인 상품 B+C 단품+톡 1: 1,426원
+2026-07-04 06:03:06,950 - INFO -   [서브] 메인 상품 A 단품+톡 1: 302원
+2026-07-04 06:03:06,967 - INFO -   [서브] 메인 상품 B+C 단품+톡 3: 501원
+2026-07-04 06:03:06,984 - INFO -   [서브] 메인 상품 B+C 단품+톡 2: 1,709원
+2026-07-04 06:03:07,002 - INFO -   [서브] 메인 상품 B+C 단품+톡 1: 1,106원
+2026-07-04 06:03:07,022 - INFO -   [수동 키워드 노출] -2 / 매출최적화 변환: 0원
+2026-07-04 06:03:07,040 - INFO -   [수동 키워드 노출] -1 / 매출최적화 변환: 0원
+2026-07-04 06:03:07,057 - INFO -   0220 0259 0270 0324 0930 1012 1181 1235 1268 1583: 0원
+2026-07-04 06:03:07,075 - INFO -   [수동 키워드 노출] -2: 0원
+2026-07-04 06:03:07,092 - INFO -   [수동 키워드 노출] -1: 0원
+2026-07-04 06:03:07,109 - INFO -   0791 0944 0085 0083 0084 0320 0077 0131 1063_2: 0원
+2026-07-04 06:03:07,126 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 0원
+2026-07-04 06:03:07,144 - INFO -   [수동] 메인 아이폰16, 17 시리즈 [아이폰 키워드만]: 0원
+2026-07-04 06:03:07,145 - INFO - 총 20개 캠페인 | 합계: 14,442원
+2026-07-04 06:03:07,147 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-07-04.json
+2026-07-04 06:03:07,147 - INFO - 현재 시간(06시) 총 광고비: 14,442원
+2026-07-04 06:03:08,985 - WARNING - git pull 경고: error: Your local changes to the following files would be overwritten by merge:
+	auto_scheduler.py
+Please commit your changes or stash them before you merge.
+Aborting
+Merge with strategy ort failed.
+
+2026-07-04 06:03:11,275 - ERROR - git push 실패: To https://github.com/mirmoa/tools.git
+ ! [rejected]          master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/mirmoa/tools.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+2026-07-04 06:03:14,151 - INFO - 브라우저 종료
+2026-07-04 06:03:14,151 - INFO - ==================================================
+2026-07-04 06:03:14,151 - INFO - 작업 완료!
+2026-07-04 06:03:14,151 - INFO - ==================================================
+2026-07-04 07:00:03,321 - INFO - ==================================================
+2026-07-04 07:00:03,321 - INFO - 쿠팡 광고비 수집 시작
+2026-07-04 07:00:03,321 - INFO - ==================================================
+2026-07-04 07:00:03,337 - INFO - >>> 시도 1/3
+2026-07-04 07:00:03,337 - INFO - ====== WebDriver manager ======
+2026-07-04 07:00:04,881 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 07:00:04,912 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 07:00:04,943 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 07:00:06,453 - INFO - 웹드라이버 설정 완료
+2026-07-04 07:00:06,453 - INFO - 로그인 페이지 접속...
+2026-07-04 07:00:13,018 - INFO - 아이디 입력 완료
+2026-07-04 07:00:14,783 - INFO - 비밀번호 입력 완료
+2026-07-04 07:00:17,480 - INFO - 로그인 버튼 클릭
+2026-07-04 07:00:27,486 - WARNING - 차단 감지 → 새로고침 시도 (1/3)
+2026-07-04 07:00:32,762 - WARNING - 차단 감지 → 새로고침 시도 (2/3)
+2026-07-04 07:00:38,253 - WARNING - 차단 감지 → 새로고침 시도 (3/3)
+2026-07-04 07:01:13,864 - ERROR - 로그인 실패: Message: 
+
+2026-07-04 07:01:13,908 - ERROR - 수집 실패: 로그인 실패
+2026-07-04 07:01:16,589 - INFO - 브라우저 종료
+2026-07-04 07:01:16,589 - WARNING - 실패 → 60초 후 재시도...
+2026-07-04 07:02:16,592 - INFO - >>> 시도 2/3
+2026-07-04 07:02:16,592 - INFO - ====== WebDriver manager ======
+2026-07-04 07:02:18,173 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 07:02:18,189 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 07:02:18,204 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 07:02:20,311 - INFO - 웹드라이버 설정 완료
+2026-07-04 07:02:20,312 - INFO - 로그인 페이지 접속...
+2026-07-04 07:02:26,055 - INFO - 아이디 입력 완료
+2026-07-04 07:02:27,794 - INFO - 비밀번호 입력 완료
+2026-07-04 07:02:31,157 - INFO - 로그인 버튼 클릭
+2026-07-04 07:02:41,161 - WARNING - 차단 감지 → 새로고침 시도 (1/3)
+2026-07-04 07:02:46,405 - WARNING - 차단 감지 → 새로고침 시도 (2/3)
+2026-07-04 07:02:51,652 - WARNING - 차단 감지 → 새로고침 시도 (3/3)
+2026-07-04 07:03:27,169 - ERROR - 로그인 실패: Message: 
+
+2026-07-04 07:03:27,220 - ERROR - 수집 실패: 로그인 실패
+2026-07-04 07:03:29,980 - INFO - 브라우저 종료
+2026-07-04 07:03:29,980 - WARNING - 실패 → 60초 후 재시도...
+2026-07-04 07:04:29,983 - INFO - >>> 시도 3/3
+2026-07-04 07:04:29,983 - INFO - ====== WebDriver manager ======
+2026-07-04 07:04:31,542 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 07:04:31,558 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 07:04:31,574 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 07:04:33,221 - INFO - 웹드라이버 설정 완료
+2026-07-04 07:04:33,221 - INFO - 로그인 페이지 접속...
+2026-07-04 07:04:39,295 - INFO - 아이디 입력 완료
+2026-07-04 07:04:41,044 - INFO - 비밀번호 입력 완료
+2026-07-04 07:04:45,425 - INFO - 로그인 버튼 클릭
+2026-07-04 07:04:55,431 - WARNING - 차단 감지 → 새로고침 시도 (1/3)
+2026-07-04 07:05:00,672 - WARNING - 차단 감지 → 새로고침 시도 (2/3)
+2026-07-04 07:05:05,994 - WARNING - 차단 감지 → 새로고침 시도 (3/3)
+2026-07-04 07:05:41,477 - ERROR - 로그인 실패: Message: 
+
+2026-07-04 07:05:41,525 - ERROR - 수집 실패: 로그인 실패
+2026-07-04 07:05:44,178 - INFO - 브라우저 종료
+2026-07-04 07:05:44,178 - ERROR - ==================================================
+2026-07-04 07:05:44,178 - ERROR - 최대 재시도 횟수(3회) 초과 - 수집 포기
+2026-07-04 07:05:44,178 - ERROR - ==================================================
+2026-07-04 08:00:03,336 - INFO - ==================================================
+2026-07-04 08:00:03,336 - INFO - 쿠팡 광고비 수집 시작
+2026-07-04 08:00:03,336 - INFO - ==================================================
+2026-07-04 08:00:03,336 - INFO - >>> 시도 1/3
+2026-07-04 08:00:03,336 - INFO - ====== WebDriver manager ======
+2026-07-04 08:00:04,898 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 08:00:04,929 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 08:00:04,960 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 08:00:06,490 - INFO - 웹드라이버 설정 완료
+2026-07-04 08:00:06,491 - INFO - 로그인 페이지 접속...
+2026-07-04 08:00:12,304 - INFO - 아이디 입력 완료
+2026-07-04 08:00:14,054 - INFO - 비밀번호 입력 완료
+2026-07-04 08:00:17,735 - INFO - 로그인 버튼 클릭
+2026-07-04 08:00:27,752 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-07-04 08:00:27,752 - INFO - 대시보드 페이지로 이동...
+2026-07-04 08:00:35,961 - INFO - 대시보드 테이블 로드 완료
+2026-07-04 08:00:45,016 - INFO - 20개 보기 설정 완료
+2026-07-04 08:00:45,085 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 8
+2026-07-04 08:00:45,112 - INFO -   [메인] 광고효율UP 상품만: 1,611원
+2026-07-04 08:00:45,130 - INFO -   [메인] 메인 전체 상품 단품+톡 3: 1,707원
+2026-07-04 08:00:45,147 - INFO -   [메인] 메인 전체 상품 단품+톡 2: 2,228원
+2026-07-04 08:00:45,164 - INFO -   [메인] 메인 전체 상품 단품+톡 1: 3,480원
+2026-07-04 08:00:45,182 - INFO -   [메인] 메인 상품 A 단품+톡 1: 1,007원
+2026-07-04 08:00:45,199 - INFO -   [메인] 메인 상품 B+C 단품+톡 3: 2,032원
+2026-07-04 08:00:45,216 - INFO -   [메인] 메인 상품 B+C 단품+톡 2: 1,362원
+2026-07-04 08:00:45,233 - INFO -   [메인] 메인 상품 B+C 단품+톡 1: 2,162원
+2026-07-04 08:00:45,250 - INFO -   [서브] 메인 상품 A 단품+톡 1: 807원
+2026-07-04 08:00:45,268 - INFO -   [서브] 메인 상품 B+C 단품+톡 3: 701원
+2026-07-04 08:00:45,287 - INFO -   [서브] 메인 상품 B+C 단품+톡 2: 2,011원
+2026-07-04 08:00:45,304 - INFO -   [서브] 메인 상품 B+C 단품+톡 1: 1,508원
+2026-07-04 08:00:45,321 - INFO -   [수동 키워드 노출] -2 / 매출최적화 변환: 0원
+2026-07-04 08:00:45,338 - INFO -   [수동 키워드 노출] -1 / 매출최적화 변환: 0원
+2026-07-04 08:00:45,355 - INFO -   0220 0259 0270 0324 0930 1012 1181 1235 1268 1583: 0원
+2026-07-04 08:00:45,372 - INFO -   [수동 키워드 노출] -2: 0원
+2026-07-04 08:00:45,389 - INFO -   [수동 키워드 노출] -1: 0원
+2026-07-04 08:00:45,405 - INFO -   0791 0944 0085 0083 0084 0320 0077 0131 1063_2: 0원
+2026-07-04 08:00:45,422 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 0원
+2026-07-04 08:00:45,439 - INFO -   [수동] 메인 아이폰16, 17 시리즈 [아이폰 키워드만]: 0원
+2026-07-04 08:00:45,439 - INFO - 총 20개 캠페인 | 합계: 20,616원
+2026-07-04 08:00:45,442 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-07-04.json
+2026-07-04 08:00:45,442 - INFO - 현재 시간(08시) 총 광고비: 20,616원
+2026-07-04 08:00:47,111 - WARNING - git pull 경고: error: Your local changes to the following files would be overwritten by merge:
+	auto_scheduler.py
+Please commit your changes or stash them before you merge.
+Aborting
+Merge with strategy ort failed.
+
+2026-07-04 08:00:49,713 - ERROR - git push 실패: To https://github.com/mirmoa/tools.git
+ ! [rejected]          master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/mirmoa/tools.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+2026-07-04 08:00:52,548 - INFO - 브라우저 종료
+2026-07-04 08:00:52,548 - INFO - ==================================================
+2026-07-04 08:00:52,548 - INFO - 작업 완료!
+2026-07-04 08:00:52,548 - INFO - ==================================================
+2026-07-04 09:00:03,366 - INFO - ==================================================
+2026-07-04 09:00:03,366 - INFO - 쿠팡 광고비 수집 시작
+2026-07-04 09:00:03,366 - INFO - ==================================================
+2026-07-04 09:00:03,366 - INFO - >>> 시도 1/3
+2026-07-04 09:00:03,366 - INFO - ====== WebDriver manager ======
+2026-07-04 09:00:04,965 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 09:00:04,996 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 09:00:05,011 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 09:00:06,959 - INFO - 웹드라이버 설정 완료
+2026-07-04 09:00:06,960 - INFO - 로그인 페이지 접속...
+2026-07-04 09:00:12,346 - INFO - 아이디 입력 완료
+2026-07-04 09:00:13,916 - INFO - 비밀번호 입력 완료
+2026-07-04 09:00:16,917 - INFO - 로그인 버튼 클릭
+2026-07-04 09:00:26,933 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-07-04 09:00:26,933 - INFO - 대시보드 페이지로 이동...
+2026-07-04 09:00:34,724 - INFO - 대시보드 테이블 로드 완료
+2026-07-04 09:00:41,607 - INFO - 20개 보기 설정 완료
+2026-07-04 09:00:41,675 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 8
+2026-07-04 09:00:41,701 - INFO -   [메인] 광고효율UP 상품만: 2,327원
+2026-07-04 09:00:41,718 - INFO -   [메인] 메인 전체 상품 단품+톡 3: 2,210원
+2026-07-04 09:00:41,734 - INFO -   [메인] 메인 전체 상품 단품+톡 2: 3,459원
+2026-07-04 09:00:41,751 - INFO -   [메인] 메인 전체 상품 단품+톡 1: 4,594원
+2026-07-04 09:00:41,768 - INFO -   [메인] 메인 상품 A 단품+톡 1: 1,612원
+2026-07-04 09:00:41,784 - INFO -   [메인] 메인 상품 B+C 단품+톡 3: 2,838원
+2026-07-04 09:00:41,801 - INFO -   [메인] 메인 상품 B+C 단품+톡 2: 2,809원
+2026-07-04 09:00:41,818 - INFO -   [메인] 메인 상품 B+C 단품+톡 1: 2,766원
+2026-07-04 09:00:41,834 - INFO -   [서브] 메인 상품 A 단품+톡 1: 1,613원
+2026-07-04 09:00:41,854 - INFO -   [서브] 메인 상품 B+C 단품+톡 3: 1,405원
+2026-07-04 09:00:41,871 - INFO -   [서브] 메인 상품 B+C 단품+톡 2: 3,018원
+2026-07-04 09:00:41,888 - INFO -   [서브] 메인 상품 B+C 단품+톡 1: 2,114원
+2026-07-04 09:00:41,906 - INFO -   [수동 키워드 노출] -2 / 매출최적화 변환: 0원
+2026-07-04 09:00:41,925 - INFO -   [수동 키워드 노출] -1 / 매출최적화 변환: 0원
+2026-07-04 09:00:41,943 - INFO -   0220 0259 0270 0324 0930 1012 1181 1235 1268 1583: 0원
+2026-07-04 09:00:41,961 - INFO -   [수동 키워드 노출] -2: 0원
+2026-07-04 09:00:41,979 - INFO -   [수동 키워드 노출] -1: 0원
+2026-07-04 09:00:41,997 - INFO -   0791 0944 0085 0083 0084 0320 0077 0131 1063_2: 0원
+2026-07-04 09:00:42,015 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 0원
+2026-07-04 09:00:42,032 - INFO -   [수동] 메인 아이폰16, 17 시리즈 [아이폰 키워드만]: 0원
+2026-07-04 09:00:42,033 - INFO - 총 20개 캠페인 | 합계: 30,765원
+2026-07-04 09:00:42,035 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-07-04.json
+2026-07-04 09:00:42,035 - INFO - 현재 시간(09시) 총 광고비: 30,765원
+2026-07-04 09:00:43,721 - WARNING - git pull 경고: error: Your local changes to the following files would be overwritten by merge:
+	auto_scheduler.py
+Please commit your changes or stash them before you merge.
+Aborting
+Merge with strategy ort failed.
+
+2026-07-04 09:00:45,970 - ERROR - git push 실패: To https://github.com/mirmoa/tools.git
+ ! [rejected]          master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/mirmoa/tools.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+2026-07-04 09:00:48,661 - INFO - 브라우저 종료
+2026-07-04 09:00:48,661 - INFO - ==================================================
+2026-07-04 09:00:48,661 - INFO - 작업 완료!
+2026-07-04 09:00:48,661 - INFO - ==================================================
+2026-07-04 10:00:04,498 - INFO - ==================================================
+2026-07-04 10:00:04,498 - INFO - 쿠팡 광고비 수집 시작
+2026-07-04 10:00:04,498 - INFO - ==================================================
+2026-07-04 10:00:04,498 - INFO - >>> 시도 1/3
+2026-07-04 10:00:04,498 - INFO - ====== WebDriver manager ======
+2026-07-04 10:00:06,461 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 10:00:06,523 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 10:00:06,539 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 10:00:09,134 - INFO - 웹드라이버 설정 완료
+2026-07-04 10:00:09,134 - INFO - 로그인 페이지 접속...
+2026-07-04 10:00:15,244 - INFO - 아이디 입력 완료
+2026-07-04 10:00:16,895 - INFO - 비밀번호 입력 완료
+2026-07-04 10:00:20,209 - INFO - 로그인 버튼 클릭
+2026-07-04 10:00:30,215 - WARNING - 차단 감지 → 새로고침 시도 (1/3)
+2026-07-04 10:00:35,449 - WARNING - 차단 감지 → 새로고침 시도 (2/3)
+2026-07-04 10:00:40,719 - WARNING - 차단 감지 → 새로고침 시도 (3/3)
+2026-07-04 10:01:16,269 - ERROR - 로그인 실패: Message: 
+
+2026-07-04 10:01:16,317 - ERROR - 수집 실패: 로그인 실패
+2026-07-04 10:01:18,971 - INFO - 브라우저 종료
+2026-07-04 10:01:18,971 - WARNING - 실패 → 60초 후 재시도...
+2026-07-04 10:02:18,974 - INFO - >>> 시도 2/3
+2026-07-04 10:02:18,974 - INFO - ====== WebDriver manager ======
+2026-07-04 10:02:20,526 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 10:02:20,557 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 10:02:20,578 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 10:02:22,453 - INFO - 웹드라이버 설정 완료
+2026-07-04 10:02:22,453 - INFO - 로그인 페이지 접속...
+2026-07-04 10:02:29,053 - INFO - 아이디 입력 완료
+2026-07-04 10:02:30,895 - INFO - 비밀번호 입력 완료
+2026-07-04 10:02:34,492 - INFO - 로그인 버튼 클릭
+2026-07-04 10:02:44,499 - WARNING - 차단 감지 → 새로고침 시도 (1/3)
+2026-07-04 10:02:49,803 - WARNING - 차단 감지 → 새로고침 시도 (2/3)
+2026-07-04 10:02:55,068 - WARNING - 차단 감지 → 새로고침 시도 (3/3)
+2026-07-04 10:03:30,622 - ERROR - 로그인 실패: Message: 
+
+2026-07-04 10:03:30,669 - ERROR - 수집 실패: 로그인 실패
+2026-07-04 10:03:33,287 - INFO - 브라우저 종료
+2026-07-04 10:03:33,287 - WARNING - 실패 → 60초 후 재시도...
+2026-07-04 10:04:33,289 - INFO - >>> 시도 3/3
+2026-07-04 10:04:33,289 - INFO - ====== WebDriver manager ======
+2026-07-04 10:04:34,852 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 10:04:34,883 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 10:04:34,899 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 10:04:36,458 - INFO - 웹드라이버 설정 완료
+2026-07-04 10:04:36,458 - INFO - 로그인 페이지 접속...
+2026-07-04 10:04:42,384 - INFO - 아이디 입력 완료
+2026-07-04 10:04:44,182 - INFO - 비밀번호 입력 완료
+2026-07-04 10:04:46,417 - INFO - 로그인 버튼 클릭
+2026-07-04 10:04:56,422 - WARNING - 차단 감지 → 새로고침 시도 (1/3)
+2026-07-04 10:05:01,786 - WARNING - 차단 감지 → 새로고침 시도 (2/3)
+2026-07-04 10:05:09,856 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-07-04 10:05:09,857 - INFO - 대시보드 페이지로 이동...
+2026-07-04 10:05:18,105 - INFO - 대시보드 테이블 로드 완료
+2026-07-04 10:05:29,392 - INFO - 20개 보기 설정 완료
+2026-07-04 10:05:29,461 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 8
+2026-07-04 10:05:29,489 - INFO -   [메인] 광고효율UP 상품만: 3,602원
+2026-07-04 10:05:29,507 - INFO -   [메인] 메인 전체 상품 단품+톡 3: 2,713원
+2026-07-04 10:05:29,524 - INFO -   [메인] 메인 전체 상품 단품+톡 2: 3,963원
+2026-07-04 10:05:29,542 - INFO -   [메인] 메인 전체 상품 단품+톡 1: 6,292원
+2026-07-04 10:05:29,560 - INFO -   [메인] 메인 상품 A 단품+톡 1: 2,217원
+2026-07-04 10:05:29,578 - INFO -   [메인] 메인 상품 B+C 단품+톡 3: 3,550원
+2026-07-04 10:05:29,595 - INFO -   [메인] 메인 상품 B+C 단품+톡 2: 3,340원
+2026-07-04 10:05:29,613 - INFO -   [메인] 메인 상품 B+C 단품+톡 1: 3,470원
+2026-07-04 10:05:29,631 - INFO -   [서브] 메인 상품 A 단품+톡 1: 2,318원
+2026-07-04 10:05:29,648 - INFO -   [서브] 메인 상품 B+C 단품+톡 3: 1,907원
+2026-07-04 10:05:29,665 - INFO -   [서브] 메인 상품 B+C 단품+톡 2: 3,623원
+2026-07-04 10:05:29,683 - INFO -   [서브] 메인 상품 B+C 단품+톡 1: 2,617원
+2026-07-04 10:05:29,700 - INFO -   [수동 키워드 노출] -2 / 매출최적화 변환: 0원
+2026-07-04 10:05:29,717 - INFO -   [수동 키워드 노출] -1 / 매출최적화 변환: 0원
+2026-07-04 10:05:29,735 - INFO -   0220 0259 0270 0324 0930 1012 1181 1235 1268 1583: 0원
+2026-07-04 10:05:29,752 - INFO -   [수동 키워드 노출] -2: 0원
+2026-07-04 10:05:29,769 - INFO -   [수동 키워드 노출] -1: 0원
+2026-07-04 10:05:29,787 - INFO -   0791 0944 0085 0083 0084 0320 0077 0131 1063_2: 0원
+2026-07-04 10:05:29,806 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 0원
+2026-07-04 10:05:29,826 - INFO -   [수동] 메인 아이폰16, 17 시리즈 [아이폰 키워드만]: 0원
+2026-07-04 10:05:29,826 - INFO - 총 20개 캠페인 | 합계: 39,612원
+2026-07-04 10:05:29,838 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-07-04.json
+2026-07-04 10:05:29,839 - INFO - 현재 시간(10시) 총 광고비: 39,612원
+2026-07-04 10:05:32,113 - WARNING - git pull 경고: error: Your local changes to the following files would be overwritten by merge:
+	auto_scheduler.py
+Please commit your changes or stash them before you merge.
+Aborting
+Merge with strategy ort failed.
+
+2026-07-04 10:05:35,014 - ERROR - git push 실패: To https://github.com/mirmoa/tools.git
+ ! [rejected]          master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/mirmoa/tools.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+2026-07-04 10:05:37,761 - INFO - 브라우저 종료
+2026-07-04 10:05:37,761 - INFO - ==================================================
+2026-07-04 10:05:37,761 - INFO - 작업 완료!
+2026-07-04 10:05:37,761 - INFO - ==================================================
+2026-07-04 11:00:03,589 - INFO - ==================================================
+2026-07-04 11:00:03,589 - INFO - 쿠팡 광고비 수집 시작
+2026-07-04 11:00:03,589 - INFO - ==================================================
+2026-07-04 11:00:03,589 - INFO - >>> 시도 1/3
+2026-07-04 11:00:03,589 - INFO - ====== WebDriver manager ======
+2026-07-04 11:00:05,314 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 11:00:05,345 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 11:00:05,377 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 11:00:07,992 - INFO - 웹드라이버 설정 완료
+2026-07-04 11:00:07,992 - INFO - 로그인 페이지 접속...
+2026-07-04 11:00:13,389 - INFO - 아이디 입력 완료
+2026-07-04 11:00:15,177 - INFO - 비밀번호 입력 완료
+2026-07-04 11:00:17,164 - INFO - 로그인 버튼 클릭
+2026-07-04 11:00:27,169 - WARNING - 차단 감지 → 새로고침 시도 (1/3)
+2026-07-04 11:00:34,652 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-07-04 11:00:34,652 - INFO - 대시보드 페이지로 이동...
+2026-07-04 11:00:42,086 - INFO - 대시보드 테이블 로드 완료
+2026-07-04 11:00:48,716 - INFO - 20개 보기 설정 완료
+2026-07-04 11:00:48,783 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 8
+2026-07-04 11:00:48,809 - INFO -   [메인] 광고효율UP 상품만: 4,510원
+2026-07-04 11:00:48,826 - INFO -   [메인] 메인 전체 상품 단품+톡 3: 3,316원
+2026-07-04 11:00:48,842 - INFO -   [메인] 메인 전체 상품 단품+톡 2: 4,566원
+2026-07-04 11:00:48,859 - INFO -   [메인] 메인 전체 상품 단품+톡 1: 7,342원
+2026-07-04 11:00:48,876 - INFO -   [메인] 메인 상품 A 단품+톡 1: 2,923원
+2026-07-04 11:00:48,893 - INFO -   [메인] 메인 상품 B+C 단품+톡 3: 3,851원
+2026-07-04 11:00:48,909 - INFO -   [메인] 메인 상품 B+C 단품+톡 2: 4,043원
+2026-07-04 11:00:48,926 - INFO -   [메인] 메인 상품 B+C 단품+톡 1: 4,174원
+2026-07-04 11:00:48,943 - INFO -   [서브] 메인 상품 A 단품+톡 1: 3,024원
+2026-07-04 11:00:48,960 - INFO -   [서브] 메인 상품 B+C 단품+톡 3: 2,109원
+2026-07-04 11:00:48,976 - INFO -   [서브] 메인 상품 B+C 단품+톡 2: 5,009원
+2026-07-04 11:00:48,993 - INFO -   [서브] 메인 상품 B+C 단품+톡 1: 3,324원
+2026-07-04 11:00:49,010 - INFO -   [수동 키워드 노출] -2 / 매출최적화 변환: 0원
+2026-07-04 11:00:49,026 - INFO -   [수동 키워드 노출] -1 / 매출최적화 변환: 0원
+2026-07-04 11:00:49,043 - INFO -   0220 0259 0270 0324 0930 1012 1181 1235 1268 1583: 0원
+2026-07-04 11:00:49,060 - INFO -   [수동 키워드 노출] -2: 0원
+2026-07-04 11:00:49,077 - INFO -   [수동 키워드 노출] -1: 0원
+2026-07-04 11:00:49,093 - INFO -   0791 0944 0085 0083 0084 0320 0077 0131 1063_2: 0원
+2026-07-04 11:00:49,110 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 0원
+2026-07-04 11:00:49,127 - INFO -   [수동] 메인 아이폰16, 17 시리즈 [아이폰 키워드만]: 0원
+2026-07-04 11:00:49,127 - INFO - 총 20개 캠페인 | 합계: 48,191원
+2026-07-04 11:00:49,145 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-07-04.json
+2026-07-04 11:00:49,145 - INFO - 현재 시간(11시) 총 광고비: 48,191원
+2026-07-04 11:00:51,398 - WARNING - git pull 경고: error: Your local changes to the following files would be overwritten by merge:
+	auto_scheduler.py
+Please commit your changes or stash them before you merge.
+Aborting
+Merge with strategy ort failed.
+
+2026-07-04 11:00:53,808 - ERROR - git push 실패: To https://github.com/mirmoa/tools.git
+ ! [rejected]          master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/mirmoa/tools.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+2026-07-04 11:00:56,566 - INFO - 브라우저 종료
+2026-07-04 11:00:56,566 - INFO - ==================================================
+2026-07-04 11:00:56,566 - INFO - 작업 완료!
+2026-07-04 11:00:56,566 - INFO - ==================================================
+2026-07-04 12:00:03,510 - INFO - ==================================================
+2026-07-04 12:00:03,510 - INFO - 쿠팡 광고비 수집 시작
+2026-07-04 12:00:03,510 - INFO - ==================================================
+2026-07-04 12:00:03,510 - INFO - >>> 시도 1/3
+2026-07-04 12:00:03,510 - INFO - ====== WebDriver manager ======
+2026-07-04 12:00:05,120 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 12:00:05,151 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 12:00:05,182 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 12:00:06,827 - INFO - 웹드라이버 설정 완료
+2026-07-04 12:00:06,828 - INFO - 로그인 페이지 접속...
+2026-07-04 12:00:12,787 - INFO - 아이디 입력 완료
+2026-07-04 12:00:14,450 - INFO - 비밀번호 입력 완료
+2026-07-04 12:00:17,488 - INFO - 로그인 버튼 클릭
+2026-07-04 12:00:27,494 - WARNING - 차단 감지 → 새로고침 시도 (1/3)
+2026-07-04 12:00:32,740 - WARNING - 차단 감지 → 새로고침 시도 (2/3)
+2026-07-04 12:00:38,059 - WARNING - 차단 감지 → 새로고침 시도 (3/3)
+2026-07-04 12:01:14,448 - ERROR - 로그인 실패: Message: 
+
+2026-07-04 12:01:14,486 - ERROR - 수집 실패: 로그인 실패
+2026-07-04 12:01:17,257 - INFO - 브라우저 종료
+2026-07-04 12:01:17,258 - WARNING - 실패 → 60초 후 재시도...
+2026-07-04 12:02:17,260 - INFO - >>> 시도 2/3
+2026-07-04 12:02:17,260 - INFO - ====== WebDriver manager ======
+2026-07-04 12:02:18,788 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 12:02:18,820 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 12:02:18,851 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 12:02:20,337 - INFO - 웹드라이버 설정 완료
+2026-07-04 12:02:20,337 - INFO - 로그인 페이지 접속...
+2026-07-04 12:02:26,398 - INFO - 아이디 입력 완료
+2026-07-04 12:02:28,137 - INFO - 비밀번호 입력 완료
+2026-07-04 12:02:30,614 - INFO - 로그인 버튼 클릭
+2026-07-04 12:02:40,621 - WARNING - 차단 감지 → 새로고침 시도 (1/3)
+2026-07-04 12:02:46,004 - WARNING - 차단 감지 → 새로고침 시도 (2/3)
+2026-07-04 12:02:51,227 - WARNING - 차단 감지 → 새로고침 시도 (3/3)
+2026-07-04 12:03:26,958 - ERROR - 로그인 실패: Message: 
+
+2026-07-04 12:03:27,009 - ERROR - 수집 실패: 로그인 실패
+2026-07-04 12:03:29,683 - INFO - 브라우저 종료
+2026-07-04 12:03:29,683 - WARNING - 실패 → 60초 후 재시도...
+2026-07-04 12:04:29,684 - INFO - >>> 시도 3/3
+2026-07-04 12:04:29,684 - INFO - ====== WebDriver manager ======
+2026-07-04 12:04:31,241 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 12:04:31,272 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 12:04:31,288 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 12:04:32,986 - INFO - 웹드라이버 설정 완료
+2026-07-04 12:04:32,986 - INFO - 로그인 페이지 접속...
+2026-07-04 12:04:38,555 - INFO - 아이디 입력 완료
+2026-07-04 12:04:40,189 - INFO - 비밀번호 입력 완료
+2026-07-04 12:04:42,225 - INFO - 로그인 버튼 클릭
+2026-07-04 12:04:52,232 - WARNING - 차단 감지 → 새로고침 시도 (1/3)
+2026-07-04 12:05:00,574 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-07-04 12:05:00,574 - INFO - 대시보드 페이지로 이동...
+2026-07-04 12:05:08,560 - INFO - 대시보드 테이블 로드 완료
+2026-07-04 12:05:15,261 - INFO - 20개 보기 설정 완료
+2026-07-04 12:05:15,329 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 8
+2026-07-04 12:05:15,355 - INFO -   [메인] 광고효율UP 상품만: 5,336원
+2026-07-04 12:05:15,372 - INFO -   [메인] 메인 전체 상품 단품+톡 3: 3,883원
+2026-07-04 12:05:15,388 - INFO -   [메인] 메인 전체 상품 단품+톡 2: 5,170원
+2026-07-04 12:05:15,404 - INFO -   [메인] 메인 전체 상품 단품+톡 1: 9,114원
+2026-07-04 12:05:15,421 - INFO -   [메인] 메인 상품 A 단품+톡 1: 3,325원
+2026-07-04 12:05:15,438 - INFO -   [메인] 메인 상품 B+C 단품+톡 3: 4,555원
+2026-07-04 12:05:15,455 - INFO -   [메인] 메인 상품 B+C 단품+톡 2: 4,847원
+2026-07-04 12:05:15,471 - INFO -   [메인] 메인 상품 B+C 단품+톡 1: 5,078원
+2026-07-04 12:05:15,488 - INFO -   [서브] 메인 상품 A 단품+톡 1: 3,428원
+2026-07-04 12:05:15,504 - INFO -   [서브] 메인 상품 B+C 단품+톡 3: 3,163원
+2026-07-04 12:05:15,521 - INFO -   [서브] 메인 상품 B+C 단품+톡 2: 5,712원
+2026-07-04 12:05:15,538 - INFO -   [서브] 메인 상품 B+C 단품+톡 1: 3,524원
+2026-07-04 12:05:15,555 - INFO -   [수동 키워드 노출] -2 / 매출최적화 변환: 0원
+2026-07-04 12:05:15,572 - INFO -   [수동 키워드 노출] -1 / 매출최적화 변환: 0원
+2026-07-04 12:05:15,589 - INFO -   0220 0259 0270 0324 0930 1012 1181 1235 1268 1583: 0원
+2026-07-04 12:05:15,605 - INFO -   [수동 키워드 노출] -2: 0원
+2026-07-04 12:05:15,622 - INFO -   [수동 키워드 노출] -1: 0원
+2026-07-04 12:05:15,639 - INFO -   0791 0944 0085 0083 0084 0320 0077 0131 1063_2: 0원
+2026-07-04 12:05:15,656 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 0원
+2026-07-04 12:05:15,672 - INFO -   [수동] 메인 아이폰16, 17 시리즈 [아이폰 키워드만]: 0원
+2026-07-04 12:05:15,673 - INFO - 총 20개 캠페인 | 합계: 57,135원
+2026-07-04 12:05:15,678 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-07-04.json
+2026-07-04 12:05:15,678 - INFO - 현재 시간(12시) 총 광고비: 57,135원
+2026-07-04 12:05:17,353 - WARNING - git pull 경고: error: Your local changes to the following files would be overwritten by merge:
+	auto_scheduler.py
+Please commit your changes or stash them before you merge.
+Aborting
+Merge with strategy ort failed.
+
+2026-07-04 12:05:20,029 - ERROR - git push 실패: To https://github.com/mirmoa/tools.git
+ ! [rejected]          master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/mirmoa/tools.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+2026-07-04 12:05:22,792 - INFO - 브라우저 종료
+2026-07-04 12:05:22,794 - INFO - ==================================================
+2026-07-04 12:05:22,794 - INFO - 작업 완료!
+2026-07-04 12:05:22,795 - INFO - ==================================================
+2026-07-04 13:00:03,401 - INFO - ==================================================
+2026-07-04 13:00:03,401 - INFO - 쿠팡 광고비 수집 시작
+2026-07-04 13:00:03,401 - INFO - ==================================================
+2026-07-04 13:00:03,401 - INFO - >>> 시도 1/3
+2026-07-04 13:00:03,401 - INFO - ====== WebDriver manager ======
+2026-07-04 13:00:04,964 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 13:00:04,995 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 13:00:05,026 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 13:00:06,745 - INFO - 웹드라이버 설정 완료
+2026-07-04 13:00:06,745 - INFO - 로그인 페이지 접속...
+2026-07-04 13:00:12,792 - INFO - 아이디 입력 완료
+2026-07-04 13:00:14,430 - INFO - 비밀번호 입력 완료
+2026-07-04 13:00:17,134 - INFO - 로그인 버튼 클릭
+2026-07-04 13:00:27,140 - WARNING - 차단 감지 → 새로고침 시도 (1/3)
+2026-07-04 13:00:32,382 - WARNING - 차단 감지 → 새로고침 시도 (2/3)
+2026-07-04 13:00:40,291 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-07-04 13:00:40,291 - INFO - 대시보드 페이지로 이동...
+2026-07-04 13:00:46,778 - INFO - 대시보드 테이블 로드 완료
+2026-07-04 13:00:55,653 - INFO - 20개 보기 설정 완료
+2026-07-04 13:00:55,718 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 8
+2026-07-04 13:00:55,748 - INFO -   [메인] 광고효율UP 상품만: 7,045원
+2026-07-04 13:00:55,766 - INFO -   [메인] 메인 전체 상품 단품+톡 3: 4,725원
+2026-07-04 13:00:55,783 - INFO -   [메인] 메인 전체 상품 단품+톡 2: 6,074원
+2026-07-04 13:00:55,799 - INFO -   [메인] 메인 전체 상품 단품+톡 1: 9,912원
+2026-07-04 13:00:55,817 - INFO -   [메인] 메인 상품 A 단품+톡 1: 3,727원
+2026-07-04 13:00:55,833 - INFO -   [메인] 메인 상품 B+C 단품+톡 3: 5,562원
+2026-07-04 13:00:55,849 - INFO -   [메인] 메인 상품 B+C 단품+톡 2: 5,351원
+2026-07-04 13:00:55,869 - INFO -   [메인] 메인 상품 B+C 단품+톡 1: 5,582원
+2026-07-04 13:00:55,886 - INFO -   [서브] 메인 상품 A 단품+톡 1: 4,377원
+2026-07-04 13:00:55,902 - INFO -   [서브] 메인 상품 B+C 단품+톡 3: 3,567원
+2026-07-04 13:00:55,919 - INFO -   [서브] 메인 상품 B+C 단품+톡 2: 6,819원
+2026-07-04 13:00:55,936 - INFO -   [서브] 메인 상품 B+C 단품+톡 1: 4,328원
+2026-07-04 13:00:55,953 - INFO -   [수동 키워드 노출] -2 / 매출최적화 변환: 0원
+2026-07-04 13:00:55,969 - INFO -   [수동 키워드 노출] -1 / 매출최적화 변환: 0원
+2026-07-04 13:00:55,986 - INFO -   0220 0259 0270 0324 0930 1012 1181 1235 1268 1583: 0원
+2026-07-04 13:00:56,002 - INFO -   [수동 키워드 노출] -2: 0원
+2026-07-04 13:00:56,019 - INFO -   [수동 키워드 노출] -1: 0원
+2026-07-04 13:00:56,035 - INFO -   0791 0944 0085 0083 0084 0320 0077 0131 1063_2: 0원
+2026-07-04 13:00:56,052 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 0원
+2026-07-04 13:00:56,069 - INFO -   [수동] 메인 아이폰16, 17 시리즈 [아이폰 키워드만]: 0원
+2026-07-04 13:00:56,069 - INFO - 총 20개 캠페인 | 합계: 67,069원
+2026-07-04 13:00:56,073 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-07-04.json
+2026-07-04 13:00:56,074 - INFO - 현재 시간(13시) 총 광고비: 67,069원
+2026-07-04 13:00:57,960 - WARNING - git pull 경고: error: Your local changes to the following files would be overwritten by merge:
+	auto_scheduler.py
+Please commit your changes or stash them before you merge.
+Aborting
+Merge with strategy ort failed.
+
+2026-07-04 13:01:00,238 - ERROR - git push 실패: To https://github.com/mirmoa/tools.git
+ ! [rejected]          master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/mirmoa/tools.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+2026-07-04 13:01:03,097 - INFO - 브라우저 종료
+2026-07-04 13:01:03,097 - INFO - ==================================================
+2026-07-04 13:01:03,097 - INFO - 작업 완료!
+2026-07-04 13:01:03,097 - INFO - ==================================================
+2026-07-04 14:00:03,520 - INFO - ==================================================
+2026-07-04 14:00:03,520 - INFO - 쿠팡 광고비 수집 시작
+2026-07-04 14:00:03,520 - INFO - ==================================================
+2026-07-04 14:00:03,520 - INFO - >>> 시도 1/3
+2026-07-04 14:00:03,520 - INFO - ====== WebDriver manager ======
+2026-07-04 14:00:05,268 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 14:00:05,315 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 14:00:05,346 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 14:00:07,189 - INFO - 웹드라이버 설정 완료
+2026-07-04 14:00:07,189 - INFO - 로그인 페이지 접속...
+2026-07-04 14:00:13,190 - INFO - 아이디 입력 완료
+2026-07-04 14:00:14,742 - INFO - 비밀번호 입력 완료
+2026-07-04 14:00:17,505 - INFO - 로그인 버튼 클릭
+2026-07-04 14:00:27,512 - WARNING - 차단 감지 → 새로고침 시도 (1/3)
+2026-07-04 14:00:33,077 - WARNING - 차단 감지 → 새로고침 시도 (2/3)
+2026-07-04 14:00:38,409 - WARNING - 차단 감지 → 새로고침 시도 (3/3)
+2026-07-04 14:01:13,935 - ERROR - 로그인 실패: Message: 
+
+2026-07-04 14:01:13,978 - ERROR - 수집 실패: 로그인 실패
+2026-07-04 14:01:16,648 - INFO - 브라우저 종료
+2026-07-04 14:01:16,648 - WARNING - 실패 → 60초 후 재시도...
+2026-07-04 14:02:16,650 - INFO - >>> 시도 2/3
+2026-07-04 14:02:16,650 - INFO - ====== WebDriver manager ======
+2026-07-04 14:02:18,196 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 14:02:18,228 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 14:02:18,243 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 14:02:19,862 - INFO - 웹드라이버 설정 완료
+2026-07-04 14:02:19,863 - INFO - 로그인 페이지 접속...
+2026-07-04 14:02:25,640 - INFO - 아이디 입력 완료
+2026-07-04 14:02:27,315 - INFO - 비밀번호 입력 완료
+2026-07-04 14:02:30,762 - INFO - 로그인 버튼 클릭
+2026-07-04 14:02:40,787 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-07-04 14:02:40,788 - INFO - 대시보드 페이지로 이동...
+2026-07-04 14:02:49,058 - INFO - 대시보드 테이블 로드 완료
+2026-07-04 14:02:56,117 - INFO - 20개 보기 설정 완료
+2026-07-04 14:02:56,189 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 8
+2026-07-04 14:02:56,215 - INFO -   [메인] 광고효율UP 상품만: 7,448원
+2026-07-04 14:02:56,232 - INFO -   [메인] 메인 전체 상품 단품+톡 3: 6,123원
+2026-07-04 14:02:56,248 - INFO -   [메인] 메인 전체 상품 단품+톡 2: 6,476원
+2026-07-04 14:02:56,265 - INFO -   [메인] 메인 전체 상품 단품+톡 1: 11,230원
+2026-07-04 14:02:56,281 - INFO -   [메인] 메인 상품 A 단품+톡 1: 4,128원
+2026-07-04 14:02:56,298 - INFO -   [메인] 메인 상품 B+C 단품+톡 3: 5,764원
+2026-07-04 14:02:56,314 - INFO -   [메인] 메인 상품 B+C 단품+톡 2: 6,057원
+2026-07-04 14:02:56,331 - INFO -   [메인] 메인 상품 B+C 단품+톡 1: 5,985원
+2026-07-04 14:02:56,347 - INFO -   [서브] 메인 상품 A 단품+톡 1: 4,980원
+2026-07-04 14:02:56,364 - INFO -   [서브] 메인 상품 B+C 단품+톡 3: 3,667원
+2026-07-04 14:02:56,381 - INFO -   [서브] 메인 상품 B+C 단품+톡 2: 7,221원
+2026-07-04 14:02:56,397 - INFO -   [서브] 메인 상품 B+C 단품+톡 1: 5,131원
+2026-07-04 14:02:56,414 - INFO -   [수동 키워드 노출] -2 / 매출최적화 변환: 0원
+2026-07-04 14:02:56,431 - INFO -   [수동 키워드 노출] -1 / 매출최적화 변환: 0원
+2026-07-04 14:02:56,447 - INFO -   0220 0259 0270 0324 0930 1012 1181 1235 1268 1583: 0원
+2026-07-04 14:02:56,464 - INFO -   [수동 키워드 노출] -2: 0원
+2026-07-04 14:02:56,481 - INFO -   [수동 키워드 노출] -1: 0원
+2026-07-04 14:02:56,497 - INFO -   0791 0944 0085 0083 0084 0320 0077 0131 1063_2: 0원
+2026-07-04 14:02:56,514 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 0원
+2026-07-04 14:02:56,531 - INFO -   [수동] 메인 아이폰16, 17 시리즈 [아이폰 키워드만]: 0원
+2026-07-04 14:02:56,531 - INFO - 총 20개 캠페인 | 합계: 74,210원
+2026-07-04 14:02:56,543 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-07-04.json
+2026-07-04 14:02:56,543 - INFO - 현재 시간(14시) 총 광고비: 74,210원
+2026-07-04 14:02:58,685 - WARNING - git pull 경고: error: Your local changes to the following files would be overwritten by merge:
+	auto_scheduler.py
+Please commit your changes or stash them before you merge.
+Aborting
+Merge with strategy ort failed.
+
+2026-07-04 14:03:01,052 - ERROR - git push 실패: To https://github.com/mirmoa/tools.git
+ ! [rejected]          master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/mirmoa/tools.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+2026-07-04 14:03:03,855 - INFO - 브라우저 종료
+2026-07-04 14:03:03,855 - INFO - ==================================================
+2026-07-04 14:03:03,855 - INFO - 작업 완료!
+2026-07-04 14:03:03,855 - INFO - ==================================================
+2026-07-04 15:00:03,526 - INFO - ==================================================
+2026-07-04 15:00:03,526 - INFO - 쿠팡 광고비 수집 시작
+2026-07-04 15:00:03,526 - INFO - ==================================================
+2026-07-04 15:00:03,526 - INFO - >>> 시도 1/3
+2026-07-04 15:00:03,526 - INFO - ====== WebDriver manager ======
+2026-07-04 15:00:05,115 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 15:00:05,162 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 15:00:05,178 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 15:00:07,053 - INFO - 웹드라이버 설정 완료
+2026-07-04 15:00:07,053 - INFO - 로그인 페이지 접속...
+2026-07-04 15:00:12,748 - INFO - 아이디 입력 완료
+2026-07-04 15:00:14,395 - INFO - 비밀번호 입력 완료
+2026-07-04 15:00:18,785 - INFO - 로그인 버튼 클릭
+2026-07-04 15:00:28,790 - WARNING - 차단 감지 → 새로고침 시도 (1/3)
+2026-07-04 15:00:36,908 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-07-04 15:00:36,908 - INFO - 대시보드 페이지로 이동...
+2026-07-04 15:00:44,889 - INFO - 대시보드 테이블 로드 완료
+2026-07-04 15:00:52,713 - INFO - 20개 보기 설정 완료
+2026-07-04 15:00:52,781 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 8
+2026-07-04 15:00:52,808 - INFO -   [메인] 광고효율UP 상품만: 9,054원
+2026-07-04 15:00:52,825 - INFO -   [메인] 메인 전체 상품 단품+톡 3: 6,727원
+2026-07-04 15:00:52,843 - INFO -   [메인] 메인 전체 상품 단품+톡 2: 7,483원
+2026-07-04 15:00:52,860 - INFO -   [메인] 메인 전체 상품 단품+톡 1: 13,957원
+2026-07-04 15:00:52,878 - INFO -   [메인] 메인 상품 A 단품+톡 1: 5,334원
+2026-07-04 15:00:52,895 - INFO -   [메인] 메인 상품 B+C 단품+톡 3: 6,267원
+2026-07-04 15:00:52,913 - INFO -   [메인] 메인 상품 B+C 단품+톡 2: 6,661원
+2026-07-04 15:00:52,930 - INFO -   [메인] 메인 상품 B+C 단품+톡 1: 6,690원
+2026-07-04 15:00:52,948 - INFO -   [서브] 메인 상품 A 단품+톡 1: 5,784원
+2026-07-04 15:00:52,965 - INFO -   [서브] 메인 상품 B+C 단품+톡 3: 4,905원
+2026-07-04 15:00:52,982 - INFO -   [서브] 메인 상품 B+C 단품+톡 2: 8,026원
+2026-07-04 15:00:53,000 - INFO -   [서브] 메인 상품 B+C 단품+톡 1: 5,736원
+2026-07-04 15:00:53,019 - INFO -   [수동 키워드 노출] -2 / 매출최적화 변환: 0원
+2026-07-04 15:00:53,036 - INFO -   [수동 키워드 노출] -1 / 매출최적화 변환: 0원
+2026-07-04 15:00:53,053 - INFO -   0220 0259 0270 0324 0930 1012 1181 1235 1268 1583: 0원
+2026-07-04 15:00:53,071 - INFO -   [수동 키워드 노출] -2: 0원
+2026-07-04 15:00:53,088 - INFO -   [수동 키워드 노출] -1: 0원
+2026-07-04 15:00:53,105 - INFO -   0791 0944 0085 0083 0084 0320 0077 0131 1063_2: 0원
+2026-07-04 15:00:53,123 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 0원
+2026-07-04 15:00:53,140 - INFO -   [수동] 메인 아이폰16, 17 시리즈 [아이폰 키워드만]: 0원
+2026-07-04 15:00:53,141 - INFO - 총 20개 캠페인 | 합계: 86,624원
+2026-07-04 15:00:53,143 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-07-04.json
+2026-07-04 15:00:53,143 - INFO - 현재 시간(15시) 총 광고비: 86,624원
+2026-07-04 15:00:54,957 - WARNING - git pull 경고: error: Your local changes to the following files would be overwritten by merge:
+	auto_scheduler.py
+Please commit your changes or stash them before you merge.
+Aborting
+Merge with strategy ort failed.
+
+2026-07-04 15:00:57,193 - ERROR - git push 실패: To https://github.com/mirmoa/tools.git
+ ! [rejected]          master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/mirmoa/tools.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+2026-07-04 15:01:00,072 - INFO - 브라우저 종료
+2026-07-04 15:01:00,072 - INFO - ==================================================
+2026-07-04 15:01:00,072 - INFO - 작업 완료!
+2026-07-04 15:01:00,072 - INFO - ==================================================
+2026-07-04 16:00:03,384 - INFO - ==================================================
+2026-07-04 16:00:03,384 - INFO - 쿠팡 광고비 수집 시작
+2026-07-04 16:00:03,384 - INFO - ==================================================
+2026-07-04 16:00:03,384 - INFO - >>> 시도 1/3
+2026-07-04 16:00:03,384 - INFO - ====== WebDriver manager ======
+2026-07-04 16:00:04,985 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 16:00:05,017 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 16:00:05,048 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 16:00:06,605 - INFO - 웹드라이버 설정 완료
+2026-07-04 16:00:06,606 - INFO - 로그인 페이지 접속...
+2026-07-04 16:00:12,730 - INFO - 아이디 입력 완료
+2026-07-04 16:00:14,383 - INFO - 비밀번호 입력 완료
+2026-07-04 16:00:18,699 - INFO - 로그인 버튼 클릭
+2026-07-04 16:00:28,704 - WARNING - 차단 감지 → 새로고침 시도 (1/3)
+2026-07-04 16:00:33,987 - WARNING - 차단 감지 → 새로고침 시도 (2/3)
+2026-07-04 16:00:39,233 - WARNING - 차단 감지 → 새로고침 시도 (3/3)
+2026-07-04 16:00:47,244 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-07-04 16:00:47,244 - INFO - 대시보드 페이지로 이동...
+2026-07-04 16:00:55,349 - INFO - 대시보드 테이블 로드 완료
+2026-07-04 16:01:03,252 - INFO - 20개 보기 설정 완료
+2026-07-04 16:01:03,316 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 8
+2026-07-04 16:01:03,346 - INFO -   [메인] 광고효율UP 상품만: 10,197원
+2026-07-04 16:01:03,365 - INFO -   [메인] 메인 전체 상품 단품+톡 3: 8,427원
+2026-07-04 16:01:03,383 - INFO -   [메인] 메인 전체 상품 단품+톡 2: 8,086원
+2026-07-04 16:01:03,399 - INFO -   [메인] 메인 전체 상품 단품+톡 1: 16,577원
+2026-07-04 16:01:03,416 - INFO -   [메인] 메인 상품 A 단품+톡 1: 5,839원
+2026-07-04 16:01:03,433 - INFO -   [메인] 메인 상품 B+C 단품+톡 3: 7,574원
+2026-07-04 16:01:03,450 - INFO -   [메인] 메인 상품 B+C 단품+톡 2: 7,467원
+2026-07-04 16:01:03,466 - INFO -   [메인] 메인 상품 B+C 단품+톡 1: 7,193원
+2026-07-04 16:01:03,484 - INFO -   [서브] 메인 상품 A 단품+톡 1: 6,958원
+2026-07-04 16:01:03,501 - INFO -   [서브] 메인 상품 B+C 단품+톡 3: 5,610원
+2026-07-04 16:01:03,518 - INFO -   [서브] 메인 상품 B+C 단품+톡 2: 8,878원
+2026-07-04 16:01:03,534 - INFO -   [서브] 메인 상품 B+C 단품+톡 1: 6,841원
+2026-07-04 16:01:03,551 - INFO -   [수동 키워드 노출] -2 / 매출최적화 변환: 0원
+2026-07-04 16:01:03,568 - INFO -   [수동 키워드 노출] -1 / 매출최적화 변환: 0원
+2026-07-04 16:01:03,584 - INFO -   0220 0259 0270 0324 0930 1012 1181 1235 1268 1583: 0원
+2026-07-04 16:01:03,601 - INFO -   [수동 키워드 노출] -2: 0원
+2026-07-04 16:01:03,619 - INFO -   [수동 키워드 노출] -1: 0원
+2026-07-04 16:01:03,635 - INFO -   0791 0944 0085 0083 0084 0320 0077 0131 1063_2: 0원
+2026-07-04 16:01:03,652 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 0원
+2026-07-04 16:01:03,669 - INFO -   [수동] 메인 아이폰16, 17 시리즈 [아이폰 키워드만]: 0원
+2026-07-04 16:01:03,669 - INFO - 총 20개 캠페인 | 합계: 99,647원
+2026-07-04 16:01:03,674 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-07-04.json
+2026-07-04 16:01:03,674 - INFO - 현재 시간(16시) 총 광고비: 99,647원
+2026-07-04 16:01:05,309 - WARNING - git pull 경고: error: Your local changes to the following files would be overwritten by merge:
+	auto_scheduler.py
+Please commit your changes or stash them before you merge.
+Aborting
+Merge with strategy ort failed.
+
+2026-07-04 16:01:07,533 - ERROR - git push 실패: To https://github.com/mirmoa/tools.git
+ ! [rejected]          master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/mirmoa/tools.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+2026-07-04 16:01:10,401 - INFO - 브라우저 종료
+2026-07-04 16:01:10,401 - INFO - ==================================================
+2026-07-04 16:01:10,401 - INFO - 작업 완료!
+2026-07-04 16:01:10,401 - INFO - ==================================================
+2026-07-04 17:00:03,352 - INFO - ==================================================
+2026-07-04 17:00:03,352 - INFO - 쿠팡 광고비 수집 시작
+2026-07-04 17:00:03,352 - INFO - ==================================================
+2026-07-04 17:00:03,352 - INFO - >>> 시도 1/3
+2026-07-04 17:00:03,352 - INFO - ====== WebDriver manager ======
+2026-07-04 17:00:04,930 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 17:00:04,961 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 17:00:04,977 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 17:00:06,531 - INFO - 웹드라이버 설정 완료
+2026-07-04 17:00:06,532 - INFO - 로그인 페이지 접속...
+2026-07-04 17:00:12,784 - INFO - 아이디 입력 완료
+2026-07-04 17:00:14,394 - INFO - 비밀번호 입력 완료
+2026-07-04 17:00:17,292 - INFO - 로그인 버튼 클릭
+2026-07-04 17:00:27,297 - WARNING - 차단 감지 → 새로고침 시도 (1/3)
+2026-07-04 17:00:32,551 - WARNING - 차단 감지 → 새로고침 시도 (2/3)
+2026-07-04 17:00:37,853 - WARNING - 차단 감지 → 새로고침 시도 (3/3)
+2026-07-04 17:01:13,373 - ERROR - 로그인 실패: Message: 
+
+2026-07-04 17:01:13,416 - ERROR - 수집 실패: 로그인 실패
+2026-07-04 17:01:16,073 - INFO - 브라우저 종료
+2026-07-04 17:01:16,073 - WARNING - 실패 → 60초 후 재시도...
+2026-07-04 17:02:16,075 - INFO - >>> 시도 2/3
+2026-07-04 17:02:16,075 - INFO - ====== WebDriver manager ======
+2026-07-04 17:02:17,621 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 17:02:17,636 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 17:02:17,668 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 17:02:19,235 - INFO - 웹드라이버 설정 완료
+2026-07-04 17:02:19,235 - INFO - 로그인 페이지 접속...
+2026-07-04 17:02:28,044 - INFO - 아이디 입력 완료
+2026-07-04 17:02:29,615 - INFO - 비밀번호 입력 완료
+2026-07-04 17:02:32,034 - INFO - 로그인 버튼 클릭
+2026-07-04 17:02:42,040 - WARNING - 차단 감지 → 새로고침 시도 (1/3)
+2026-07-04 17:02:47,325 - WARNING - 차단 감지 → 새로고침 시도 (2/3)
+2026-07-04 17:02:52,574 - WARNING - 차단 감지 → 새로고침 시도 (3/3)
+2026-07-04 17:03:28,104 - ERROR - 로그인 실패: Message: 
+
+2026-07-04 17:03:28,157 - ERROR - 수집 실패: 로그인 실패
+2026-07-04 17:03:30,937 - INFO - 브라우저 종료
+2026-07-04 17:03:30,937 - WARNING - 실패 → 60초 후 재시도...
+2026-07-04 17:04:30,939 - INFO - >>> 시도 3/3
+2026-07-04 17:04:30,939 - INFO - ====== WebDriver manager ======
+2026-07-04 17:04:32,540 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 17:04:32,555 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 17:04:32,571 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 17:04:34,253 - INFO - 웹드라이버 설정 완료
+2026-07-04 17:04:34,253 - INFO - 로그인 페이지 접속...
+2026-07-04 17:04:40,142 - INFO - 아이디 입력 완료
+2026-07-04 17:04:41,702 - INFO - 비밀번호 입력 완료
+2026-07-04 17:04:45,645 - INFO - 로그인 버튼 클릭
+2026-07-04 17:04:55,650 - WARNING - 차단 감지 → 새로고침 시도 (1/3)
+2026-07-04 17:05:01,276 - WARNING - 차단 감지 → 새로고침 시도 (2/3)
+2026-07-04 17:05:06,563 - WARNING - 차단 감지 → 새로고침 시도 (3/3)
+2026-07-04 17:05:14,469 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-07-04 17:05:14,469 - INFO - 대시보드 페이지로 이동...
+2026-07-04 17:05:22,332 - INFO - 대시보드 테이블 로드 완료
+2026-07-04 17:05:29,445 - INFO - 20개 보기 설정 완료
+2026-07-04 17:05:29,511 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 8
+2026-07-04 17:05:29,538 - INFO -   [메인] 광고효율UP 상품만: 11,075원
+2026-07-04 17:05:29,555 - INFO -   [메인] 메인 전체 상품 단품+톡 3: 9,332원
+2026-07-04 17:05:29,572 - INFO -   [메인] 메인 전체 상품 단품+톡 2: 9,393원
+2026-07-04 17:05:29,589 - INFO -   [메인] 메인 전체 상품 단품+톡 1: 18,579원
+2026-07-04 17:05:29,605 - INFO -   [메인] 메인 상품 A 단품+톡 1: 6,848원
+2026-07-04 17:05:29,622 - INFO -   [메인] 메인 상품 B+C 단품+톡 3: 9,285원
+2026-07-04 17:05:29,638 - INFO -   [메인] 메인 상품 B+C 단품+톡 2: 7,869원
+2026-07-04 17:05:29,657 - INFO -   [메인] 메인 상품 B+C 단품+톡 1: 8,824원
+2026-07-04 17:05:29,675 - INFO -   [서브] 메인 상품 A 단품+톡 1: 8,573원
+2026-07-04 17:05:29,691 - INFO -   [서브] 메인 상품 B+C 단품+톡 3: 5,912원
+2026-07-04 17:05:29,708 - INFO -   [서브] 메인 상품 B+C 단품+톡 2: 10,420원
+2026-07-04 17:05:29,724 - INFO -   [서브] 메인 상품 B+C 단품+톡 1: 7,648원
+2026-07-04 17:05:29,741 - INFO -   [수동 키워드 노출] -2 / 매출최적화 변환: 0원
+2026-07-04 17:05:29,760 - INFO -   [수동 키워드 노출] -1 / 매출최적화 변환: 0원
+2026-07-04 17:05:29,779 - INFO -   0220 0259 0270 0324 0930 1012 1181 1235 1268 1583: 0원
+2026-07-04 17:05:29,797 - INFO -   [수동 키워드 노출] -2: 0원
+2026-07-04 17:05:29,815 - INFO -   [수동 키워드 노출] -1: 0원
+2026-07-04 17:05:29,834 - INFO -   0791 0944 0085 0083 0084 0320 0077 0131 1063_2: 0원
+2026-07-04 17:05:29,852 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 0원
+2026-07-04 17:05:29,870 - INFO -   [수동] 메인 아이폰16, 17 시리즈 [아이폰 키워드만]: 0원
+2026-07-04 17:05:29,871 - INFO - 총 20개 캠페인 | 합계: 113,758원
+2026-07-04 17:05:29,873 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-07-04.json
+2026-07-04 17:05:29,873 - INFO - 현재 시간(17시) 총 광고비: 113,758원
+2026-07-04 17:05:31,621 - WARNING - git pull 경고: error: Your local changes to the following files would be overwritten by merge:
+	auto_scheduler.py
+Please commit your changes or stash them before you merge.
+Aborting
+Merge with strategy ort failed.
+
+2026-07-04 17:05:34,712 - ERROR - git push 실패: To https://github.com/mirmoa/tools.git
+ ! [rejected]          master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/mirmoa/tools.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+2026-07-04 17:05:37,694 - INFO - 브라우저 종료
+2026-07-04 17:05:37,694 - INFO - ==================================================
+2026-07-04 17:05:37,694 - INFO - 작업 완료!
+2026-07-04 17:05:37,694 - INFO - ==================================================
+2026-07-04 18:00:03,948 - INFO - ==================================================
+2026-07-04 18:00:03,948 - INFO - 쿠팡 광고비 수집 시작
+2026-07-04 18:00:03,948 - INFO - ==================================================
+2026-07-04 18:00:03,948 - INFO - >>> 시도 1/3
+2026-07-04 18:00:03,948 - INFO - ====== WebDriver manager ======
+2026-07-04 18:00:05,823 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 18:00:05,855 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 18:00:05,886 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 18:00:07,849 - INFO - 웹드라이버 설정 완료
+2026-07-04 18:00:07,850 - INFO - 로그인 페이지 접속...
+2026-07-04 18:00:13,765 - INFO - 아이디 입력 완료
+2026-07-04 18:00:15,539 - INFO - 비밀번호 입력 완료
+2026-07-04 18:00:19,184 - INFO - 로그인 버튼 클릭
+2026-07-04 18:00:29,190 - WARNING - 차단 감지 → 새로고침 시도 (1/3)
+2026-07-04 18:00:34,471 - WARNING - 차단 감지 → 새로고침 시도 (2/3)
+2026-07-04 18:00:39,756 - WARNING - 차단 감지 → 새로고침 시도 (3/3)
+2026-07-04 18:01:15,252 - ERROR - 로그인 실패: Message: 
+
+2026-07-04 18:01:15,296 - ERROR - 수집 실패: 로그인 실패
+2026-07-04 18:01:18,387 - INFO - 브라우저 종료
+2026-07-04 18:01:18,387 - WARNING - 실패 → 60초 후 재시도...
+2026-07-04 18:02:18,389 - INFO - >>> 시도 2/3
+2026-07-04 18:02:18,389 - INFO - ====== WebDriver manager ======
+2026-07-04 18:02:20,185 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 18:02:20,201 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 18:02:20,232 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 18:02:21,885 - INFO - 웹드라이버 설정 완료
+2026-07-04 18:02:21,886 - INFO - 로그인 페이지 접속...
+2026-07-04 18:02:28,220 - INFO - 아이디 입력 완료
+2026-07-04 18:02:29,846 - INFO - 비밀번호 입력 완료
+2026-07-04 18:02:32,624 - INFO - 로그인 버튼 클릭
+2026-07-04 18:02:42,629 - WARNING - 차단 감지 → 새로고침 시도 (1/3)
+2026-07-04 18:02:47,906 - WARNING - 차단 감지 → 새로고침 시도 (2/3)
+2026-07-04 18:02:53,150 - WARNING - 차단 감지 → 새로고침 시도 (3/3)
+2026-07-04 18:03:00,965 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-07-04 18:03:00,965 - INFO - 대시보드 페이지로 이동...
+2026-07-04 18:03:09,317 - INFO - 대시보드 테이블 로드 완료
+2026-07-04 18:03:16,662 - INFO - 20개 보기 설정 완료
+2026-07-04 18:03:16,727 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 8
+2026-07-04 18:03:16,759 - INFO -   [메인] 광고효율UP 상품만: 12,688원
+2026-07-04 18:03:16,780 - INFO -   [메인] 메인 전체 상품 단품+톡 3: 10,967원
+2026-07-04 18:03:16,800 - INFO -   [메인] 메인 전체 상품 단품+톡 2: 10,399원
+2026-07-04 18:03:16,819 - INFO -   [메인] 메인 전체 상품 단품+톡 1: 21,380원
+2026-07-04 18:03:16,838 - INFO -   [메인] 메인 상품 A 단품+톡 1: 7,552원
+2026-07-04 18:03:16,857 - INFO -   [메인] 메인 상품 B+C 단품+톡 3: 9,891원
+2026-07-04 18:03:16,875 - INFO -   [메인] 메인 상품 B+C 단품+톡 2: 8,772원
+2026-07-04 18:03:16,893 - INFO -   [메인] 메인 상품 B+C 단품+톡 1: 10,032원
+2026-07-04 18:03:16,912 - INFO -   [서브] 메인 상품 A 단품+톡 1: 10,219원
+2026-07-04 18:03:16,932 - INFO -   [서브] 메인 상품 B+C 단품+톡 3: 6,214원
+2026-07-04 18:03:16,951 - INFO -   [서브] 메인 상품 B+C 단품+톡 2: 11,467원
+2026-07-04 18:03:16,971 - INFO -   [서브] 메인 상품 B+C 단품+톡 1: 9,157원
+2026-07-04 18:03:16,991 - INFO -   [수동 키워드 노출] -2 / 매출최적화 변환: 0원
+2026-07-04 18:03:17,011 - INFO -   [수동 키워드 노출] -1 / 매출최적화 변환: 0원
+2026-07-04 18:03:17,032 - INFO -   0220 0259 0270 0324 0930 1012 1181 1235 1268 1583: 0원
+2026-07-04 18:03:17,052 - INFO -   [수동 키워드 노출] -2: 0원
+2026-07-04 18:03:17,073 - INFO -   [수동 키워드 노출] -1: 0원
+2026-07-04 18:03:17,092 - INFO -   0791 0944 0085 0083 0084 0320 0077 0131 1063_2: 0원
+2026-07-04 18:03:17,110 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 0원
+2026-07-04 18:03:17,128 - INFO -   [수동] 메인 아이폰16, 17 시리즈 [아이폰 키워드만]: 0원
+2026-07-04 18:03:17,128 - INFO - 총 20개 캠페인 | 합계: 128,738원
+2026-07-04 18:03:17,133 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-07-04.json
+2026-07-04 18:03:17,133 - INFO - 현재 시간(18시) 총 광고비: 128,738원
+2026-07-04 18:03:19,228 - WARNING - git pull 경고: error: Your local changes to the following files would be overwritten by merge:
+	auto_scheduler.py
+Please commit your changes or stash them before you merge.
+Aborting
+Merge with strategy ort failed.
+
+2026-07-04 18:03:22,035 - ERROR - git push 실패: To https://github.com/mirmoa/tools.git
+ ! [rejected]          master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/mirmoa/tools.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+2026-07-04 18:03:25,407 - INFO - 브라우저 종료
+2026-07-04 18:03:25,407 - INFO - ==================================================
+2026-07-04 18:03:25,407 - INFO - 작업 완료!
+2026-07-04 18:03:25,407 - INFO - ==================================================
+2026-07-04 19:00:03,527 - INFO - ==================================================
+2026-07-04 19:00:03,527 - INFO - 쿠팡 광고비 수집 시작
+2026-07-04 19:00:03,527 - INFO - ==================================================
+2026-07-04 19:00:03,527 - INFO - >>> 시도 1/3
+2026-07-04 19:00:03,527 - INFO - ====== WebDriver manager ======
+2026-07-04 19:00:05,128 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 19:00:05,159 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 19:00:05,191 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 19:00:06,801 - INFO - 웹드라이버 설정 완료
+2026-07-04 19:00:06,801 - INFO - 로그인 페이지 접속...
+2026-07-04 19:00:12,685 - INFO - 아이디 입력 완료
+2026-07-04 19:00:14,362 - INFO - 비밀번호 입력 완료
+2026-07-04 19:00:18,451 - INFO - 로그인 버튼 클릭
+2026-07-04 19:00:28,458 - WARNING - 차단 감지 → 새로고침 시도 (1/3)
+2026-07-04 19:00:36,572 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-07-04 19:00:36,573 - INFO - 대시보드 페이지로 이동...
+2026-07-04 19:00:47,067 - INFO - 대시보드 테이블 로드 완료
+2026-07-04 19:00:57,047 - INFO - 20개 보기 설정 완료
+2026-07-04 19:00:57,116 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 8
+2026-07-04 19:00:57,145 - INFO -   [메인] 광고효율UP 상품만: 14,487원
+2026-07-04 19:00:57,163 - INFO -   [메인] 메인 전체 상품 단품+톡 3: 12,356원
+2026-07-04 19:00:57,180 - INFO -   [메인] 메인 전체 상품 단품+톡 2: 11,504원
+2026-07-04 19:00:57,197 - INFO -   [메인] 메인 전체 상품 단품+톡 1: 24,176원
+2026-07-04 19:00:57,214 - INFO -   [메인] 메인 상품 A 단품+톡 1: 8,258원
+2026-07-04 19:00:57,231 - INFO -   [메인] 메인 상품 B+C 단품+톡 3: 11,502원
+2026-07-04 19:00:57,247 - INFO -   [메인] 메인 상품 B+C 단품+톡 2: 11,547원
+2026-07-04 19:00:57,265 - INFO -   [메인] 메인 상품 B+C 단품+톡 1: 10,736원
+2026-07-04 19:00:57,282 - INFO -   [서브] 메인 상품 A 단품+톡 1: 11,164원
+2026-07-04 19:00:57,299 - INFO -   [서브] 메인 상품 B+C 단품+톡 3: 6,617원
+2026-07-04 19:00:57,316 - INFO -   [서브] 메인 상품 B+C 단품+톡 2: 12,572원
+2026-07-04 19:00:57,333 - INFO -   [서브] 메인 상품 B+C 단품+톡 1: 9,359원
+2026-07-04 19:00:57,350 - INFO -   [수동 키워드 노출] -2 / 매출최적화 변환: 0원
+2026-07-04 19:00:57,367 - INFO -   [수동 키워드 노출] -1 / 매출최적화 변환: 0원
+2026-07-04 19:00:57,384 - INFO -   0220 0259 0270 0324 0930 1012 1181 1235 1268 1583: 0원
+2026-07-04 19:00:57,401 - INFO -   [수동 키워드 노출] -2: 0원
+2026-07-04 19:00:57,418 - INFO -   [수동 키워드 노출] -1: 0원
+2026-07-04 19:00:57,434 - INFO -   0791 0944 0085 0083 0084 0320 0077 0131 1063_2: 0원
+2026-07-04 19:00:57,454 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 0원
+2026-07-04 19:00:57,473 - INFO -   [수동] 메인 아이폰16, 17 시리즈 [아이폰 키워드만]: 0원
+2026-07-04 19:00:57,473 - INFO - 총 20개 캠페인 | 합계: 144,278원
+2026-07-04 19:00:57,476 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-07-04.json
+2026-07-04 19:00:57,476 - INFO - 현재 시간(19시) 총 광고비: 144,278원
+2026-07-04 19:00:59,296 - WARNING - git pull 경고: error: Your local changes to the following files would be overwritten by merge:
+	auto_scheduler.py
+Please commit your changes or stash them before you merge.
+Aborting
+Merge with strategy ort failed.
+
+2026-07-04 19:01:01,512 - ERROR - git push 실패: To https://github.com/mirmoa/tools.git
+ ! [rejected]          master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/mirmoa/tools.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+2026-07-04 19:01:04,440 - INFO - 브라우저 종료
+2026-07-04 19:01:04,440 - INFO - ==================================================
+2026-07-04 19:01:04,440 - INFO - 작업 완료!
+2026-07-04 19:01:04,440 - INFO - ==================================================
+2026-07-04 20:00:03,480 - INFO - ==================================================
+2026-07-04 20:00:03,480 - INFO - 쿠팡 광고비 수집 시작
+2026-07-04 20:00:03,480 - INFO - ==================================================
+2026-07-04 20:00:03,480 - INFO - >>> 시도 1/3
+2026-07-04 20:00:03,480 - INFO - ====== WebDriver manager ======
+2026-07-04 20:00:05,179 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 20:00:05,226 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 20:00:05,241 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 20:00:07,632 - INFO - 웹드라이버 설정 완료
+2026-07-04 20:00:07,633 - INFO - 로그인 페이지 접속...
+2026-07-04 20:00:13,022 - INFO - 아이디 입력 완료
+2026-07-04 20:00:14,650 - INFO - 비밀번호 입력 완료
+2026-07-04 20:00:17,730 - INFO - 로그인 버튼 클릭
+2026-07-04 20:00:27,736 - WARNING - 차단 감지 → 새로고침 시도 (1/3)
+2026-07-04 20:00:32,974 - WARNING - 차단 감지 → 새로고침 시도 (2/3)
+2026-07-04 20:00:38,229 - WARNING - 차단 감지 → 새로고침 시도 (3/3)
+2026-07-04 20:01:13,812 - ERROR - 로그인 실패: Message: 
+
+2026-07-04 20:01:13,853 - ERROR - 수집 실패: 로그인 실패
+2026-07-04 20:01:17,026 - INFO - 브라우저 종료
+2026-07-04 20:01:17,026 - WARNING - 실패 → 60초 후 재시도...
+2026-07-04 20:02:17,028 - INFO - >>> 시도 2/3
+2026-07-04 20:02:17,028 - INFO - ====== WebDriver manager ======
+2026-07-04 20:02:19,347 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 20:02:19,558 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 20:02:19,574 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 20:02:21,561 - INFO - 웹드라이버 설정 완료
+2026-07-04 20:02:21,562 - INFO - 로그인 페이지 접속...
+2026-07-04 20:02:27,343 - INFO - 아이디 입력 완료
+2026-07-04 20:02:29,028 - INFO - 비밀번호 입력 완료
+2026-07-04 20:02:32,271 - INFO - 로그인 버튼 클릭
+2026-07-04 20:02:42,276 - WARNING - 차단 감지 → 새로고침 시도 (1/3)
+2026-07-04 20:02:47,493 - WARNING - 차단 감지 → 새로고침 시도 (2/3)
+2026-07-04 20:02:52,731 - WARNING - 차단 감지 → 새로고침 시도 (3/3)
+2026-07-04 20:03:06,331 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-07-04 20:03:06,331 - INFO - 대시보드 페이지로 이동...
+2026-07-04 20:03:19,076 - INFO - 대시보드 테이블 로드 완료
+2026-07-04 20:03:26,834 - INFO - 20개 보기 설정 완료
+2026-07-04 20:03:26,904 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 8
+2026-07-04 20:03:26,932 - INFO -   [메인] 광고효율UP 상품만: 15,193원
+2026-07-04 20:03:26,950 - INFO -   [메인] 메인 전체 상품 단품+톡 3: 13,576원
+2026-07-04 20:03:26,967 - INFO -   [메인] 메인 전체 상품 단품+톡 2: 12,917원
+2026-07-04 20:03:26,985 - INFO -   [메인] 메인 전체 상품 단품+톡 1: 26,089원
+2026-07-04 20:03:27,003 - INFO -   [메인] 메인 상품 A 단품+톡 1: 8,964원
+2026-07-04 20:03:27,021 - INFO -   [메인] 메인 상품 B+C 단품+톡 3: 12,207원
+2026-07-04 20:03:27,039 - INFO -   [메인] 메인 상품 B+C 단품+톡 2: 11,950원
+2026-07-04 20:03:27,057 - INFO -   [메인] 메인 상품 B+C 단품+톡 1: 11,943원
+2026-07-04 20:03:27,074 - INFO -   [서브] 메인 상품 A 단품+톡 1: 12,372원
+2026-07-04 20:03:27,092 - INFO -   [서브] 메인 상품 B+C 단품+톡 3: 6,817원
+2026-07-04 20:03:27,110 - INFO -   [서브] 메인 상품 B+C 단품+톡 2: 13,277원
+2026-07-04 20:03:27,129 - INFO -   [서브] 메인 상품 B+C 단품+톡 1: 9,359원
+2026-07-04 20:03:27,148 - INFO -   [수동 키워드 노출] -2 / 매출최적화 변환: 0원
+2026-07-04 20:03:27,168 - INFO -   [수동 키워드 노출] -1 / 매출최적화 변환: 0원
+2026-07-04 20:03:27,187 - INFO -   0220 0259 0270 0324 0930 1012 1181 1235 1268 1583: 0원
+2026-07-04 20:03:27,205 - INFO -   [수동 키워드 노출] -2: 0원
+2026-07-04 20:03:27,225 - INFO -   [수동 키워드 노출] -1: 0원
+2026-07-04 20:03:27,244 - INFO -   0791 0944 0085 0083 0084 0320 0077 0131 1063_2: 0원
+2026-07-04 20:03:27,264 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 0원
+2026-07-04 20:03:27,283 - INFO -   [수동] 메인 아이폰16, 17 시리즈 [아이폰 키워드만]: 0원
+2026-07-04 20:03:27,283 - INFO - 총 20개 캠페인 | 합계: 154,664원
+2026-07-04 20:03:27,293 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-07-04.json
+2026-07-04 20:03:27,293 - INFO - 현재 시간(20시) 총 광고비: 154,664원
+2026-07-04 20:03:29,658 - WARNING - git pull 경고: error: Your local changes to the following files would be overwritten by merge:
+	auto_scheduler.py
+Please commit your changes or stash them before you merge.
+Aborting
+Merge with strategy ort failed.
+
+2026-07-04 20:03:32,325 - ERROR - git push 실패: To https://github.com/mirmoa/tools.git
+ ! [rejected]          master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/mirmoa/tools.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+2026-07-04 20:03:37,252 - INFO - 브라우저 종료
+2026-07-04 20:03:37,252 - INFO - ==================================================
+2026-07-04 20:03:37,252 - INFO - 작업 완료!
+2026-07-04 20:03:37,252 - INFO - ==================================================
+2026-07-04 21:00:03,443 - INFO - ==================================================
+2026-07-04 21:00:03,443 - INFO - 쿠팡 광고비 수집 시작
+2026-07-04 21:00:03,443 - INFO - ==================================================
+2026-07-04 21:00:03,443 - INFO - >>> 시도 1/3
+2026-07-04 21:00:03,443 - INFO - ====== WebDriver manager ======
+2026-07-04 21:00:05,055 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 21:00:05,102 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 21:00:05,118 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 21:00:06,823 - INFO - 웹드라이버 설정 완료
+2026-07-04 21:00:06,823 - INFO - 로그인 페이지 접속...
+2026-07-04 21:00:11,707 - INFO - 아이디 입력 완료
+2026-07-04 21:00:13,248 - INFO - 비밀번호 입력 완료
+2026-07-04 21:00:15,865 - INFO - 로그인 버튼 클릭
+2026-07-04 21:00:25,882 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-07-04 21:00:25,883 - INFO - 대시보드 페이지로 이동...
+2026-07-04 21:00:33,863 - INFO - 대시보드 테이블 로드 완료
+2026-07-04 21:00:40,998 - INFO - 20개 보기 설정 완료
+2026-07-04 21:00:41,066 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 8
+2026-07-04 21:00:41,092 - INFO -   [메인] 광고효율UP 상품만: 16,400원
+2026-07-04 21:00:41,109 - INFO -   [메인] 메인 전체 상품 단품+톡 3: 14,825원
+2026-07-04 21:00:41,125 - INFO -   [메인] 메인 전체 상품 단품+톡 2: 15,230원
+2026-07-04 21:00:41,142 - INFO -   [메인] 메인 전체 상품 단품+톡 1: 28,706원
+2026-07-04 21:00:41,159 - INFO -   [메인] 메인 상품 A 단품+톡 1: 9,771원
+2026-07-04 21:00:41,175 - INFO -   [메인] 메인 상품 B+C 단품+톡 3: 13,314원
+2026-07-04 21:00:41,192 - INFO -   [메인] 메인 상품 B+C 단품+톡 2: 12,554원
+2026-07-04 21:00:41,209 - INFO -   [메인] 메인 상품 B+C 단품+톡 1: 12,847원
+2026-07-04 21:00:41,226 - INFO -   [서브] 메인 상품 A 단품+톡 1: 13,378원
+2026-07-04 21:00:41,243 - INFO -   [서브] 메인 상품 B+C 단품+톡 3: 7,660원
+2026-07-04 21:00:41,259 - INFO -   [서브] 메인 상품 B+C 단품+톡 2: 14,181원
+2026-07-04 21:00:41,275 - INFO -   [서브] 메인 상품 B+C 단품+톡 1: 9,359원
+2026-07-04 21:00:41,292 - INFO -   [수동 키워드 노출] -2 / 매출최적화 변환: 0원
+2026-07-04 21:00:41,309 - INFO -   [수동 키워드 노출] -1 / 매출최적화 변환: 0원
+2026-07-04 21:00:41,325 - INFO -   0220 0259 0270 0324 0930 1012 1181 1235 1268 1583: 0원
+2026-07-04 21:00:41,342 - INFO -   [수동 키워드 노출] -2: 0원
+2026-07-04 21:00:41,359 - INFO -   [수동 키워드 노출] -1: 0원
+2026-07-04 21:00:41,375 - INFO -   0791 0944 0085 0083 0084 0320 0077 0131 1063_2: 0원
+2026-07-04 21:00:41,392 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 0원
+2026-07-04 21:00:41,408 - INFO -   [수동] 메인 아이폰16, 17 시리즈 [아이폰 키워드만]: 0원
+2026-07-04 21:00:41,408 - INFO - 총 20개 캠페인 | 합계: 168,225원
+2026-07-04 21:00:41,411 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-07-04.json
+2026-07-04 21:00:41,411 - INFO - 현재 시간(21시) 총 광고비: 168,225원
+2026-07-04 21:00:43,227 - WARNING - git pull 경고: error: Your local changes to the following files would be overwritten by merge:
+	auto_scheduler.py
+Please commit your changes or stash them before you merge.
+Aborting
+Merge with strategy ort failed.
+
+2026-07-04 21:00:45,620 - ERROR - git push 실패: To https://github.com/mirmoa/tools.git
+ ! [rejected]          master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/mirmoa/tools.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+2026-07-04 21:00:48,358 - INFO - 브라우저 종료
+2026-07-04 21:00:48,358 - INFO - ==================================================
+2026-07-04 21:00:48,358 - INFO - 작업 완료!
+2026-07-04 21:00:48,358 - INFO - ==================================================
+2026-07-04 22:00:03,368 - INFO - ==================================================
+2026-07-04 22:00:03,368 - INFO - 쿠팡 광고비 수집 시작
+2026-07-04 22:00:03,368 - INFO - ==================================================
+2026-07-04 22:00:03,368 - INFO - >>> 시도 1/3
+2026-07-04 22:00:03,368 - INFO - ====== WebDriver manager ======
+2026-07-04 22:00:04,998 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 22:00:05,045 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 22:00:05,060 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 22:00:06,737 - INFO - 웹드라이버 설정 완료
+2026-07-04 22:00:06,737 - INFO - 로그인 페이지 접속...
+2026-07-04 22:00:12,713 - INFO - 아이디 입력 완료
+2026-07-04 22:00:14,296 - INFO - 비밀번호 입력 완료
+2026-07-04 22:00:16,626 - INFO - 로그인 버튼 클릭
+2026-07-04 22:00:26,643 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-07-04 22:00:26,644 - INFO - 대시보드 페이지로 이동...
+2026-07-04 22:00:33,200 - INFO - 대시보드 테이블 로드 완료
+2026-07-04 22:00:44,847 - INFO - 20개 보기 설정 완료
+2026-07-04 22:00:44,914 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 8
+2026-07-04 22:00:44,944 - INFO -   [메인] 광고효율UP 상품만: 17,605원
+2026-07-04 22:00:44,962 - INFO -   [메인] 메인 전체 상품 단품+톡 3: 17,049원
+2026-07-04 22:00:44,980 - INFO -   [메인] 메인 전체 상품 단품+톡 2: 16,935원
+2026-07-04 22:00:44,998 - INFO -   [메인] 메인 전체 상품 단품+톡 1: 30,618원
+2026-07-04 22:00:45,016 - INFO -   [메인] 메인 상품 A 단품+톡 1: 11,275원
+2026-07-04 22:00:45,034 - INFO -   [메인] 메인 상품 B+C 단품+톡 3: 14,721원
+2026-07-04 22:00:45,051 - INFO -   [메인] 메인 상품 B+C 단품+톡 2: 13,763원
+2026-07-04 22:00:45,069 - INFO -   [메인] 메인 상품 B+C 단품+톡 1: 14,862원
+2026-07-04 22:00:45,086 - INFO -   [서브] 메인 상품 A 단품+톡 1: 16,081원
+2026-07-04 22:00:45,105 - INFO -   [서브] 메인 상품 B+C 단품+톡 3: 9,067원
+2026-07-04 22:00:45,123 - INFO -   [서브] 메인 상품 B+C 단품+톡 2: 15,489원
+2026-07-04 22:00:45,141 - INFO -   [서브] 메인 상품 B+C 단품+톡 1: 9,359원
+2026-07-04 22:00:45,159 - INFO -   [수동 키워드 노출] -2 / 매출최적화 변환: 0원
+2026-07-04 22:00:45,177 - INFO -   [수동 키워드 노출] -1 / 매출최적화 변환: 0원
+2026-07-04 22:00:45,196 - INFO -   0220 0259 0270 0324 0930 1012 1181 1235 1268 1583: 0원
+2026-07-04 22:00:45,214 - INFO -   [수동 키워드 노출] -2: 0원
+2026-07-04 22:00:45,233 - INFO -   [수동 키워드 노출] -1: 0원
+2026-07-04 22:00:45,250 - INFO -   0791 0944 0085 0083 0084 0320 0077 0131 1063_2: 0원
+2026-07-04 22:00:45,270 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 0원
+2026-07-04 22:00:45,287 - INFO -   [수동] 메인 아이폰16, 17 시리즈 [아이폰 키워드만]: 0원
+2026-07-04 22:00:45,288 - INFO - 총 20개 캠페인 | 합계: 186,824원
+2026-07-04 22:00:45,290 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-07-04.json
+2026-07-04 22:00:45,290 - INFO - 현재 시간(22시) 총 광고비: 186,824원
+2026-07-04 22:00:47,030 - WARNING - git pull 경고: error: Your local changes to the following files would be overwritten by merge:
+	auto_scheduler.py
+Please commit your changes or stash them before you merge.
+Aborting
+Merge with strategy ort failed.
+
+2026-07-04 22:00:49,834 - ERROR - git push 실패: To https://github.com/mirmoa/tools.git
+ ! [rejected]          master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/mirmoa/tools.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+2026-07-04 22:00:52,602 - INFO - 브라우저 종료
+2026-07-04 22:00:52,602 - INFO - ==================================================
+2026-07-04 22:00:52,602 - INFO - 작업 완료!
+2026-07-04 22:00:52,602 - INFO - ==================================================
+2026-07-04 23:00:03,320 - INFO - ==================================================
+2026-07-04 23:00:03,320 - INFO - 쿠팡 광고비 수집 시작
+2026-07-04 23:00:03,320 - INFO - ==================================================
+2026-07-04 23:00:03,320 - INFO - >>> 시도 1/3
+2026-07-04 23:00:03,320 - INFO - ====== WebDriver manager ======
+2026-07-04 23:00:04,941 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 23:00:04,973 - INFO - Get LATEST chromedriver version for google-chrome
+2026-07-04 23:00:04,988 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\149.0.7827.155\chromedriver-win32/chromedriver.exe] found in cache
+2026-07-04 23:00:07,207 - INFO - 웹드라이버 설정 완료
+2026-07-04 23:00:07,208 - INFO - 로그인 페이지 접속...
+2026-07-04 23:00:12,675 - INFO - 아이디 입력 완료
+2026-07-04 23:00:14,382 - INFO - 비밀번호 입력 완료
+2026-07-04 23:00:17,295 - INFO - 로그인 버튼 클릭
+2026-07-04 23:00:27,300 - WARNING - 차단 감지 → 새로고침 시도 (1/3)
+2026-07-04 23:00:32,717 - WARNING - 차단 감지 → 새로고침 시도 (2/3)
+2026-07-04 23:00:38,165 - WARNING - 차단 감지 → 새로고침 시도 (3/3)
+2026-07-04 23:00:46,225 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-07-04 23:00:46,225 - INFO - 대시보드 페이지로 이동...
+2026-07-04 23:00:54,447 - INFO - 대시보드 테이블 로드 완료
+2026-07-04 23:01:02,282 - INFO - 20개 보기 설정 완료
+2026-07-04 23:01:02,349 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 8
+2026-07-04 23:01:02,377 - INFO -   [메인] 광고효율UP 상품만: 20,019원
+2026-07-04 23:01:02,395 - INFO -   [메인] 메인 전체 상품 단품+톡 3: 20,729원
+2026-07-04 23:01:02,413 - INFO -   [메인] 메인 전체 상품 단품+톡 2: 16,935원
+2026-07-04 23:01:02,431 - INFO -   [메인] 메인 전체 상품 단품+톡 1: 34,916원
+2026-07-04 23:01:02,450 - INFO -   [메인] 메인 상품 A 단품+톡 1: 12,488원
+2026-07-04 23:01:02,467 - INFO -   [메인] 메인 상품 B+C 단품+톡 3: 14,721원
+2026-07-04 23:01:02,485 - INFO -   [메인] 메인 상품 B+C 단품+톡 2: 13,763원
+2026-07-04 23:01:02,503 - INFO -   [메인] 메인 상품 B+C 단품+톡 1: 14,962원
+2026-07-04 23:01:02,520 - INFO -   [서브] 메인 상품 A 단품+톡 1: 18,596원
+2026-07-04 23:01:02,538 - INFO -   [서브] 메인 상품 B+C 단품+톡 3: 10,002원
+2026-07-04 23:01:02,556 - INFO -   [서브] 메인 상품 B+C 단품+톡 2: 18,158원
+2026-07-04 23:01:02,574 - INFO -   [서브] 메인 상품 B+C 단품+톡 1: 9,359원
+2026-07-04 23:01:02,591 - INFO -   [수동 키워드 노출] -2 / 매출최적화 변환: 0원
+2026-07-04 23:01:02,610 - INFO -   [수동 키워드 노출] -1 / 매출최적화 변환: 0원
+2026-07-04 23:01:02,629 - INFO -   0220 0259 0270 0324 0930 1012 1181 1235 1268 1583: 0원
+2026-07-04 23:01:02,647 - INFO -   [수동 키워드 노출] -2: 0원
+2026-07-04 23:01:02,666 - INFO -   [수동 키워드 노출] -1: 0원
+2026-07-04 23:01:02,686 - INFO -   0791 0944 0085 0083 0084 0320 0077 0131 1063_2: 0원
+2026-07-04 23:01:02,705 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 0원
+2026-07-04 23:01:02,724 - INFO -   [수동] 메인 아이폰16, 17 시리즈 [아이폰 키워드만]: 0원
+2026-07-04 23:01:02,724 - INFO - 총 20개 캠페인 | 합계: 204,648원
+2026-07-04 23:01:02,726 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-07-04.json
+2026-07-04 23:01:02,726 - INFO - 현재 시간(23시) 총 광고비: 204,648원
+2026-07-04 23:01:04,411 - WARNING - git pull 경고: error: Your local changes to the following files would be overwritten by merge:
+	auto_scheduler.py
+Please commit your changes or stash them before you merge.
+Aborting
+Merge with strategy ort failed.
+
+2026-07-04 23:01:06,607 - ERROR - git push 실패: To https://github.com/mirmoa/tools.git
+ ! [rejected]          master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/mirmoa/tools.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+2026-07-04 23:01:09,375 - INFO - 브라우저 종료
+2026-07-04 23:01:09,375 - INFO - ==================================================
+2026-07-04 23:01:09,375 - INFO - 작업 완료!
+2026-07-04 23:01:09,375 - INFO - ==================================================

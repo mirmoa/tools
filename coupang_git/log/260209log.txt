@@ -1,0 +1,737 @@
+2026-02-09 00:00:02,544 - INFO - ==================================================
+2026-02-09 00:00:02,544 - INFO - 쿠팡 광고비 수집 시작
+2026-02-09 00:00:02,544 - INFO - ==================================================
+2026-02-09 00:00:02,545 - INFO - ====== WebDriver manager ======
+2026-02-09 00:00:03,556 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 00:00:03,586 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 00:00:03,603 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 00:00:03,659 - INFO - WebDriver version 144.0.7559.133 selected
+2026-02-09 00:00:03,663 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/144.0.7559.133/win32/chromedriver-win32.zip
+2026-02-09 00:00:03,664 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/144.0.7559.133/win32/chromedriver-win32.zip
+2026-02-09 00:00:03,713 - INFO - Driver downloading response is 200
+2026-02-09 00:00:03,879 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 00:00:04,034 - INFO - Driver has been saved in cache [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\144.0.7559.133]
+2026-02-09 00:00:06,010 - INFO - 웹드라이버 설정 완료
+2026-02-09 00:00:06,010 - INFO - 로그인 페이지 접속...
+2026-02-09 00:00:09,694 - INFO - 아이디 입력 완료
+2026-02-09 00:00:09,747 - INFO - 비밀번호 입력 완료
+2026-02-09 00:00:09,987 - INFO - 로그인 버튼 클릭
+2026-02-09 00:00:09,987 - INFO - ==================================================
+2026-02-09 00:00:09,988 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-02-09 00:00:09,988 - INFO - ==================================================
+2026-02-09 00:02:10,480 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa95093
+	0xa950d4
+	0x88b490
+	0x8d58da
+	0x8d5b7b
+	0x917b42
+	0x8f8204
+	0x915341
+	0x8f7f56
+	0x8c96c9
+	0x8ca484
+	0xce7e34
+	0xce30c9
+	0xd00add
+	0xaadb38
+	0xab58ad
+	0xa9d848
+	0xa9da12
+	0xa875fa
+	0x7574fcc9
+	0x774382ae
+	0x7743827e
+
+2026-02-09 00:02:10,591 - ERROR - 오류 발생: 로그인 실패
+2026-02-09 00:02:12,856 - INFO - 브라우저 종료
+2026-02-09 01:00:03,061 - INFO - ==================================================
+2026-02-09 01:00:03,062 - INFO - 쿠팡 광고비 수집 시작
+2026-02-09 01:00:03,062 - INFO - ==================================================
+2026-02-09 01:00:03,062 - INFO - ====== WebDriver manager ======
+2026-02-09 01:00:04,088 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 01:00:04,122 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 01:00:04,140 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-09 01:00:05,284 - INFO - 웹드라이버 설정 완료
+2026-02-09 01:00:05,284 - INFO - 로그인 페이지 접속...
+2026-02-09 01:00:08,896 - INFO - 아이디 입력 완료
+2026-02-09 01:00:08,942 - INFO - 비밀번호 입력 완료
+2026-02-09 01:00:09,131 - INFO - 로그인 버튼 클릭
+2026-02-09 01:00:09,131 - INFO - ==================================================
+2026-02-09 01:00:09,132 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-02-09 01:00:09,132 - INFO - ==================================================
+2026-02-09 01:02:09,530 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa95093
+	0xa950d4
+	0x88b490
+	0x8d58da
+	0x8d5b7b
+	0x917b42
+	0x8f8204
+	0x915341
+	0x8f7f56
+	0x8c96c9
+	0x8ca484
+	0xce7e34
+	0xce30c9
+	0xd00add
+	0xaadb38
+	0xab58ad
+	0xa9d848
+	0xa9da12
+	0xa875fa
+	0x7574fcc9
+	0x774382ae
+	0x7743827e
+
+2026-02-09 01:02:09,647 - ERROR - 오류 발생: 로그인 실패
+2026-02-09 01:02:11,926 - INFO - 브라우저 종료
+2026-02-09 02:00:03,075 - INFO - ==================================================
+2026-02-09 02:00:03,076 - INFO - 쿠팡 광고비 수집 시작
+2026-02-09 02:00:03,076 - INFO - ==================================================
+2026-02-09 02:00:03,076 - INFO - ====== WebDriver manager ======
+2026-02-09 02:00:04,106 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 02:00:04,129 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 02:00:04,145 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-09 02:00:05,213 - INFO - 웹드라이버 설정 완료
+2026-02-09 02:00:05,213 - INFO - 로그인 페이지 접속...
+2026-02-09 02:00:08,863 - INFO - 아이디 입력 완료
+2026-02-09 02:00:08,914 - INFO - 비밀번호 입력 완료
+2026-02-09 02:00:09,207 - INFO - 로그인 버튼 클릭
+2026-02-09 02:00:09,208 - INFO - ==================================================
+2026-02-09 02:00:09,209 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-02-09 02:00:09,209 - INFO - ==================================================
+2026-02-09 02:02:09,657 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa95093
+	0xa950d4
+	0x88b490
+	0x8d58da
+	0x8d5b7b
+	0x917b42
+	0x8f8204
+	0x915341
+	0x8f7f56
+	0x8c96c9
+	0x8ca484
+	0xce7e34
+	0xce30c9
+	0xd00add
+	0xaadb38
+	0xab58ad
+	0xa9d848
+	0xa9da12
+	0xa875fa
+	0x7574fcc9
+	0x774382ae
+	0x7743827e
+
+2026-02-09 02:02:09,770 - ERROR - 오류 발생: 로그인 실패
+2026-02-09 02:02:12,021 - INFO - 브라우저 종료
+2026-02-09 03:00:03,061 - INFO - ==================================================
+2026-02-09 03:00:03,062 - INFO - 쿠팡 광고비 수집 시작
+2026-02-09 03:00:03,062 - INFO - ==================================================
+2026-02-09 03:00:03,063 - INFO - ====== WebDriver manager ======
+2026-02-09 03:00:04,074 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 03:00:04,102 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 03:00:04,122 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-09 03:00:05,266 - INFO - 웹드라이버 설정 완료
+2026-02-09 03:00:05,266 - INFO - 로그인 페이지 접속...
+2026-02-09 03:00:09,075 - INFO - 아이디 입력 완료
+2026-02-09 03:00:09,129 - INFO - 비밀번호 입력 완료
+2026-02-09 03:00:09,338 - INFO - 로그인 버튼 클릭
+2026-02-09 03:00:09,339 - INFO - ==================================================
+2026-02-09 03:00:09,339 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-02-09 03:00:09,339 - INFO - ==================================================
+2026-02-09 03:02:09,681 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa95093
+	0xa950d4
+	0x88b490
+	0x8d58da
+	0x8d5b7b
+	0x917b42
+	0x8f8204
+	0x915341
+	0x8f7f56
+	0x8c96c9
+	0x8ca484
+	0xce7e34
+	0xce30c9
+	0xd00add
+	0xaadb38
+	0xab58ad
+	0xa9d848
+	0xa9da12
+	0xa875fa
+	0x7574fcc9
+	0x774382ae
+	0x7743827e
+
+2026-02-09 03:02:09,796 - ERROR - 오류 발생: 로그인 실패
+2026-02-09 03:02:12,071 - INFO - 브라우저 종료
+2026-02-09 04:00:02,535 - INFO - ==================================================
+2026-02-09 04:00:02,535 - INFO - 쿠팡 광고비 수집 시작
+2026-02-09 04:00:02,536 - INFO - ==================================================
+2026-02-09 04:00:02,536 - INFO - ====== WebDriver manager ======
+2026-02-09 04:00:03,557 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 04:00:03,580 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 04:00:03,597 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-09 04:00:04,720 - INFO - 웹드라이버 설정 완료
+2026-02-09 04:00:04,720 - INFO - 로그인 페이지 접속...
+2026-02-09 04:00:08,383 - INFO - 아이디 입력 완료
+2026-02-09 04:00:08,434 - INFO - 비밀번호 입력 완료
+2026-02-09 04:00:08,677 - INFO - 로그인 버튼 클릭
+2026-02-09 04:00:08,677 - INFO - ==================================================
+2026-02-09 04:00:08,678 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-02-09 04:00:08,678 - INFO - ==================================================
+2026-02-09 04:02:09,033 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa95093
+	0xa950d4
+	0x88b490
+	0x8d58da
+	0x8d5b7b
+	0x917b42
+	0x8f8204
+	0x915341
+	0x8f7f56
+	0x8c96c9
+	0x8ca484
+	0xce7e34
+	0xce30c9
+	0xd00add
+	0xaadb38
+	0xab58ad
+	0xa9d848
+	0xa9da12
+	0xa875fa
+	0x7574fcc9
+	0x774382ae
+	0x7743827e
+
+2026-02-09 04:02:09,152 - ERROR - 오류 발생: 로그인 실패
+2026-02-09 04:02:11,409 - INFO - 브라우저 종료
+2026-02-09 05:00:03,061 - INFO - ==================================================
+2026-02-09 05:00:03,061 - INFO - 쿠팡 광고비 수집 시작
+2026-02-09 05:00:03,061 - INFO - ==================================================
+2026-02-09 05:00:03,061 - INFO - ====== WebDriver manager ======
+2026-02-09 05:00:04,091 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 05:00:04,117 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 05:00:04,137 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-09 05:00:05,252 - INFO - 웹드라이버 설정 완료
+2026-02-09 05:00:05,252 - INFO - 로그인 페이지 접속...
+2026-02-09 05:00:09,151 - INFO - 아이디 입력 완료
+2026-02-09 05:00:09,198 - INFO - 비밀번호 입력 완료
+2026-02-09 05:00:09,423 - INFO - 로그인 버튼 클릭
+2026-02-09 05:00:09,425 - INFO - ==================================================
+2026-02-09 05:00:09,426 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-02-09 05:00:09,426 - INFO - ==================================================
+2026-02-09 05:02:09,562 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa95093
+	0xa950d4
+	0x88b490
+	0x8d58da
+	0x8d5b7b
+	0x917b42
+	0x8f8204
+	0x915341
+	0x8f7f56
+	0x8c96c9
+	0x8ca484
+	0xce7e34
+	0xce30c9
+	0xd00add
+	0xaadb38
+	0xab58ad
+	0xa9d848
+	0xa9da12
+	0xa875fa
+	0x7574fcc9
+	0x774382ae
+	0x7743827e
+
+2026-02-09 05:02:09,671 - ERROR - 오류 발생: 로그인 실패
+2026-02-09 05:02:11,946 - INFO - 브라우저 종료
+2026-02-09 06:00:03,064 - INFO - ==================================================
+2026-02-09 06:00:03,064 - INFO - 쿠팡 광고비 수집 시작
+2026-02-09 06:00:03,064 - INFO - ==================================================
+2026-02-09 06:00:03,064 - INFO - ====== WebDriver manager ======
+2026-02-09 06:00:04,097 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 06:00:04,119 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 06:00:04,136 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-09 06:00:05,188 - INFO - 웹드라이버 설정 완료
+2026-02-09 06:00:05,188 - INFO - 로그인 페이지 접속...
+2026-02-09 06:00:08,905 - INFO - 아이디 입력 완료
+2026-02-09 06:00:08,954 - INFO - 비밀번호 입력 완료
+2026-02-09 06:00:09,197 - INFO - 로그인 버튼 클릭
+2026-02-09 06:00:09,200 - INFO - ==================================================
+2026-02-09 06:00:09,200 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-02-09 06:00:09,200 - INFO - ==================================================
+2026-02-09 06:02:09,474 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa95093
+	0xa950d4
+	0x88b490
+	0x8d58da
+	0x8d5b7b
+	0x917b42
+	0x8f8204
+	0x915341
+	0x8f7f56
+	0x8c96c9
+	0x8ca484
+	0xce7e34
+	0xce30c9
+	0xd00add
+	0xaadb38
+	0xab58ad
+	0xa9d848
+	0xa9da12
+	0xa875fa
+	0x7574fcc9
+	0x774382ae
+	0x7743827e
+
+2026-02-09 06:02:09,582 - ERROR - 오류 발생: 로그인 실패
+2026-02-09 06:02:11,855 - INFO - 브라우저 종료
+2026-02-09 07:00:03,075 - INFO - ==================================================
+2026-02-09 07:00:03,075 - INFO - 쿠팡 광고비 수집 시작
+2026-02-09 07:00:03,075 - INFO - ==================================================
+2026-02-09 07:00:03,075 - INFO - ====== WebDriver manager ======
+2026-02-09 07:00:04,073 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 07:00:04,100 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 07:00:04,119 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-09 07:00:05,243 - INFO - 웹드라이버 설정 완료
+2026-02-09 07:00:05,243 - INFO - 로그인 페이지 접속...
+2026-02-09 07:00:08,808 - INFO - 아이디 입력 완료
+2026-02-09 07:00:08,859 - INFO - 비밀번호 입력 완료
+2026-02-09 07:00:09,073 - INFO - 로그인 버튼 클릭
+2026-02-09 07:00:09,076 - INFO - ==================================================
+2026-02-09 07:00:09,076 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-02-09 07:00:09,076 - INFO - ==================================================
+2026-02-09 07:02:09,424 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa95093
+	0xa950d4
+	0x88b490
+	0x8d58da
+	0x8d5b7b
+	0x917b42
+	0x8f8204
+	0x915341
+	0x8f7f56
+	0x8c96c9
+	0x8ca484
+	0xce7e34
+	0xce30c9
+	0xd00add
+	0xaadb38
+	0xab58ad
+	0xa9d848
+	0xa9da12
+	0xa875fa
+	0x7574fcc9
+	0x774382ae
+	0x7743827e
+
+2026-02-09 07:02:09,534 - ERROR - 오류 발생: 로그인 실패
+2026-02-09 07:02:11,815 - INFO - 브라우저 종료
+2026-02-09 08:00:03,065 - INFO - ==================================================
+2026-02-09 08:00:03,065 - INFO - 쿠팡 광고비 수집 시작
+2026-02-09 08:00:03,065 - INFO - ==================================================
+2026-02-09 08:00:03,066 - INFO - ====== WebDriver manager ======
+2026-02-09 08:00:04,091 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 08:00:04,118 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 08:00:04,134 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-09 08:00:05,260 - INFO - 웹드라이버 설정 완료
+2026-02-09 08:00:05,261 - INFO - 로그인 페이지 접속...
+2026-02-09 08:00:08,827 - INFO - 아이디 입력 완료
+2026-02-09 08:00:08,873 - INFO - 비밀번호 입력 완료
+2026-02-09 08:00:09,079 - INFO - 로그인 버튼 클릭
+2026-02-09 08:00:09,081 - INFO - ==================================================
+2026-02-09 08:00:09,081 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-02-09 08:00:09,082 - INFO - ==================================================
+2026-02-09 08:02:09,456 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa95093
+	0xa950d4
+	0x88b490
+	0x8d58da
+	0x8d5b7b
+	0x917b42
+	0x8f8204
+	0x915341
+	0x8f7f56
+	0x8c96c9
+	0x8ca484
+	0xce7e34
+	0xce30c9
+	0xd00add
+	0xaadb38
+	0xab58ad
+	0xa9d848
+	0xa9da12
+	0xa875fa
+	0x7574fcc9
+	0x774382ae
+	0x7743827e
+
+2026-02-09 08:02:09,586 - ERROR - 오류 발생: 로그인 실패
+2026-02-09 08:02:11,863 - INFO - 브라우저 종료
+2026-02-09 09:00:03,066 - INFO - ==================================================
+2026-02-09 09:00:03,067 - INFO - 쿠팡 광고비 수집 시작
+2026-02-09 09:00:03,067 - INFO - ==================================================
+2026-02-09 09:00:03,067 - INFO - ====== WebDriver manager ======
+2026-02-09 09:00:04,099 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 09:00:04,126 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 09:00:04,143 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-09 09:00:05,220 - INFO - 웹드라이버 설정 완료
+2026-02-09 09:00:05,221 - INFO - 로그인 페이지 접속...
+2026-02-09 09:00:09,066 - INFO - 아이디 입력 완료
+2026-02-09 09:00:09,118 - INFO - 비밀번호 입력 완료
+2026-02-09 09:00:09,337 - INFO - 로그인 버튼 클릭
+2026-02-09 09:00:09,339 - INFO - ==================================================
+2026-02-09 09:00:09,339 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-02-09 09:00:09,339 - INFO - ==================================================
+2026-02-09 09:02:09,787 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa95093
+	0xa950d4
+	0x88b490
+	0x8d58da
+	0x8d5b7b
+	0x917b42
+	0x8f8204
+	0x915341
+	0x8f7f56
+	0x8c96c9
+	0x8ca484
+	0xce7e34
+	0xce30c9
+	0xd00add
+	0xaadb38
+	0xab58ad
+	0xa9d848
+	0xa9da12
+	0xa875fa
+	0x7574fcc9
+	0x774382ae
+	0x7743827e
+
+2026-02-09 09:02:09,896 - ERROR - 오류 발생: 로그인 실패
+2026-02-09 09:02:12,154 - INFO - 브라우저 종료
+2026-02-09 10:00:03,278 - INFO - ==================================================
+2026-02-09 10:00:03,278 - INFO - 쿠팡 광고비 수집 시작
+2026-02-09 10:00:03,279 - INFO - ==================================================
+2026-02-09 10:00:03,279 - INFO - ====== WebDriver manager ======
+2026-02-09 10:00:04,535 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 10:00:04,564 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 10:00:04,583 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-09 10:00:06,219 - INFO - 웹드라이버 설정 완료
+2026-02-09 10:00:06,219 - INFO - 로그인 페이지 접속...
+2026-02-09 10:00:09,925 - INFO - 아이디 입력 완료
+2026-02-09 10:00:09,977 - INFO - 비밀번호 입력 완료
+2026-02-09 10:00:10,026 - INFO - 로그인 버튼 클릭
+2026-02-09 10:00:10,026 - INFO - ==================================================
+2026-02-09 10:00:10,026 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-02-09 10:00:10,026 - INFO - ==================================================
+2026-02-09 10:02:10,163 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa95093
+	0xa950d4
+	0x88b490
+	0x8d58da
+	0x8d5b7b
+	0x917b42
+	0x8f8204
+	0x915341
+	0x8f7f56
+	0x8c96c9
+	0x8ca484
+	0xce7e34
+	0xce30c9
+	0xd00add
+	0xaadb38
+	0xab58ad
+	0xa9d848
+	0xa9da12
+	0xa875fa
+	0x7574fcc9
+	0x774382ae
+	0x7743827e
+
+2026-02-09 10:02:10,268 - ERROR - 오류 발생: 로그인 실패
+2026-02-09 10:02:12,550 - INFO - 브라우저 종료
+2026-02-09 11:00:03,151 - INFO - ==================================================
+2026-02-09 11:00:03,151 - INFO - 쿠팡 광고비 수집 시작
+2026-02-09 11:00:03,151 - INFO - ==================================================
+2026-02-09 11:00:03,152 - INFO - ====== WebDriver manager ======
+2026-02-09 11:00:04,258 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 11:00:04,283 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 11:00:04,301 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-09 11:00:05,333 - INFO - 웹드라이버 설정 완료
+2026-02-09 11:00:05,333 - INFO - 로그인 페이지 접속...
+2026-02-09 11:00:09,099 - INFO - 아이디 입력 완료
+2026-02-09 11:00:09,155 - INFO - 비밀번호 입력 완료
+2026-02-09 11:00:09,382 - INFO - 로그인 버튼 클릭
+2026-02-09 11:00:09,384 - INFO - ==================================================
+2026-02-09 11:00:09,385 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-02-09 11:00:09,385 - INFO - ==================================================
+2026-02-09 11:02:09,705 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa95093
+	0xa950d4
+	0x88b490
+	0x8d58da
+	0x8d5b7b
+	0x917b42
+	0x8f8204
+	0x915341
+	0x8f7f56
+	0x8c96c9
+	0x8ca484
+	0xce7e34
+	0xce30c9
+	0xd00add
+	0xaadb38
+	0xab58ad
+	0xa9d848
+	0xa9da12
+	0xa875fa
+	0x7574fcc9
+	0x774382ae
+	0x7743827e
+
+2026-02-09 11:02:09,818 - ERROR - 오류 발생: 로그인 실패
+2026-02-09 11:02:11,972 - INFO - 브라우저 종료
+2026-02-09 12:00:03,130 - INFO - ==================================================
+2026-02-09 12:00:03,130 - INFO - 쿠팡 광고비 수집 시작
+2026-02-09 12:00:03,131 - INFO - ==================================================
+2026-02-09 12:00:03,131 - INFO - ====== WebDriver manager ======
+2026-02-09 12:00:04,221 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 12:00:04,242 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 12:00:04,260 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-09 12:00:05,398 - INFO - 웹드라이버 설정 완료
+2026-02-09 12:00:05,398 - INFO - 로그인 페이지 접속...
+2026-02-09 12:00:09,100 - INFO - 아이디 입력 완료
+2026-02-09 12:00:09,155 - INFO - 비밀번호 입력 완료
+2026-02-09 12:00:09,390 - INFO - 로그인 버튼 클릭
+2026-02-09 12:00:09,391 - INFO - ==================================================
+2026-02-09 12:00:09,391 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-02-09 12:00:09,391 - INFO - ==================================================
+2026-02-09 12:02:09,703 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa95093
+	0xa950d4
+	0x88b490
+	0x8d58da
+	0x8d5b7b
+	0x917b42
+	0x8f8204
+	0x915341
+	0x8f7f56
+	0x8c96c9
+	0x8ca484
+	0xce7e34
+	0xce30c9
+	0xd00add
+	0xaadb38
+	0xab58ad
+	0xa9d848
+	0xa9da12
+	0xa875fa
+	0x7574fcc9
+	0x774382ae
+	0x7743827e
+
+2026-02-09 12:02:09,817 - ERROR - 오류 발생: 로그인 실패
+2026-02-09 12:02:12,103 - INFO - 브라우저 종료
+2026-02-09 13:00:03,064 - INFO - ==================================================
+2026-02-09 13:00:03,064 - INFO - 쿠팡 광고비 수집 시작
+2026-02-09 13:00:03,064 - INFO - ==================================================
+2026-02-09 13:00:03,064 - INFO - ====== WebDriver manager ======
+2026-02-09 13:00:04,133 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 13:00:04,162 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 13:00:04,181 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-09 13:00:05,230 - INFO - 웹드라이버 설정 완료
+2026-02-09 13:00:05,231 - INFO - 로그인 페이지 접속...
+2026-02-09 13:00:08,897 - INFO - 아이디 입력 완료
+2026-02-09 13:00:08,947 - INFO - 비밀번호 입력 완료
+2026-02-09 13:00:09,146 - INFO - 로그인 버튼 클릭
+2026-02-09 13:00:09,148 - INFO - ==================================================
+2026-02-09 13:00:09,148 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-02-09 13:00:09,149 - INFO - ==================================================
+2026-02-09 13:02:09,392 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa95093
+	0xa950d4
+	0x88b490
+	0x8d58da
+	0x8d5b7b
+	0x917b42
+	0x8f8204
+	0x915341
+	0x8f7f56
+	0x8c96c9
+	0x8ca484
+	0xce7e34
+	0xce30c9
+	0xd00add
+	0xaadb38
+	0xab58ad
+	0xa9d848
+	0xa9da12
+	0xa875fa
+	0x7574fcc9
+	0x774382ae
+	0x7743827e
+
+2026-02-09 13:02:09,502 - ERROR - 오류 발생: 로그인 실패
+2026-02-09 13:02:11,646 - INFO - 브라우저 종료
+2026-02-09 14:00:03,190 - INFO - ==================================================
+2026-02-09 14:00:03,190 - INFO - 쿠팡 광고비 수집 시작
+2026-02-09 14:00:03,190 - INFO - ==================================================
+2026-02-09 14:00:03,191 - INFO - ====== WebDriver manager ======
+2026-02-09 14:00:04,557 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 14:00:04,587 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 14:00:04,606 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-09 14:00:06,297 - INFO - 웹드라이버 설정 완료
+2026-02-09 14:00:06,297 - INFO - 로그인 페이지 접속...
+2026-02-09 14:00:10,104 - INFO - 아이디 입력 완료
+2026-02-09 14:00:10,153 - INFO - 비밀번호 입력 완료
+2026-02-09 14:00:10,431 - INFO - 로그인 버튼 클릭
+2026-02-09 14:00:10,434 - INFO - ==================================================
+2026-02-09 14:00:10,435 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-02-09 14:00:10,435 - INFO - ==================================================
+2026-02-09 14:02:10,883 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa95093
+	0xa950d4
+	0x88b490
+	0x8d58da
+	0x8d5b7b
+	0x917b42
+	0x8f8204
+	0x915341
+	0x8f7f56
+	0x8c96c9
+	0x8ca484
+	0xce7e34
+	0xce30c9
+	0xd00add
+	0xaadb38
+	0xab58ad
+	0xa9d848
+	0xa9da12
+	0xa875fa
+	0x7574fcc9
+	0x774382ae
+	0x7743827e
+
+2026-02-09 14:02:10,992 - ERROR - 오류 발생: 로그인 실패
+2026-02-09 14:02:13,158 - INFO - 브라우저 종료
+2026-02-09 15:00:03,173 - INFO - ==================================================
+2026-02-09 15:00:03,174 - INFO - 쿠팡 광고비 수집 시작
+2026-02-09 15:00:03,174 - INFO - ==================================================
+2026-02-09 15:00:03,174 - INFO - ====== WebDriver manager ======
+2026-02-09 15:00:04,301 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 15:00:04,328 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 15:00:04,345 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-09 15:00:05,708 - INFO - 웹드라이버 설정 완료
+2026-02-09 15:00:05,709 - INFO - 로그인 페이지 접속...
+2026-02-09 15:00:09,316 - INFO - 아이디 입력 완료
+2026-02-09 15:00:09,373 - INFO - 비밀번호 입력 완료
+2026-02-09 15:00:09,583 - INFO - 로그인 버튼 클릭
+2026-02-09 15:00:09,583 - INFO - ==================================================
+2026-02-09 15:00:09,584 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-02-09 15:00:09,584 - INFO - ==================================================
+2026-02-09 15:02:09,817 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa95093
+	0xa950d4
+	0x88b490
+	0x8d58da
+	0x8d5b7b
+	0x917b42
+	0x8f8204
+	0x915341
+	0x8f7f56
+	0x8c96c9
+	0x8ca484
+	0xce7e34
+	0xce30c9
+	0xd00add
+	0xaadb38
+	0xab58ad
+	0xa9d848
+	0xa9da12
+	0xa875fa
+	0x7574fcc9
+	0x774382ae
+	0x7743827e
+
+2026-02-09 15:02:09,931 - ERROR - 오류 발생: 로그인 실패
+2026-02-09 15:02:12,090 - INFO - 브라우저 종료
+2026-02-09 16:00:03,234 - INFO - ==================================================
+2026-02-09 16:00:03,234 - INFO - 쿠팡 광고비 수집 시작
+2026-02-09 16:00:03,235 - INFO - ==================================================
+2026-02-09 16:00:03,235 - INFO - ====== WebDriver manager ======
+2026-02-09 16:00:04,679 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 16:00:04,713 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-09 16:00:04,740 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\144.0.7559.133\chromedriver-win32/chromedriver.exe] found in cache
+2026-02-09 16:00:06,466 - INFO - 웹드라이버 설정 완료
+2026-02-09 16:00:06,467 - INFO - 로그인 페이지 접속...
+2026-02-09 16:00:10,205 - INFO - 아이디 입력 완료
+2026-02-09 16:00:10,266 - INFO - 비밀번호 입력 완료
+2026-02-09 16:00:10,480 - INFO - 로그인 버튼 클릭
+2026-02-09 16:00:10,481 - INFO - ==================================================
+2026-02-09 16:00:10,481 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-02-09 16:00:10,481 - INFO - ==================================================
+2026-02-09 16:02:10,926 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa95093
+	0xa950d4
+	0x88b490
+	0x8d58da
+	0x8d5b7b
+	0x917b42
+	0x8f8204
+	0x915341
+	0x8f7f56
+	0x8c96c9
+	0x8ca484
+	0xce7e34
+	0xce30c9
+	0xd00add
+	0xaadb38
+	0xab58ad
+	0xa9d848
+	0xa9da12
+	0xa875fa
+	0x7574fcc9
+	0x774382ae
+	0x7743827e
+
+2026-02-09 16:02:11,035 - ERROR - 오류 발생: 로그인 실패
+2026-02-09 16:02:13,373 - INFO - 브라우저 종료

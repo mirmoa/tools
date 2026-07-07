@@ -1,0 +1,12 @@
+2026-01-13 15:46:08,258 - INFO - ==================================================
+2026-01-13 15:46:08,259 - INFO - 쿠팡 광고비 수집 시작
+2026-01-13 15:46:08,259 - INFO - ==================================================
+2026-01-13 15:46:08,259 - INFO - ====== WebDriver manager ======
+2026-01-13 15:46:10,750 - INFO - Get LATEST chromedriver version for google-chrome
+2026-01-13 15:46:10,789 - INFO - Get LATEST chromedriver version for google-chrome
+2026-01-13 15:46:10,820 - INFO - Get LATEST chromedriver version for google-chrome
+2026-01-13 15:46:10,882 - INFO - WebDriver version 143.0.7499.192 selected
+2026-01-13 15:46:10,885 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/143.0.7499.192/win32/chromedriver-win32.zip
+2026-01-13 15:46:10,885 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/143.0.7499.192/win32/chromedriver-win32.zip
+2026-01-29 15:50:09,796 - ERROR - 웹드라이버 설정 실패: Could not reach host. Are you offline?
+2026-01-29 15:50:09,811 - ERROR - 오류 발생: Could not reach host. Are you offline?

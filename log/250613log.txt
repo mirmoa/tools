@@ -1,0 +1,503 @@
+2025-06-13 00:00:02,289 - INFO - 실행 시도 1/3
+2025-06-13 00:00:02,289 - INFO - ====== WebDriver manager ======
+2025-06-13 00:00:03,027 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 00:00:03,051 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 00:00:03,068 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 00:00:03,123 - INFO - WebDriver version 137.0.7151.70 selected
+2025-06-13 00:00:03,123 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.70/win32/chromedriver-win32.zip
+2025-06-13 00:00:03,123 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.70/win32/chromedriver-win32.zip
+2025-06-13 00:00:03,170 - INFO - Driver downloading response is 200
+2025-06-13 00:00:03,339 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 00:00:03,617 - INFO - Driver has been saved in cache [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\137.0.7151.70]
+2025-06-13 00:00:05,020 - INFO - 웹드라이버 설정 완료
+2025-06-13 00:00:27,545 - INFO - 로그인 성공
+2025-06-13 00:00:32,973 - INFO - 20개 보기 설정 완료
+2025-06-13 00:00:33,231 - INFO - 15개의 캠페인 데이터 수집 완료
+2025-06-13 00:00:33,233 - INFO - 데이터 저장 완료: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 00:00:33,336 - INFO - 기존 스테이징된 파일 리셋
+2025-06-13 00:00:33,336 - INFO - Git pull 시도 중...
+2025-06-13 00:00:34,185 - INFO - Git pull 완료
+2025-06-13 00:00:34,229 - INFO - Git에 파일 추가: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 00:00:34,309 - INFO - Git 커밋 생성: Update data: 2025-06-13 00:00:34
+2025-06-13 00:00:36,078 - INFO - Git 푸시 완료
+2025-06-13 00:00:36,078 - INFO - 데이터 수집 및 Git 푸시 완료
+2025-06-13 00:00:36,079 - INFO - 작업 완료
+2025-06-13 00:00:38,169 - INFO - 웹드라이버 종료
+2025-06-13 01:00:02,724 - INFO - 실행 시도 1/3
+2025-06-13 01:00:02,724 - INFO - ====== WebDriver manager ======
+2025-06-13 01:00:03,457 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 01:00:03,490 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 01:00:03,507 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\137.0.7151.70\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-13 01:00:04,571 - INFO - 웹드라이버 설정 완료
+2025-06-13 01:00:21,404 - INFO - 로그인 성공
+2025-06-13 01:00:27,360 - INFO - 20개 보기 설정 완료
+2025-06-13 01:00:27,625 - INFO - 15개의 캠페인 데이터 수집 완료
+2025-06-13 01:00:27,633 - INFO - 데이터 저장 완료: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 01:00:27,735 - INFO - 기존 스테이징된 파일 리셋
+2025-06-13 01:00:27,736 - INFO - Git pull 시도 중...
+2025-06-13 01:00:28,563 - INFO - Git pull 완료
+2025-06-13 01:00:28,606 - INFO - Git에 파일 추가: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 01:00:28,688 - INFO - Git 커밋 생성: Update data: 2025-06-13 01:00:28
+2025-06-13 01:00:30,495 - INFO - Git 푸시 완료
+2025-06-13 01:00:30,495 - INFO - 데이터 수집 및 Git 푸시 완료
+2025-06-13 01:00:30,495 - INFO - 작업 완료
+2025-06-13 01:00:32,609 - INFO - 웹드라이버 종료
+2025-06-13 02:00:02,702 - INFO - 실행 시도 1/3
+2025-06-13 02:00:02,702 - INFO - ====== WebDriver manager ======
+2025-06-13 02:00:03,456 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 02:00:03,487 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 02:00:03,503 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\137.0.7151.70\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-13 02:00:04,513 - INFO - 웹드라이버 설정 완료
+2025-06-13 02:00:21,374 - INFO - 로그인 성공
+2025-06-13 02:00:27,243 - INFO - 20개 보기 설정 완료
+2025-06-13 02:00:27,530 - INFO - 15개의 캠페인 데이터 수집 완료
+2025-06-13 02:00:27,539 - INFO - 데이터 저장 완료: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 02:00:27,640 - INFO - 기존 스테이징된 파일 리셋
+2025-06-13 02:00:27,640 - INFO - Git pull 시도 중...
+2025-06-13 02:00:28,453 - INFO - Git pull 완료
+2025-06-13 02:00:28,495 - INFO - Git에 파일 추가: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 02:00:28,581 - INFO - Git 커밋 생성: Update data: 2025-06-13 02:00:28
+2025-06-13 02:00:30,387 - INFO - Git 푸시 완료
+2025-06-13 02:00:30,387 - INFO - 데이터 수집 및 Git 푸시 완료
+2025-06-13 02:00:30,387 - INFO - 작업 완료
+2025-06-13 02:00:32,479 - INFO - 웹드라이버 종료
+2025-06-13 03:00:02,768 - INFO - 실행 시도 1/3
+2025-06-13 03:00:02,768 - INFO - ====== WebDriver manager ======
+2025-06-13 03:00:03,519 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 03:00:03,534 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 03:00:03,565 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\137.0.7151.70\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-13 03:00:04,555 - INFO - 웹드라이버 설정 완료
+2025-06-13 03:00:21,302 - INFO - 로그인 성공
+2025-06-13 03:00:26,816 - INFO - 20개 보기 설정 완료
+2025-06-13 03:00:27,078 - INFO - 15개의 캠페인 데이터 수집 완료
+2025-06-13 03:00:27,078 - INFO - 데이터 저장 완료: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 03:00:27,184 - INFO - 기존 스테이징된 파일 리셋
+2025-06-13 03:00:27,184 - INFO - Git pull 시도 중...
+2025-06-13 03:00:27,954 - INFO - Git pull 완료
+2025-06-13 03:00:28,002 - INFO - Git에 파일 추가: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 03:00:28,088 - INFO - Git 커밋 생성: Update data: 2025-06-13 03:00:28
+2025-06-13 03:00:29,853 - INFO - Git 푸시 완료
+2025-06-13 03:00:29,868 - INFO - 데이터 수집 및 Git 푸시 완료
+2025-06-13 03:00:29,868 - INFO - 작업 완료
+2025-06-13 03:00:31,977 - INFO - 웹드라이버 종료
+2025-06-13 04:00:02,260 - INFO - 실행 시도 1/3
+2025-06-13 04:00:02,260 - INFO - ====== WebDriver manager ======
+2025-06-13 04:00:02,998 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 04:00:03,019 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 04:00:03,051 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\137.0.7151.70\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-13 04:00:04,098 - INFO - 웹드라이버 설정 완료
+2025-06-13 04:00:21,269 - INFO - 로그인 성공
+2025-06-13 04:00:26,811 - INFO - 20개 보기 설정 완료
+2025-06-13 04:00:27,074 - INFO - 15개의 캠페인 데이터 수집 완료
+2025-06-13 04:00:27,084 - INFO - 데이터 저장 완료: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 04:00:27,184 - INFO - 기존 스테이징된 파일 리셋
+2025-06-13 04:00:27,184 - INFO - Git pull 시도 중...
+2025-06-13 04:00:28,014 - INFO - Git pull 완료
+2025-06-13 04:00:28,058 - INFO - Git에 파일 추가: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 04:00:28,139 - INFO - Git 커밋 생성: Update data: 2025-06-13 04:00:28
+2025-06-13 04:00:29,896 - INFO - Git 푸시 완료
+2025-06-13 04:00:29,897 - INFO - 데이터 수집 및 Git 푸시 완료
+2025-06-13 04:00:29,897 - INFO - 작업 완료
+2025-06-13 04:00:31,995 - INFO - 웹드라이버 종료
+2025-06-13 05:00:02,724 - INFO - 실행 시도 1/3
+2025-06-13 05:00:02,724 - INFO - ====== WebDriver manager ======
+2025-06-13 05:00:03,449 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 05:00:03,465 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 05:00:03,493 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\137.0.7151.70\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-13 05:00:04,533 - INFO - 웹드라이버 설정 완료
+2025-06-13 05:00:21,199 - INFO - 로그인 성공
+2025-06-13 05:00:26,603 - INFO - 20개 보기 설정 완료
+2025-06-13 05:00:26,860 - INFO - 15개의 캠페인 데이터 수집 완료
+2025-06-13 05:00:26,869 - INFO - 데이터 저장 완료: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 05:00:26,968 - INFO - 기존 스테이징된 파일 리셋
+2025-06-13 05:00:26,969 - INFO - Git pull 시도 중...
+2025-06-13 05:00:27,794 - INFO - Git pull 완료
+2025-06-13 05:00:27,838 - INFO - Git에 파일 추가: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 05:00:27,920 - INFO - Git 커밋 생성: Update data: 2025-06-13 05:00:27
+2025-06-13 05:00:29,712 - INFO - Git 푸시 완료
+2025-06-13 05:00:29,712 - INFO - 데이터 수집 및 Git 푸시 완료
+2025-06-13 05:00:29,713 - INFO - 작업 완료
+2025-06-13 05:00:31,802 - INFO - 웹드라이버 종료
+2025-06-13 06:00:02,706 - INFO - 실행 시도 1/3
+2025-06-13 06:00:02,706 - INFO - ====== WebDriver manager ======
+2025-06-13 06:00:03,433 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 06:00:03,465 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 06:00:03,480 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\137.0.7151.70\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-13 06:00:04,542 - INFO - 웹드라이버 설정 완료
+2025-06-13 06:00:21,150 - INFO - 로그인 성공
+2025-06-13 06:00:26,704 - INFO - 20개 보기 설정 완료
+2025-06-13 06:00:26,964 - INFO - 15개의 캠페인 데이터 수집 완료
+2025-06-13 06:00:26,974 - INFO - 데이터 저장 완료: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 06:00:27,073 - INFO - 기존 스테이징된 파일 리셋
+2025-06-13 06:00:27,073 - INFO - Git pull 시도 중...
+2025-06-13 06:00:27,900 - INFO - Git pull 완료
+2025-06-13 06:00:27,942 - INFO - Git에 파일 추가: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 06:00:28,012 - INFO - Git 커밋 생성: Update data: 2025-06-13 06:00:27
+2025-06-13 06:00:29,816 - INFO - Git 푸시 완료
+2025-06-13 06:00:29,816 - INFO - 데이터 수집 및 Git 푸시 완료
+2025-06-13 06:00:29,817 - INFO - 작업 완료
+2025-06-13 06:00:31,912 - INFO - 웹드라이버 종료
+2025-06-13 07:00:02,714 - INFO - 실행 시도 1/3
+2025-06-13 07:00:02,714 - INFO - ====== WebDriver manager ======
+2025-06-13 07:00:03,483 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 07:00:03,500 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 07:00:03,515 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\137.0.7151.70\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-13 07:00:04,566 - INFO - 웹드라이버 설정 완료
+2025-06-13 07:00:25,630 - INFO - 로그인 성공
+2025-06-13 07:00:31,135 - INFO - 20개 보기 설정 완료
+2025-06-13 07:00:31,400 - INFO - 15개의 캠페인 데이터 수집 완료
+2025-06-13 07:00:31,409 - INFO - 데이터 저장 완료: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 07:00:31,511 - INFO - 기존 스테이징된 파일 리셋
+2025-06-13 07:00:31,511 - INFO - Git pull 시도 중...
+2025-06-13 07:00:32,325 - INFO - Git pull 완료
+2025-06-13 07:00:32,370 - INFO - Git에 파일 추가: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 07:00:32,451 - INFO - Git 커밋 생성: Update data: 2025-06-13 07:00:32
+2025-06-13 07:00:34,310 - INFO - Git 푸시 완료
+2025-06-13 07:00:34,311 - INFO - 데이터 수집 및 Git 푸시 완료
+2025-06-13 07:00:34,311 - INFO - 작업 완료
+2025-06-13 07:00:36,398 - INFO - 웹드라이버 종료
+2025-06-13 08:00:02,743 - INFO - 실행 시도 1/3
+2025-06-13 08:00:02,743 - INFO - ====== WebDriver manager ======
+2025-06-13 08:00:03,496 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 08:00:03,528 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 08:00:03,544 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\137.0.7151.70\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-13 08:00:04,616 - INFO - 웹드라이버 설정 완료
+2025-06-13 08:00:23,772 - INFO - 로그인 성공
+2025-06-13 08:00:29,255 - INFO - 20개 보기 설정 완료
+2025-06-13 08:00:29,509 - INFO - 15개의 캠페인 데이터 수집 완료
+2025-06-13 08:00:29,518 - INFO - 데이터 저장 완료: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 08:00:29,616 - INFO - 기존 스테이징된 파일 리셋
+2025-06-13 08:00:29,616 - INFO - Git pull 시도 중...
+2025-06-13 08:00:30,433 - INFO - Git pull 완료
+2025-06-13 08:00:30,476 - INFO - Git에 파일 추가: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 08:00:30,557 - INFO - Git 커밋 생성: Update data: 2025-06-13 08:00:30
+2025-06-13 08:00:32,368 - INFO - Git 푸시 완료
+2025-06-13 08:00:32,368 - INFO - 데이터 수집 및 Git 푸시 완료
+2025-06-13 08:00:32,369 - INFO - 작업 완료
+2025-06-13 08:00:34,470 - INFO - 웹드라이버 종료
+2025-06-13 09:00:02,706 - INFO - 실행 시도 1/3
+2025-06-13 09:00:02,706 - INFO - ====== WebDriver manager ======
+2025-06-13 09:00:03,475 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 09:00:03,491 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 09:00:03,507 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\137.0.7151.70\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-13 09:00:04,604 - INFO - 웹드라이버 설정 완료
+2025-06-13 09:00:22,076 - INFO - 로그인 성공
+2025-06-13 09:00:27,625 - INFO - 20개 보기 설정 완료
+2025-06-13 09:00:27,884 - INFO - 15개의 캠페인 데이터 수집 완료
+2025-06-13 09:00:27,893 - INFO - 데이터 저장 완료: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 09:00:27,995 - INFO - 기존 스테이징된 파일 리셋
+2025-06-13 09:00:27,995 - INFO - Git pull 시도 중...
+2025-06-13 09:00:28,787 - INFO - Git pull 완료
+2025-06-13 09:00:28,830 - INFO - Git에 파일 추가: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 09:00:28,911 - INFO - Git 커밋 생성: Update data: 2025-06-13 09:00:28
+2025-06-13 09:00:30,716 - INFO - Git 푸시 완료
+2025-06-13 09:00:30,716 - INFO - 데이터 수집 및 Git 푸시 완료
+2025-06-13 09:00:30,717 - INFO - 작업 완료
+2025-06-13 09:00:32,808 - INFO - 웹드라이버 종료
+2025-06-13 10:00:02,712 - INFO - 실행 시도 1/3
+2025-06-13 10:00:02,712 - INFO - ====== WebDriver manager ======
+2025-06-13 10:00:03,423 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 10:00:03,452 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 10:00:03,463 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\137.0.7151.70\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-13 10:00:04,533 - INFO - 웹드라이버 설정 완료
+2025-06-13 10:00:21,786 - INFO - 로그인 성공
+2025-06-13 10:00:27,220 - INFO - 20개 보기 설정 완료
+2025-06-13 10:00:27,481 - INFO - 15개의 캠페인 데이터 수집 완료
+2025-06-13 10:00:27,491 - INFO - 데이터 저장 완료: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 10:00:27,593 - INFO - 기존 스테이징된 파일 리셋
+2025-06-13 10:00:27,593 - INFO - Git pull 시도 중...
+2025-06-13 10:00:28,400 - INFO - Git pull 완료
+2025-06-13 10:00:28,444 - INFO - Git에 파일 추가: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 10:00:28,525 - INFO - Git 커밋 생성: Update data: 2025-06-13 10:00:28
+2025-06-13 10:00:30,348 - INFO - Git 푸시 완료
+2025-06-13 10:00:30,348 - INFO - 데이터 수집 및 Git 푸시 완료
+2025-06-13 10:00:30,349 - INFO - 작업 완료
+2025-06-13 10:00:32,427 - INFO - 웹드라이버 종료
+2025-06-13 11:00:02,827 - INFO - 실행 시도 1/3
+2025-06-13 11:00:02,843 - INFO - ====== WebDriver manager ======
+2025-06-13 11:00:04,030 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 11:00:04,061 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 11:00:04,083 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\137.0.7151.70\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-13 11:00:05,304 - INFO - 웹드라이버 설정 완료
+2025-06-13 11:00:22,231 - INFO - 로그인 성공
+2025-06-13 11:00:26,368 - ERROR - 행 수 선택 실패: Message: element click intercepted: Element <select aria-label="rows per page">...</select> is not clickable at point (1138, 668). Other element would receive the click: <div class="-loading -active">...</div>
+  (Session info: chrome=137.0.7151.103)
+Stacktrace:
+	GetHandleVerifier [0x0x343783+63299]
+	GetHandleVerifier [0x0x3437c4+63364]
+	(No symbol) [0x0x171113]
+	(No symbol) [0x0x1bfbb0]
+	(No symbol) [0x0x1bdf6a]
+	(No symbol) [0x0x1bbad7]
+	(No symbol) [0x0x1bada7]
+	(No symbol) [0x0x1af445]
+	(No symbol) [0x0x1de57c]
+	(No symbol) [0x0x1aeed4]
+	(No symbol) [0x0x1de7f4]
+	(No symbol) [0x0x1ffa4a]
+	(No symbol) [0x0x1de376]
+	(No symbol) [0x0x1ad6e0]
+	(No symbol) [0x0x1ae544]
+	GetHandleVerifier [0x0x59e073+2531379]
+	GetHandleVerifier [0x0x599372+2511666]
+	GetHandleVerifier [0x0x369efa+220858]
+	GetHandleVerifier [0x0x35a548+156936]
+	GetHandleVerifier [0x0x360c7d+183357]
+	GetHandleVerifier [0x0x34b6e8+95912]
+	GetHandleVerifier [0x0x34b890+96336]
+	GetHandleVerifier [0x0x33666a+9770]
+	BaseThreadInitThunk [0x0x75befcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x77aa82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x77aa827e+238]
+	(No symbol) [0x0]
+
+2025-06-13 11:00:26,368 - ERROR - 오류 발생 (시도 1): 행 수 설정 실패
+2025-06-13 11:00:26,369 - INFO - 30초 후 재시도...
+2025-06-13 11:00:58,456 - INFO - 웹드라이버 종료
+2025-06-13 11:00:58,456 - INFO - 실행 시도 2/3
+2025-06-13 11:00:58,456 - INFO - ====== WebDriver manager ======
+2025-06-13 11:00:59,174 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 11:00:59,194 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 11:00:59,211 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\137.0.7151.70\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-13 11:01:00,299 - INFO - 웹드라이버 설정 완료
+2025-06-13 11:01:16,839 - INFO - 로그인 성공
+2025-06-13 11:01:23,128 - INFO - 20개 보기 설정 완료
+2025-06-13 11:01:23,387 - INFO - 15개의 캠페인 데이터 수집 완료
+2025-06-13 11:01:23,396 - INFO - 데이터 저장 완료: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 11:01:23,495 - INFO - 기존 스테이징된 파일 리셋
+2025-06-13 11:01:23,496 - INFO - Git pull 시도 중...
+2025-06-13 11:01:24,765 - INFO - Git pull 완료
+2025-06-13 11:01:24,807 - INFO - Git에 파일 추가: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 11:01:24,890 - INFO - Git 커밋 생성: Update data: 2025-06-13 11:01:24
+2025-06-13 11:01:26,901 - INFO - Git 푸시 완료
+2025-06-13 11:01:26,901 - INFO - 데이터 수집 및 Git 푸시 완료
+2025-06-13 11:01:26,902 - INFO - 작업 완료
+2025-06-13 11:01:28,982 - INFO - 웹드라이버 종료
+2025-06-13 12:00:02,732 - INFO - 실행 시도 1/3
+2025-06-13 12:00:02,732 - INFO - ====== WebDriver manager ======
+2025-06-13 12:00:03,459 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 12:00:03,491 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 12:00:03,506 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\137.0.7151.70\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-13 12:00:04,508 - INFO - 웹드라이버 설정 완료
+2025-06-13 12:00:22,108 - INFO - 로그인 성공
+2025-06-13 12:00:27,543 - INFO - 20개 보기 설정 완료
+2025-06-13 12:00:27,789 - INFO - 15개의 캠페인 데이터 수집 완료
+2025-06-13 12:00:27,789 - INFO - 데이터 저장 완료: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 12:00:27,902 - INFO - 기존 스테이징된 파일 리셋
+2025-06-13 12:00:27,902 - INFO - Git pull 시도 중...
+2025-06-13 12:00:28,704 - INFO - Git pull 완료
+2025-06-13 12:00:28,751 - INFO - Git에 파일 추가: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 12:00:28,826 - INFO - Git 커밋 생성: Update data: 2025-06-13 12:00:28
+2025-06-13 12:00:30,630 - INFO - Git 푸시 완료
+2025-06-13 12:00:30,630 - INFO - 데이터 수집 및 Git 푸시 완료
+2025-06-13 12:00:30,630 - INFO - 작업 완료
+2025-06-13 12:00:32,744 - INFO - 웹드라이버 종료
+2025-06-13 13:00:02,769 - INFO - 실행 시도 1/3
+2025-06-13 13:00:02,769 - INFO - ====== WebDriver manager ======
+2025-06-13 13:00:03,782 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 13:00:03,798 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 13:00:03,814 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\137.0.7151.70\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-13 13:00:05,101 - INFO - 웹드라이버 설정 완료
+2025-06-13 13:00:22,138 - INFO - 로그인 성공
+2025-06-13 13:00:27,631 - INFO - 20개 보기 설정 완료
+2025-06-13 13:00:27,896 - INFO - 15개의 캠페인 데이터 수집 완료
+2025-06-13 13:00:27,905 - INFO - 데이터 저장 완료: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 13:00:28,004 - INFO - 기존 스테이징된 파일 리셋
+2025-06-13 13:00:28,005 - INFO - Git pull 시도 중...
+2025-06-13 13:00:29,212 - INFO - Git pull 완료
+2025-06-13 13:00:29,255 - INFO - Git에 파일 추가: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 13:00:29,336 - INFO - Git 커밋 생성: Update data: 2025-06-13 13:00:29
+2025-06-13 13:00:31,113 - INFO - Git 푸시 완료
+2025-06-13 13:00:31,113 - INFO - 데이터 수집 및 Git 푸시 완료
+2025-06-13 13:00:31,114 - INFO - 작업 완료
+2025-06-13 13:00:33,212 - INFO - 웹드라이버 종료
+2025-06-13 14:00:02,706 - INFO - 실행 시도 1/3
+2025-06-13 14:00:02,706 - INFO - ====== WebDriver manager ======
+2025-06-13 14:00:03,429 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 14:00:03,461 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 14:00:03,477 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\137.0.7151.70\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-13 14:00:04,488 - INFO - 웹드라이버 설정 완료
+2025-06-13 14:00:21,790 - INFO - 로그인 성공
+2025-06-13 14:00:27,714 - INFO - 20개 보기 설정 완료
+2025-06-13 14:00:27,981 - INFO - 15개의 캠페인 데이터 수집 완료
+2025-06-13 14:00:27,991 - INFO - 데이터 저장 완료: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 14:00:28,091 - INFO - 기존 스테이징된 파일 리셋
+2025-06-13 14:00:28,091 - INFO - Git pull 시도 중...
+2025-06-13 14:00:28,914 - INFO - Git pull 완료
+2025-06-13 14:00:28,958 - INFO - Git에 파일 추가: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 14:00:29,038 - INFO - Git 커밋 생성: Update data: 2025-06-13 14:00:28
+2025-06-13 14:00:30,824 - INFO - Git 푸시 완료
+2025-06-13 14:00:30,824 - INFO - 데이터 수집 및 Git 푸시 완료
+2025-06-13 14:00:30,825 - INFO - 작업 완료
+2025-06-13 14:00:32,939 - INFO - 웹드라이버 종료
+2025-06-13 15:00:02,746 - INFO - 실행 시도 1/3
+2025-06-13 15:00:02,746 - INFO - ====== WebDriver manager ======
+2025-06-13 15:00:03,486 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 15:00:03,501 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 15:00:03,517 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\137.0.7151.70\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-13 15:00:04,539 - INFO - 웹드라이버 설정 완료
+2025-06-13 15:00:21,485 - INFO - 로그인 성공
+2025-06-13 15:00:26,844 - INFO - 20개 보기 설정 완료
+2025-06-13 15:00:27,104 - INFO - 15개의 캠페인 데이터 수집 완료
+2025-06-13 15:00:27,113 - INFO - 데이터 저장 완료: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 15:00:27,211 - INFO - 기존 스테이징된 파일 리셋
+2025-06-13 15:00:27,211 - INFO - Git pull 시도 중...
+2025-06-13 15:00:28,008 - INFO - Git pull 완료
+2025-06-13 15:00:28,053 - INFO - Git에 파일 추가: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 15:00:28,137 - INFO - Git 커밋 생성: Update data: 2025-06-13 15:00:28
+2025-06-13 15:00:29,962 - INFO - Git 푸시 완료
+2025-06-13 15:00:29,963 - INFO - 데이터 수집 및 Git 푸시 완료
+2025-06-13 15:00:29,963 - INFO - 작업 완료
+2025-06-13 15:00:32,052 - INFO - 웹드라이버 종료
+2025-06-13 16:00:02,772 - INFO - 실행 시도 1/3
+2025-06-13 16:00:02,772 - INFO - ====== WebDriver manager ======
+2025-06-13 16:00:03,511 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 16:00:03,542 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 16:00:03,558 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\137.0.7151.70\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-13 16:00:04,612 - INFO - 웹드라이버 설정 완료
+2025-06-13 16:00:22,716 - INFO - 로그인 성공
+2025-06-13 16:00:28,515 - INFO - 20개 보기 설정 완료
+2025-06-13 16:00:28,780 - INFO - 15개의 캠페인 데이터 수집 완료
+2025-06-13 16:00:28,789 - INFO - 데이터 저장 완료: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 16:00:28,894 - INFO - 기존 스테이징된 파일 리셋
+2025-06-13 16:00:28,894 - INFO - Git pull 시도 중...
+2025-06-13 16:00:29,717 - INFO - Git pull 완료
+2025-06-13 16:00:29,761 - INFO - Git에 파일 추가: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 16:00:29,839 - INFO - Git 커밋 생성: Update data: 2025-06-13 16:00:29
+2025-06-13 16:00:31,658 - INFO - Git 푸시 완료
+2025-06-13 16:00:31,659 - INFO - 데이터 수집 및 Git 푸시 완료
+2025-06-13 16:00:31,659 - INFO - 작업 완료
+2025-06-13 16:00:33,750 - INFO - 웹드라이버 종료
+2025-06-13 17:00:02,718 - INFO - 실행 시도 1/3
+2025-06-13 17:00:02,718 - INFO - ====== WebDriver manager ======
+2025-06-13 17:00:03,444 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 17:00:03,460 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 17:00:03,487 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\137.0.7151.70\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-13 17:00:04,477 - INFO - 웹드라이버 설정 완료
+2025-06-13 17:00:21,689 - INFO - 로그인 성공
+2025-06-13 17:00:27,796 - INFO - 20개 보기 설정 완료
+2025-06-13 17:00:28,062 - INFO - 15개의 캠페인 데이터 수집 완료
+2025-06-13 17:00:28,071 - INFO - 데이터 저장 완료: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 17:00:28,171 - INFO - 기존 스테이징된 파일 리셋
+2025-06-13 17:00:28,171 - INFO - Git pull 시도 중...
+2025-06-13 17:00:29,010 - INFO - Git pull 완료
+2025-06-13 17:00:29,052 - INFO - Git에 파일 추가: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 17:00:29,134 - INFO - Git 커밋 생성: Update data: 2025-06-13 17:00:29
+2025-06-13 17:00:30,911 - INFO - Git 푸시 완료
+2025-06-13 17:00:30,911 - INFO - 데이터 수집 및 Git 푸시 완료
+2025-06-13 17:00:30,911 - INFO - 작업 완료
+2025-06-13 17:00:32,997 - INFO - 웹드라이버 종료
+2025-06-13 18:00:02,702 - INFO - 실행 시도 1/3
+2025-06-13 18:00:02,702 - INFO - ====== WebDriver manager ======
+2025-06-13 18:00:03,478 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 18:00:03,494 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 18:00:03,510 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\137.0.7151.70\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-13 18:00:04,564 - INFO - 웹드라이버 설정 완료
+2025-06-13 18:00:22,148 - INFO - 로그인 성공
+2025-06-13 18:00:27,431 - INFO - 20개 보기 설정 완료
+2025-06-13 18:00:27,698 - INFO - 15개의 캠페인 데이터 수집 완료
+2025-06-13 18:00:27,707 - INFO - 데이터 저장 완료: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 18:00:27,808 - INFO - 기존 스테이징된 파일 리셋
+2025-06-13 18:00:27,808 - INFO - Git pull 시도 중...
+2025-06-13 18:00:28,639 - INFO - Git pull 완료
+2025-06-13 18:00:28,683 - INFO - Git에 파일 추가: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 18:00:28,763 - INFO - Git 커밋 생성: Update data: 2025-06-13 18:00:28
+2025-06-13 18:00:30,543 - INFO - Git 푸시 완료
+2025-06-13 18:00:30,543 - INFO - 데이터 수집 및 Git 푸시 완료
+2025-06-13 18:00:30,544 - INFO - 작업 완료
+2025-06-13 18:00:32,641 - INFO - 웹드라이버 종료
+2025-06-13 19:00:02,792 - INFO - 실행 시도 1/3
+2025-06-13 19:00:02,792 - INFO - ====== WebDriver manager ======
+2025-06-13 19:00:04,010 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 19:00:04,041 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 19:00:04,053 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\137.0.7151.70\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-13 19:00:05,337 - INFO - 웹드라이버 설정 완료
+2025-06-13 19:00:22,633 - INFO - 로그인 성공
+2025-06-13 19:00:28,560 - INFO - 20개 보기 설정 완료
+2025-06-13 19:00:28,804 - INFO - 15개의 캠페인 데이터 수집 완료
+2025-06-13 19:00:28,813 - INFO - 데이터 저장 완료: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 19:00:28,914 - INFO - 기존 스테이징된 파일 리셋
+2025-06-13 19:00:28,914 - INFO - Git pull 시도 중...
+2025-06-13 19:00:30,138 - INFO - Git pull 완료
+2025-06-13 19:00:30,181 - INFO - Git에 파일 추가: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 19:00:30,261 - INFO - Git 커밋 생성: Update data: 2025-06-13 19:00:30
+2025-06-13 19:00:32,107 - INFO - Git 푸시 완료
+2025-06-13 19:00:32,107 - INFO - 데이터 수집 및 Git 푸시 완료
+2025-06-13 19:00:32,108 - INFO - 작업 완료
+2025-06-13 19:00:34,190 - INFO - 웹드라이버 종료
+2025-06-13 20:00:02,694 - INFO - 실행 시도 1/3
+2025-06-13 20:00:02,694 - INFO - ====== WebDriver manager ======
+2025-06-13 20:00:03,402 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 20:00:03,433 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 20:00:03,449 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\137.0.7151.70\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-13 20:00:04,516 - INFO - 웹드라이버 설정 완료
+2025-06-13 20:00:22,248 - INFO - 로그인 성공
+2025-06-13 20:00:27,644 - INFO - 20개 보기 설정 완료
+2025-06-13 20:00:27,903 - INFO - 15개의 캠페인 데이터 수집 완료
+2025-06-13 20:00:27,912 - INFO - 데이터 저장 완료: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 20:00:28,015 - INFO - 기존 스테이징된 파일 리셋
+2025-06-13 20:00:28,015 - INFO - Git pull 시도 중...
+2025-06-13 20:00:28,835 - INFO - Git pull 완료
+2025-06-13 20:00:28,877 - INFO - Git에 파일 추가: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 20:00:28,963 - INFO - Git 커밋 생성: Update data: 2025-06-13 20:00:28
+2025-06-13 20:00:30,748 - INFO - Git 푸시 완료
+2025-06-13 20:00:30,748 - INFO - 데이터 수집 및 Git 푸시 완료
+2025-06-13 20:00:30,748 - INFO - 작업 완료
+2025-06-13 20:00:32,838 - INFO - 웹드라이버 종료
+2025-06-13 21:00:02,707 - INFO - 실행 시도 1/3
+2025-06-13 21:00:02,707 - INFO - ====== WebDriver manager ======
+2025-06-13 21:00:03,430 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 21:00:03,446 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 21:00:03,477 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\137.0.7151.70\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-13 21:00:04,538 - INFO - 웹드라이버 설정 완료
+2025-06-13 21:00:21,601 - INFO - 로그인 성공
+2025-06-13 21:00:26,905 - INFO - 20개 보기 설정 완료
+2025-06-13 21:00:27,167 - INFO - 15개의 캠페인 데이터 수집 완료
+2025-06-13 21:00:27,176 - INFO - 데이터 저장 완료: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 21:00:27,275 - INFO - 기존 스테이징된 파일 리셋
+2025-06-13 21:00:27,275 - INFO - Git pull 시도 중...
+2025-06-13 21:00:28,089 - INFO - Git pull 완료
+2025-06-13 21:00:28,131 - INFO - Git에 파일 추가: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 21:00:28,210 - INFO - Git 커밋 생성: Update data: 2025-06-13 21:00:28
+2025-06-13 21:00:29,989 - INFO - Git 푸시 완료
+2025-06-13 21:00:29,990 - INFO - 데이터 수집 및 Git 푸시 완료
+2025-06-13 21:00:29,990 - INFO - 작업 완료
+2025-06-13 21:00:32,097 - INFO - 웹드라이버 종료
+2025-06-13 22:00:02,708 - INFO - 실행 시도 1/3
+2025-06-13 22:00:02,708 - INFO - ====== WebDriver manager ======
+2025-06-13 22:00:03,435 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 22:00:03,466 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 22:00:03,482 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\137.0.7151.70\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-13 22:00:04,489 - INFO - 웹드라이버 설정 완료
+2025-06-13 22:00:26,124 - INFO - 로그인 성공
+2025-06-13 22:00:32,553 - INFO - 20개 보기 설정 완료
+2025-06-13 22:00:32,863 - INFO - 15개의 캠페인 데이터 수집 완료
+2025-06-13 22:00:32,874 - INFO - 데이터 저장 완료: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 22:00:32,973 - INFO - 기존 스테이징된 파일 리셋
+2025-06-13 22:00:32,973 - INFO - Git pull 시도 중...
+2025-06-13 22:00:33,808 - INFO - Git pull 완료
+2025-06-13 22:00:33,849 - INFO - Git에 파일 추가: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 22:00:33,929 - INFO - Git 커밋 생성: Update data: 2025-06-13 22:00:33
+2025-06-13 22:00:35,718 - INFO - Git 푸시 완료
+2025-06-13 22:00:35,718 - INFO - 데이터 수집 및 Git 푸시 완료
+2025-06-13 22:00:35,719 - INFO - 작업 완료
+2025-06-13 22:00:37,837 - INFO - 웹드라이버 종료
+2025-06-13 23:00:02,708 - INFO - 실행 시도 1/3
+2025-06-13 23:00:02,708 - INFO - ====== WebDriver manager ======
+2025-06-13 23:00:03,446 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 23:00:03,462 - INFO - Get LATEST chromedriver version for google-chrome
+2025-06-13 23:00:03,478 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\137.0.7151.70\chromedriver-win32/chromedriver.exe] found in cache
+2025-06-13 23:00:04,569 - INFO - 웹드라이버 설정 완료
+2025-06-13 23:00:21,964 - INFO - 로그인 성공
+2025-06-13 23:00:27,542 - INFO - 20개 보기 설정 완료
+2025-06-13 23:00:27,804 - INFO - 15개의 캠페인 데이터 수집 완료
+2025-06-13 23:00:27,814 - INFO - 데이터 저장 완료: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 23:00:27,914 - INFO - 기존 스테이징된 파일 리셋
+2025-06-13 23:00:27,914 - INFO - Git pull 시도 중...
+2025-06-13 23:00:28,730 - INFO - Git pull 완료
+2025-06-13 23:00:28,776 - INFO - Git에 파일 추가: src\frontend\public\data\daily\2025-06-13.json
+2025-06-13 23:00:28,856 - INFO - Git 커밋 생성: Update data: 2025-06-13 23:00:28
+2025-06-13 23:00:30,725 - INFO - Git 푸시 완료
+2025-06-13 23:00:30,725 - INFO - 데이터 수집 및 Git 푸시 완료
+2025-06-13 23:00:30,726 - INFO - 작업 완료
+2025-06-13 23:00:32,824 - INFO - 웹드라이버 종료

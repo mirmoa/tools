@@ -1,0 +1,28 @@
+2026-04-26 16:00:03,253 - INFO - ==================================================
+2026-04-26 16:00:03,254 - INFO - 쿠팡 광고비 수집 시작
+2026-04-26 16:00:03,255 - INFO - ==================================================
+2026-04-26 16:00:03,255 - INFO - ====== WebDriver manager ======
+2026-04-26 16:00:04,659 - INFO - Get LATEST chromedriver version for google-chrome
+2026-04-26 16:00:04,690 - INFO - Get LATEST chromedriver version for google-chrome
+2026-04-26 16:00:04,710 - INFO - Get LATEST chromedriver version for google-chrome
+2026-04-26 16:00:04,767 - INFO - WebDriver version 147.0.7727.117 selected
+2026-04-26 16:00:04,771 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/147.0.7727.117/win32/chromedriver-win32.zip
+2026-04-26 16:00:04,772 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/147.0.7727.117/win32/chromedriver-win32.zip
+2026-04-26 16:00:04,821 - INFO - Driver downloading response is 200
+2026-04-26 16:00:04,992 - INFO - Get LATEST chromedriver version for google-chrome
+2026-04-26 16:00:05,074 - INFO - Driver has been saved in cache [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\147.0.7727.117]
+2026-04-26 16:00:06,264 - INFO - 웹드라이버 설정 완료
+2026-04-26 16:00:06,264 - INFO - 로그인 페이지 접속...
+2026-04-26 16:00:09,997 - INFO - 아이디 입력 완료
+2026-04-26 16:00:10,050 - INFO - 비밀번호 입력 완료
+2026-04-26 16:00:12,376 - INFO - 로그인 버튼 클릭
+2026-04-26 16:00:12,376 - INFO - ==================================================
+2026-04-26 16:00:12,376 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-04-26 16:00:12,376 - INFO - ==================================================
+2026-04-26 16:00:12,471 - INFO - 로그인 성공!
+2026-04-26 16:00:13,877 - INFO - 광고관리 메뉴 클릭
+2026-04-26 16:00:16,887 - INFO - 캠페인 테이블 로드 완료
+2026-04-26 16:00:28,737 - INFO - 20개 보기 설정 완료
+2026-04-26 16:00:29,108 - INFO - 20개의 캠페인 데이터 수집 완료
+2026-04-26 16:00:29,110 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-04-26.json
+2026-04-26 16:00:29,110 - INFO - 현재 시간(16시) 총 광고비: 122,518원

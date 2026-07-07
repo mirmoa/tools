@@ -1,0 +1,1073 @@
+2026-05-18 00:00:01,981 - INFO - ==================================================
+2026-05-18 00:00:01,981 - INFO - 쿠팡 광고비 수집 시작
+2026-05-18 00:00:01,981 - INFO - ==================================================
+2026-05-18 00:00:01,981 - INFO - ====== WebDriver manager ======
+2026-05-18 00:00:03,042 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 00:00:03,066 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 00:00:03,084 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 00:00:03,142 - INFO - WebDriver version 148.0.7778.167 selected
+2026-05-18 00:00:03,146 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/148.0.7778.167/win32/chromedriver-win32.zip
+2026-05-18 00:00:03,146 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/148.0.7778.167/win32/chromedriver-win32.zip
+2026-05-18 00:00:03,195 - INFO - Driver downloading response is 200
+2026-05-18 00:00:03,364 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 00:00:03,505 - INFO - Driver has been saved in cache [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167]
+2026-05-18 00:00:05,206 - INFO - 웹드라이버 설정 완료
+2026-05-18 00:00:05,206 - INFO - 로그인 페이지 접속...
+2026-05-18 00:00:09,723 - INFO - 아이디 입력 완료
+2026-05-18 00:00:09,773 - INFO - 비밀번호 입력 완료
+2026-05-18 00:00:09,824 - INFO - 로그인 버튼 클릭
+2026-05-18 00:01:10,204 - ERROR - 로그인 실패: Message: 
+
+2026-05-18 00:01:10,286 - ERROR - 오류 발생: 로그인 실패
+2026-05-18 00:01:12,448 - INFO - 브라우저 종료
+2026-05-18 01:00:02,473 - INFO - ==================================================
+2026-05-18 01:00:02,473 - INFO - 쿠팡 광고비 수집 시작
+2026-05-18 01:00:02,473 - INFO - ==================================================
+2026-05-18 01:00:02,473 - INFO - ====== WebDriver manager ======
+2026-05-18 01:00:03,555 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 01:00:03,585 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 01:00:03,602 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 01:00:04,676 - INFO - 웹드라이버 설정 완료
+2026-05-18 01:00:04,677 - INFO - 로그인 페이지 접속...
+2026-05-18 01:00:08,996 - INFO - 아이디 입력 완료
+2026-05-18 01:00:09,050 - INFO - 비밀번호 입력 완료
+2026-05-18 01:00:09,099 - INFO - 로그인 버튼 클릭
+2026-05-18 01:01:09,410 - ERROR - 로그인 실패: Message: 
+
+2026-05-18 01:01:09,486 - ERROR - 오류 발생: 로그인 실패
+2026-05-18 01:01:11,649 - INFO - 브라우저 종료
+2026-05-18 02:00:02,443 - INFO - ==================================================
+2026-05-18 02:00:02,443 - INFO - 쿠팡 광고비 수집 시작
+2026-05-18 02:00:02,444 - INFO - ==================================================
+2026-05-18 02:00:02,444 - INFO - ====== WebDriver manager ======
+2026-05-18 02:00:03,524 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 02:00:03,547 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 02:00:03,565 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 02:00:04,707 - INFO - 웹드라이버 설정 완료
+2026-05-18 02:00:04,707 - INFO - 로그인 페이지 접속...
+2026-05-18 02:00:08,868 - INFO - 아이디 입력 완료
+2026-05-18 02:00:08,919 - INFO - 비밀번호 입력 완료
+2026-05-18 02:00:08,970 - INFO - 로그인 버튼 클릭
+2026-05-18 02:01:09,203 - ERROR - 로그인 실패: Message: 
+
+2026-05-18 02:01:09,285 - ERROR - 오류 발생: 로그인 실패
+2026-05-18 02:01:11,445 - INFO - 브라우저 종료
+2026-05-18 03:00:02,506 - INFO - ==================================================
+2026-05-18 03:00:02,507 - INFO - 쿠팡 광고비 수집 시작
+2026-05-18 03:00:02,507 - INFO - ==================================================
+2026-05-18 03:00:02,507 - INFO - ====== WebDriver manager ======
+2026-05-18 03:00:03,593 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 03:00:03,616 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 03:00:03,633 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 03:00:04,781 - INFO - 웹드라이버 설정 완료
+2026-05-18 03:00:04,781 - INFO - 로그인 페이지 접속...
+2026-05-18 03:00:09,026 - INFO - 아이디 입력 완료
+2026-05-18 03:00:09,074 - INFO - 비밀번호 입력 완료
+2026-05-18 03:00:09,123 - INFO - 로그인 버튼 클릭
+2026-05-18 03:01:09,301 - ERROR - 로그인 실패: Message: 
+
+2026-05-18 03:01:09,346 - ERROR - 오류 발생: 로그인 실패
+2026-05-18 03:01:11,499 - INFO - 브라우저 종료
+2026-05-18 04:00:02,503 - INFO - ==================================================
+2026-05-18 04:00:02,503 - INFO - 쿠팡 광고비 수집 시작
+2026-05-18 04:00:02,504 - INFO - ==================================================
+2026-05-18 04:00:02,504 - INFO - ====== WebDriver manager ======
+2026-05-18 04:00:03,559 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 04:00:03,580 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 04:00:03,598 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 04:00:04,754 - INFO - 웹드라이버 설정 완료
+2026-05-18 04:00:04,755 - INFO - 로그인 페이지 접속...
+2026-05-18 04:00:08,972 - INFO - 아이디 입력 완료
+2026-05-18 04:00:09,027 - INFO - 비밀번호 입력 완료
+2026-05-18 04:00:09,078 - INFO - 로그인 버튼 클릭
+2026-05-18 04:01:09,362 - ERROR - 로그인 실패: Message: 
+
+2026-05-18 04:01:09,445 - ERROR - 오류 발생: 로그인 실패
+2026-05-18 04:01:11,593 - INFO - 브라우저 종료
+2026-05-18 05:00:02,504 - INFO - ==================================================
+2026-05-18 05:00:02,505 - INFO - 쿠팡 광고비 수집 시작
+2026-05-18 05:00:02,505 - INFO - ==================================================
+2026-05-18 05:00:02,505 - INFO - ====== WebDriver manager ======
+2026-05-18 05:00:03,565 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 05:00:03,591 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 05:00:03,609 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 05:00:04,735 - INFO - 웹드라이버 설정 완료
+2026-05-18 05:00:04,735 - INFO - 로그인 페이지 접속...
+2026-05-18 05:00:08,915 - INFO - 아이디 입력 완료
+2026-05-18 05:00:08,968 - INFO - 비밀번호 입력 완료
+2026-05-18 05:00:09,017 - INFO - 로그인 버튼 클릭
+2026-05-18 05:01:09,212 - ERROR - 로그인 실패: Message: 
+
+2026-05-18 05:01:09,301 - ERROR - 오류 발생: 로그인 실패
+2026-05-18 05:01:11,448 - INFO - 브라우저 종료
+2026-05-18 06:00:02,491 - INFO - ==================================================
+2026-05-18 06:00:02,491 - INFO - 쿠팡 광고비 수집 시작
+2026-05-18 06:00:02,492 - INFO - ==================================================
+2026-05-18 06:00:02,492 - INFO - ====== WebDriver manager ======
+2026-05-18 06:00:03,572 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 06:00:03,595 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 06:00:03,610 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 06:00:04,730 - INFO - 웹드라이버 설정 완료
+2026-05-18 06:00:04,730 - INFO - 로그인 페이지 접속...
+2026-05-18 06:00:08,947 - INFO - 아이디 입력 완료
+2026-05-18 06:00:08,999 - INFO - 비밀번호 입력 완료
+2026-05-18 06:00:09,047 - INFO - 로그인 버튼 클릭
+2026-05-18 06:01:09,195 - ERROR - 로그인 실패: Message: 
+
+2026-05-18 06:01:09,230 - ERROR - 오류 발생: 로그인 실패
+2026-05-18 06:01:11,391 - INFO - 브라우저 종료
+2026-05-18 07:00:02,479 - INFO - ==================================================
+2026-05-18 07:00:02,479 - INFO - 쿠팡 광고비 수집 시작
+2026-05-18 07:00:02,479 - INFO - ==================================================
+2026-05-18 07:00:02,479 - INFO - ====== WebDriver manager ======
+2026-05-18 07:00:03,554 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 07:00:03,578 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 07:00:03,596 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 07:00:04,679 - INFO - 웹드라이버 설정 완료
+2026-05-18 07:00:04,679 - INFO - 로그인 페이지 접속...
+2026-05-18 07:00:09,137 - INFO - 아이디 입력 완료
+2026-05-18 07:00:09,188 - INFO - 비밀번호 입력 완료
+2026-05-18 07:00:09,236 - INFO - 로그인 버튼 클릭
+2026-05-18 07:01:09,615 - ERROR - 로그인 실패: Message: 
+
+2026-05-18 07:01:09,699 - ERROR - 오류 발생: 로그인 실패
+2026-05-18 07:01:11,862 - INFO - 브라우저 종료
+2026-05-18 08:00:02,455 - INFO - ==================================================
+2026-05-18 08:00:02,456 - INFO - 쿠팡 광고비 수집 시작
+2026-05-18 08:00:02,456 - INFO - ==================================================
+2026-05-18 08:00:02,456 - INFO - ====== WebDriver manager ======
+2026-05-18 08:00:03,516 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 08:00:03,540 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 08:00:03,556 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 08:00:04,630 - INFO - 웹드라이버 설정 완료
+2026-05-18 08:00:04,630 - INFO - 로그인 페이지 접속...
+2026-05-18 08:00:09,041 - INFO - 아이디 입력 완료
+2026-05-18 08:00:09,094 - INFO - 비밀번호 입력 완료
+2026-05-18 08:00:09,141 - INFO - 로그인 버튼 클릭
+2026-05-18 08:01:09,300 - ERROR - 로그인 실패: Message: 
+
+2026-05-18 08:01:09,344 - ERROR - 오류 발생: 로그인 실패
+2026-05-18 08:01:11,509 - INFO - 브라우저 종료
+2026-05-18 09:00:02,485 - INFO - ==================================================
+2026-05-18 09:00:02,486 - INFO - 쿠팡 광고비 수집 시작
+2026-05-18 09:00:02,486 - INFO - ==================================================
+2026-05-18 09:00:02,486 - INFO - ====== WebDriver manager ======
+2026-05-18 09:00:03,568 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 09:00:03,592 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 09:00:03,609 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 09:00:04,765 - INFO - 웹드라이버 설정 완료
+2026-05-18 09:00:04,765 - INFO - 로그인 페이지 접속...
+2026-05-18 09:00:09,173 - INFO - 아이디 입력 완료
+2026-05-18 09:00:09,220 - INFO - 비밀번호 입력 완료
+2026-05-18 09:00:09,266 - INFO - 로그인 버튼 클릭
+2026-05-18 09:01:09,677 - ERROR - 로그인 실패: Message: 
+
+2026-05-18 09:01:09,760 - ERROR - 오류 발생: 로그인 실패
+2026-05-18 09:01:11,924 - INFO - 브라우저 종료
+2026-05-18 10:00:02,493 - INFO - ==================================================
+2026-05-18 10:00:02,493 - INFO - 쿠팡 광고비 수집 시작
+2026-05-18 10:00:02,493 - INFO - ==================================================
+2026-05-18 10:00:02,493 - INFO - ====== WebDriver manager ======
+2026-05-18 10:00:03,562 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 10:00:03,586 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 10:00:03,603 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 10:00:04,771 - INFO - 웹드라이버 설정 완료
+2026-05-18 10:00:04,771 - INFO - 로그인 페이지 접속...
+2026-05-18 10:00:09,005 - INFO - 아이디 입력 완료
+2026-05-18 10:00:09,054 - INFO - 비밀번호 입력 완료
+2026-05-18 10:00:09,105 - INFO - 로그인 버튼 클릭
+2026-05-18 10:01:09,115 - ERROR - 로그인 실패: Message: 
+
+2026-05-18 10:01:09,201 - ERROR - 오류 발생: 로그인 실패
+2026-05-18 10:01:11,359 - INFO - 브라우저 종료
+2026-05-18 10:03:33,096 - INFO - ==================================================
+2026-05-18 10:03:33,096 - INFO - 쿠팡 광고비 수집 시작
+2026-05-18 10:03:33,096 - INFO - ==================================================
+2026-05-18 10:03:33,096 - INFO - ====== WebDriver manager ======
+2026-05-18 10:03:33,840 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 10:03:33,860 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 10:03:33,876 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 10:03:34,918 - INFO - 웹드라이버 설정 완료
+2026-05-18 10:03:34,918 - INFO - 로그인 페이지 접속...
+2026-05-18 10:03:39,249 - INFO - 아이디 입력 완료
+2026-05-18 10:03:39,298 - INFO - 비밀번호 입력 완료
+2026-05-18 10:03:39,344 - INFO - 로그인 버튼 클릭
+2026-05-18 10:04:29,249 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, '현재 연결은 원격 호스트에 의해 강제로 끊겼습니다', None, 10054, None)': /session/8df3cc314904f8d184ff364548181440
+2026-05-18 10:04:58,866 - INFO - ==================================================
+2026-05-18 10:04:58,867 - INFO - 쿠팡 광고비 수집 시작
+2026-05-18 10:04:58,867 - INFO - ==================================================
+2026-05-18 10:04:58,867 - INFO - ====== WebDriver manager ======
+2026-05-18 10:04:59,586 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 10:04:59,607 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 10:04:59,622 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 10:05:00,686 - INFO - 웹드라이버 설정 완료
+2026-05-18 10:05:00,686 - INFO - 로그인 페이지 접속...
+2026-05-18 10:05:04,932 - INFO - 아이디 입력 완료
+2026-05-18 10:05:04,983 - INFO - 비밀번호 입력 완료
+2026-05-18 10:05:05,029 - INFO - 로그인 버튼 클릭
+2026-05-18 10:05:13,977 - ERROR - 로그인 실패: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=148.0.7778.97)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xa37123+10a23]
+	chromedriver!GetHandleVerifier [0xa37254+10b54]
+	chromedriver!(No symbol) [0x851e90]
+	chromedriver!(No symbol) [0x840d8e]
+	chromedriver!(No symbol) [0x85f97e]
+	chromedriver!(No symbol) [0x8c3cdd]
+	chromedriver!(No symbol) [0x8da2a9]
+	chromedriver!(No symbol) [0x8bd526]
+	chromedriver!(No symbol) [0x8908f9]
+	chromedriver!(No symbol) [0x8916b4]
+	chromedriver!GetHandleVerifier [0xcd1ac4+2ab3c4]
+	chromedriver!GetHandleVerifier [0xccd0ed+2a69ed]
+	chromedriver!GetHandleVerifier [0xcee4f5+2c7df5]
+	chromedriver!GetHandleVerifier [0xa51128+2aa28]
+	chromedriver!GetHandleVerifier [0xa58bbd+324bd]
+	chromedriver!GetHandleVerifier [0xa3fb28+19428]
+	chromedriver!GetHandleVerifier [0xa3fcd5+195d5]
+	chromedriver!GetHandleVerifier [0xa291cf+2acf]
+	KERNEL32!BaseThreadInitThunk [0x76d8fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x76f682ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x76f6827e+ee]
+
+2026-05-18 10:05:14,036 - ERROR - 오류 발생: Message: invalid session id
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xa37123+10a23]
+	chromedriver!GetHandleVerifier [0xa37254+10b54]
+	chromedriver!(No symbol) [0x851cce]
+	chromedriver!(No symbol) [0x88fb85]
+	chromedriver!(No symbol) [0x8bd646]
+	chromedriver!(No symbol) [0x8b8869]
+	chromedriver!(No symbol) [0x8b8252]
+	chromedriver!(No symbol) [0x82502e]
+	chromedriver!(No symbol) [0x8255ce]
+	chromedriver!(No symbol) [0x825aad]
+	chromedriver!GetHandleVerifier [0xcd1ac4+2ab3c4]
+	chromedriver!GetHandleVerifier [0xccd0ed+2a69ed]
+	chromedriver!GetHandleVerifier [0xcee4f5+2c7df5]
+	chromedriver!GetHandleVerifier [0xa51128+2aa28]
+	chromedriver!GetHandleVerifier [0xa58bbd+324bd]
+	chromedriver!(No symbol) [0x824ba6]
+	chromedriver!(No symbol) [0x8241e0]
+	chromedriver!GetHandleVerifier [0xe3b02f+41492f]
+	KERNEL32!BaseThreadInitThunk [0x76d8fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x76f682ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x76f6827e+ee]
+
+2026-05-18 11:00:02,622 - INFO - ==================================================
+2026-05-18 11:00:02,623 - INFO - 쿠팡 광고비 수집 시작
+2026-05-18 11:00:02,623 - INFO - ==================================================
+2026-05-18 11:00:02,623 - INFO - ====== WebDriver manager ======
+2026-05-18 11:00:03,882 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 11:00:03,906 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 11:00:03,928 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 11:00:04,996 - INFO - 웹드라이버 설정 완료
+2026-05-18 11:00:04,996 - INFO - 로그인 페이지 접속...
+2026-05-18 11:00:09,728 - INFO - 아이디 입력 완료
+2026-05-18 11:00:09,780 - INFO - 비밀번호 입력 완료
+2026-05-18 11:00:09,828 - INFO - 로그인 버튼 클릭
+2026-05-18 11:00:29,876 - ERROR - 로그인 실패: Message: tab crashed
+  (Session info: chrome=148.0.7778.97)
+
+2026-05-18 11:00:29,877 - ERROR - 오류 발생: Message: tab crashed
+  (Session info: chrome=148.0.7778.97)
+
+2026-05-18 11:00:32,031 - INFO - 브라우저 종료
+2026-05-18 12:00:02,513 - INFO - ==================================================
+2026-05-18 12:00:02,514 - INFO - 쿠팡 광고비 수집 시작
+2026-05-18 12:00:02,514 - INFO - ==================================================
+2026-05-18 12:00:02,514 - INFO - ====== WebDriver manager ======
+2026-05-18 12:00:03,624 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 12:00:03,648 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 12:00:03,667 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 13:00:02,619 - INFO - ==================================================
+2026-05-18 13:00:02,620 - INFO - 쿠팡 광고비 수집 시작
+2026-05-18 13:00:02,620 - INFO - ==================================================
+2026-05-18 13:00:02,620 - INFO - ====== WebDriver manager ======
+2026-05-18 13:00:04,008 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 13:00:04,036 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 13:00:04,054 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 13:00:05,580 - INFO - 웹드라이버 설정 완료
+2026-05-18 13:00:05,580 - INFO - 로그인 페이지 접속...
+2026-05-18 13:00:10,093 - INFO - 아이디 입력 완료
+2026-05-18 13:00:10,146 - INFO - 비밀번호 입력 완료
+2026-05-18 13:00:10,195 - INFO - 로그인 버튼 클릭
+2026-05-18 13:01:10,418 - ERROR - 로그인 실패: Message: 
+
+2026-05-18 13:01:10,499 - ERROR - 오류 발생: 로그인 실패
+2026-05-18 13:01:12,662 - INFO - 브라우저 종료
+2026-05-18 14:00:02,531 - INFO - ==================================================
+2026-05-18 14:00:02,531 - INFO - 쿠팡 광고비 수집 시작
+2026-05-18 14:00:02,531 - INFO - ==================================================
+2026-05-18 14:00:02,531 - INFO - ====== WebDriver manager ======
+2026-05-18 14:59:10,508 - INFO - ==================================================
+2026-05-18 14:59:10,508 - INFO - 쿠팡 광고비 수집 시작
+2026-05-18 14:59:10,509 - INFO - ==================================================
+2026-05-18 14:59:10,509 - INFO - ====== WebDriver manager ======
+2026-05-18 14:59:11,510 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 14:59:11,540 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 14:59:11,556 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 14:59:13,094 - INFO - 웹드라이버 설정 완료
+2026-05-18 14:59:13,094 - INFO - 로그인 페이지 접속...
+2026-05-18 14:59:17,555 - INFO - 아이디 입력 완료
+2026-05-18 14:59:17,605 - INFO - 비밀번호 입력 완료
+2026-05-18 14:59:17,650 - INFO - 로그인 버튼 클릭
+2026-05-18 14:59:25,810 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, '현재 연결은 원격 호스트에 의해 강제로 끊겼습니다', None, 10054, None)': /session/bf7dfe08759373d5c654e11b5e0950c4
+2026-05-18 14:59:29,885 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D14547CAD0>: Failed to establish a new connection: [WinError 10061] 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다')': /session/bf7dfe08759373d5c654e11b5e0950c4
+2026-05-18 14:59:33,996 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D14547C680>: Failed to establish a new connection: [WinError 10061] 대상 컴퓨터에서 연결을 거부했으므로 연결하지 못했습니다')': /session/bf7dfe08759373d5c654e11b5e0950c4
+2026-05-18 15:00:02,569 - INFO - ==================================================
+2026-05-18 15:00:02,570 - INFO - 쿠팡 광고비 수집 시작
+2026-05-18 15:00:02,570 - INFO - ==================================================
+2026-05-18 15:00:02,570 - INFO - ====== WebDriver manager ======
+2026-05-18 15:00:03,671 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 15:00:03,690 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 15:00:03,709 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 15:00:04,855 - INFO - 웹드라이버 설정 완료
+2026-05-18 15:00:04,855 - INFO - 로그인 페이지 접속...
+2026-05-18 15:00:09,518 - INFO - 아이디 입력 완료
+2026-05-18 15:00:09,571 - INFO - 비밀번호 입력 완료
+2026-05-18 15:00:09,638 - INFO - 로그인 버튼 클릭
+2026-05-18 15:00:33,963 - ERROR - 로그인 실패: Message: tab crashed
+  (Session info: chrome=148.0.7778.97)
+
+2026-05-18 15:00:33,964 - ERROR - 오류 발생: Message: tab crashed
+  (Session info: chrome=148.0.7778.97)
+
+2026-05-18 15:00:36,127 - INFO - 브라우저 종료
+2026-05-18 15:09:50,029 - INFO - ==================================================
+2026-05-18 15:09:50,029 - INFO - 쿠팡 광고비 수집 시작
+2026-05-18 15:09:50,029 - INFO - ==================================================
+2026-05-18 15:09:50,029 - INFO - ====== WebDriver manager ======
+2026-05-18 15:09:50,786 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 15:09:50,805 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 15:09:50,822 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 15:09:51,866 - INFO - 웹드라이버 설정 완료
+2026-05-18 15:09:51,866 - INFO - 로그인 페이지 접속...
+2026-05-18 15:09:56,562 - INFO - 아이디 입력 완료
+2026-05-18 15:09:56,614 - INFO - 비밀번호 입력 완료
+2026-05-18 15:09:56,658 - INFO - 로그인 버튼 클릭
+2026-05-18 15:10:02,563 - ERROR - 로그인 실패: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=148.0.7778.97)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xa37123+10a23]
+	chromedriver!GetHandleVerifier [0xa37254+10b54]
+	chromedriver!(No symbol) [0x851e90]
+	chromedriver!(No symbol) [0x840d8e]
+	chromedriver!(No symbol) [0x85f97e]
+	chromedriver!(No symbol) [0x8c3cdd]
+	chromedriver!(No symbol) [0x8da2a9]
+	chromedriver!(No symbol) [0x8bd526]
+	chromedriver!(No symbol) [0x8908f9]
+	chromedriver!(No symbol) [0x8916b4]
+	chromedriver!GetHandleVerifier [0xcd1ac4+2ab3c4]
+	chromedriver!GetHandleVerifier [0xccd0ed+2a69ed]
+	chromedriver!GetHandleVerifier [0xcee4f5+2c7df5]
+	chromedriver!GetHandleVerifier [0xa51128+2aa28]
+	chromedriver!GetHandleVerifier [0xa58bbd+324bd]
+	chromedriver!GetHandleVerifier [0xa3fb28+19428]
+	chromedriver!GetHandleVerifier [0xa3fcd5+195d5]
+	chromedriver!GetHandleVerifier [0xa291cf+2acf]
+	KERNEL32!BaseThreadInitThunk [0x76d8fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x76f682ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x76f6827e+ee]
+
+2026-05-18 15:10:02,610 - ERROR - 오류 발생: Message: invalid session id
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xa37123+10a23]
+	chromedriver!GetHandleVerifier [0xa37254+10b54]
+	chromedriver!(No symbol) [0x851cce]
+	chromedriver!(No symbol) [0x88fb85]
+	chromedriver!(No symbol) [0x8bd646]
+	chromedriver!(No symbol) [0x8b8869]
+	chromedriver!(No symbol) [0x8b8252]
+	chromedriver!(No symbol) [0x82502e]
+	chromedriver!(No symbol) [0x8255ce]
+	chromedriver!(No symbol) [0x825aad]
+	chromedriver!GetHandleVerifier [0xcd1ac4+2ab3c4]
+	chromedriver!GetHandleVerifier [0xccd0ed+2a69ed]
+	chromedriver!GetHandleVerifier [0xcee4f5+2c7df5]
+	chromedriver!GetHandleVerifier [0xa51128+2aa28]
+	chromedriver!GetHandleVerifier [0xa58bbd+324bd]
+	chromedriver!(No symbol) [0x824ba6]
+	chromedriver!(No symbol) [0x8241e0]
+	chromedriver!GetHandleVerifier [0xe3b02f+41492f]
+	KERNEL32!BaseThreadInitThunk [0x76d8fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x76f682ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x76f6827e+ee]
+
+2026-05-18 15:19:26,750 - INFO - ==================================================
+2026-05-18 15:19:26,750 - INFO - 쿠팡 광고비 수집 시작
+2026-05-18 15:19:26,750 - INFO - ==================================================
+2026-05-18 15:19:26,750 - INFO - ====== WebDriver manager ======
+2026-05-18 15:19:27,486 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 15:19:27,510 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 15:19:27,527 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 15:19:28,576 - INFO - 웹드라이버 설정 완료
+2026-05-18 15:19:28,576 - INFO - 로그인 페이지 접속...
+2026-05-18 15:19:32,927 - INFO - 아이디 입력 완료
+2026-05-18 15:19:32,979 - INFO - 비밀번호 입력 완료
+2026-05-18 15:19:33,022 - INFO - 로그인 버튼 클릭
+2026-05-18 15:19:35,583 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-05-18 15:19:35,583 - INFO - 대시보드 페이지로 이동...
+2026-05-18 15:19:40,261 - INFO - 대시보드 테이블 로드 완료
+2026-05-18 15:19:48,347 - INFO - 20개 보기 설정 완료
+2026-05-18 15:19:48,408 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 7
+2026-05-18 15:19:48,432 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 1,900원
+2026-05-18 15:19:48,446 - INFO -   [수동] 메인 아이폰16, 17 시리즈 [아이폰 키워드만]: 3,300원
+2026-05-18 15:19:48,461 - INFO -   0213 0214 0217 0218 0790 0801 0879_2: 1,004원
+2026-05-18 15:19:48,475 - INFO -   기존 로켓 캠페인 3개 1개로 합침: 1,913원
+2026-05-18 15:19:48,489 - INFO -   1상품 2000% 핑크스마일꽃: 101원
+2026-05-18 15:19:48,505 - INFO -   1상품 2000% 자신감지킴이 화이트: 0원
+2026-05-18 15:19:48,520 - INFO -   1상품 2000% 자신감지킴이 블랙: 101원
+2026-05-18 15:19:48,534 - INFO -   1상품 2000% Peachy Bunny: 200원
+2026-05-18 15:19:48,551 - INFO -   1상품 3000% 깜찍삐약이: 0원
+2026-05-18 15:19:48,566 - INFO -   1상품 3000% 놔라고했다: 0원
+2026-05-18 15:19:48,587 - INFO -   1상품 3000% 토순이: 0원
+2026-05-18 15:19:48,603 - INFO -   1상품 3000% 귤댕이: 0원
+2026-05-18 15:19:48,621 - INFO -   1상품 3000% 데이지꽃패턴: 0원
+2026-05-18 15:19:48,639 - INFO -   0219 0259 0443 1018 1123 1147 1232 1235 1244 1400 1446 1570 1583 1675_2: 1,406원
+2026-05-18 15:19:48,657 - INFO -   1036 1077 1138 1153 1155 1156 1157 1160 1161 1362_2: 2,109원
+2026-05-18 15:19:48,673 - INFO -   0459 0643 0662 0806 0825 0826 1001_2: 1,205원
+2026-05-18 15:19:48,687 - INFO -   1035 1108 1109 1162 1172 1175 1176 1183 1217 1283_2: 2,815원
+2026-05-18 15:19:48,700 - INFO -   무판매 195개 상품 S24 S24U S25 S25U -2: 1,205원
+2026-05-18 15:19:48,713 - INFO -   무판매 195개 상품 S24 S24U S25 S25U -1: 1,408원
+2026-05-18 15:19:48,726 - INFO -   0023 0254 044 20615 0927 1124 1230 1323 1357 141 01459 1663 1664 1704: 501원
+2026-05-18 15:19:48,726 - INFO - 총 20개 캠페인 | 합계: 19,168원
+2026-05-18 15:19:48,728 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-05-18.json
+2026-05-18 15:19:48,728 - INFO - 현재 시간(15시) 총 광고비: 19,168원
+2026-05-18 15:19:52,251 - INFO - Git push 완료
+2026-05-18 15:19:52,252 - INFO - ==================================================
+2026-05-18 15:19:52,252 - INFO - 작업 완료!
+2026-05-18 15:19:52,252 - INFO - ==================================================
+2026-05-18 15:19:54,404 - INFO - 브라우저 종료
+2026-05-18 15:23:37,230 - INFO - ==================================================
+2026-05-18 15:23:37,230 - INFO - 쿠팡 광고비 수집 시작
+2026-05-18 15:23:37,230 - INFO - ==================================================
+2026-05-18 15:23:37,230 - INFO - ====== WebDriver manager ======
+2026-05-18 15:23:37,941 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 15:23:37,962 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 15:23:37,979 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 15:23:39,043 - INFO - 웹드라이버 설정 완료
+2026-05-18 15:23:39,043 - INFO - 로그인 페이지 접속...
+2026-05-18 15:23:43,350 - INFO - 아이디 입력 완료
+2026-05-18 15:23:43,400 - INFO - 비밀번호 입력 완료
+2026-05-18 15:23:43,441 - INFO - 로그인 버튼 클릭
+2026-05-18 15:23:46,436 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-05-18 15:23:46,436 - INFO - 대시보드 페이지로 이동...
+2026-05-18 15:23:51,130 - INFO - 대시보드 테이블 로드 완료
+2026-05-18 15:23:59,763 - INFO - 20개 보기 설정 완료
+2026-05-18 15:23:59,823 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 7
+2026-05-18 15:23:59,847 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 1,900원
+2026-05-18 15:23:59,862 - INFO -   [수동] 메인 아이폰16, 17 시리즈 [아이폰 키워드만]: 3,500원
+2026-05-18 15:23:59,876 - INFO -   0213 0214 0217 0218 0790 0801 0879_2: 1,004원
+2026-05-18 15:23:59,890 - INFO -   기존 로켓 캠페인 3개 1개로 합침: 1,913원
+2026-05-18 15:23:59,903 - INFO -   1상품 2000% 핑크스마일꽃: 101원
+2026-05-18 15:23:59,917 - INFO -   1상품 2000% 자신감지킴이 화이트: 0원
+2026-05-18 15:23:59,930 - INFO -   1상품 2000% 자신감지킴이 블랙: 101원
+2026-05-18 15:23:59,944 - INFO -   1상품 2000% Peachy Bunny: 200원
+2026-05-18 15:23:59,957 - INFO -   1상품 3000% 깜찍삐약이: 0원
+2026-05-18 15:23:59,972 - INFO -   1상품 3000% 놔라고했다: 0원
+2026-05-18 15:23:59,987 - INFO -   1상품 3000% 토순이: 0원
+2026-05-18 15:24:00,004 - INFO -   1상품 3000% 귤댕이: 0원
+2026-05-18 15:24:00,024 - INFO -   1상품 3000% 데이지꽃패턴: 0원
+2026-05-18 15:24:00,040 - INFO -   0219 0259 0443 1018 1123 1147 1232 1235 1244 1400 1446 1570 1583 1675_2: 1,406원
+2026-05-18 15:24:00,058 - INFO -   1036 1077 1138 1153 1155 1156 1157 1160 1161 1362_2: 2,109원
+2026-05-18 15:24:00,075 - INFO -   0459 0643 0662 0806 0825 0826 1001_2: 1,205원
+2026-05-18 15:24:00,088 - INFO -   1035 1108 1109 1162 1172 1175 1176 1183 1217 1283_2: 2,815원
+2026-05-18 15:24:00,101 - INFO -   무판매 195개 상품 S24 S24U S25 S25U -2: 1,205원
+2026-05-18 15:24:00,114 - INFO -   무판매 195개 상품 S24 S24U S25 S25U -1: 1,408원
+2026-05-18 15:24:00,128 - INFO -   0023 0254 044 20615 0927 1124 1230 1323 1357 141 01459 1663 1664 1704: 501원
+2026-05-18 15:24:00,128 - INFO - 총 20개 캠페인 | 합계: 19,368원
+2026-05-18 15:24:00,130 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-05-18.json
+2026-05-18 15:24:00,130 - INFO - 현재 시간(15시) 총 광고비: 19,368원
+2026-05-18 15:24:03,025 - INFO - Git push 완료
+2026-05-18 15:24:03,025 - INFO - ==================================================
+2026-05-18 15:24:03,025 - INFO - 작업 완료!
+2026-05-18 15:24:03,025 - INFO - ==================================================
+2026-05-18 15:24:05,175 - INFO - 브라우저 종료
+2026-05-18 15:30:58,487 - INFO - ==================================================
+2026-05-18 15:30:58,487 - INFO - 쿠팡 광고비 수집 시작
+2026-05-18 15:30:58,487 - INFO - ==================================================
+2026-05-18 15:30:58,487 - INFO - 시도 1/3
+2026-05-18 15:30:58,488 - INFO - ====== WebDriver manager ======
+2026-05-18 15:30:59,242 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 15:30:59,265 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 15:30:59,284 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 15:31:02,048 - ERROR - 웹드라이버 설정 실패: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xa37123+10a23]
+	chromedriver!GetHandleVerifier [0xa37254+10b54]
+	chromedriver!(No symbol) [0x851e90]
+	chromedriver!(No symbol) [0x886768]
+	chromedriver!(No symbol) [0x882d20]
+	chromedriver!(No symbol) [0x8c949f]
+	chromedriver!(No symbol) [0x8c8cb7]
+	chromedriver!(No symbol) [0x8bd526]
+	chromedriver!(No symbol) [0x8908f9]
+	chromedriver!(No symbol) [0x8916b4]
+	chromedriver!GetHandleVerifier [0xcd1ac4+2ab3c4]
+	chromedriver!GetHandleVerifier [0xccd0ed+2a69ed]
+	chromedriver!GetHandleVerifier [0xcee4f5+2c7df5]
+	chromedriver!GetHandleVerifier [0xa51128+2aa28]
+	chromedriver!GetHandleVerifier [0xa58bbd+324bd]
+	chromedriver!GetHandleVerifier [0xa3fb28+19428]
+	chromedriver!GetHandleVerifier [0xa3fcd5+195d5]
+	chromedriver!GetHandleVerifier [0xa291cf+2acf]
+	KERNEL32!BaseThreadInitThunk [0x76d8fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x76f682ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x76f6827e+ee]
+
+2026-05-18 15:31:02,048 - ERROR - 수집 실패: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xa37123+10a23]
+	chromedriver!GetHandleVerifier [0xa37254+10b54]
+	chromedriver!(No symbol) [0x851e90]
+	chromedriver!(No symbol) [0x886768]
+	chromedriver!(No symbol) [0x882d20]
+	chromedriver!(No symbol) [0x8c949f]
+	chromedriver!(No symbol) [0x8c8cb7]
+	chromedriver!(No symbol) [0x8bd526]
+	chromedriver!(No symbol) [0x8908f9]
+	chromedriver!(No symbol) [0x8916b4]
+	chromedriver!GetHandleVerifier [0xcd1ac4+2ab3c4]
+	chromedriver!GetHandleVerifier [0xccd0ed+2a69ed]
+	chromedriver!GetHandleVerifier [0xcee4f5+2c7df5]
+	chromedriver!GetHandleVerifier [0xa51128+2aa28]
+	chromedriver!GetHandleVerifier [0xa58bbd+324bd]
+	chromedriver!GetHandleVerifier [0xa3fb28+19428]
+	chromedriver!GetHandleVerifier [0xa3fcd5+195d5]
+	chromedriver!GetHandleVerifier [0xa291cf+2acf]
+	KERNEL32!BaseThreadInitThunk [0x76d8fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x76f682ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x76f6827e+ee]
+
+2026-05-18 15:31:02,049 - WARNING - 실패 → 60초 후 재시도...
+2026-05-18 15:44:52,485 - INFO - ==================================================
+2026-05-18 15:44:52,485 - INFO - 쿠팡 광고비 수집 시작
+2026-05-18 15:44:52,485 - INFO - ==================================================
+2026-05-18 15:44:52,485 - INFO - >>> 시도 1/3
+2026-05-18 15:44:52,485 - INFO - ====== WebDriver manager ======
+2026-05-18 15:44:53,214 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 15:44:53,238 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 15:44:53,255 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 15:44:54,311 - INFO - 웹드라이버 설정 완료
+2026-05-18 15:44:54,311 - INFO - 로그인 페이지 접속...
+2026-05-18 15:44:58,925 - INFO - 아이디 입력 완료
+2026-05-18 15:44:58,974 - INFO - 비밀번호 입력 완료
+2026-05-18 15:44:59,024 - INFO - 로그인 버튼 클릭
+2026-05-18 15:45:02,644 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-05-18 15:45:02,644 - INFO - 대시보드 페이지로 이동...
+2026-05-18 15:45:07,151 - INFO - 대시보드 테이블 로드 완료
+2026-05-18 15:45:13,377 - ERROR - 행 수 선택 실패: Message: stale element reference: stale element not found
+  (Session info: chrome=148.0.7778.97); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xa37123+10a23]
+	chromedriver!GetHandleVerifier [0xa37254+10b54]
+	chromedriver!(No symbol) [0x851e90]
+	chromedriver!(No symbol) [0x8643e2]
+	chromedriver!(No symbol) [0x8634ac]
+	chromedriver!(No symbol) [0x8593d9]
+	chromedriver!(No symbol) [0x857852]
+	chromedriver!(No symbol) [0x85ad4a]
+	chromedriver!(No symbol) [0x85add8]
+	chromedriver!(No symbol) [0x89cf72]
+	chromedriver!(No symbol) [0x8922ff]
+	chromedriver!(No symbol) [0x8bd78c]
+	chromedriver!(No symbol) [0x891db4]
+	chromedriver!(No symbol) [0x8bd954]
+	chromedriver!(No symbol) [0x8da936]
+	chromedriver!(No symbol) [0x8bd526]
+	chromedriver!(No symbol) [0x8908f9]
+	chromedriver!(No symbol) [0x8916b4]
+	chromedriver!GetHandleVerifier [0xcd1ac4+2ab3c4]
+	chromedriver!GetHandleVerifier [0xccd0ed+2a69ed]
+	chromedriver!GetHandleVerifier [0xcee4f5+2c7df5]
+	chromedriver!GetHandleVerifier [0xa51128+2aa28]
+	chromedriver!GetHandleVerifier [0xa58bbd+324bd]
+	chromedriver!GetHandleVerifier [0xa3fb28+19428]
+	chromedriver!GetHandleVerifier [0xa3fcd5+195d5]
+	chromedriver!GetHandleVerifier [0xa291cf+2acf]
+	KERNEL32!BaseThreadInitThunk [0x76d8fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x76f682ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x76f6827e+ee]
+
+2026-05-18 15:45:13,377 - WARNING - 행 수 설정 실패 - 기본값으로 진행
+2026-05-18 15:45:15,819 - INFO - 컬럼 위치 → 캠페인 이름: 4, 오늘 누적광고비: 8
+2026-05-18 15:45:15,824 - WARNING - 캠페인 데이터가 없습니다.
+2026-05-18 15:45:15,824 - ERROR - 수집 실패: 데이터 수집 실패
+2026-05-18 15:45:17,949 - INFO - 브라우저 종료
+2026-05-18 15:45:17,949 - WARNING - 실패 → 60초 후 재시도...
+2026-05-18 15:46:17,950 - INFO - >>> 시도 2/3
+2026-05-18 15:46:17,950 - INFO - ====== WebDriver manager ======
+2026-05-18 15:46:18,669 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 15:46:18,685 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 15:46:18,702 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 15:46:19,755 - INFO - 웹드라이버 설정 완료
+2026-05-18 15:46:19,755 - INFO - 로그인 페이지 접속...
+2026-05-18 15:46:24,194 - INFO - 아이디 입력 완료
+2026-05-18 15:46:24,243 - INFO - 비밀번호 입력 완료
+2026-05-18 15:46:24,279 - INFO - 로그인 버튼 클릭
+2026-05-18 15:46:45,045 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-05-18 15:46:45,045 - INFO - 대시보드 페이지로 이동...
+2026-05-18 15:46:49,856 - INFO - 대시보드 테이블 로드 완료
+2026-05-18 15:46:58,294 - INFO - 20개 보기 설정 완료
+2026-05-18 15:46:58,361 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 7
+2026-05-18 15:46:58,386 - INFO -   0791 0944 0085 0083 0084 0320 0077 0131 1063_2: 0원
+2026-05-18 15:46:58,400 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 1,900원
+2026-05-18 15:46:58,415 - INFO -   [수동] 메인 아이폰16, 17 시리즈 [아이폰 키워드만]: 3,800원
+2026-05-18 15:46:58,429 - INFO -   0213 0214 0217 0218 0790 0801 0879_2: 1,004원
+2026-05-18 15:46:58,444 - INFO -   기존 로켓 캠페인 3개 1개로 합침: 1,913원
+2026-05-18 15:46:58,457 - INFO -   1상품 2000% 핑크스마일꽃: 101원
+2026-05-18 15:46:58,474 - INFO -   1상품 2000% 자신감지킴이 화이트: 0원
+2026-05-18 15:46:58,487 - INFO -   1상품 2000% 자신감지킴이 블랙: 101원
+2026-05-18 15:46:58,501 - INFO -   1상품 2000% Peachy Bunny: 200원
+2026-05-18 15:46:58,517 - INFO -   1상품 3000% 깜찍삐약이: 0원
+2026-05-18 15:46:58,531 - INFO -   1상품 3000% 놔라고했다: 0원
+2026-05-18 15:46:58,547 - INFO -   1상품 3000% 토순이: 0원
+2026-05-18 15:46:58,562 - INFO -   1상품 3000% 귤댕이: 0원
+2026-05-18 15:46:58,577 - INFO -   1상품 3000% 데이지꽃패턴: 0원
+2026-05-18 15:46:58,592 - INFO -   0219 0259 0443 1018 1123 1147 1232 1235 1244 1400 1446 1570 1583 1675_2: 1,607원
+2026-05-18 15:46:58,607 - INFO -   1036 1077 1138 1153 1155 1156 1157 1160 1161 1362_2: 2,410원
+2026-05-18 15:46:58,620 - INFO -   0459 0643 0662 0806 0825 0826 1001_2: 1,205원
+2026-05-18 15:46:58,634 - INFO -   1035 1108 1109 1162 1172 1175 1176 1183 1217 1283_2: 3,216원
+2026-05-18 15:46:58,648 - INFO -   무판매 195개 상품 S24 S24U S25 S25U -2: 1,205원
+2026-05-18 15:46:58,661 - INFO -   무판매 195개 상품 S24 S24U S25 S25U -1: 1,408원
+2026-05-18 15:46:58,661 - INFO - 총 20개 캠페인 | 합계: 20,070원
+2026-05-18 15:46:58,662 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-05-18.json
+2026-05-18 15:46:58,662 - INFO - 현재 시간(15시) 총 광고비: 20,070원
+2026-05-18 15:47:01,625 - INFO - Git push 완료
+2026-05-18 15:47:03,775 - INFO - 브라우저 종료
+2026-05-18 15:47:03,775 - INFO - ==================================================
+2026-05-18 15:47:03,775 - INFO - 작업 완료!
+2026-05-18 15:47:03,775 - INFO - ==================================================
+2026-05-18 16:00:02,593 - INFO - ==================================================
+2026-05-18 16:00:02,593 - INFO - 쿠팡 광고비 수집 시작
+2026-05-18 16:00:02,593 - INFO - ==================================================
+2026-05-18 16:00:02,594 - INFO - ====== WebDriver manager ======
+2026-05-18 16:00:03,747 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 16:00:03,767 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 16:00:03,785 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 16:00:04,906 - INFO - 웹드라이버 설정 완료
+2026-05-18 16:00:04,907 - INFO - 로그인 페이지 접속...
+2026-05-18 16:00:09,387 - INFO - 아이디 입력 완료
+2026-05-18 16:00:09,444 - INFO - 비밀번호 입력 완료
+2026-05-18 16:00:09,496 - INFO - 로그인 버튼 클릭
+2026-05-18 16:01:09,746 - ERROR - 로그인 실패: Message: 
+
+2026-05-18 16:01:09,788 - ERROR - 오류 발생: 로그인 실패
+2026-05-18 16:01:11,974 - INFO - 브라우저 종료
+2026-05-18 16:14:23,440 - INFO - ==================================================
+2026-05-18 16:14:23,441 - INFO - 쿠팡 광고비 수집 시작
+2026-05-18 16:14:23,441 - INFO - ==================================================
+2026-05-18 16:14:23,441 - INFO - >>> 시도 1/3
+2026-05-18 16:14:23,441 - INFO - ====== WebDriver manager ======
+2026-05-18 16:14:24,362 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 16:14:24,387 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 16:14:24,405 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 16:14:25,573 - INFO - 웹드라이버 설정 완료
+2026-05-18 16:14:25,573 - INFO - 로그인 페이지 접속...
+2026-05-18 16:14:30,153 - INFO - 아이디 입력 완료
+2026-05-18 16:14:30,205 - INFO - 비밀번호 입력 완료
+2026-05-18 16:14:30,247 - INFO - 로그인 버튼 클릭
+2026-05-18 16:14:33,640 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-05-18 16:14:33,641 - INFO - 대시보드 페이지로 이동...
+2026-05-18 16:14:38,231 - INFO - 대시보드 테이블 로드 완료
+2026-05-18 16:14:46,084 - INFO - 20개 보기 설정 완료
+2026-05-18 16:14:46,147 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 7
+2026-05-18 16:14:46,174 - INFO -   AI-2차: 0원
+2026-05-18 16:14:46,190 - INFO -   0220 0270 0324 0452 1181 1241 1268 1330 1401 1457 1458 1575 1705 1706_2: 0원
+2026-05-18 16:14:46,207 - INFO -   0791 0944 0085 0083 0084 0320 0077 0131 1063_2: 0원
+2026-05-18 16:14:46,223 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 2,100원
+2026-05-18 16:14:46,240 - INFO -   [수동] 메인 아이폰16, 17 시리즈 [아이폰 키워드만]: 4,500원
+2026-05-18 16:14:46,257 - INFO -   0213 0214 0217 0218 0790 0801 0879_2: 1,105원
+2026-05-18 16:14:46,275 - INFO -   기존 로켓 캠페인 3개 1개로 합침: 2,618원
+2026-05-18 16:14:46,293 - INFO -   1상품 2000% 핑크스마일꽃: 101원
+2026-05-18 16:14:46,311 - INFO -   1상품 2000% 자신감지킴이 화이트: 0원
+2026-05-18 16:14:46,333 - INFO -   1상품 2000% 자신감지킴이 블랙: 101원
+2026-05-18 16:14:46,356 - INFO -   1상품 2000% Peachy Bunny: 200원
+2026-05-18 16:14:46,376 - INFO -   1상품 3000% 깜찍삐약이: 0원
+2026-05-18 16:14:46,394 - INFO -   1상품 3000% 놔라고했다: 0원
+2026-05-18 16:14:46,411 - INFO -   1상품 3000% 토순이: 0원
+2026-05-18 16:14:46,428 - INFO -   1상품 3000% 귤댕이: 0원
+2026-05-18 16:14:46,445 - INFO -   1상품 3000% 데이지꽃패턴: 0원
+2026-05-18 16:14:46,463 - INFO -   0219 0259 0443 1018 1123 1147 1232 1235 1244 1400 1446 1570 1583 1675_2: 1,607원
+2026-05-18 16:14:46,482 - INFO -   1036 1077 1138 1153 1155 1156 1157 1160 1161 1362_2: 3,013원
+2026-05-18 16:14:46,500 - INFO -   0459 0643 0662 0806 0825 0826 1001_2: 1,706원
+2026-05-18 16:14:46,518 - INFO -   1035 1108 1109 1162 1172 1175 1176 1183 1217 1283_2: 4,022원
+2026-05-18 16:14:46,518 - INFO - 총 20개 캠페인 | 합계: 21,073원
+2026-05-18 16:14:46,520 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-05-18.json
+2026-05-18 16:14:46,520 - INFO - 현재 시간(16시) 총 광고비: 21,073원
+2026-05-18 16:14:49,896 - INFO - Git push 완료
+2026-05-18 16:14:52,060 - INFO - 브라우저 종료
+2026-05-18 16:14:52,060 - INFO - ==================================================
+2026-05-18 16:14:52,060 - INFO - 작업 완료!
+2026-05-18 16:14:52,060 - INFO - ==================================================
+2026-05-18 17:00:02,636 - INFO - ==================================================
+2026-05-18 17:00:02,636 - INFO - 쿠팡 광고비 수집 시작
+2026-05-18 17:00:02,636 - INFO - ==================================================
+2026-05-18 17:00:02,637 - INFO - >>> 시도 1/3
+2026-05-18 17:00:02,637 - INFO - ====== WebDriver manager ======
+2026-05-18 17:00:04,340 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 17:00:04,381 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 17:00:04,400 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 17:00:06,233 - INFO - 웹드라이버 설정 완료
+2026-05-18 17:00:06,233 - INFO - 로그인 페이지 접속...
+2026-05-18 17:00:10,721 - INFO - 아이디 입력 완료
+2026-05-18 17:00:10,772 - INFO - 비밀번호 입력 완료
+2026-05-18 17:00:10,872 - INFO - 로그인 버튼 클릭
+2026-05-18 17:00:13,671 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-05-18 17:00:13,671 - INFO - 대시보드 페이지로 이동...
+2026-05-18 17:00:18,325 - INFO - 대시보드 테이블 로드 완료
+2026-05-18 17:00:24,286 - INFO - 20개 보기 설정 완료
+2026-05-18 17:00:24,354 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 7
+2026-05-18 17:00:24,384 - INFO -   AI-2차: 0원
+2026-05-18 17:00:24,402 - INFO -   0220 0270 0324 0452 1181 1241 1268 1330 1401 1457 1458 1575 1705 1706_2: 0원
+2026-05-18 17:00:24,420 - INFO -   0791 0944 0085 0083 0084 0320 0077 0131 1063_2: 0원
+2026-05-18 17:00:24,438 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 0원
+2026-05-18 17:00:24,456 - INFO -   [수동] 메인 아이폰16, 17 시리즈 [아이폰 키워드만]: 0원
+2026-05-18 17:00:24,775 - INFO -   0213 0214 0217 0218 0790 0801 0879_2: 1,105원
+2026-05-18 17:00:24,793 - INFO -   기존 로켓 캠페인 3개 1개로 합침: 3,021원
+2026-05-18 17:00:24,809 - INFO -   1상품 2000% 핑크스마일꽃: 101원
+2026-05-18 17:00:24,825 - INFO -   1상품 2000% 자신감지킴이 화이트: 0원
+2026-05-18 17:00:24,842 - INFO -   1상품 2000% 자신감지킴이 블랙: 101원
+2026-05-18 17:00:24,858 - INFO -   1상품 2000% Peachy Bunny: 301원
+2026-05-18 17:00:24,874 - INFO -   1상품 3000% 깜찍삐약이: 0원
+2026-05-18 17:00:24,891 - INFO -   1상품 3000% 놔라고했다: 0원
+2026-05-18 17:00:24,907 - INFO -   1상품 3000% 토순이: 0원
+2026-05-18 17:00:24,948 - INFO -   1상품 3000% 귤댕이: 0원
+2026-05-18 17:00:24,964 - INFO -   1상품 3000% 데이지꽃패턴: 0원
+2026-05-18 17:00:24,981 - INFO -   0219 0259 0443 1018 1123 1147 1232 1235 1244 1400 1446 1570 1583 1675_2: 1,808원
+2026-05-18 17:00:24,998 - INFO -   1036 1077 1138 1153 1155 1156 1157 1160 1161 1362_2: 3,516원
+2026-05-18 17:00:25,014 - INFO -   0459 0643 0662 0806 0825 0826 1001_2: 2,007원
+2026-05-18 17:00:25,030 - INFO -   1035 1108 1109 1162 1172 1175 1176 1183 1217 1283_2: 5,129원
+2026-05-18 17:00:25,030 - INFO - 총 20개 캠페인 | 합계: 17,089원
+2026-05-18 17:00:25,033 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-05-18.json
+2026-05-18 17:00:25,033 - INFO - 현재 시간(17시) 총 광고비: 17,089원
+2026-05-18 17:00:29,205 - INFO - Git push 완료
+2026-05-18 17:00:31,394 - INFO - 브라우저 종료
+2026-05-18 17:00:31,394 - INFO - ==================================================
+2026-05-18 17:00:31,395 - INFO - 작업 완료!
+2026-05-18 17:00:31,396 - INFO - ==================================================
+2026-05-18 18:00:02,484 - INFO - ==================================================
+2026-05-18 18:00:02,485 - INFO - 쿠팡 광고비 수집 시작
+2026-05-18 18:00:02,485 - INFO - ==================================================
+2026-05-18 18:00:02,485 - INFO - >>> 시도 1/3
+2026-05-18 18:00:02,485 - INFO - ====== WebDriver manager ======
+2026-05-18 18:00:03,554 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 18:00:03,577 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 18:00:03,594 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 18:00:04,689 - INFO - 웹드라이버 설정 완료
+2026-05-18 18:00:04,689 - INFO - 로그인 페이지 접속...
+2026-05-18 18:00:08,121 - INFO - 아이디 입력 완료
+2026-05-18 18:00:08,177 - INFO - 비밀번호 입력 완료
+2026-05-18 18:00:08,223 - INFO - 로그인 버튼 클릭
+2026-05-18 18:00:12,191 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-05-18 18:00:12,191 - INFO - 대시보드 페이지로 이동...
+2026-05-18 18:00:16,724 - INFO - 대시보드 테이블 로드 완료
+2026-05-18 18:00:22,574 - INFO - 20개 보기 설정 완료
+2026-05-18 18:00:22,652 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 7
+2026-05-18 18:00:22,706 - INFO -   AI-2차: 0원
+2026-05-18 18:00:22,725 - INFO -   0220 0270 0324 0452 1181 1241 1268 1330 1401 1457 1458 1575 1705 1706_2: 0원
+2026-05-18 18:00:22,743 - INFO -   0791 0944 0085 0083 0084 0320 0077 0131 1063_2: 0원
+2026-05-18 18:00:22,760 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 0원
+2026-05-18 18:00:23,098 - INFO -   [수동] 메인 아이폰16, 17 시리즈 [아이폰 키워드만]: 5,500원
+2026-05-18 18:00:23,118 - INFO -   0213 0214 0217 0218 0790 0801 0879_2: 1,306원
+2026-05-18 18:00:23,135 - INFO -   기존 로켓 캠페인 3개 1개로 합침: 3,522원
+2026-05-18 18:00:23,154 - INFO -   1상품 2000% 핑크스마일꽃: 101원
+2026-05-18 18:00:23,171 - INFO -   1상품 2000% 자신감지킴이 화이트: 129원
+2026-05-18 18:00:23,187 - INFO -   1상품 2000% 자신감지킴이 블랙: 101원
+2026-05-18 18:00:23,205 - INFO -   1상품 2000% Peachy Bunny: 301원
+2026-05-18 18:00:23,221 - INFO -   1상품 3000% 깜찍삐약이: 0원
+2026-05-18 18:00:23,237 - INFO -   1상품 3000% 놔라고했다: 0원
+2026-05-18 18:00:23,279 - INFO -   1상품 3000% 토순이: 0원
+2026-05-18 18:00:23,300 - INFO -   1상품 3000% 귤댕이: 0원
+2026-05-18 18:00:23,318 - INFO -   1상품 3000% 데이지꽃패턴: 0원
+2026-05-18 18:00:23,338 - INFO -   0219 0259 0443 1018 1123 1147 1232 1235 1244 1400 1446 1570 1583 1675_2: 2,108원
+2026-05-18 18:00:23,356 - INFO -   1036 1077 1138 1153 1155 1156 1157 1160 1161 1362_2: 4,421원
+2026-05-18 18:00:23,373 - INFO -   0459 0643 0662 0806 0825 0826 1001_2: 2,609원
+2026-05-18 18:00:23,390 - INFO -   1035 1108 1109 1162 1172 1175 1176 1183 1217 1283_2: 6,534원
+2026-05-18 18:00:23,391 - INFO - 총 20개 캠페인 | 합계: 26,632원
+2026-05-18 18:00:23,393 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-05-18.json
+2026-05-18 18:00:23,393 - INFO - 현재 시간(18시) 총 광고비: 26,632원
+2026-05-18 18:00:27,368 - INFO - Git push 완료
+2026-05-18 18:00:29,560 - INFO - 브라우저 종료
+2026-05-18 18:00:29,560 - INFO - ==================================================
+2026-05-18 18:00:29,562 - INFO - 작업 완료!
+2026-05-18 18:00:29,563 - INFO - ==================================================
+2026-05-18 19:00:02,569 - INFO - ==================================================
+2026-05-18 19:00:02,570 - INFO - 쿠팡 광고비 수집 시작
+2026-05-18 19:00:02,570 - INFO - ==================================================
+2026-05-18 19:00:02,570 - INFO - >>> 시도 1/3
+2026-05-18 19:00:02,570 - INFO - ====== WebDriver manager ======
+2026-05-18 19:00:04,161 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 19:00:04,190 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 19:00:04,206 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 19:00:06,074 - INFO - 웹드라이버 설정 완료
+2026-05-18 19:00:06,074 - INFO - 로그인 페이지 접속...
+2026-05-18 19:00:10,329 - INFO - 아이디 입력 완료
+2026-05-18 19:00:10,381 - INFO - 비밀번호 입력 완료
+2026-05-18 19:00:10,428 - INFO - 로그인 버튼 클릭
+2026-05-18 19:00:13,312 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-05-18 19:00:13,312 - INFO - 대시보드 페이지로 이동...
+2026-05-18 19:00:17,656 - INFO - 대시보드 테이블 로드 완료
+2026-05-18 19:00:23,842 - INFO - 20개 보기 설정 완료
+2026-05-18 19:00:23,911 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 7
+2026-05-18 19:00:23,939 - INFO -   AI-2차: 0원
+2026-05-18 19:00:23,957 - INFO -   0220 0270 0324 0452 1181 1241 1268 1330 1401 1457 1458 1575 1705 1706_2: 0원
+2026-05-18 19:00:23,978 - INFO -   0791 0944 0085 0083 0084 0320 0077 0131 1063_2: 0원
+2026-05-18 19:00:23,996 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 0원
+2026-05-18 19:00:24,015 - INFO -   [수동] 메인 아이폰16, 17 시리즈 [아이폰 키워드만]: 0원
+2026-05-18 19:00:24,033 - INFO -   0213 0214 0217 0218 0790 0801 0879_2: 0원
+2026-05-18 19:00:24,052 - INFO -   기존 로켓 캠페인 3개 1개로 합침: 0원
+2026-05-18 19:00:24,071 - INFO -   1상품 2000% 핑크스마일꽃: 0원
+2026-05-18 19:00:24,373 - INFO -   1상품 2000% 자신감지킴이 화이트: 129원
+2026-05-18 19:00:24,391 - INFO -   1상품 2000% 자신감지킴이 블랙: 101원
+2026-05-18 19:00:24,410 - INFO -   1상품 2000% Peachy Bunny: 301원
+2026-05-18 19:00:24,427 - INFO -   1상품 3000% 깜찍삐약이: 0원
+2026-05-18 19:00:24,445 - INFO -   1상품 3000% 놔라고했다: 201원
+2026-05-18 19:00:24,462 - INFO -   1상품 3000% 토순이: 0원
+2026-05-18 19:00:24,481 - INFO -   1상품 3000% 귤댕이: 0원
+2026-05-18 19:00:24,497 - INFO -   1상품 3000% 데이지꽃패턴: 0원
+2026-05-18 19:00:24,513 - INFO -   0219 0259 0443 1018 1123 1147 1232 1235 1244 1400 1446 1570 1583 1675_2: 2,409원
+2026-05-18 19:00:24,548 - INFO -   1036 1077 1138 1153 1155 1156 1157 1160 1161 1362_2: 4,621원
+2026-05-18 19:00:24,565 - INFO -   0459 0643 0662 0806 0825 0826 1001_2: 3,111원
+2026-05-18 19:00:24,582 - INFO -   1035 1108 1109 1162 1172 1175 1176 1183 1217 1283_2: 7,137원
+2026-05-18 19:00:24,582 - INFO - 총 20개 캠페인 | 합계: 18,010원
+2026-05-18 19:00:24,592 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-05-18.json
+2026-05-18 19:00:24,593 - INFO - 현재 시간(19시) 총 광고비: 18,010원
+2026-05-18 19:00:29,073 - INFO - Git push 완료
+2026-05-18 19:00:31,298 - INFO - 브라우저 종료
+2026-05-18 19:00:31,298 - INFO - ==================================================
+2026-05-18 19:00:31,299 - INFO - 작업 완료!
+2026-05-18 19:00:31,300 - INFO - ==================================================
+2026-05-18 20:00:02,491 - INFO - ==================================================
+2026-05-18 20:00:02,492 - INFO - 쿠팡 광고비 수집 시작
+2026-05-18 20:00:02,492 - INFO - ==================================================
+2026-05-18 20:00:02,492 - INFO - >>> 시도 1/3
+2026-05-18 20:00:02,492 - INFO - ====== WebDriver manager ======
+2026-05-18 20:00:04,063 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 20:00:04,095 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 20:00:04,114 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 20:00:05,581 - INFO - 웹드라이버 설정 완료
+2026-05-18 20:00:05,582 - INFO - 로그인 페이지 접속...
+2026-05-18 20:00:10,623 - INFO - 아이디 입력 완료
+2026-05-18 20:00:10,680 - INFO - 비밀번호 입력 완료
+2026-05-18 20:00:10,734 - INFO - 로그인 버튼 클릭
+2026-05-18 20:01:11,013 - ERROR - 로그인 실패: Message: 
+
+2026-05-18 20:01:11,042 - ERROR - 수집 실패: 로그인 실패
+2026-05-18 20:01:13,202 - INFO - 브라우저 종료
+2026-05-18 20:01:13,203 - WARNING - 실패 → 60초 후 재시도...
+2026-05-18 20:02:13,204 - INFO - >>> 시도 2/3
+2026-05-18 20:02:13,204 - INFO - ====== WebDriver manager ======
+2026-05-18 20:02:14,296 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 20:02:14,314 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 20:02:14,332 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 20:02:15,413 - INFO - 웹드라이버 설정 완료
+2026-05-18 20:02:15,413 - INFO - 로그인 페이지 접속...
+2026-05-18 20:02:20,119 - INFO - 아이디 입력 완료
+2026-05-18 20:02:20,174 - INFO - 비밀번호 입력 완료
+2026-05-18 20:02:20,223 - INFO - 로그인 버튼 클릭
+2026-05-18 20:02:23,058 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-05-18 20:02:23,059 - INFO - 대시보드 페이지로 이동...
+2026-05-18 20:02:27,563 - INFO - 대시보드 테이블 로드 완료
+2026-05-18 20:02:33,243 - INFO - 20개 보기 설정 완료
+2026-05-18 20:02:33,312 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 7
+2026-05-18 20:02:33,341 - INFO -   AI-2차: 0원
+2026-05-18 20:02:33,359 - INFO -   0220 0270 0324 0452 1181 1241 1268 1330 1401 1457 1458 1575 1705 1706_2: 0원
+2026-05-18 20:02:33,377 - INFO -   0791 0944 0085 0083 0084 0320 0077 0131 1063_2: 0원
+2026-05-18 20:02:33,396 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 0원
+2026-05-18 20:02:33,415 - INFO -   [수동] 메인 아이폰16, 17 시리즈 [아이폰 키워드만]: 0원
+2026-05-18 20:02:33,435 - INFO -   0213 0214 0217 0218 0790 0801 0879_2: 0원
+2026-05-18 20:02:33,453 - INFO -   기존 로켓 캠페인 3개 1개로 합침: 0원
+2026-05-18 20:02:33,472 - INFO -   1상품 2000% 핑크스마일꽃: 0원
+2026-05-18 20:02:33,492 - INFO -   1상품 2000% 자신감지킴이 화이트: 0원
+2026-05-18 20:02:33,513 - INFO -   1상품 2000% 자신감지킴이 블랙: 0원
+2026-05-18 20:02:33,534 - INFO -   1상품 2000% Peachy Bunny: 0원
+2026-05-18 20:02:33,555 - INFO -   1상품 3000% 깜찍삐약이: 0원
+2026-05-18 20:02:33,575 - INFO -   1상품 3000% 놔라고했다: 0원
+2026-05-18 20:02:33,859 - INFO -   1상품 3000% 토순이: 0원
+2026-05-18 20:02:33,878 - INFO -   1상품 3000% 귤댕이: 0원
+2026-05-18 20:02:33,896 - INFO -   1상품 3000% 데이지꽃패턴: 0원
+2026-05-18 20:02:33,914 - INFO -   0219 0259 0443 1018 1123 1147 1232 1235 1244 1400 1446 1570 1583 1675_2: 2,912원
+2026-05-18 20:02:33,933 - INFO -   1036 1077 1138 1153 1155 1156 1157 1160 1161 1362_2: 5,124원
+2026-05-18 20:02:33,950 - INFO -   0459 0643 0662 0806 0825 0826 1001_2: 3,513원
+2026-05-18 20:02:33,970 - INFO -   1035 1108 1109 1162 1172 1175 1176 1183 1217 1283_2: 7,941원
+2026-05-18 20:02:33,970 - INFO - 총 20개 캠페인 | 합계: 19,490원
+2026-05-18 20:02:33,972 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-05-18.json
+2026-05-18 20:02:33,973 - INFO - 현재 시간(20시) 총 광고비: 19,490원
+2026-05-18 20:02:38,792 - INFO - Git push 완료
+2026-05-18 20:02:41,055 - INFO - 브라우저 종료
+2026-05-18 20:02:41,056 - INFO - ==================================================
+2026-05-18 20:02:41,056 - INFO - 작업 완료!
+2026-05-18 20:02:41,057 - INFO - ==================================================
+2026-05-18 21:00:02,488 - INFO - ==================================================
+2026-05-18 21:00:02,489 - INFO - 쿠팡 광고비 수집 시작
+2026-05-18 21:00:02,489 - INFO - ==================================================
+2026-05-18 21:00:02,489 - INFO - >>> 시도 1/3
+2026-05-18 21:00:02,489 - INFO - ====== WebDriver manager ======
+2026-05-18 21:00:03,992 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 21:00:04,021 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 21:00:04,039 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 21:00:05,294 - INFO - 웹드라이버 설정 완료
+2026-05-18 21:00:05,294 - INFO - 로그인 페이지 접속...
+2026-05-18 21:00:09,540 - INFO - 아이디 입력 완료
+2026-05-18 21:00:09,590 - INFO - 비밀번호 입력 완료
+2026-05-18 21:00:09,636 - INFO - 로그인 버튼 클릭
+2026-05-18 21:00:12,049 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-05-18 21:00:12,049 - INFO - 대시보드 페이지로 이동...
+2026-05-18 21:00:16,308 - INFO - 대시보드 테이블 로드 완료
+2026-05-18 21:00:22,261 - INFO - 20개 보기 설정 완료
+2026-05-18 21:00:22,329 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 7
+2026-05-18 21:00:22,355 - INFO -   AI-2차: 0원
+2026-05-18 21:00:22,372 - INFO -   0220 0270 0324 0452 1181 1241 1268 1330 1401 1457 1458 1575 1705 1706_2: 0원
+2026-05-18 21:00:22,387 - INFO -   0791 0944 0085 0083 0084 0320 0077 0131 1063_2: 0원
+2026-05-18 21:00:22,404 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 0원
+2026-05-18 21:00:22,710 - INFO -   [수동] 메인 아이폰16, 17 시리즈 [아이폰 키워드만]: 7,700원
+2026-05-18 21:00:22,726 - INFO -   0213 0214 0217 0218 0790 0801 0879_2: 1,708원
+2026-05-18 21:00:22,743 - INFO -   기존 로켓 캠페인 3개 1개로 합침: 5,030원
+2026-05-18 21:00:22,758 - INFO -   1상품 2000% 핑크스마일꽃: 202원
+2026-05-18 21:00:22,775 - INFO -   1상품 2000% 자신감지킴이 화이트: 129원
+2026-05-18 21:00:22,791 - INFO -   1상품 2000% 자신감지킴이 블랙: 201원
+2026-05-18 21:00:22,808 - INFO -   1상품 2000% Peachy Bunny: 405원
+2026-05-18 21:00:22,822 - INFO -   1상품 3000% 깜찍삐약이: 0원
+2026-05-18 21:00:22,839 - INFO -   1상품 3000% 놔라고했다: 302원
+2026-05-18 21:00:22,873 - INFO -   1상품 3000% 토순이: 0원
+2026-05-18 21:00:22,890 - INFO -   1상품 3000% 귤댕이: 0원
+2026-05-18 21:00:22,906 - INFO -   1상품 3000% 데이지꽃패턴: 0원
+2026-05-18 21:00:22,923 - INFO -   0219 0259 0443 1018 1123 1147 1232 1235 1244 1400 1446 1570 1583 1675_2: 3,213원
+2026-05-18 21:00:22,939 - INFO -   1036 1077 1138 1153 1155 1156 1157 1160 1161 1362_2: 6,131원
+2026-05-18 21:00:22,955 - INFO -   0459 0643 0662 0806 0825 0826 1001_2: 3,814원
+2026-05-18 21:00:22,971 - INFO -   1035 1108 1109 1162 1172 1175 1176 1183 1217 1283_2: 8,948원
+2026-05-18 21:00:22,971 - INFO - 총 20개 캠페인 | 합계: 37,783원
+2026-05-18 21:00:22,973 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-05-18.json
+2026-05-18 21:00:22,973 - INFO - 현재 시간(21시) 총 광고비: 37,783원
+2026-05-18 21:00:26,937 - INFO - Git push 완료
+2026-05-18 21:00:29,158 - INFO - 브라우저 종료
+2026-05-18 21:00:29,159 - INFO - ==================================================
+2026-05-18 21:00:29,160 - INFO - 작업 완료!
+2026-05-18 21:00:29,161 - INFO - ==================================================
+2026-05-18 22:00:02,502 - INFO - ==================================================
+2026-05-18 22:00:02,503 - INFO - 쿠팡 광고비 수집 시작
+2026-05-18 22:00:02,503 - INFO - ==================================================
+2026-05-18 22:00:02,503 - INFO - >>> 시도 1/3
+2026-05-18 22:00:02,503 - INFO - ====== WebDriver manager ======
+2026-05-18 22:00:04,055 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 22:00:04,078 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 22:00:04,097 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 22:00:05,387 - INFO - 웹드라이버 설정 완료
+2026-05-18 22:00:05,387 - INFO - 로그인 페이지 접속...
+2026-05-18 22:00:09,652 - INFO - 아이디 입력 완료
+2026-05-18 22:00:09,706 - INFO - 비밀번호 입력 완료
+2026-05-18 22:00:09,751 - INFO - 로그인 버튼 클릭
+2026-05-18 22:01:10,029 - ERROR - 로그인 실패: Message: 
+
+2026-05-18 22:01:10,062 - ERROR - 수집 실패: 로그인 실패
+2026-05-18 22:01:12,203 - INFO - 브라우저 종료
+2026-05-18 22:01:12,203 - WARNING - 실패 → 60초 후 재시도...
+2026-05-18 22:02:12,205 - INFO - >>> 시도 2/3
+2026-05-18 22:02:12,205 - INFO - ====== WebDriver manager ======
+2026-05-18 22:02:13,721 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 22:02:13,738 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 22:02:13,753 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 22:02:15,115 - INFO - 웹드라이버 설정 완료
+2026-05-18 22:02:15,115 - INFO - 로그인 페이지 접속...
+2026-05-18 22:02:19,395 - INFO - 아이디 입력 완료
+2026-05-18 22:02:19,449 - INFO - 비밀번호 입력 완료
+2026-05-18 22:02:19,499 - INFO - 로그인 버튼 클릭
+2026-05-18 22:02:22,676 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-05-18 22:02:22,677 - INFO - 대시보드 페이지로 이동...
+2026-05-18 22:02:27,198 - INFO - 대시보드 테이블 로드 완료
+2026-05-18 22:02:32,873 - INFO - 20개 보기 설정 완료
+2026-05-18 22:02:32,944 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 7
+2026-05-18 22:02:32,972 - INFO -   AI-2차: 0원
+2026-05-18 22:02:32,989 - INFO -   0220 0270 0324 0452 1181 1241 1268 1330 1401 1457 1458 1575 1705 1706_2: 0원
+2026-05-18 22:02:33,007 - INFO -   0791 0944 0085 0083 0084 0320 0077 0131 1063_2: 0원
+2026-05-18 22:02:33,026 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 0원
+2026-05-18 22:02:33,323 - INFO -   [수동] 메인 아이폰16, 17 시리즈 [아이폰 키워드만]: 9,300원
+2026-05-18 22:02:33,340 - INFO -   0213 0214 0217 0218 0790 0801 0879_2: 2,212원
+2026-05-18 22:02:33,356 - INFO -   기존 로켓 캠페인 3개 1개로 합침: 5,835원
+2026-05-18 22:02:33,372 - INFO -   1상품 2000% 핑크스마일꽃: 302원
+2026-05-18 22:02:33,389 - INFO -   1상품 2000% 자신감지킴이 화이트: 129원
+2026-05-18 22:02:33,406 - INFO -   1상품 2000% 자신감지킴이 블랙: 302원
+2026-05-18 22:02:33,423 - INFO -   1상품 2000% Peachy Bunny: 405원
+2026-05-18 22:02:33,439 - INFO -   1상품 3000% 깜찍삐약이: 0원
+2026-05-18 22:02:33,456 - INFO -   1상품 3000% 놔라고했다: 503원
+2026-05-18 22:02:33,476 - INFO -   1상품 3000% 토순이: 0원
+2026-05-18 22:02:33,512 - INFO -   1상품 3000% 귤댕이: 0원
+2026-05-18 22:02:33,528 - INFO -   1상품 3000% 데이지꽃패턴: 101원
+2026-05-18 22:02:33,544 - INFO -   0219 0259 0443 1018 1123 1147 1232 1235 1244 1400 1446 1570 1583 1675_2: 4,717원
+2026-05-18 22:02:33,566 - INFO -   1036 1077 1138 1153 1155 1156 1157 1160 1161 1362_2: 7,435원
+2026-05-18 22:02:33,585 - INFO -   0459 0643 0662 0806 0825 0826 1001_2: 4,618원
+2026-05-18 22:02:33,604 - INFO -   1035 1108 1109 1162 1172 1175 1176 1183 1217 1283_2: 9,955원
+2026-05-18 22:02:33,605 - INFO - 총 20개 캠페인 | 합계: 45,814원
+2026-05-18 22:02:33,607 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-05-18.json
+2026-05-18 22:02:33,607 - INFO - 현재 시간(22시) 총 광고비: 45,814원
+2026-05-18 22:02:37,702 - INFO - Git push 완료
+2026-05-18 22:02:39,929 - INFO - 브라우저 종료
+2026-05-18 22:02:39,929 - INFO - ==================================================
+2026-05-18 22:02:39,930 - INFO - 작업 완료!
+2026-05-18 22:02:39,931 - INFO - ==================================================
+2026-05-18 23:00:02,524 - INFO - ==================================================
+2026-05-18 23:00:02,525 - INFO - 쿠팡 광고비 수집 시작
+2026-05-18 23:00:02,525 - INFO - ==================================================
+2026-05-18 23:00:02,525 - INFO - >>> 시도 1/3
+2026-05-18 23:00:02,525 - INFO - ====== WebDriver manager ======
+2026-05-18 23:00:04,047 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 23:00:04,073 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 23:00:04,093 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 23:00:05,363 - INFO - 웹드라이버 설정 완료
+2026-05-18 23:00:05,363 - INFO - 로그인 페이지 접속...
+2026-05-18 23:00:09,673 - INFO - 아이디 입력 완료
+2026-05-18 23:00:09,725 - INFO - 비밀번호 입력 완료
+2026-05-18 23:00:09,775 - INFO - 로그인 버튼 클릭
+2026-05-18 23:01:10,068 - ERROR - 로그인 실패: Message: 
+
+2026-05-18 23:01:10,113 - ERROR - 수집 실패: 로그인 실패
+2026-05-18 23:01:12,261 - INFO - 브라우저 종료
+2026-05-18 23:01:12,261 - WARNING - 실패 → 60초 후 재시도...
+2026-05-18 23:02:12,262 - INFO - >>> 시도 2/3
+2026-05-18 23:02:12,262 - INFO - ====== WebDriver manager ======
+2026-05-18 23:02:13,313 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 23:02:13,331 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-18 23:02:13,346 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-18 23:02:14,485 - INFO - 웹드라이버 설정 완료
+2026-05-18 23:02:14,486 - INFO - 로그인 페이지 접속...
+2026-05-18 23:02:18,798 - INFO - 아이디 입력 완료
+2026-05-18 23:02:18,852 - INFO - 비밀번호 입력 완료
+2026-05-18 23:02:18,899 - INFO - 로그인 버튼 클릭
+2026-05-18 23:02:21,976 - INFO - 로그인 성공! 현재 URL: https://advertising.coupang.com/dashboard
+2026-05-18 23:02:21,976 - INFO - 대시보드 페이지로 이동...
+2026-05-18 23:02:26,342 - INFO - 대시보드 테이블 로드 완료
+2026-05-18 23:02:32,135 - INFO - 20개 보기 설정 완료
+2026-05-18 23:02:32,201 - INFO - 컬럼 위치 → 캠페인 이름: 0, 오늘 누적광고비: 7
+2026-05-18 23:02:32,227 - INFO -   AI-2차: 0원
+2026-05-18 23:02:32,242 - INFO -   0220 0270 0324 0452 1181 1241 1268 1330 1401 1457 1458 1575 1705 1706_2: 0원
+2026-05-18 23:02:32,259 - INFO -   0791 0944 0085 0083 0084 0320 0077 0131 1063_2: 0원
+2026-05-18 23:02:32,276 - INFO -   [수동] 메인 갤럭시S25,S26 시리즈 [갤럭시 키워드만]: 0원
+2026-05-18 23:02:32,292 - INFO -   [수동] 메인 아이폰16, 17 시리즈 [아이폰 키워드만]: 0원
+2026-05-18 23:02:32,308 - INFO -   0213 0214 0217 0218 0790 0801 0879_2: 0원
+2026-05-18 23:02:32,325 - INFO -   기존 로켓 캠페인 3개 1개로 합침: 0원
+2026-05-18 23:02:32,342 - INFO -   1상품 2000% 핑크스마일꽃: 0원
+2026-05-18 23:02:32,358 - INFO -   1상품 2000% 자신감지킴이 화이트: 0원
+2026-05-18 23:02:32,375 - INFO -   1상품 2000% 자신감지킴이 블랙: 0원
+2026-05-18 23:02:32,395 - INFO -   1상품 2000% Peachy Bunny: 0원
+2026-05-18 23:02:32,689 - INFO -   1상품 3000% 깜찍삐약이: 0원
+2026-05-18 23:02:32,708 - INFO -   1상품 3000% 놔라고했다: 604원
+2026-05-18 23:02:32,725 - INFO -   1상품 3000% 토순이: 0원
+2026-05-18 23:02:32,741 - INFO -   1상품 3000% 귤댕이: 0원
+2026-05-18 23:02:32,757 - INFO -   1상품 3000% 데이지꽃패턴: 101원
+2026-05-18 23:02:32,773 - INFO -   0219 0259 0443 1018 1123 1147 1232 1235 1244 1400 1446 1570 1583 1675_2: 5,621원
+2026-05-18 23:02:32,789 - INFO -   1036 1077 1138 1153 1155 1156 1157 1160 1161 1362_2: 9,342원
+2026-05-18 23:02:32,804 - INFO -   0459 0643 0662 0806 0825 0826 1001_2: 5,723원
+2026-05-18 23:02:32,820 - INFO -   1035 1108 1109 1162 1172 1175 1176 1183 1217 1283_2: 9,955원
+2026-05-18 23:02:32,821 - INFO - 총 20개 캠페인 | 합계: 31,346원
+2026-05-18 23:02:32,823 - INFO - 데이터 저장 완료: C:\tools\src\frontend\public\data\daily\2026-05-18.json
+2026-05-18 23:02:32,823 - INFO - 현재 시간(23시) 총 광고비: 31,346원
+2026-05-18 23:02:36,992 - INFO - Git push 완료
+2026-05-18 23:02:39,255 - INFO - 브라우저 종료
+2026-05-18 23:02:39,255 - INFO - ==================================================
+2026-05-18 23:02:39,256 - INFO - 작업 완료!
+2026-05-18 23:02:39,257 - INFO - ==================================================

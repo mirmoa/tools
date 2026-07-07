@@ -1,0 +1,1014 @@
+2026-05-10 00:00:02,731 - INFO - ==================================================
+2026-05-10 00:00:02,731 - INFO - 쿠팡 광고비 수집 시작
+2026-05-10 00:00:02,731 - INFO - ==================================================
+2026-05-10 00:00:02,732 - INFO - ====== WebDriver manager ======
+2026-05-10 00:00:03,818 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 00:00:03,842 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 00:00:03,861 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 00:00:03,921 - INFO - WebDriver version 147.0.7727.117 selected
+2026-05-10 00:00:03,925 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/147.0.7727.117/win32/chromedriver-win32.zip
+2026-05-10 00:00:03,925 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/147.0.7727.117/win32/chromedriver-win32.zip
+2026-05-10 00:00:03,975 - INFO - Driver downloading response is 200
+2026-05-10 00:00:04,148 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 00:00:04,290 - INFO - Driver has been saved in cache [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\147.0.7727.117]
+2026-05-10 00:00:05,916 - INFO - 웹드라이버 설정 완료
+2026-05-10 00:00:05,917 - INFO - 로그인 페이지 접속...
+2026-05-10 00:00:10,439 - INFO - 아이디 입력 완료
+2026-05-10 00:00:10,491 - INFO - 비밀번호 입력 완료
+2026-05-10 00:00:10,540 - INFO - 로그인 버튼 클릭
+2026-05-10 00:00:10,540 - INFO - ==================================================
+2026-05-10 00:00:10,540 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-05-10 00:00:10,540 - INFO - ==================================================
+2026-05-10 00:02:10,595 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xb8b373+10553]
+	chromedriver!GetHandleVerifier [0xb8b4a4+10684]
+	chromedriver!(No symbol) [0x991e10]
+	chromedriver!(No symbol) [0x9da9da]
+	chromedriver!(No symbol) [0x9dac7b]
+	chromedriver!(No symbol) [0xa1d162]
+	chromedriver!(No symbol) [0x9fd8b4]
+	chromedriver!(No symbol) [0xa1aa36]
+	chromedriver!(No symbol) [0x9fd606]
+	chromedriver!(No symbol) [0x9d0039]
+	chromedriver!(No symbol) [0x9d0df4]
+	chromedriver!GetHandleVerifier [0xe0ddb4+292f94]
+	chromedriver!GetHandleVerifier [0xe0937d+28e55d]
+	chromedriver!GetHandleVerifier [0xe28215+2ad3f5]
+	chromedriver!GetHandleVerifier [0xba4c18+29df8]
+	chromedriver!GetHandleVerifier [0xbac6fd+318dd]
+	chromedriver!GetHandleVerifier [0xb93c78+18e58]
+	chromedriver!GetHandleVerifier [0xb93e42+19022]
+	chromedriver!GetHandleVerifier [0xb7d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76c9fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e282ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e2827e+ee]
+
+2026-05-10 00:02:10,629 - ERROR - 오류 발생: 로그인 실패
+2026-05-10 00:02:12,843 - INFO - 브라우저 종료
+2026-05-10 01:00:03,263 - INFO - ==================================================
+2026-05-10 01:00:03,264 - INFO - 쿠팡 광고비 수집 시작
+2026-05-10 01:00:03,264 - INFO - ==================================================
+2026-05-10 01:00:03,264 - INFO - ====== WebDriver manager ======
+2026-05-10 01:00:04,399 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 01:00:04,432 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 01:00:04,449 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-10 01:00:05,692 - INFO - 웹드라이버 설정 완료
+2026-05-10 01:00:05,692 - INFO - 로그인 페이지 접속...
+2026-05-10 01:00:09,881 - INFO - 아이디 입력 완료
+2026-05-10 01:00:09,937 - INFO - 비밀번호 입력 완료
+2026-05-10 01:00:09,983 - INFO - 로그인 버튼 클릭
+2026-05-10 01:00:09,983 - INFO - ==================================================
+2026-05-10 01:00:09,983 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-05-10 01:00:09,983 - INFO - ==================================================
+2026-05-10 01:02:10,450 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xb8b373+10553]
+	chromedriver!GetHandleVerifier [0xb8b4a4+10684]
+	chromedriver!(No symbol) [0x991e10]
+	chromedriver!(No symbol) [0x9da9da]
+	chromedriver!(No symbol) [0x9dac7b]
+	chromedriver!(No symbol) [0xa1d162]
+	chromedriver!(No symbol) [0x9fd8b4]
+	chromedriver!(No symbol) [0xa1aa36]
+	chromedriver!(No symbol) [0x9fd606]
+	chromedriver!(No symbol) [0x9d0039]
+	chromedriver!(No symbol) [0x9d0df4]
+	chromedriver!GetHandleVerifier [0xe0ddb4+292f94]
+	chromedriver!GetHandleVerifier [0xe0937d+28e55d]
+	chromedriver!GetHandleVerifier [0xe28215+2ad3f5]
+	chromedriver!GetHandleVerifier [0xba4c18+29df8]
+	chromedriver!GetHandleVerifier [0xbac6fd+318dd]
+	chromedriver!GetHandleVerifier [0xb93c78+18e58]
+	chromedriver!GetHandleVerifier [0xb93e42+19022]
+	chromedriver!GetHandleVerifier [0xb7d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76c9fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e282ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e2827e+ee]
+
+2026-05-10 01:02:10,484 - ERROR - 오류 발생: 로그인 실패
+2026-05-10 01:02:12,656 - INFO - 브라우저 종료
+2026-05-10 02:00:03,299 - INFO - ==================================================
+2026-05-10 02:00:03,299 - INFO - 쿠팡 광고비 수집 시작
+2026-05-10 02:00:03,299 - INFO - ==================================================
+2026-05-10 02:00:03,300 - INFO - ====== WebDriver manager ======
+2026-05-10 02:00:04,430 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 02:00:04,455 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 02:00:04,474 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-10 02:00:05,548 - INFO - 웹드라이버 설정 완료
+2026-05-10 02:00:05,548 - INFO - 로그인 페이지 접속...
+2026-05-10 02:00:10,202 - INFO - 아이디 입력 완료
+2026-05-10 02:00:10,255 - INFO - 비밀번호 입력 완료
+2026-05-10 02:00:10,302 - INFO - 로그인 버튼 클릭
+2026-05-10 02:00:10,302 - INFO - ==================================================
+2026-05-10 02:00:10,302 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-05-10 02:00:10,302 - INFO - ==================================================
+2026-05-10 02:02:10,506 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xb8b373+10553]
+	chromedriver!GetHandleVerifier [0xb8b4a4+10684]
+	chromedriver!(No symbol) [0x991e10]
+	chromedriver!(No symbol) [0x9da9da]
+	chromedriver!(No symbol) [0x9dac7b]
+	chromedriver!(No symbol) [0xa1d162]
+	chromedriver!(No symbol) [0x9fd8b4]
+	chromedriver!(No symbol) [0xa1aa36]
+	chromedriver!(No symbol) [0x9fd606]
+	chromedriver!(No symbol) [0x9d0039]
+	chromedriver!(No symbol) [0x9d0df4]
+	chromedriver!GetHandleVerifier [0xe0ddb4+292f94]
+	chromedriver!GetHandleVerifier [0xe0937d+28e55d]
+	chromedriver!GetHandleVerifier [0xe28215+2ad3f5]
+	chromedriver!GetHandleVerifier [0xba4c18+29df8]
+	chromedriver!GetHandleVerifier [0xbac6fd+318dd]
+	chromedriver!GetHandleVerifier [0xb93c78+18e58]
+	chromedriver!GetHandleVerifier [0xb93e42+19022]
+	chromedriver!GetHandleVerifier [0xb7d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76c9fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e282ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e2827e+ee]
+
+2026-05-10 02:02:10,539 - ERROR - 오류 발생: 로그인 실패
+2026-05-10 02:02:12,754 - INFO - 브라우저 종료
+2026-05-10 03:00:03,257 - INFO - ==================================================
+2026-05-10 03:00:03,258 - INFO - 쿠팡 광고비 수집 시작
+2026-05-10 03:00:03,258 - INFO - ==================================================
+2026-05-10 03:00:03,258 - INFO - ====== WebDriver manager ======
+2026-05-10 03:00:04,389 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 03:00:04,412 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 03:00:04,433 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-10 03:00:05,492 - INFO - 웹드라이버 설정 완료
+2026-05-10 03:00:05,492 - INFO - 로그인 페이지 접속...
+2026-05-10 03:00:09,788 - INFO - 아이디 입력 완료
+2026-05-10 03:00:09,841 - INFO - 비밀번호 입력 완료
+2026-05-10 03:00:09,893 - INFO - 로그인 버튼 클릭
+2026-05-10 03:00:09,893 - INFO - ==================================================
+2026-05-10 03:00:09,893 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-05-10 03:00:09,893 - INFO - ==================================================
+2026-05-10 03:02:10,081 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xb8b373+10553]
+	chromedriver!GetHandleVerifier [0xb8b4a4+10684]
+	chromedriver!(No symbol) [0x991e10]
+	chromedriver!(No symbol) [0x9da9da]
+	chromedriver!(No symbol) [0x9dac7b]
+	chromedriver!(No symbol) [0xa1d162]
+	chromedriver!(No symbol) [0x9fd8b4]
+	chromedriver!(No symbol) [0xa1aa36]
+	chromedriver!(No symbol) [0x9fd606]
+	chromedriver!(No symbol) [0x9d0039]
+	chromedriver!(No symbol) [0x9d0df4]
+	chromedriver!GetHandleVerifier [0xe0ddb4+292f94]
+	chromedriver!GetHandleVerifier [0xe0937d+28e55d]
+	chromedriver!GetHandleVerifier [0xe28215+2ad3f5]
+	chromedriver!GetHandleVerifier [0xba4c18+29df8]
+	chromedriver!GetHandleVerifier [0xbac6fd+318dd]
+	chromedriver!GetHandleVerifier [0xb93c78+18e58]
+	chromedriver!GetHandleVerifier [0xb93e42+19022]
+	chromedriver!GetHandleVerifier [0xb7d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76c9fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e282ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e2827e+ee]
+
+2026-05-10 03:02:10,112 - ERROR - 오류 발생: 로그인 실패
+2026-05-10 03:02:12,336 - INFO - 브라우저 종료
+2026-05-10 04:00:03,290 - INFO - ==================================================
+2026-05-10 04:00:03,290 - INFO - 쿠팡 광고비 수집 시작
+2026-05-10 04:00:03,290 - INFO - ==================================================
+2026-05-10 04:00:03,291 - INFO - ====== WebDriver manager ======
+2026-05-10 04:00:04,434 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 04:00:04,459 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 04:00:04,479 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-10 04:00:05,981 - INFO - 웹드라이버 설정 완료
+2026-05-10 04:00:05,981 - INFO - 로그인 페이지 접속...
+2026-05-10 04:00:10,287 - INFO - 아이디 입력 완료
+2026-05-10 04:00:10,342 - INFO - 비밀번호 입력 완료
+2026-05-10 04:00:10,392 - INFO - 로그인 버튼 클릭
+2026-05-10 04:00:10,392 - INFO - ==================================================
+2026-05-10 04:00:10,392 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-05-10 04:00:10,392 - INFO - ==================================================
+2026-05-10 04:02:10,516 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xb8b373+10553]
+	chromedriver!GetHandleVerifier [0xb8b4a4+10684]
+	chromedriver!(No symbol) [0x991e10]
+	chromedriver!(No symbol) [0x9da9da]
+	chromedriver!(No symbol) [0x9dac7b]
+	chromedriver!(No symbol) [0xa1d162]
+	chromedriver!(No symbol) [0x9fd8b4]
+	chromedriver!(No symbol) [0xa1aa36]
+	chromedriver!(No symbol) [0x9fd606]
+	chromedriver!(No symbol) [0x9d0039]
+	chromedriver!(No symbol) [0x9d0df4]
+	chromedriver!GetHandleVerifier [0xe0ddb4+292f94]
+	chromedriver!GetHandleVerifier [0xe0937d+28e55d]
+	chromedriver!GetHandleVerifier [0xe28215+2ad3f5]
+	chromedriver!GetHandleVerifier [0xba4c18+29df8]
+	chromedriver!GetHandleVerifier [0xbac6fd+318dd]
+	chromedriver!GetHandleVerifier [0xb93c78+18e58]
+	chromedriver!GetHandleVerifier [0xb93e42+19022]
+	chromedriver!GetHandleVerifier [0xb7d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76c9fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e282ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e2827e+ee]
+
+2026-05-10 04:02:10,549 - ERROR - 오류 발생: 로그인 실패
+2026-05-10 04:02:12,786 - INFO - 브라우저 종료
+2026-05-10 05:00:03,254 - INFO - ==================================================
+2026-05-10 05:00:03,254 - INFO - 쿠팡 광고비 수집 시작
+2026-05-10 05:00:03,254 - INFO - ==================================================
+2026-05-10 05:00:03,255 - INFO - ====== WebDriver manager ======
+2026-05-10 05:00:04,367 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 05:00:04,390 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 05:00:04,407 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-10 05:00:05,507 - INFO - 웹드라이버 설정 완료
+2026-05-10 05:00:05,507 - INFO - 로그인 페이지 접속...
+2026-05-10 05:00:09,722 - INFO - 아이디 입력 완료
+2026-05-10 05:00:09,776 - INFO - 비밀번호 입력 완료
+2026-05-10 05:00:09,824 - INFO - 로그인 버튼 클릭
+2026-05-10 05:00:09,824 - INFO - ==================================================
+2026-05-10 05:00:09,824 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-05-10 05:00:09,824 - INFO - ==================================================
+2026-05-10 05:02:10,266 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xb8b373+10553]
+	chromedriver!GetHandleVerifier [0xb8b4a4+10684]
+	chromedriver!(No symbol) [0x991e10]
+	chromedriver!(No symbol) [0x9da9da]
+	chromedriver!(No symbol) [0x9dac7b]
+	chromedriver!(No symbol) [0xa1d162]
+	chromedriver!(No symbol) [0x9fd8b4]
+	chromedriver!(No symbol) [0xa1aa36]
+	chromedriver!(No symbol) [0x9fd606]
+	chromedriver!(No symbol) [0x9d0039]
+	chromedriver!(No symbol) [0x9d0df4]
+	chromedriver!GetHandleVerifier [0xe0ddb4+292f94]
+	chromedriver!GetHandleVerifier [0xe0937d+28e55d]
+	chromedriver!GetHandleVerifier [0xe28215+2ad3f5]
+	chromedriver!GetHandleVerifier [0xba4c18+29df8]
+	chromedriver!GetHandleVerifier [0xbac6fd+318dd]
+	chromedriver!GetHandleVerifier [0xb93c78+18e58]
+	chromedriver!GetHandleVerifier [0xb93e42+19022]
+	chromedriver!GetHandleVerifier [0xb7d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76c9fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e282ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e2827e+ee]
+
+2026-05-10 05:02:10,306 - ERROR - 오류 발생: 로그인 실패
+2026-05-10 05:02:12,535 - INFO - 브라우저 종료
+2026-05-10 06:00:03,264 - INFO - ==================================================
+2026-05-10 06:00:03,265 - INFO - 쿠팡 광고비 수집 시작
+2026-05-10 06:00:03,265 - INFO - ==================================================
+2026-05-10 06:00:03,265 - INFO - ====== WebDriver manager ======
+2026-05-10 06:00:04,368 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 06:00:04,393 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 06:00:04,417 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-10 06:00:05,502 - INFO - 웹드라이버 설정 완료
+2026-05-10 06:00:05,502 - INFO - 로그인 페이지 접속...
+2026-05-10 06:00:09,778 - INFO - 아이디 입력 완료
+2026-05-10 06:00:09,829 - INFO - 비밀번호 입력 완료
+2026-05-10 06:00:09,876 - INFO - 로그인 버튼 클릭
+2026-05-10 06:00:09,876 - INFO - ==================================================
+2026-05-10 06:00:09,876 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-05-10 06:00:09,876 - INFO - ==================================================
+2026-05-10 06:02:10,109 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xb8b373+10553]
+	chromedriver!GetHandleVerifier [0xb8b4a4+10684]
+	chromedriver!(No symbol) [0x991e10]
+	chromedriver!(No symbol) [0x9da9da]
+	chromedriver!(No symbol) [0x9dac7b]
+	chromedriver!(No symbol) [0xa1d162]
+	chromedriver!(No symbol) [0x9fd8b4]
+	chromedriver!(No symbol) [0xa1aa36]
+	chromedriver!(No symbol) [0x9fd606]
+	chromedriver!(No symbol) [0x9d0039]
+	chromedriver!(No symbol) [0x9d0df4]
+	chromedriver!GetHandleVerifier [0xe0ddb4+292f94]
+	chromedriver!GetHandleVerifier [0xe0937d+28e55d]
+	chromedriver!GetHandleVerifier [0xe28215+2ad3f5]
+	chromedriver!GetHandleVerifier [0xba4c18+29df8]
+	chromedriver!GetHandleVerifier [0xbac6fd+318dd]
+	chromedriver!GetHandleVerifier [0xb93c78+18e58]
+	chromedriver!GetHandleVerifier [0xb93e42+19022]
+	chromedriver!GetHandleVerifier [0xb7d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76c9fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e282ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e2827e+ee]
+
+2026-05-10 06:02:10,146 - ERROR - 오류 발생: 로그인 실패
+2026-05-10 06:02:12,367 - INFO - 브라우저 종료
+2026-05-10 07:00:03,255 - INFO - ==================================================
+2026-05-10 07:00:03,255 - INFO - 쿠팡 광고비 수집 시작
+2026-05-10 07:00:03,255 - INFO - ==================================================
+2026-05-10 07:00:03,255 - INFO - ====== WebDriver manager ======
+2026-05-10 07:00:04,375 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 07:00:04,400 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 07:00:04,417 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-10 07:00:05,478 - INFO - 웹드라이버 설정 완료
+2026-05-10 07:00:05,478 - INFO - 로그인 페이지 접속...
+2026-05-10 07:00:09,828 - INFO - 아이디 입력 완료
+2026-05-10 07:00:09,880 - INFO - 비밀번호 입력 완료
+2026-05-10 07:00:09,925 - INFO - 로그인 버튼 클릭
+2026-05-10 07:00:09,926 - INFO - ==================================================
+2026-05-10 07:00:09,926 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-05-10 07:00:09,926 - INFO - ==================================================
+2026-05-10 07:02:10,396 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xb8b373+10553]
+	chromedriver!GetHandleVerifier [0xb8b4a4+10684]
+	chromedriver!(No symbol) [0x991e10]
+	chromedriver!(No symbol) [0x9da9da]
+	chromedriver!(No symbol) [0x9dac7b]
+	chromedriver!(No symbol) [0xa1d162]
+	chromedriver!(No symbol) [0x9fd8b4]
+	chromedriver!(No symbol) [0xa1aa36]
+	chromedriver!(No symbol) [0x9fd606]
+	chromedriver!(No symbol) [0x9d0039]
+	chromedriver!(No symbol) [0x9d0df4]
+	chromedriver!GetHandleVerifier [0xe0ddb4+292f94]
+	chromedriver!GetHandleVerifier [0xe0937d+28e55d]
+	chromedriver!GetHandleVerifier [0xe28215+2ad3f5]
+	chromedriver!GetHandleVerifier [0xba4c18+29df8]
+	chromedriver!GetHandleVerifier [0xbac6fd+318dd]
+	chromedriver!GetHandleVerifier [0xb93c78+18e58]
+	chromedriver!GetHandleVerifier [0xb93e42+19022]
+	chromedriver!GetHandleVerifier [0xb7d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76c9fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e282ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e2827e+ee]
+
+2026-05-10 07:02:10,434 - ERROR - 오류 발생: 로그인 실패
+2026-05-10 07:02:12,659 - INFO - 브라우저 종료
+2026-05-10 08:00:03,310 - INFO - ==================================================
+2026-05-10 08:00:03,311 - INFO - 쿠팡 광고비 수집 시작
+2026-05-10 08:00:03,311 - INFO - ==================================================
+2026-05-10 08:00:03,311 - INFO - ====== WebDriver manager ======
+2026-05-10 08:00:04,451 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 08:00:04,475 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 08:00:04,495 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-10 08:00:06,037 - INFO - 웹드라이버 설정 완료
+2026-05-10 08:00:06,037 - INFO - 로그인 페이지 접속...
+2026-05-10 08:00:10,333 - INFO - 아이디 입력 완료
+2026-05-10 08:00:10,387 - INFO - 비밀번호 입력 완료
+2026-05-10 08:00:10,435 - INFO - 로그인 버튼 클릭
+2026-05-10 08:00:10,435 - INFO - ==================================================
+2026-05-10 08:00:10,435 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-05-10 08:00:10,435 - INFO - ==================================================
+2026-05-10 08:02:10,855 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xb8b373+10553]
+	chromedriver!GetHandleVerifier [0xb8b4a4+10684]
+	chromedriver!(No symbol) [0x991e10]
+	chromedriver!(No symbol) [0x9da9da]
+	chromedriver!(No symbol) [0x9dac7b]
+	chromedriver!(No symbol) [0xa1d162]
+	chromedriver!(No symbol) [0x9fd8b4]
+	chromedriver!(No symbol) [0xa1aa36]
+	chromedriver!(No symbol) [0x9fd606]
+	chromedriver!(No symbol) [0x9d0039]
+	chromedriver!(No symbol) [0x9d0df4]
+	chromedriver!GetHandleVerifier [0xe0ddb4+292f94]
+	chromedriver!GetHandleVerifier [0xe0937d+28e55d]
+	chromedriver!GetHandleVerifier [0xe28215+2ad3f5]
+	chromedriver!GetHandleVerifier [0xba4c18+29df8]
+	chromedriver!GetHandleVerifier [0xbac6fd+318dd]
+	chromedriver!GetHandleVerifier [0xb93c78+18e58]
+	chromedriver!GetHandleVerifier [0xb93e42+19022]
+	chromedriver!GetHandleVerifier [0xb7d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76c9fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e282ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e2827e+ee]
+
+2026-05-10 08:02:10,891 - ERROR - 오류 발생: 로그인 실패
+2026-05-10 08:02:13,127 - INFO - 브라우저 종료
+2026-05-10 09:00:03,328 - INFO - ==================================================
+2026-05-10 09:00:03,329 - INFO - 쿠팡 광고비 수집 시작
+2026-05-10 09:00:03,329 - INFO - ==================================================
+2026-05-10 09:00:03,329 - INFO - ====== WebDriver manager ======
+2026-05-10 09:00:04,736 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 09:00:04,766 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 09:00:04,785 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-10 09:00:06,285 - INFO - 웹드라이버 설정 완료
+2026-05-10 09:00:06,285 - INFO - 로그인 페이지 접속...
+2026-05-10 09:00:10,628 - INFO - 아이디 입력 완료
+2026-05-10 09:00:10,675 - INFO - 비밀번호 입력 완료
+2026-05-10 09:00:10,727 - INFO - 로그인 버튼 클릭
+2026-05-10 09:00:10,727 - INFO - ==================================================
+2026-05-10 09:00:10,728 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-05-10 09:00:10,728 - INFO - ==================================================
+2026-05-10 09:02:10,950 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xb8b373+10553]
+	chromedriver!GetHandleVerifier [0xb8b4a4+10684]
+	chromedriver!(No symbol) [0x991e10]
+	chromedriver!(No symbol) [0x9da9da]
+	chromedriver!(No symbol) [0x9dac7b]
+	chromedriver!(No symbol) [0xa1d162]
+	chromedriver!(No symbol) [0x9fd8b4]
+	chromedriver!(No symbol) [0xa1aa36]
+	chromedriver!(No symbol) [0x9fd606]
+	chromedriver!(No symbol) [0x9d0039]
+	chromedriver!(No symbol) [0x9d0df4]
+	chromedriver!GetHandleVerifier [0xe0ddb4+292f94]
+	chromedriver!GetHandleVerifier [0xe0937d+28e55d]
+	chromedriver!GetHandleVerifier [0xe28215+2ad3f5]
+	chromedriver!GetHandleVerifier [0xba4c18+29df8]
+	chromedriver!GetHandleVerifier [0xbac6fd+318dd]
+	chromedriver!GetHandleVerifier [0xb93c78+18e58]
+	chromedriver!GetHandleVerifier [0xb93e42+19022]
+	chromedriver!GetHandleVerifier [0xb7d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76c9fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e282ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e2827e+ee]
+
+2026-05-10 09:02:10,980 - ERROR - 오류 발생: 로그인 실패
+2026-05-10 09:02:13,155 - INFO - 브라우저 종료
+2026-05-10 10:00:03,249 - INFO - ==================================================
+2026-05-10 10:00:03,250 - INFO - 쿠팡 광고비 수집 시작
+2026-05-10 10:00:03,250 - INFO - ==================================================
+2026-05-10 10:00:03,250 - INFO - ====== WebDriver manager ======
+2026-05-10 10:00:04,385 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 10:00:04,415 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 10:00:04,431 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-10 10:00:05,509 - INFO - 웹드라이버 설정 완료
+2026-05-10 10:00:05,510 - INFO - 로그인 페이지 접속...
+2026-05-10 10:00:10,031 - INFO - 아이디 입력 완료
+2026-05-10 10:00:10,082 - INFO - 비밀번호 입력 완료
+2026-05-10 10:00:10,131 - INFO - 로그인 버튼 클릭
+2026-05-10 10:00:10,132 - INFO - ==================================================
+2026-05-10 10:00:10,132 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-05-10 10:00:10,132 - INFO - ==================================================
+2026-05-10 10:02:10,592 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xb8b373+10553]
+	chromedriver!GetHandleVerifier [0xb8b4a4+10684]
+	chromedriver!(No symbol) [0x991e10]
+	chromedriver!(No symbol) [0x9da9da]
+	chromedriver!(No symbol) [0x9dac7b]
+	chromedriver!(No symbol) [0xa1d162]
+	chromedriver!(No symbol) [0x9fd8b4]
+	chromedriver!(No symbol) [0xa1aa36]
+	chromedriver!(No symbol) [0x9fd606]
+	chromedriver!(No symbol) [0x9d0039]
+	chromedriver!(No symbol) [0x9d0df4]
+	chromedriver!GetHandleVerifier [0xe0ddb4+292f94]
+	chromedriver!GetHandleVerifier [0xe0937d+28e55d]
+	chromedriver!GetHandleVerifier [0xe28215+2ad3f5]
+	chromedriver!GetHandleVerifier [0xba4c18+29df8]
+	chromedriver!GetHandleVerifier [0xbac6fd+318dd]
+	chromedriver!GetHandleVerifier [0xb93c78+18e58]
+	chromedriver!GetHandleVerifier [0xb93e42+19022]
+	chromedriver!GetHandleVerifier [0xb7d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76c9fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e282ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e2827e+ee]
+
+2026-05-10 10:02:10,620 - ERROR - 오류 발생: 로그인 실패
+2026-05-10 10:02:12,842 - INFO - 브라우저 종료
+2026-05-10 11:00:03,263 - INFO - ==================================================
+2026-05-10 11:00:03,264 - INFO - 쿠팡 광고비 수집 시작
+2026-05-10 11:00:03,264 - INFO - ==================================================
+2026-05-10 11:00:03,264 - INFO - ====== WebDriver manager ======
+2026-05-10 11:00:04,383 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 11:00:04,413 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 11:00:04,430 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-10 11:00:05,539 - INFO - 웹드라이버 설정 완료
+2026-05-10 11:00:05,541 - INFO - 로그인 페이지 접속...
+2026-05-10 11:00:09,825 - INFO - 아이디 입력 완료
+2026-05-10 11:00:09,876 - INFO - 비밀번호 입력 완료
+2026-05-10 11:00:09,922 - INFO - 로그인 버튼 클릭
+2026-05-10 11:00:09,923 - INFO - ==================================================
+2026-05-10 11:00:09,923 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-05-10 11:00:09,923 - INFO - ==================================================
+2026-05-10 11:02:09,957 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xb8b373+10553]
+	chromedriver!GetHandleVerifier [0xb8b4a4+10684]
+	chromedriver!(No symbol) [0x991e10]
+	chromedriver!(No symbol) [0x9da9da]
+	chromedriver!(No symbol) [0x9dac7b]
+	chromedriver!(No symbol) [0xa1d162]
+	chromedriver!(No symbol) [0x9fd8b4]
+	chromedriver!(No symbol) [0xa1aa36]
+	chromedriver!(No symbol) [0x9fd606]
+	chromedriver!(No symbol) [0x9d0039]
+	chromedriver!(No symbol) [0x9d0df4]
+	chromedriver!GetHandleVerifier [0xe0ddb4+292f94]
+	chromedriver!GetHandleVerifier [0xe0937d+28e55d]
+	chromedriver!GetHandleVerifier [0xe28215+2ad3f5]
+	chromedriver!GetHandleVerifier [0xba4c18+29df8]
+	chromedriver!GetHandleVerifier [0xbac6fd+318dd]
+	chromedriver!GetHandleVerifier [0xb93c78+18e58]
+	chromedriver!GetHandleVerifier [0xb93e42+19022]
+	chromedriver!GetHandleVerifier [0xb7d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76c9fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e282ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e2827e+ee]
+
+2026-05-10 11:02:09,993 - ERROR - 오류 발생: 로그인 실패
+2026-05-10 11:02:12,161 - INFO - 브라우저 종료
+2026-05-10 12:00:03,262 - INFO - ==================================================
+2026-05-10 12:00:03,263 - INFO - 쿠팡 광고비 수집 시작
+2026-05-10 12:00:03,263 - INFO - ==================================================
+2026-05-10 12:00:03,263 - INFO - ====== WebDriver manager ======
+2026-05-10 12:00:04,389 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 12:00:04,414 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 12:00:04,430 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-10 12:00:05,509 - INFO - 웹드라이버 설정 완료
+2026-05-10 12:00:05,509 - INFO - 로그인 페이지 접속...
+2026-05-10 12:00:09,722 - INFO - 아이디 입력 완료
+2026-05-10 12:00:09,776 - INFO - 비밀번호 입력 완료
+2026-05-10 12:00:09,825 - INFO - 로그인 버튼 클릭
+2026-05-10 12:00:09,825 - INFO - ==================================================
+2026-05-10 12:00:09,826 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-05-10 12:00:09,826 - INFO - ==================================================
+2026-05-10 12:02:09,876 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xb8b373+10553]
+	chromedriver!GetHandleVerifier [0xb8b4a4+10684]
+	chromedriver!(No symbol) [0x991e10]
+	chromedriver!(No symbol) [0x9da9da]
+	chromedriver!(No symbol) [0x9dac7b]
+	chromedriver!(No symbol) [0xa1d162]
+	chromedriver!(No symbol) [0x9fd8b4]
+	chromedriver!(No symbol) [0xa1aa36]
+	chromedriver!(No symbol) [0x9fd606]
+	chromedriver!(No symbol) [0x9d0039]
+	chromedriver!(No symbol) [0x9d0df4]
+	chromedriver!GetHandleVerifier [0xe0ddb4+292f94]
+	chromedriver!GetHandleVerifier [0xe0937d+28e55d]
+	chromedriver!GetHandleVerifier [0xe28215+2ad3f5]
+	chromedriver!GetHandleVerifier [0xba4c18+29df8]
+	chromedriver!GetHandleVerifier [0xbac6fd+318dd]
+	chromedriver!GetHandleVerifier [0xb93c78+18e58]
+	chromedriver!GetHandleVerifier [0xb93e42+19022]
+	chromedriver!GetHandleVerifier [0xb7d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76c9fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e282ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e2827e+ee]
+
+2026-05-10 12:02:09,915 - ERROR - 오류 발생: 로그인 실패
+2026-05-10 12:02:12,136 - INFO - 브라우저 종료
+2026-05-10 13:00:03,256 - INFO - ==================================================
+2026-05-10 13:00:03,257 - INFO - 쿠팡 광고비 수집 시작
+2026-05-10 13:00:03,257 - INFO - ==================================================
+2026-05-10 13:00:03,257 - INFO - ====== WebDriver manager ======
+2026-05-10 13:00:04,371 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 13:00:04,395 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 13:00:04,413 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-10 13:00:05,488 - INFO - 웹드라이버 설정 완료
+2026-05-10 13:00:05,488 - INFO - 로그인 페이지 접속...
+2026-05-10 13:00:09,827 - INFO - 아이디 입력 완료
+2026-05-10 13:00:09,878 - INFO - 비밀번호 입력 완료
+2026-05-10 13:00:09,927 - INFO - 로그인 버튼 클릭
+2026-05-10 13:00:09,927 - INFO - ==================================================
+2026-05-10 13:00:09,927 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-05-10 13:00:09,927 - INFO - ==================================================
+2026-05-10 13:02:10,108 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xb8b373+10553]
+	chromedriver!GetHandleVerifier [0xb8b4a4+10684]
+	chromedriver!(No symbol) [0x991e10]
+	chromedriver!(No symbol) [0x9da9da]
+	chromedriver!(No symbol) [0x9dac7b]
+	chromedriver!(No symbol) [0xa1d162]
+	chromedriver!(No symbol) [0x9fd8b4]
+	chromedriver!(No symbol) [0xa1aa36]
+	chromedriver!(No symbol) [0x9fd606]
+	chromedriver!(No symbol) [0x9d0039]
+	chromedriver!(No symbol) [0x9d0df4]
+	chromedriver!GetHandleVerifier [0xe0ddb4+292f94]
+	chromedriver!GetHandleVerifier [0xe0937d+28e55d]
+	chromedriver!GetHandleVerifier [0xe28215+2ad3f5]
+	chromedriver!GetHandleVerifier [0xba4c18+29df8]
+	chromedriver!GetHandleVerifier [0xbac6fd+318dd]
+	chromedriver!GetHandleVerifier [0xb93c78+18e58]
+	chromedriver!GetHandleVerifier [0xb93e42+19022]
+	chromedriver!GetHandleVerifier [0xb7d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76c9fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e282ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e2827e+ee]
+
+2026-05-10 13:02:10,137 - ERROR - 오류 발생: 로그인 실패
+2026-05-10 13:02:12,293 - INFO - 브라우저 종료
+2026-05-10 14:00:03,257 - INFO - ==================================================
+2026-05-10 14:00:03,257 - INFO - 쿠팡 광고비 수집 시작
+2026-05-10 14:00:03,257 - INFO - ==================================================
+2026-05-10 14:00:03,257 - INFO - ====== WebDriver manager ======
+2026-05-10 14:00:04,368 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 14:00:04,392 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 14:00:04,409 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-10 14:00:05,486 - INFO - 웹드라이버 설정 완료
+2026-05-10 14:00:05,486 - INFO - 로그인 페이지 접속...
+2026-05-10 14:00:09,856 - INFO - 아이디 입력 완료
+2026-05-10 14:00:09,908 - INFO - 비밀번호 입력 완료
+2026-05-10 14:00:09,958 - INFO - 로그인 버튼 클릭
+2026-05-10 14:00:09,958 - INFO - ==================================================
+2026-05-10 14:00:09,959 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-05-10 14:00:09,959 - INFO - ==================================================
+2026-05-10 14:02:10,367 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xb8b373+10553]
+	chromedriver!GetHandleVerifier [0xb8b4a4+10684]
+	chromedriver!(No symbol) [0x991e10]
+	chromedriver!(No symbol) [0x9da9da]
+	chromedriver!(No symbol) [0x9dac7b]
+	chromedriver!(No symbol) [0xa1d162]
+	chromedriver!(No symbol) [0x9fd8b4]
+	chromedriver!(No symbol) [0xa1aa36]
+	chromedriver!(No symbol) [0x9fd606]
+	chromedriver!(No symbol) [0x9d0039]
+	chromedriver!(No symbol) [0x9d0df4]
+	chromedriver!GetHandleVerifier [0xe0ddb4+292f94]
+	chromedriver!GetHandleVerifier [0xe0937d+28e55d]
+	chromedriver!GetHandleVerifier [0xe28215+2ad3f5]
+	chromedriver!GetHandleVerifier [0xba4c18+29df8]
+	chromedriver!GetHandleVerifier [0xbac6fd+318dd]
+	chromedriver!GetHandleVerifier [0xb93c78+18e58]
+	chromedriver!GetHandleVerifier [0xb93e42+19022]
+	chromedriver!GetHandleVerifier [0xb7d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76c9fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e282ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e2827e+ee]
+
+2026-05-10 14:02:10,394 - ERROR - 오류 발생: 로그인 실패
+2026-05-10 14:02:12,631 - INFO - 브라우저 종료
+2026-05-10 15:00:03,264 - INFO - ==================================================
+2026-05-10 15:00:03,264 - INFO - 쿠팡 광고비 수집 시작
+2026-05-10 15:00:03,265 - INFO - ==================================================
+2026-05-10 15:00:03,265 - INFO - ====== WebDriver manager ======
+2026-05-10 15:00:04,387 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 15:00:04,410 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 15:00:04,431 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-10 15:00:05,498 - INFO - 웹드라이버 설정 완료
+2026-05-10 15:00:05,499 - INFO - 로그인 페이지 접속...
+2026-05-10 15:00:09,731 - INFO - 아이디 입력 완료
+2026-05-10 15:00:09,783 - INFO - 비밀번호 입력 완료
+2026-05-10 15:00:09,831 - INFO - 로그인 버튼 클릭
+2026-05-10 15:00:09,831 - INFO - ==================================================
+2026-05-10 15:00:09,831 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-05-10 15:00:09,831 - INFO - ==================================================
+2026-05-10 15:02:10,175 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xb8b373+10553]
+	chromedriver!GetHandleVerifier [0xb8b4a4+10684]
+	chromedriver!(No symbol) [0x991e10]
+	chromedriver!(No symbol) [0x9da9da]
+	chromedriver!(No symbol) [0x9dac7b]
+	chromedriver!(No symbol) [0xa1d162]
+	chromedriver!(No symbol) [0x9fd8b4]
+	chromedriver!(No symbol) [0xa1aa36]
+	chromedriver!(No symbol) [0x9fd606]
+	chromedriver!(No symbol) [0x9d0039]
+	chromedriver!(No symbol) [0x9d0df4]
+	chromedriver!GetHandleVerifier [0xe0ddb4+292f94]
+	chromedriver!GetHandleVerifier [0xe0937d+28e55d]
+	chromedriver!GetHandleVerifier [0xe28215+2ad3f5]
+	chromedriver!GetHandleVerifier [0xba4c18+29df8]
+	chromedriver!GetHandleVerifier [0xbac6fd+318dd]
+	chromedriver!GetHandleVerifier [0xb93c78+18e58]
+	chromedriver!GetHandleVerifier [0xb93e42+19022]
+	chromedriver!GetHandleVerifier [0xb7d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76c9fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e282ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e2827e+ee]
+
+2026-05-10 15:02:10,215 - ERROR - 오류 발생: 로그인 실패
+2026-05-10 15:02:12,362 - INFO - 브라우저 종료
+2026-05-10 16:00:03,308 - INFO - ==================================================
+2026-05-10 16:00:03,308 - INFO - 쿠팡 광고비 수집 시작
+2026-05-10 16:00:03,308 - INFO - ==================================================
+2026-05-10 16:00:03,308 - INFO - ====== WebDriver manager ======
+2026-05-10 16:00:04,428 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 16:00:04,449 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 16:00:04,468 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-10 16:00:05,611 - INFO - 웹드라이버 설정 완료
+2026-05-10 16:00:05,611 - INFO - 로그인 페이지 접속...
+2026-05-10 16:00:10,050 - INFO - 아이디 입력 완료
+2026-05-10 16:00:10,102 - INFO - 비밀번호 입력 완료
+2026-05-10 16:00:10,149 - INFO - 로그인 버튼 클릭
+2026-05-10 16:00:10,150 - INFO - ==================================================
+2026-05-10 16:00:10,150 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-05-10 16:00:10,150 - INFO - ==================================================
+2026-05-10 16:02:10,252 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xb8b373+10553]
+	chromedriver!GetHandleVerifier [0xb8b4a4+10684]
+	chromedriver!(No symbol) [0x991e10]
+	chromedriver!(No symbol) [0x9da9da]
+	chromedriver!(No symbol) [0x9dac7b]
+	chromedriver!(No symbol) [0xa1d162]
+	chromedriver!(No symbol) [0x9fd8b4]
+	chromedriver!(No symbol) [0xa1aa36]
+	chromedriver!(No symbol) [0x9fd606]
+	chromedriver!(No symbol) [0x9d0039]
+	chromedriver!(No symbol) [0x9d0df4]
+	chromedriver!GetHandleVerifier [0xe0ddb4+292f94]
+	chromedriver!GetHandleVerifier [0xe0937d+28e55d]
+	chromedriver!GetHandleVerifier [0xe28215+2ad3f5]
+	chromedriver!GetHandleVerifier [0xba4c18+29df8]
+	chromedriver!GetHandleVerifier [0xbac6fd+318dd]
+	chromedriver!GetHandleVerifier [0xb93c78+18e58]
+	chromedriver!GetHandleVerifier [0xb93e42+19022]
+	chromedriver!GetHandleVerifier [0xb7d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76c9fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e282ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e2827e+ee]
+
+2026-05-10 16:02:10,289 - ERROR - 오류 발생: 로그인 실패
+2026-05-10 16:02:12,536 - INFO - 브라우저 종료
+2026-05-10 17:00:03,342 - INFO - ==================================================
+2026-05-10 17:00:03,342 - INFO - 쿠팡 광고비 수집 시작
+2026-05-10 17:00:03,342 - INFO - ==================================================
+2026-05-10 17:00:03,343 - INFO - ====== WebDriver manager ======
+2026-05-10 17:00:04,523 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 17:00:04,547 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 17:00:04,564 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-10 17:00:06,176 - INFO - 웹드라이버 설정 완료
+2026-05-10 17:00:06,176 - INFO - 로그인 페이지 접속...
+2026-05-10 17:00:10,532 - INFO - 아이디 입력 완료
+2026-05-10 17:00:10,581 - INFO - 비밀번호 입력 완료
+2026-05-10 17:00:10,632 - INFO - 로그인 버튼 클릭
+2026-05-10 17:00:10,632 - INFO - ==================================================
+2026-05-10 17:00:10,633 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-05-10 17:00:10,633 - INFO - ==================================================
+2026-05-10 17:02:11,108 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xb8b373+10553]
+	chromedriver!GetHandleVerifier [0xb8b4a4+10684]
+	chromedriver!(No symbol) [0x991e10]
+	chromedriver!(No symbol) [0x9da9da]
+	chromedriver!(No symbol) [0x9dac7b]
+	chromedriver!(No symbol) [0xa1d162]
+	chromedriver!(No symbol) [0x9fd8b4]
+	chromedriver!(No symbol) [0xa1aa36]
+	chromedriver!(No symbol) [0x9fd606]
+	chromedriver!(No symbol) [0x9d0039]
+	chromedriver!(No symbol) [0x9d0df4]
+	chromedriver!GetHandleVerifier [0xe0ddb4+292f94]
+	chromedriver!GetHandleVerifier [0xe0937d+28e55d]
+	chromedriver!GetHandleVerifier [0xe28215+2ad3f5]
+	chromedriver!GetHandleVerifier [0xba4c18+29df8]
+	chromedriver!GetHandleVerifier [0xbac6fd+318dd]
+	chromedriver!GetHandleVerifier [0xb93c78+18e58]
+	chromedriver!GetHandleVerifier [0xb93e42+19022]
+	chromedriver!GetHandleVerifier [0xb7d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76c9fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e282ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e2827e+ee]
+
+2026-05-10 17:02:11,146 - ERROR - 오류 발생: 로그인 실패
+2026-05-10 17:02:13,351 - INFO - 브라우저 종료
+2026-05-10 18:00:03,344 - INFO - ==================================================
+2026-05-10 18:00:03,344 - INFO - 쿠팡 광고비 수집 시작
+2026-05-10 18:00:03,345 - INFO - ==================================================
+2026-05-10 18:00:03,345 - INFO - ====== WebDriver manager ======
+2026-05-10 18:00:04,730 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 18:00:04,758 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 18:00:04,777 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-10 18:00:06,783 - INFO - 웹드라이버 설정 완료
+2026-05-10 18:00:06,783 - INFO - 로그인 페이지 접속...
+2026-05-10 18:00:11,440 - INFO - 아이디 입력 완료
+2026-05-10 18:00:11,497 - INFO - 비밀번호 입력 완료
+2026-05-10 18:00:11,549 - INFO - 로그인 버튼 클릭
+2026-05-10 18:00:11,550 - INFO - ==================================================
+2026-05-10 18:00:11,550 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-05-10 18:00:11,550 - INFO - ==================================================
+2026-05-10 18:02:11,995 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xb8b373+10553]
+	chromedriver!GetHandleVerifier [0xb8b4a4+10684]
+	chromedriver!(No symbol) [0x991e10]
+	chromedriver!(No symbol) [0x9da9da]
+	chromedriver!(No symbol) [0x9dac7b]
+	chromedriver!(No symbol) [0xa1d162]
+	chromedriver!(No symbol) [0x9fd8b4]
+	chromedriver!(No symbol) [0xa1aa36]
+	chromedriver!(No symbol) [0x9fd606]
+	chromedriver!(No symbol) [0x9d0039]
+	chromedriver!(No symbol) [0x9d0df4]
+	chromedriver!GetHandleVerifier [0xe0ddb4+292f94]
+	chromedriver!GetHandleVerifier [0xe0937d+28e55d]
+	chromedriver!GetHandleVerifier [0xe28215+2ad3f5]
+	chromedriver!GetHandleVerifier [0xba4c18+29df8]
+	chromedriver!GetHandleVerifier [0xbac6fd+318dd]
+	chromedriver!GetHandleVerifier [0xb93c78+18e58]
+	chromedriver!GetHandleVerifier [0xb93e42+19022]
+	chromedriver!GetHandleVerifier [0xb7d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76c9fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e282ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e2827e+ee]
+
+2026-05-10 18:02:12,033 - ERROR - 오류 발생: 로그인 실패
+2026-05-10 18:02:14,266 - INFO - 브라우저 종료
+2026-05-10 19:00:03,348 - INFO - ==================================================
+2026-05-10 19:00:03,348 - INFO - 쿠팡 광고비 수집 시작
+2026-05-10 19:00:03,349 - INFO - ==================================================
+2026-05-10 19:00:03,349 - INFO - ====== WebDriver manager ======
+2026-05-10 19:00:04,711 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 19:00:04,736 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 19:00:04,754 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-10 19:00:06,793 - INFO - 웹드라이버 설정 완료
+2026-05-10 19:00:06,793 - INFO - 로그인 페이지 접속...
+2026-05-10 19:00:11,030 - INFO - 아이디 입력 완료
+2026-05-10 19:00:11,086 - INFO - 비밀번호 입력 완료
+2026-05-10 19:00:11,136 - INFO - 로그인 버튼 클릭
+2026-05-10 19:00:11,137 - INFO - ==================================================
+2026-05-10 19:00:11,137 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-05-10 19:00:11,137 - INFO - ==================================================
+2026-05-10 19:02:11,256 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xb8b373+10553]
+	chromedriver!GetHandleVerifier [0xb8b4a4+10684]
+	chromedriver!(No symbol) [0x991e10]
+	chromedriver!(No symbol) [0x9da9da]
+	chromedriver!(No symbol) [0x9dac7b]
+	chromedriver!(No symbol) [0xa1d162]
+	chromedriver!(No symbol) [0x9fd8b4]
+	chromedriver!(No symbol) [0xa1aa36]
+	chromedriver!(No symbol) [0x9fd606]
+	chromedriver!(No symbol) [0x9d0039]
+	chromedriver!(No symbol) [0x9d0df4]
+	chromedriver!GetHandleVerifier [0xe0ddb4+292f94]
+	chromedriver!GetHandleVerifier [0xe0937d+28e55d]
+	chromedriver!GetHandleVerifier [0xe28215+2ad3f5]
+	chromedriver!GetHandleVerifier [0xba4c18+29df8]
+	chromedriver!GetHandleVerifier [0xbac6fd+318dd]
+	chromedriver!GetHandleVerifier [0xb93c78+18e58]
+	chromedriver!GetHandleVerifier [0xb93e42+19022]
+	chromedriver!GetHandleVerifier [0xb7d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76c9fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e282ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e2827e+ee]
+
+2026-05-10 19:02:11,290 - ERROR - 오류 발생: 로그인 실패
+2026-05-10 19:02:13,516 - INFO - 브라우저 종료
+2026-05-10 20:00:03,278 - INFO - ==================================================
+2026-05-10 20:00:03,278 - INFO - 쿠팡 광고비 수집 시작
+2026-05-10 20:00:03,279 - INFO - ==================================================
+2026-05-10 20:00:03,279 - INFO - ====== WebDriver manager ======
+2026-05-10 20:00:04,400 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 20:00:04,425 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 20:00:04,444 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-10 20:00:05,706 - INFO - 웹드라이버 설정 완료
+2026-05-10 20:00:05,707 - INFO - 로그인 페이지 접속...
+2026-05-10 20:00:10,618 - INFO - 아이디 입력 완료
+2026-05-10 20:00:10,667 - INFO - 비밀번호 입력 완료
+2026-05-10 20:00:10,712 - INFO - 로그인 버튼 클릭
+2026-05-10 20:00:10,713 - INFO - ==================================================
+2026-05-10 20:00:10,713 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-05-10 20:00:10,713 - INFO - ==================================================
+2026-05-10 20:02:10,752 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xb8b373+10553]
+	chromedriver!GetHandleVerifier [0xb8b4a4+10684]
+	chromedriver!(No symbol) [0x991e10]
+	chromedriver!(No symbol) [0x9da9da]
+	chromedriver!(No symbol) [0x9dac7b]
+	chromedriver!(No symbol) [0xa1d162]
+	chromedriver!(No symbol) [0x9fd8b4]
+	chromedriver!(No symbol) [0xa1aa36]
+	chromedriver!(No symbol) [0x9fd606]
+	chromedriver!(No symbol) [0x9d0039]
+	chromedriver!(No symbol) [0x9d0df4]
+	chromedriver!GetHandleVerifier [0xe0ddb4+292f94]
+	chromedriver!GetHandleVerifier [0xe0937d+28e55d]
+	chromedriver!GetHandleVerifier [0xe28215+2ad3f5]
+	chromedriver!GetHandleVerifier [0xba4c18+29df8]
+	chromedriver!GetHandleVerifier [0xbac6fd+318dd]
+	chromedriver!GetHandleVerifier [0xb93c78+18e58]
+	chromedriver!GetHandleVerifier [0xb93e42+19022]
+	chromedriver!GetHandleVerifier [0xb7d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76c9fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e282ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e2827e+ee]
+
+2026-05-10 20:02:10,782 - ERROR - 오류 발생: 로그인 실패
+2026-05-10 20:02:12,977 - INFO - 브라우저 종료
+2026-05-10 21:00:03,277 - INFO - ==================================================
+2026-05-10 21:00:03,277 - INFO - 쿠팡 광고비 수집 시작
+2026-05-10 21:00:03,277 - INFO - ==================================================
+2026-05-10 21:00:03,278 - INFO - ====== WebDriver manager ======
+2026-05-10 21:00:04,412 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 21:00:04,435 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 21:00:04,455 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-10 21:00:06,084 - INFO - 웹드라이버 설정 완료
+2026-05-10 21:00:06,084 - INFO - 로그인 페이지 접속...
+2026-05-10 21:00:10,494 - INFO - 아이디 입력 완료
+2026-05-10 21:00:10,559 - INFO - 비밀번호 입력 완료
+2026-05-10 21:00:10,612 - INFO - 로그인 버튼 클릭
+2026-05-10 21:00:10,612 - INFO - ==================================================
+2026-05-10 21:00:10,612 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-05-10 21:00:10,612 - INFO - ==================================================
+2026-05-10 21:02:10,968 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xb8b373+10553]
+	chromedriver!GetHandleVerifier [0xb8b4a4+10684]
+	chromedriver!(No symbol) [0x991e10]
+	chromedriver!(No symbol) [0x9da9da]
+	chromedriver!(No symbol) [0x9dac7b]
+	chromedriver!(No symbol) [0xa1d162]
+	chromedriver!(No symbol) [0x9fd8b4]
+	chromedriver!(No symbol) [0xa1aa36]
+	chromedriver!(No symbol) [0x9fd606]
+	chromedriver!(No symbol) [0x9d0039]
+	chromedriver!(No symbol) [0x9d0df4]
+	chromedriver!GetHandleVerifier [0xe0ddb4+292f94]
+	chromedriver!GetHandleVerifier [0xe0937d+28e55d]
+	chromedriver!GetHandleVerifier [0xe28215+2ad3f5]
+	chromedriver!GetHandleVerifier [0xba4c18+29df8]
+	chromedriver!GetHandleVerifier [0xbac6fd+318dd]
+	chromedriver!GetHandleVerifier [0xb93c78+18e58]
+	chromedriver!GetHandleVerifier [0xb93e42+19022]
+	chromedriver!GetHandleVerifier [0xb7d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76c9fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e282ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e2827e+ee]
+
+2026-05-10 21:02:11,002 - ERROR - 오류 발생: 로그인 실패
+2026-05-10 21:02:13,169 - INFO - 브라우저 종료
+2026-05-10 22:00:03,258 - INFO - ==================================================
+2026-05-10 22:00:03,258 - INFO - 쿠팡 광고비 수집 시작
+2026-05-10 22:00:03,258 - INFO - ==================================================
+2026-05-10 22:00:03,258 - INFO - ====== WebDriver manager ======
+2026-05-10 22:00:04,377 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 22:00:04,403 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 22:00:04,421 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-10 22:00:05,609 - INFO - 웹드라이버 설정 완료
+2026-05-10 22:00:05,609 - INFO - 로그인 페이지 접속...
+2026-05-10 22:00:09,917 - INFO - 아이디 입력 완료
+2026-05-10 22:00:09,969 - INFO - 비밀번호 입력 완료
+2026-05-10 22:00:10,015 - INFO - 로그인 버튼 클릭
+2026-05-10 22:00:10,015 - INFO - ==================================================
+2026-05-10 22:00:10,015 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-05-10 22:00:10,015 - INFO - ==================================================
+2026-05-10 22:02:10,092 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xb8b373+10553]
+	chromedriver!GetHandleVerifier [0xb8b4a4+10684]
+	chromedriver!(No symbol) [0x991e10]
+	chromedriver!(No symbol) [0x9da9da]
+	chromedriver!(No symbol) [0x9dac7b]
+	chromedriver!(No symbol) [0xa1d162]
+	chromedriver!(No symbol) [0x9fd8b4]
+	chromedriver!(No symbol) [0xa1aa36]
+	chromedriver!(No symbol) [0x9fd606]
+	chromedriver!(No symbol) [0x9d0039]
+	chromedriver!(No symbol) [0x9d0df4]
+	chromedriver!GetHandleVerifier [0xe0ddb4+292f94]
+	chromedriver!GetHandleVerifier [0xe0937d+28e55d]
+	chromedriver!GetHandleVerifier [0xe28215+2ad3f5]
+	chromedriver!GetHandleVerifier [0xba4c18+29df8]
+	chromedriver!GetHandleVerifier [0xbac6fd+318dd]
+	chromedriver!GetHandleVerifier [0xb93c78+18e58]
+	chromedriver!GetHandleVerifier [0xb93e42+19022]
+	chromedriver!GetHandleVerifier [0xb7d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76c9fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e282ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e2827e+ee]
+
+2026-05-10 22:02:10,126 - ERROR - 오류 발생: 로그인 실패
+2026-05-10 22:02:12,396 - INFO - 브라우저 종료
+2026-05-10 23:00:03,258 - INFO - ==================================================
+2026-05-10 23:00:03,258 - INFO - 쿠팡 광고비 수집 시작
+2026-05-10 23:00:03,258 - INFO - ==================================================
+2026-05-10 23:00:03,258 - INFO - ====== WebDriver manager ======
+2026-05-10 23:00:04,377 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 23:00:04,400 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-10 23:00:04,417 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-10 23:00:05,691 - INFO - 웹드라이버 설정 완료
+2026-05-10 23:00:05,691 - INFO - 로그인 페이지 접속...
+2026-05-10 23:00:10,048 - INFO - 아이디 입력 완료
+2026-05-10 23:00:10,102 - INFO - 비밀번호 입력 완료
+2026-05-10 23:00:10,151 - INFO - 로그인 버튼 클릭
+2026-05-10 23:00:10,151 - INFO - ==================================================
+2026-05-10 23:00:10,151 - INFO - 2차 인증이 필요하면 브라우저에서 직접 완료하세요!
+2026-05-10 23:00:10,151 - INFO - ==================================================
+2026-05-10 23:02:10,340 - ERROR - 로그인 실패: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0xb8b373+10553]
+	chromedriver!GetHandleVerifier [0xb8b4a4+10684]
+	chromedriver!(No symbol) [0x991e10]
+	chromedriver!(No symbol) [0x9da9da]
+	chromedriver!(No symbol) [0x9dac7b]
+	chromedriver!(No symbol) [0xa1d162]
+	chromedriver!(No symbol) [0x9fd8b4]
+	chromedriver!(No symbol) [0xa1aa36]
+	chromedriver!(No symbol) [0x9fd606]
+	chromedriver!(No symbol) [0x9d0039]
+	chromedriver!(No symbol) [0x9d0df4]
+	chromedriver!GetHandleVerifier [0xe0ddb4+292f94]
+	chromedriver!GetHandleVerifier [0xe0937d+28e55d]
+	chromedriver!GetHandleVerifier [0xe28215+2ad3f5]
+	chromedriver!GetHandleVerifier [0xba4c18+29df8]
+	chromedriver!GetHandleVerifier [0xbac6fd+318dd]
+	chromedriver!GetHandleVerifier [0xb93c78+18e58]
+	chromedriver!GetHandleVerifier [0xb93e42+19022]
+	chromedriver!GetHandleVerifier [0xb7d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76c9fcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e282ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77e2827e+ee]
+
+2026-05-10 23:02:10,371 - ERROR - 오류 발생: 로그인 실패
+2026-05-10 23:02:12,565 - INFO - 브라우저 종료

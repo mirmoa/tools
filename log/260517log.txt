@@ -1,0 +1,390 @@
+2026-05-17 00:00:02,965 - INFO - ==================================================
+2026-05-17 00:00:02,965 - INFO - 쿠팡 광고비 수집 시작
+2026-05-17 00:00:02,965 - INFO - ==================================================
+2026-05-17 00:00:02,966 - INFO - ====== WebDriver manager ======
+2026-05-17 00:00:04,034 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 00:00:04,059 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 00:00:04,077 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 00:00:04,133 - INFO - WebDriver version 148.0.7778.167 selected
+2026-05-17 00:00:04,137 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/148.0.7778.167/win32/chromedriver-win32.zip
+2026-05-17 00:00:04,138 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/148.0.7778.167/win32/chromedriver-win32.zip
+2026-05-17 00:00:04,191 - INFO - Driver downloading response is 200
+2026-05-17 00:00:04,360 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 00:00:04,512 - INFO - Driver has been saved in cache [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167]
+2026-05-17 00:00:06,137 - INFO - 웹드라이버 설정 완료
+2026-05-17 00:00:06,137 - INFO - 로그인 페이지 접속...
+2026-05-17 00:00:10,374 - INFO - 아이디 입력 완료
+2026-05-17 00:00:10,427 - INFO - 비밀번호 입력 완료
+2026-05-17 00:00:10,476 - INFO - 로그인 버튼 클릭
+2026-05-17 00:01:10,885 - ERROR - 로그인 실패: Message: 
+
+2026-05-17 00:01:10,961 - ERROR - 오류 발생: 로그인 실패
+2026-05-17 00:01:13,119 - INFO - 브라우저 종료
+2026-05-17 01:00:03,519 - INFO - ==================================================
+2026-05-17 01:00:03,520 - INFO - 쿠팡 광고비 수집 시작
+2026-05-17 01:00:03,520 - INFO - ==================================================
+2026-05-17 01:00:03,520 - INFO - ====== WebDriver manager ======
+2026-05-17 01:00:04,611 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 01:00:04,641 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 01:00:04,660 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-17 01:00:05,806 - INFO - 웹드라이버 설정 완료
+2026-05-17 01:00:05,807 - INFO - 로그인 페이지 접속...
+2026-05-17 01:00:10,222 - INFO - 아이디 입력 완료
+2026-05-17 01:00:10,271 - INFO - 비밀번호 입력 완료
+2026-05-17 01:00:10,320 - INFO - 로그인 버튼 클릭
+2026-05-17 01:01:10,581 - ERROR - 로그인 실패: Message: 
+
+2026-05-17 01:01:10,623 - ERROR - 오류 발생: 로그인 실패
+2026-05-17 01:01:12,774 - INFO - 브라우저 종료
+2026-05-17 02:00:03,447 - INFO - ==================================================
+2026-05-17 02:00:03,448 - INFO - 쿠팡 광고비 수집 시작
+2026-05-17 02:00:03,448 - INFO - ==================================================
+2026-05-17 02:00:03,448 - INFO - ====== WebDriver manager ======
+2026-05-17 02:00:04,515 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 02:00:04,539 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 02:00:04,557 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-17 02:00:05,732 - INFO - 웹드라이버 설정 완료
+2026-05-17 02:00:05,733 - INFO - 로그인 페이지 접속...
+2026-05-17 02:00:10,273 - INFO - 아이디 입력 완료
+2026-05-17 02:00:10,324 - INFO - 비밀번호 입력 완료
+2026-05-17 02:00:10,372 - INFO - 로그인 버튼 클릭
+2026-05-17 02:01:10,611 - ERROR - 로그인 실패: Message: 
+
+2026-05-17 02:01:10,689 - ERROR - 오류 발생: 로그인 실패
+2026-05-17 02:01:12,842 - INFO - 브라우저 종료
+2026-05-17 03:00:03,469 - INFO - ==================================================
+2026-05-17 03:00:03,469 - INFO - 쿠팡 광고비 수집 시작
+2026-05-17 03:00:03,469 - INFO - ==================================================
+2026-05-17 03:00:03,469 - INFO - ====== WebDriver manager ======
+2026-05-17 03:00:04,540 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 03:00:04,564 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 03:00:04,581 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-17 03:00:05,647 - INFO - 웹드라이버 설정 완료
+2026-05-17 03:00:05,647 - INFO - 로그인 페이지 접속...
+2026-05-17 03:00:09,838 - INFO - 아이디 입력 완료
+2026-05-17 03:00:09,896 - INFO - 비밀번호 입력 완료
+2026-05-17 03:00:09,949 - INFO - 로그인 버튼 클릭
+2026-05-17 03:01:10,116 - ERROR - 로그인 실패: Message: 
+
+2026-05-17 03:01:10,149 - ERROR - 오류 발생: 로그인 실패
+2026-05-17 03:01:12,303 - INFO - 브라우저 종료
+2026-05-17 04:00:03,442 - INFO - ==================================================
+2026-05-17 04:00:03,442 - INFO - 쿠팡 광고비 수집 시작
+2026-05-17 04:00:03,442 - INFO - ==================================================
+2026-05-17 04:00:03,443 - INFO - ====== WebDriver manager ======
+2026-05-17 04:00:04,491 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 04:00:04,518 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 04:00:04,534 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-17 04:00:05,616 - INFO - 웹드라이버 설정 완료
+2026-05-17 04:00:05,616 - INFO - 로그인 페이지 접속...
+2026-05-17 04:00:09,857 - INFO - 아이디 입력 완료
+2026-05-17 04:00:09,916 - INFO - 비밀번호 입력 완료
+2026-05-17 04:00:09,968 - INFO - 로그인 버튼 클릭
+2026-05-17 04:01:10,161 - ERROR - 로그인 실패: Message: 
+
+2026-05-17 04:01:10,239 - ERROR - 오류 발생: 로그인 실패
+2026-05-17 04:01:12,403 - INFO - 브라우저 종료
+2026-05-17 05:00:03,500 - INFO - ==================================================
+2026-05-17 05:00:03,501 - INFO - 쿠팡 광고비 수집 시작
+2026-05-17 05:00:03,501 - INFO - ==================================================
+2026-05-17 05:00:03,501 - INFO - ====== WebDriver manager ======
+2026-05-17 05:00:04,560 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 05:00:04,584 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 05:00:04,603 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-17 05:00:05,715 - INFO - 웹드라이버 설정 완료
+2026-05-17 05:00:05,715 - INFO - 로그인 페이지 접속...
+2026-05-17 05:00:09,898 - INFO - 아이디 입력 완료
+2026-05-17 05:00:09,950 - INFO - 비밀번호 입력 완료
+2026-05-17 05:00:09,997 - INFO - 로그인 버튼 클릭
+2026-05-17 05:01:10,155 - ERROR - 로그인 실패: Message: 
+
+2026-05-17 05:01:10,194 - ERROR - 오류 발생: 로그인 실패
+2026-05-17 05:01:12,344 - INFO - 브라우저 종료
+2026-05-17 06:00:03,474 - INFO - ==================================================
+2026-05-17 06:00:03,475 - INFO - 쿠팡 광고비 수집 시작
+2026-05-17 06:00:03,475 - INFO - ==================================================
+2026-05-17 06:00:03,475 - INFO - ====== WebDriver manager ======
+2026-05-17 06:00:04,546 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 06:00:04,569 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 06:00:04,587 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-17 06:00:05,723 - INFO - 웹드라이버 설정 완료
+2026-05-17 06:00:05,723 - INFO - 로그인 페이지 접속...
+2026-05-17 06:00:09,979 - INFO - 아이디 입력 완료
+2026-05-17 06:00:10,032 - INFO - 비밀번호 입력 완료
+2026-05-17 06:00:10,081 - INFO - 로그인 버튼 클릭
+2026-05-17 06:01:10,246 - ERROR - 로그인 실패: Message: 
+
+2026-05-17 06:01:10,329 - ERROR - 오류 발생: 로그인 실패
+2026-05-17 06:01:12,473 - INFO - 브라우저 종료
+2026-05-17 07:00:03,462 - INFO - ==================================================
+2026-05-17 07:00:03,462 - INFO - 쿠팡 광고비 수집 시작
+2026-05-17 07:00:03,462 - INFO - ==================================================
+2026-05-17 07:00:03,462 - INFO - ====== WebDriver manager ======
+2026-05-17 07:00:04,531 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 07:00:04,556 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 07:00:04,575 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-17 07:00:05,650 - INFO - 웹드라이버 설정 완료
+2026-05-17 07:00:05,650 - INFO - 로그인 페이지 접속...
+2026-05-17 07:00:10,025 - INFO - 아이디 입력 완료
+2026-05-17 07:00:10,077 - INFO - 비밀번호 입력 완료
+2026-05-17 07:00:10,125 - INFO - 로그인 버튼 클릭
+2026-05-17 07:01:10,341 - ERROR - 로그인 실패: Message: 
+
+2026-05-17 07:01:10,419 - ERROR - 오류 발생: 로그인 실패
+2026-05-17 07:01:12,579 - INFO - 브라우저 종료
+2026-05-17 08:00:03,486 - INFO - ==================================================
+2026-05-17 08:00:03,487 - INFO - 쿠팡 광고비 수집 시작
+2026-05-17 08:00:03,487 - INFO - ==================================================
+2026-05-17 08:00:03,487 - INFO - ====== WebDriver manager ======
+2026-05-17 08:00:04,566 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 08:00:04,594 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 08:00:04,610 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-17 08:00:05,676 - INFO - 웹드라이버 설정 완료
+2026-05-17 08:00:05,677 - INFO - 로그인 페이지 접속...
+2026-05-17 08:00:09,857 - INFO - 아이디 입력 완료
+2026-05-17 08:00:09,910 - INFO - 비밀번호 입력 완료
+2026-05-17 08:00:09,959 - INFO - 로그인 버튼 클릭
+2026-05-17 08:01:10,217 - ERROR - 로그인 실패: Message: 
+
+2026-05-17 08:01:10,297 - ERROR - 오류 발생: 로그인 실패
+2026-05-17 08:01:12,449 - INFO - 브라우저 종료
+2026-05-17 09:00:03,498 - INFO - ==================================================
+2026-05-17 09:00:03,498 - INFO - 쿠팡 광고비 수집 시작
+2026-05-17 09:00:03,499 - INFO - ==================================================
+2026-05-17 09:00:03,499 - INFO - ====== WebDriver manager ======
+2026-05-17 09:00:04,553 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 09:00:04,574 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 09:00:04,593 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-17 09:00:05,707 - INFO - 웹드라이버 설정 완료
+2026-05-17 09:00:05,707 - INFO - 로그인 페이지 접속...
+2026-05-17 09:00:09,958 - INFO - 아이디 입력 완료
+2026-05-17 09:00:10,010 - INFO - 비밀번호 입력 완료
+2026-05-17 09:00:10,057 - INFO - 로그인 버튼 클릭
+2026-05-17 09:01:10,218 - ERROR - 로그인 실패: Message: 
+
+2026-05-17 09:01:10,253 - ERROR - 오류 발생: 로그인 실패
+2026-05-17 09:01:12,406 - INFO - 브라우저 종료
+2026-05-17 10:00:03,479 - INFO - ==================================================
+2026-05-17 10:00:03,479 - INFO - 쿠팡 광고비 수집 시작
+2026-05-17 10:00:03,480 - INFO - ==================================================
+2026-05-17 10:00:03,480 - INFO - ====== WebDriver manager ======
+2026-05-17 10:00:04,548 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 10:00:04,571 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 10:00:04,589 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-17 10:00:05,703 - INFO - 웹드라이버 설정 완료
+2026-05-17 10:00:05,703 - INFO - 로그인 페이지 접속...
+2026-05-17 10:00:10,340 - INFO - 아이디 입력 완료
+2026-05-17 10:00:10,389 - INFO - 비밀번호 입력 완료
+2026-05-17 10:00:10,439 - INFO - 로그인 버튼 클릭
+2026-05-17 10:01:10,617 - ERROR - 로그인 실패: Message: 
+
+2026-05-17 10:01:10,714 - ERROR - 오류 발생: 로그인 실패
+2026-05-17 10:01:12,868 - INFO - 브라우저 종료
+2026-05-17 11:00:03,461 - INFO - ==================================================
+2026-05-17 11:00:03,461 - INFO - 쿠팡 광고비 수집 시작
+2026-05-17 11:00:03,461 - INFO - ==================================================
+2026-05-17 11:00:03,462 - INFO - ====== WebDriver manager ======
+2026-05-17 11:00:04,530 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 11:00:04,554 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 11:00:04,573 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-17 11:00:05,694 - INFO - 웹드라이버 설정 완료
+2026-05-17 11:00:05,694 - INFO - 로그인 페이지 접속...
+2026-05-17 11:00:10,001 - INFO - 아이디 입력 완료
+2026-05-17 11:00:10,053 - INFO - 비밀번호 입력 완료
+2026-05-17 11:00:10,103 - INFO - 로그인 버튼 클릭
+2026-05-17 11:01:10,571 - ERROR - 로그인 실패: Message: 
+
+2026-05-17 11:01:10,667 - ERROR - 오류 발생: 로그인 실패
+2026-05-17 11:01:12,816 - INFO - 브라우저 종료
+2026-05-17 12:00:03,470 - INFO - ==================================================
+2026-05-17 12:00:03,470 - INFO - 쿠팡 광고비 수집 시작
+2026-05-17 12:00:03,470 - INFO - ==================================================
+2026-05-17 12:00:03,471 - INFO - ====== WebDriver manager ======
+2026-05-17 12:00:04,520 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 12:00:04,542 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 12:00:04,560 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-17 12:00:05,635 - INFO - 웹드라이버 설정 완료
+2026-05-17 12:00:05,636 - INFO - 로그인 페이지 접속...
+2026-05-17 12:00:09,959 - INFO - 아이디 입력 완료
+2026-05-17 12:00:10,011 - INFO - 비밀번호 입력 완료
+2026-05-17 12:00:10,057 - INFO - 로그인 버튼 클릭
+2026-05-17 12:01:10,273 - ERROR - 로그인 실패: Message: 
+
+2026-05-17 12:01:10,306 - ERROR - 오류 발생: 로그인 실패
+2026-05-17 12:01:12,471 - INFO - 브라우저 종료
+2026-05-17 13:00:03,542 - INFO - ==================================================
+2026-05-17 13:00:03,542 - INFO - 쿠팡 광고비 수집 시작
+2026-05-17 13:00:03,542 - INFO - ==================================================
+2026-05-17 13:00:03,542 - INFO - ====== WebDriver manager ======
+2026-05-17 13:00:04,906 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 13:00:04,935 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 13:00:04,950 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-17 13:00:06,454 - INFO - 웹드라이버 설정 완료
+2026-05-17 13:00:06,454 - INFO - 로그인 페이지 접속...
+2026-05-17 13:00:10,843 - INFO - 아이디 입력 완료
+2026-05-17 13:00:10,898 - INFO - 비밀번호 입력 완료
+2026-05-17 13:00:10,945 - INFO - 로그인 버튼 클릭
+2026-05-17 13:01:10,991 - ERROR - 로그인 실패: Message: 
+
+2026-05-17 13:01:11,075 - ERROR - 오류 발생: 로그인 실패
+2026-05-17 13:01:13,229 - INFO - 브라우저 종료
+2026-05-17 14:00:03,527 - INFO - ==================================================
+2026-05-17 14:00:03,527 - INFO - 쿠팡 광고비 수집 시작
+2026-05-17 14:00:03,528 - INFO - ==================================================
+2026-05-17 14:00:03,528 - INFO - ====== WebDriver manager ======
+2026-05-17 14:00:04,622 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 14:00:04,644 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 14:00:04,660 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-17 14:00:05,804 - INFO - 웹드라이버 설정 완료
+2026-05-17 14:00:05,805 - INFO - 로그인 페이지 접속...
+2026-05-17 14:00:10,247 - INFO - 아이디 입력 완료
+2026-05-17 14:00:10,298 - INFO - 비밀번호 입력 완료
+2026-05-17 14:00:10,349 - INFO - 로그인 버튼 클릭
+2026-05-17 14:01:10,724 - ERROR - 로그인 실패: Message: 
+
+2026-05-17 14:01:10,810 - ERROR - 오류 발생: 로그인 실패
+2026-05-17 14:01:12,964 - INFO - 브라우저 종료
+2026-05-17 15:00:03,480 - INFO - ==================================================
+2026-05-17 15:00:03,481 - INFO - 쿠팡 광고비 수집 시작
+2026-05-17 15:00:03,481 - INFO - ==================================================
+2026-05-17 15:00:03,481 - INFO - ====== WebDriver manager ======
+2026-05-17 15:00:04,556 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 15:00:04,579 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 15:00:04,597 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-17 15:00:05,662 - INFO - 웹드라이버 설정 완료
+2026-05-17 15:00:05,662 - INFO - 로그인 페이지 접속...
+2026-05-17 15:00:10,240 - INFO - 아이디 입력 완료
+2026-05-17 15:00:10,293 - INFO - 비밀번호 입력 완료
+2026-05-17 15:00:10,341 - INFO - 로그인 버튼 클릭
+2026-05-17 15:01:10,813 - ERROR - 로그인 실패: Message: 
+
+2026-05-17 15:01:10,900 - ERROR - 오류 발생: 로그인 실패
+2026-05-17 15:01:13,055 - INFO - 브라우저 종료
+2026-05-17 16:00:03,520 - INFO - ==================================================
+2026-05-17 16:00:03,521 - INFO - 쿠팡 광고비 수집 시작
+2026-05-17 16:00:03,521 - INFO - ==================================================
+2026-05-17 16:00:03,521 - INFO - ====== WebDriver manager ======
+2026-05-17 16:00:04,592 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 16:00:04,617 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 16:00:04,635 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-17 16:00:05,784 - INFO - 웹드라이버 설정 완료
+2026-05-17 16:00:05,784 - INFO - 로그인 페이지 접속...
+2026-05-17 16:00:10,071 - INFO - 아이디 입력 완료
+2026-05-17 16:00:10,118 - INFO - 비밀번호 입력 완료
+2026-05-17 16:00:10,165 - INFO - 로그인 버튼 클릭
+2026-05-17 16:01:10,371 - ERROR - 로그인 실패: Message: 
+
+2026-05-17 16:01:10,409 - ERROR - 오류 발생: 로그인 실패
+2026-05-17 16:01:12,564 - INFO - 브라우저 종료
+2026-05-17 17:00:03,552 - INFO - ==================================================
+2026-05-17 17:00:03,553 - INFO - 쿠팡 광고비 수집 시작
+2026-05-17 17:00:03,553 - INFO - ==================================================
+2026-05-17 17:00:03,553 - INFO - ====== WebDriver manager ======
+2026-05-17 17:00:04,922 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 17:00:04,950 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 17:00:04,966 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-17 17:00:06,473 - INFO - 웹드라이버 설정 완료
+2026-05-17 17:00:06,474 - INFO - 로그인 페이지 접속...
+2026-05-17 17:00:10,796 - INFO - 아이디 입력 완료
+2026-05-17 17:00:10,845 - INFO - 비밀번호 입력 완료
+2026-05-17 17:00:10,892 - INFO - 로그인 버튼 클릭
+2026-05-17 17:01:11,222 - ERROR - 로그인 실패: Message: 
+
+2026-05-17 17:01:11,303 - ERROR - 오류 발생: 로그인 실패
+2026-05-17 17:01:13,457 - INFO - 브라우저 종료
+2026-05-17 18:00:03,492 - INFO - ==================================================
+2026-05-17 18:00:03,492 - INFO - 쿠팡 광고비 수집 시작
+2026-05-17 18:00:03,492 - INFO - ==================================================
+2026-05-17 18:00:03,492 - INFO - ====== WebDriver manager ======
+2026-05-17 18:00:04,565 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 18:00:04,588 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 18:00:04,605 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-17 18:00:05,675 - INFO - 웹드라이버 설정 완료
+2026-05-17 18:00:05,675 - INFO - 로그인 페이지 접속...
+2026-05-17 18:00:10,145 - INFO - 아이디 입력 완료
+2026-05-17 18:00:10,199 - INFO - 비밀번호 입력 완료
+2026-05-17 18:00:10,246 - INFO - 로그인 버튼 클릭
+2026-05-17 18:01:10,467 - ERROR - 로그인 실패: Message: 
+
+2026-05-17 18:01:10,506 - ERROR - 오류 발생: 로그인 실패
+2026-05-17 18:01:12,663 - INFO - 브라우저 종료
+2026-05-17 19:00:03,571 - INFO - ==================================================
+2026-05-17 19:00:03,572 - INFO - 쿠팡 광고비 수집 시작
+2026-05-17 19:00:03,572 - INFO - ==================================================
+2026-05-17 19:00:03,572 - INFO - ====== WebDriver manager ======
+2026-05-17 19:00:04,920 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 19:00:04,945 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 19:00:04,960 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-17 19:00:06,370 - INFO - 웹드라이버 설정 완료
+2026-05-17 19:00:06,370 - INFO - 로그인 페이지 접속...
+2026-05-17 19:00:10,753 - INFO - 아이디 입력 완료
+2026-05-17 19:00:10,808 - INFO - 비밀번호 입력 완료
+2026-05-17 19:00:10,858 - INFO - 로그인 버튼 클릭
+2026-05-17 19:01:11,067 - ERROR - 로그인 실패: Message: 
+
+2026-05-17 19:01:11,116 - ERROR - 오류 발생: 로그인 실패
+2026-05-17 19:01:13,267 - INFO - 브라우저 종료
+2026-05-17 20:00:03,494 - INFO - ==================================================
+2026-05-17 20:00:03,495 - INFO - 쿠팡 광고비 수집 시작
+2026-05-17 20:00:03,495 - INFO - ==================================================
+2026-05-17 20:00:03,495 - INFO - ====== WebDriver manager ======
+2026-05-17 20:00:04,564 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 20:00:04,587 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 20:00:04,605 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-17 20:00:05,750 - INFO - 웹드라이버 설정 완료
+2026-05-17 20:00:05,750 - INFO - 로그인 페이지 접속...
+2026-05-17 20:00:10,467 - INFO - 아이디 입력 완료
+2026-05-17 20:00:10,532 - INFO - 비밀번호 입력 완료
+2026-05-17 20:00:10,594 - INFO - 로그인 버튼 클릭
+2026-05-17 20:01:10,792 - ERROR - 로그인 실패: Message: 
+
+2026-05-17 20:01:10,880 - ERROR - 오류 발생: 로그인 실패
+2026-05-17 20:01:13,044 - INFO - 브라우저 종료
+2026-05-17 21:00:03,472 - INFO - ==================================================
+2026-05-17 21:00:03,472 - INFO - 쿠팡 광고비 수집 시작
+2026-05-17 21:00:03,472 - INFO - ==================================================
+2026-05-17 21:00:03,473 - INFO - ====== WebDriver manager ======
+2026-05-17 21:00:04,578 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 21:00:04,602 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 21:00:04,620 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-17 21:00:05,735 - INFO - 웹드라이버 설정 완료
+2026-05-17 21:00:05,735 - INFO - 로그인 페이지 접속...
+2026-05-17 21:00:10,198 - INFO - 아이디 입력 완료
+2026-05-17 21:00:10,251 - INFO - 비밀번호 입력 완료
+2026-05-17 21:00:10,299 - INFO - 로그인 버튼 클릭
+2026-05-17 21:01:10,758 - ERROR - 로그인 실패: Message: 
+
+2026-05-17 21:01:10,838 - ERROR - 오류 발생: 로그인 실패
+2026-05-17 21:01:12,997 - INFO - 브라우저 종료
+2026-05-17 22:00:03,474 - INFO - ==================================================
+2026-05-17 22:00:03,474 - INFO - 쿠팡 광고비 수집 시작
+2026-05-17 22:00:03,474 - INFO - ==================================================
+2026-05-17 22:00:03,475 - INFO - ====== WebDriver manager ======
+2026-05-17 22:00:04,550 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 22:00:04,573 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 22:00:04,591 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-17 22:00:05,705 - INFO - 웹드라이버 설정 완료
+2026-05-17 22:00:05,706 - INFO - 로그인 페이지 접속...
+2026-05-17 22:00:10,098 - INFO - 아이디 입력 완료
+2026-05-17 22:00:10,146 - INFO - 비밀번호 입력 완료
+2026-05-17 22:00:10,196 - INFO - 로그인 버튼 클릭
+2026-05-17 22:01:10,376 - ERROR - 로그인 실패: Message: 
+
+2026-05-17 22:01:10,462 - ERROR - 오류 발생: 로그인 실패
+2026-05-17 22:01:12,615 - INFO - 브라우저 종료
+2026-05-17 23:00:03,480 - INFO - ==================================================
+2026-05-17 23:00:03,481 - INFO - 쿠팡 광고비 수집 시작
+2026-05-17 23:00:03,481 - INFO - ==================================================
+2026-05-17 23:00:03,481 - INFO - ====== WebDriver manager ======
+2026-05-17 23:00:04,580 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 23:00:04,604 - INFO - Get LATEST chromedriver version for google-chrome
+2026-05-17 23:00:04,623 - INFO - Driver [C:\Users\모아유통\.wdm\drivers\chromedriver\win64\148.0.7778.167\chromedriver-win32/chromedriver.exe] found in cache
+2026-05-17 23:00:05,719 - INFO - 웹드라이버 설정 완료
+2026-05-17 23:00:05,719 - INFO - 로그인 페이지 접속...
+2026-05-17 23:00:10,146 - INFO - 아이디 입력 완료
+2026-05-17 23:00:10,198 - INFO - 비밀번호 입력 완료
+2026-05-17 23:00:10,248 - INFO - 로그인 버튼 클릭
+2026-05-17 23:01:10,440 - ERROR - 로그인 실패: Message: 
+
+2026-05-17 23:01:10,488 - ERROR - 오류 발생: 로그인 실패
+2026-05-17 23:01:12,642 - INFO - 브라우저 종료

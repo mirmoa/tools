@@ -2,7 +2,7 @@ import os
 import re
 import json
 import logging
-#import subprocess
+import subprocess
 from datetime import datetime
 from pathlib import Path
 from selenium import webdriver
@@ -13,10 +13,17 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 import time
+import random
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.action_chains import ActionChains
 
 # 계정 정보
 COUPANG_ID = "alfm1991"
 COUPANG_PW = "Ehdvkf29@@als!"
+
+# 재시도 설정
+MAX_ATTEMPTS = 3
+RETRY_WAIT_SEC = 60
 
 # 로그 디렉토리 생성
 os.makedirs('log', exist_ok=True)
@@ -37,7 +44,7 @@ def setup_driver():
     """웹드라이버 설정"""
     try:
         chrome_options = Options()
-        chrome_options.add_argument('--headless=new')
+        #chrome_options.add_argument('--headless=new')
         chrome_options.add_argument('--no-sandbox')
         chrome_options.add_argument('--disable-dev-shm-usage')
         chrome_options.add_argument('--window-size=1920,1080')
@@ -74,29 +81,46 @@ def login(driver):
 
         wait = WebDriverWait(driver, 20)
 
-        # 아이디 입력
+        # 아이디 입력 (한 글자씩)
         username_field = wait.until(EC.presence_of_element_located((By.ID, "username")))
         username_field.clear()
-        username_field.send_keys(COUPANG_ID)
+        for char in COUPANG_ID:
+            username_field.send_keys(char)
+            time.sleep(random.uniform(0.05, 0.15))
         logger.info("아이디 입력 완료")
 
-        # 비밀번호 입력
+        # 비밀번호 입력 (한 글자씩)
         password_field = driver.find_element(By.ID, "password")
         password_field.clear()
-        password_field.send_keys(COUPANG_PW)
+        for char in COUPANG_PW:
+            password_field.send_keys(char)
+            time.sleep(random.uniform(0.05, 0.15))
         logger.info("비밀번호 입력 완료")
 
-        # 로그인 버튼 클릭
+        # 로그인 버튼 클릭 (마우스 이동 후 클릭)
+        time.sleep(random.uniform(1, 3))
         login_button = driver.find_element(By.ID, "kc-login")
-        login_button.click()
+        actions = ActionChains(driver)
+        actions.move_to_element(login_button).pause(random.uniform(0.5, 1.5)).click().perform()
         logger.info("로그인 버튼 클릭")
 
-        # relay URL을 벗어나면 로그인 완료로 판단 (최대 60초)
-        wait_long = WebDriverWait(driver, 60)
-        # 변경 후
+        # 10초 대기 후 차단 여부 확인
+        time.sleep(10)
+
+        # 차단됐으면 새로고침 시도
+        for i in range(3):
+            if "xauth" in driver.current_url or "errors.edgesuite.net" in driver.current_url:
+                logger.warning(f"차단 감지 → 새로고침 시도 ({i + 1}/3)")
+                driver.refresh()
+                time.sleep(5)
+            else:
+                break
+
+        # 로그인 완료 대기 (최대 60초)
+        wait_long = WebDriverWait(driver, 30)
         wait_long.until(
-            lambda d: "advertising.coupang.com" in d.current_url 
-                      and "relay" not in d.current_url 
+            lambda d: "advertising.coupang.com" in d.current_url
+                      and "relay" not in d.current_url
                       and "xauth" not in d.current_url
         )
         logger.info(f"로그인 성공! 현재 URL: {driver.current_url}")
@@ -109,7 +133,6 @@ def login(driver):
 
 
 def navigate_to_dashboard(driver):
-    """마케팅 대시보드로 이동 및 테이블 로드 대기"""
     try:
         wait = WebDriverWait(driver, 30)
 
@@ -120,6 +143,11 @@ def navigate_to_dashboard(driver):
         time.sleep(3)
 
         wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, ".rt-thead, .ReactTable")))
+
+        # 데이터 로딩 완료 대기 ('- 원' 사라질 때까지)
+        wait.until(lambda d: '- 원' not in d.find_element(By.CSS_SELECTOR, ".ReactTable").text)
+        time.sleep(2)
+
         logger.info("대시보드 테이블 로드 완료")
         return True
 
@@ -130,7 +158,6 @@ def navigate_to_dashboard(driver):
 
 
 def select_rows_per_page(driver, rows=20):
-    """페이지당 표시할 행 수 선택"""
     try:
         wait = WebDriverWait(driver, 30)
 
@@ -152,6 +179,9 @@ def select_rows_per_page(driver, rows=20):
         option.click()
 
         wait.until(EC.invisibility_of_element_located((By.CSS_SELECTOR, "div.-loading.-active")))
+
+        # 20개로 바꾼 후 데이터 로딩 완료 대기
+        wait.until(lambda d: '- 원' not in d.find_element(By.CSS_SELECTOR, ".ReactTable").text)
         time.sleep(1)
 
         logger.info(f"{rows}개 보기 설정 완료")
@@ -221,7 +251,7 @@ def collect_campaign_data(driver):
             # 오늘누적광고비
             cost_text = cells[cost_idx].text.strip()
             numbers = re.findall(r'[\d,]+', cost_text)
-            cost = float(numbers[-1].replace(',', '')) if numbers else 0.0
+            cost = float(numbers[0].replace(',', '')) if numbers else 0.0
 
             campaigns[campaign_name] = {
                 'hourly_costs': {str(h).zfill(2): 0.0 for h in range(24)},
@@ -248,8 +278,7 @@ def save_data(campaigns, total_cost):
         today = current_time.strftime('%Y-%m-%d')
         current_hour = current_time.strftime('%H')
 
-        # 상대경로 (레포 루트 기준)
-        data_dir = Path('src/frontend/public/data/daily')
+        data_dir = Path('C:/tools/src/frontend/public/data/daily')
         data_dir.mkdir(parents=True, exist_ok=True)
         data_file = data_dir / f'{today}.json'
 
@@ -290,79 +319,69 @@ def save_data(campaigns, total_cost):
         return False
 
 
-# def git_push():
-#     """Git에 변경사항 push"""
-#     try:
-#         git_root = '.'
-
-#         # git pull
-#         result = subprocess.run(
-#             ['git', 'pull', '--no-edit'],
-#             capture_output=True, text=True, encoding='utf-8',
-#             cwd=git_root
-#         )
-#         if result.returncode != 0:
-#             logger.warning(f"git pull 경고: {result.stderr}")
-
-#         # git add
-#         result = subprocess.run(
-#             ['git', 'add', 'src/frontend/public/data/daily/'],
-#             capture_output=True, text=True, encoding='utf-8',
-#             cwd=git_root
-#         )
-#         if result.returncode != 0:
-#             logger.error(f"git add 실패: {result.stderr}")
-#             return False
-
-#         # 변경사항 확인
-#         result = subprocess.run(
-#             ['git', 'diff', '--cached', '--quiet'],
-#             capture_output=True,
-#             cwd=git_root
-#         )
-#         if result.returncode == 0:
-#             logger.info("변경사항 없음 - Git push 스킵")
-#             return True
-
-#         # git commit
-#         today = datetime.now().strftime('%Y-%m-%d')
-#         current_time = datetime.now().strftime('%H:%M')
-#         result = subprocess.run(
-#             ['git', 'commit', '-m', f'광고비 데이터 업데이트: {today} {current_time}'],
-#             capture_output=True, text=True, encoding='utf-8',
-#             cwd=git_root
-#         )
-#         if result.returncode != 0:
-#             logger.error(f"git commit 실패: {result.stderr}")
-#             return False
-
-#         # git push
-#         result = subprocess.run(
-#             ['git', 'push'],
-#             capture_output=True, text=True, encoding='utf-8',
-#             cwd=git_root
-#         )
-#         if result.returncode != 0:
-#             logger.error(f"git push 실패: {result.stderr}")
-#             return False
-
-#         logger.info("Git push 완료")
-#         return True
-
-#     except Exception as e:
-#         logger.error(f"Git 오류: {e}")
-#         return False
-
-
-def main():
-    """메인 실행 함수"""
-    driver = None
-
+def git_push():
+    """Git에 변경사항 push"""
     try:
-        logger.info("=" * 50)
-        logger.info("쿠팡 광고비 수집 시작")
-        logger.info("=" * 50)
+        git_root = 'C:/tools'
 
+        result = subprocess.run(
+            ['git', 'pull', '--no-edit'],
+            capture_output=True, text=True, encoding='utf-8',
+            cwd=git_root
+        )
+        if result.returncode != 0:
+            logger.warning(f"git pull 경고: {result.stderr}")
+
+        result = subprocess.run(
+            ['git', 'add', 'src/frontend/public/data/daily/'],
+            capture_output=True, text=True, encoding='utf-8',
+            cwd=git_root
+        )
+        if result.returncode != 0:
+            logger.error(f"git add 실패: {result.stderr}")
+            return False
+
+        result = subprocess.run(
+            ['git', 'diff', '--cached', '--quiet'],
+            capture_output=True,
+            cwd=git_root
+        )
+        if result.returncode == 0:
+            logger.info("변경사항 없음 - Git push 스킵")
+            return True
+
+        today = datetime.now().strftime('%Y-%m-%d')
+        current_time = datetime.now().strftime('%H:%M')
+        result = subprocess.run(
+            ['git', 'commit', '-m', f'광고비 데이터 업데이트: {today} {current_time}'],
+            capture_output=True, text=True, encoding='utf-8',
+            cwd=git_root
+        )
+        if result.returncode != 0:
+            logger.error(f"git commit 실패: {result.stderr}")
+            return False
+
+        result = subprocess.run(
+            ['git', 'push'],
+            capture_output=True, text=True, encoding='utf-8',
+            cwd=git_root
+        )
+        if result.returncode != 0:
+            logger.error(f"git push 실패: {result.stderr}")
+            return False
+
+        logger.info("Git push 완료")
+        return True
+
+    except Exception as e:
+        logger.error(f"Git 오류: {e}")
+        return False
+
+
+def run_once():
+    """1회 수집 시도 - 실패 시 드라이버 완전 종료"""
+    driver = None
+    try:
         driver = setup_driver()
 
         if not login(driver):
@@ -381,19 +400,41 @@ def main():
         if not save_data(campaigns, total_cost):
             raise Exception("데이터 저장 실패")
 
-        #git_push()
-
-        logger.info("=" * 50)
-        logger.info("작업 완료!")
-        logger.info("=" * 50)
+        git_push()
+        return True
 
     except Exception as e:
-        logger.error(f"오류 발생: {e}")
+        logger.error(f"수집 실패: {e}")
+        return False
 
     finally:
         if driver:
             driver.quit()
             logger.info("브라우저 종료")
+
+
+def main():
+    """메인 실행 함수 - 실패 시 1분 간격 최대 3회 재시도"""
+    logger.info("=" * 50)
+    logger.info("쿠팡 광고비 수집 시작")
+    logger.info("=" * 50)
+
+    for attempt in range(1, MAX_ATTEMPTS + 1):
+        logger.info(f">>> 시도 {attempt}/{MAX_ATTEMPTS}")
+
+        if run_once():
+            logger.info("=" * 50)
+            logger.info("작업 완료!")
+            logger.info("=" * 50)
+            return
+
+        if attempt < MAX_ATTEMPTS:
+            logger.warning(f"실패 → {RETRY_WAIT_SEC}초 후 재시도...")
+            time.sleep(RETRY_WAIT_SEC)
+
+    logger.error("=" * 50)
+    logger.error(f"최대 재시도 횟수({MAX_ATTEMPTS}회) 초과 - 수집 포기")
+    logger.error("=" * 50)
 
 
 if __name__ == "__main__":
